@@ -1,45 +1,52 @@
-    // Create modal element
-    const modal = document.createElement('div');
-    modal.id = 'modal';
-    modal.classList.add('modal');
-    const modalImg = document.createElement('img');
-    modalImg.id = 'modal-img';
-    modalImg.classList.add('modal-img');
-    const closeBtn = document.createElement('span');
-    closeBtn.id = 'close-btn';
-    closeBtn.classList.add('close-btn');
-    closeBtn.innerHTML = '&times;';
-    closeBtn.addEventListener('click', () => {
+// Create modal element
+const modal = document.createElement('div');
+modal.id = 'modal';
+modal.classList.add('modal');
+const modalImg = document.createElement('img');
+modalImg.id = 'modal-img';
+modalImg.classList.add('modal-img');
+const closeBtn = document.createElement('span');
+closeBtn.id = 'close-btn';
+closeBtn.classList.add('close-btn');
+closeBtn.innerHTML = '&times;';
+closeBtn.addEventListener('click', () => {
+    modal.style.display = 'none';
+});
+modal.appendChild(closeBtn);
+modal.appendChild(modalImg);
+
+// Append modal to document body
+document.body.appendChild(modal);
+
+// Add event listeners to images
+const images = document.querySelectorAll('.paragraph-case img');
+images.forEach((img) => {
+    img.addEventListener('click', () => {
+        modal.style.display = 'flex';
+        modalImg.src = img.src;
+    });
+});
+
+// Add event listener to modal that closes the modal if clicked outside of the image
+modal.addEventListener('click', (event) => {
+    if (event.target === modal || event.target.parentNode === modal) {
         modal.style.display = 'none';
-    });
-    modal.appendChild(closeBtn);
-    modal.appendChild(modalImg);
+    }
+});
 
-    // Append modal to document body
-    document.body.appendChild(modal);
+// get the current page URL path
+const path = window.location.pathname;
 
-    // Add event listeners to images
-    const images = document.querySelectorAll('img');
-    images.forEach((img) => {
-        img.addEventListener('click', () => {
-            modal.style.display = 'block';
-            modalImg.src = img.src;
-        });
-    });
+// select all navigation links
+const navLinks = document.querySelectorAll('nav a');
 
-    // get the current page URL path
-    const path = window.location.pathname;
-
-    // select all navigation links
-    const navLinks = document.querySelectorAll('nav a');
-
-    // loop through each link and check if its href matches the current path
-    navLinks.forEach(link => {
-        if (link.getAttribute('href') === path) {
-            // add the active class if the link matches the current path
-            link.classList.add('active');
-        } else {
-            // remove the active class if the link doesn't match the current path
-            link.classList.remove('active');
-        }
-    });
+// loop through each link and check if its href matches the current path
+navLinks.forEach(link => {
+    if (link.getAttribute('href') === path) {
+        // add the active class if the link matches the current path
+        link.classList.add('active');
+    } else {
+        // remove the active class if the link doesn't match the current path
+        link.classList.remove('active');
+    }
+});
