@@ -36,7 +36,7 @@ a {
   /* transition: ease-in-out 0.2s; */
 }
 
-p > a {
+p>a {
   text-decoration: underline;
 }
 
@@ -269,7 +269,7 @@ footer {
   justify-content: center;
   flex-direction: column;
   row-gap: 8px;
-  height: 200px;
+  padding: 48px 0 32px;
   width: 100%;
 }
 
@@ -287,6 +287,8 @@ footer>a {
 
 #content {
   width: 100%;
+  max-width: 765px;
+  margin: 0 auto;
   padding: 0;
   background-color: var(--main-bg-color);
   color: var(--font-color);
@@ -312,7 +314,7 @@ footer>a {
   float: none;
   max-width: 100%;
   margin-right: 0;
-  margin-bottom: 0;
+  margin-bottom: 1rem;
 }
 
 #content h4 {
@@ -446,10 +448,11 @@ blockquote p {
   }
 
   #content img.float {
-    float:left;
-    max-width: 256px;
-    margin-right:1.5rem;
-    margin-bottom: 1rem;
+    float: left;
+    max-width: calc(50% - 1.5rem);
+    margin-top: 8px;
+    margin-right: 1.5rem;
+    margin-bottom: 0rem;
   }
 
   .card {

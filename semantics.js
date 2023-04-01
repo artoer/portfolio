@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
     <meta name="theme-color" content="#5558D8">
     <meta name="robots" content="noindex,nofollow"/>
     <link rel="icon" type="image/png" href="../img/favicon.png"/>
-    <title>Arthur Menken</title>
+    <title>Arthur Menken | Portfolio</title>
 `);
 
   // define the data
