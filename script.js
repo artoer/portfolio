@@ -27,4 +27,19 @@ images.forEach((img) => {
     });
 });
 
+// get the current page URL path
+const path = window.location.pathname;
 
+// select all navigation links
+const navLinks = document.querySelectorAll('nav a');
+
+// loop through each link and check if its href matches the current path
+navLinks.forEach(link => {
+  if (link.getAttribute('href') === path) {
+    // add the active class if the link matches the current path
+    link.classList.add('active');
+  } else {
+    // remove the active class if the link doesn't match the current path
+    link.classList.remove('active');
+  }
+});

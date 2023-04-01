@@ -14,7 +14,7 @@
   <meta name="theme-color" content="#5558D8">
   <link rel="icon" type="image/png" href="../img/favicon.png" />
   <title>Arthur Menken</title>
-  <link rel="stylesheet" type="text/css" href="style-new.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
@@ -70,25 +70,7 @@
     <a href="https://www.linkedin.com/in/arthur-menken/">LinkedIn</a>
   </footer> -->
   <script src="node_modules/handlebars/dist/handlebars.js"></script>
-  <script>
-    // Get the HTML contents of the footer template
-    var footerTemplate = document.getElementById("footer-template").innerHTML;
-
-    // Get the current year
-    var currentYear = new Date().getFullYear();
-
-    // Compile the template using Handlebars
-    var compiledTemplate = Handlebars.compile(footerTemplate);
-
-    // Render the template with the data
-    var renderedTemplate = compiledTemplate({
-      currentYear: currentYear
-    });
-
-    // Add the rendered template to the page
-    document.body.insertAdjacentHTML("beforeend", renderedTemplate);
-  </script>
-
+  <script id="footer-template" type="text/x-handlebars-template" src="footer.handlebars"></script>
 
 </body>
 
