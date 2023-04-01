@@ -12,18 +12,29 @@ closeBtn.innerHTML = '&times;';
 closeBtn.addEventListener('click', () => {
     modal.style.display = 'none';
 });
+const openInNewTabLink = document.createElement('a');
+openInNewTabLink.id = 'open-in-new-tab';
+openInNewTabLink.classList.add('open-in-new-tab');
+openInNewTabLink.target = '_blank';
+openInNewTabLink.innerHTML = 'Open in New Tab';
+openInNewTabLink.addEventListener('click', () => {
+    event.stopPropagation();
+});
 modal.appendChild(closeBtn);
 modal.appendChild(modalImg);
+modal.appendChild(openInNewTabLink);
 
 // Append modal to document body
 document.body.appendChild(modal);
 
 // Add event listeners to images
-const images = document.querySelectorAll('.paragraph-case img');
+const images = document.querySelectorAll('#content img');
 images.forEach((img) => {
-    img.addEventListener('click', () => {
+    img.addEventListener('click', (event) => {
+        event.stopPropagation();
         modal.style.display = 'flex';
         modalImg.src = img.src;
+        openInNewTabLink.href = img.src;
     });
 });
 
@@ -33,6 +44,7 @@ modal.addEventListener('click', (event) => {
         modal.style.display = 'none';
     }
 });
+
 
 // get the current page URL path
 const path = window.location.pathname;
