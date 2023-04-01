@@ -427,7 +427,7 @@ blockquote p {
   top: 0;
   right: 0;
   font-size: 36px;
-  color: #fff;
+  color: var(--main-bg-color);
   cursor: pointer;
   width: 32px;
   line-height: 32px;
@@ -437,7 +437,7 @@ blockquote p {
 }
 
 .close-btn:hover {
-  color: #bbb;
+  color: var(--secondary-color)
 }
 
 /* ABOUT */
