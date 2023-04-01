@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const headTemplate = Handlebars.compile(`
   <head>
+  <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;600;700&family=Orbitron&display=swap" rel="stylesheet">
@@ -28,7 +29,6 @@ document.addEventListener("DOMContentLoaded", function () {
     <meta name="robots" content="noindex,nofollow"/>
     <link rel="icon" type="image/png" href="../img/favicon.png"/>
     <title>Arthur Menken</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
 `);
 
