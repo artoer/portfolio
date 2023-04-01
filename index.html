@@ -5,10 +5,10 @@
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;600;700&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;600;700&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio van Arthur Menken, student CMD en UX Designer.">
+  <meta name="description" content="Portfolio van Arthur Menken, UX Designer.">
   <meta name="author" content="Arthur Menken">
   <meta property="og:image" content="./img/logo.png">
   <meta name="theme-color" content="#5558D8">
@@ -64,10 +64,32 @@
     </div>
   </main>
 
-  <footer>
-      &copy; Copyright 2023 - Arthur Menken
-      <a href="https://www.linkedin.com/in/arthur-menken/">LinkedIn</a>
-  </footer>
+  {{> footer}}
+  <!-- <footer>
+    &copy; Copyright 2023 - Arthur Menken
+    <a href="https://www.linkedin.com/in/arthur-menken/">LinkedIn</a>
+  </footer> -->
+  <script src="node_modules/handlebars/dist/handlebars.js"></script>
+  <script>
+    // Get the HTML contents of the footer template
+    var footerTemplate = document.getElementById("footer-template").innerHTML;
+
+    // Get the current year
+    var currentYear = new Date().getFullYear();
+
+    // Compile the template using Handlebars
+    var compiledTemplate = Handlebars.compile(footerTemplate);
+
+    // Render the template with the data
+    var renderedTemplate = compiledTemplate({
+      currentYear: currentYear
+    });
+
+    // Add the rendered template to the page
+    document.body.insertAdjacentHTML("beforeend", renderedTemplate);
+  </script>
+
+
 </body>
 
 </html>

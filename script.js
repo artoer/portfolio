@@ -26,3 +26,5 @@ images.forEach((img) => {
         modalImg.src = img.src;
     });
 });
+
+
