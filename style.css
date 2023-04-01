@@ -142,11 +142,11 @@ nav ul li a:hover,
   background-position: 0;
 }
 
-nav ul li:last-of-type:active {
+/* nav ul li:last-of-type:active {
   color: var(--primary-color);
   background-color: var(--main-bg-color);
   transition: none;
-}
+} */
 
 main {
   max-width: calc(100% - 2rem);
@@ -302,9 +302,10 @@ footer>a {
   margin-bottom: 0;
 }
 
-#content>img {
+#content img {
   display: block;
   width: 100%;
+  pointer-events: none;
 }
 
 #content img.float {
@@ -466,9 +467,10 @@ blockquote p {
     padding: 16px 0;
   }
 
-  #content>img {
+  #content img {
     width: 100%;
     cursor: pointer;
+    pointer-events: unset;
   }
 
   #about {
