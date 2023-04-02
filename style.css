@@ -9,16 +9,29 @@
   color: var(--font-color);
 }
 
-:root {
-  --main-bg-color: #fff;
+/* :root {
+  --main-bg-color: #F1F1F1;
+  --surface-bg-color: #F8F8F8;
   --nav-bg-color: #222;
   --primary-color: #5558D8;
   --secondary-color: #FD49A0;
-  --tertiary-color: #F5F5F5;
   --font-family-body: 'Karla', sans-serif;
   --font-color: #222;
-  --font-color-alt: #fff;
+  --font-color-light: #fff;
   --font-color-caption: #777;
+} */
+
+:root {
+  --main-bg-color: #F1F1F1;
+  --nav-bg-color: #222;
+  --surface-bg-color: #F8F8F8;
+  --primary-color: #FF5D30;
+  --secondary-color: #FFC107;
+  --accent-color: #FFC107;
+  --font-family-body: 'Karla', sans-serif;
+  --font-color: #222;
+  --font-color-light: #F1F1F1;
+  --font-color-caption: #919191;
 }
 
 html {
@@ -34,6 +47,7 @@ img {
 a {
   color: var(--primary-color);
   text-decoration: none;
+  font-weight: 600;
   /* transition: ease-in-out 0.2s; */
 }
 
@@ -136,12 +150,28 @@ nav ul li a {
   transition: all 0.2s ease-in-out;
   filter: brightness(1.15);
   text-decoration: none;
+  position: relative;
+}
+
+nav ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--secondary-color);
+  transition: all 0.2s ease-in-out;
 }
 
 nav ul li a:hover,
 .active {
   color: var(--primary-color);
   background-position: 0;
+}
+
+nav ul li:not(:first-child) a:hover::before {
+  width: 100%;
 }
 
 /* nav ul li:last-of-type:active {
@@ -164,7 +194,7 @@ main {
   align-items: center;
   height: 300px;
   margin: 0px auto 16px;
-  background: var(--tertiary-color);
+  background: var(--surface-bg-color);
   border-radius: 15px;
 }
 
@@ -200,7 +230,7 @@ main {
   overflow: hidden;
   display: grid;
   grid-template-rows: calc(100vw - 32px) auto;
-  background: var(--tertiary-color);
+  background: var(--surface-bg-color);
 }
 
 .card>img {
@@ -225,7 +255,7 @@ main {
 }
 
 #open-in-new-tab {
-  background: var(--tertiary-color);
+  background: var(--surface-bg-color);
   height: 40px;
   line-height: 40px;
   padding: 0 16px;
@@ -235,7 +265,7 @@ main {
 
 .card>div>a {
   border-radius: 4px;
-  color: var(--font-color-alt);
+  color: var(--font-color-light);
   padding: 0 16px;
   margin: 16px 0 0 auto;
   height: 40px;
@@ -246,8 +276,9 @@ main {
       var(--primary-color) 50%);
   background-size: 200% 100%;
   background-position: 100%;
-  transition: background-position 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
+
 
 .card>div>a::after {
   margin-left: 8px;
@@ -255,7 +286,7 @@ main {
 }
 
 .card>div>a:hover {
-  color: var(--font-color-alt);
+  color: var(--font-color);
   background-position: 0;
 }
 
@@ -271,7 +302,7 @@ footer {
   justify-content: center;
   flex-direction: column;
   row-gap: 8px;
-  padding: 48px 0 32px;
+  padding: 64px 0 32px;
   width: 100%;
 }
 
@@ -284,7 +315,7 @@ footer>a {
   max-width: 765px;
   margin: 0 auto 16px;
   padding: 32px 0 16px;
-  border-bottom: 2px solid var(--primary-color);
+  border-bottom: 2px solid var(--accent-color);
 }
 
 #content {
@@ -333,7 +364,7 @@ figcaption {
 }
 
 #content h4 {
-  border-left: 2px solid var(--primary-color);
+  border-left: 2px solid var(--accent-color);
   padding-left: 1rem;
   margin-top: 3rem;
 }
@@ -394,7 +425,7 @@ blockquote p {
   text-align: center;
   font-weight: lighter;
   height: 32px;
-  background: var(--tertiary-color);
+  background: var(--surface-bg-color);
   opacity: .35;
   border-radius: 50%;
 }
@@ -411,7 +442,7 @@ blockquote p {
   display: grid;
   justify-content: center;
   grid-template-rows: auto auto;
-  background-color: var(--tertiary-color);
+  background-color: var(--surface-bg-color);
 }
 
 #about>img {
@@ -427,11 +458,6 @@ blockquote p {
   width: 100%;
   height: 100%;
   margin: 0 auto;
-}
-
-.about-text a,
-#content a {
-  font-weight: 600;
 }
 
 .about-text p:not(:last-of-type),
