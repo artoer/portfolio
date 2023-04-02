@@ -13,8 +13,8 @@
   --main-bg-color: #F1F1F1;
   --surface-bg-color: #F8F8F8;
   --nav-bg-color: #222;
-  --primary-color: #5558D8;
-  --secondary-color: #FD49A0;
+  --secondary-color: #5558D8;
+  --primary-color: #FD49A0;
   --font-family-body: 'Karla', sans-serif;
   --font-color: #222;
   --font-color-light: #fff;
@@ -25,8 +25,8 @@
   --main-bg-color: #F1F1F1;
   --nav-bg-color: #222;
   --surface-bg-color: #F8F8F8;
-  --primary-color: #FF5D30;
-  --secondary-color: #FFC107;
+  --primary-color: #FFC107;
+  --secondary-color: #FF5D30;
   --accent-color: #FFC107;
   --font-family-body: 'Karla', sans-serif;
   --font-color: #222;
@@ -45,7 +45,7 @@ img {
 }
 
 a {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   text-decoration: none;
   font-weight: 600;
   /* transition: ease-in-out 0.2s; */
@@ -56,7 +56,7 @@ p>a {
 }
 
 a:hover {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   /* transition: ease-in-out 0.2s; */
 }
 
@@ -139,8 +139,8 @@ nav ul li a {
   font-weight: bold;
   padding: 0 8px;
   background-image: linear-gradient(to right,
-      var(--secondary-color),
-      var(--secondary-color) 50%,
+      var(--primary-color),
+      var(--primary-color) 50%,
       #fff 50%);
   background-size: 200% 100%;
   background-position: 100%;
@@ -148,7 +148,6 @@ nav ul li a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.2s ease-in-out;
-  filter: brightness(1.15);
   text-decoration: none;
   position: relative;
 }
@@ -160,13 +159,13 @@ nav ul li a::before {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   transition: all 0.2s ease-in-out;
 }
 
 nav ul li a:hover,
 .active {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   background-position: 0;
 }
 
@@ -175,7 +174,7 @@ nav ul li:not(:first-child) a:hover::before {
 }
 
 /* nav ul li:last-of-type:active {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   background-color: var(--main-bg-color);
   transition: none;
 } */
@@ -212,7 +211,7 @@ main {
 } */
 
 .hero-text>h2>a:hover {
-  color: var(--secondary-color)
+  color: var(--primary-color)
 }
 
 #card-container {
@@ -243,7 +242,7 @@ main {
   display: flex;
   height: 100%;
   width: 100%;
-  color: var(--secondary-color);
+  color: var(--primary-color);
   flex-direction: column;
   margin: 0 auto;
   justify-content: center;
@@ -252,6 +251,8 @@ main {
   text-align: left;
   color: var(--font-color-);
   padding: 24px;
+  border: none;
+  border-top: 2px solid var(--accent-color);
 }
 
 #open-in-new-tab {
@@ -265,7 +266,7 @@ main {
 
 .card>div>a {
   border-radius: 4px;
-  color: var(--font-color-light);
+  color: var(--font-color);
   padding: 0 16px;
   margin: 16px 0 0 auto;
   height: 40px;
@@ -286,7 +287,7 @@ main {
 }
 
 .card>div>a:hover {
-  color: var(--font-color);
+  color: var(--font-color-light);
   background-position: 0;
 }
 
@@ -431,7 +432,7 @@ blockquote p {
 }
 
 .close-btn:hover {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   opacity: 1;
 }
 
@@ -502,6 +503,11 @@ blockquote p {
     height: 300px;
     grid-template-columns: 60% 40%;
     grid-template-rows: none;
+  }
+
+  .card > div {
+    border: none;
+    border-left: 2px solid var(--accent-color);
   }
 
   .card>div>a {
