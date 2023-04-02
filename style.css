@@ -31,7 +31,7 @@
   --font-family-body: 'Karla', sans-serif;
   --font-color: #222;
   --font-color-light: #F1F1F1;
-  --font-color-caption: #919191;
+  --font-color-caption: #515151;
 }
 
 html {
@@ -193,17 +193,17 @@ main {
   padding: 0 16px;
 }
 
-.hero-text>h2>a,
+/* .hero-text>h2>a,
 .hero-texth2>a:visited {
   color: var(--primary-color);
-}
+} */
 
 /* .hero-text h2, .hero-text h2 a{
   font-family: 'Orbitron', sans-serif;
 } */
 
 .hero-text>h2>a:hover {
-  color: var(--secondary-color)
+  color: var(--primary-color)
 }
 
 #card-container {
@@ -393,6 +393,7 @@ blockquote p {
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.35);
   backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 .modal-img {
