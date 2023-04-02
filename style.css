@@ -11,13 +11,14 @@
 
 :root {
   --main-bg-color: #fff;
+  --nav-bg-color: #222;
   --primary-color: #5558D8;
   --secondary-color: #FD49A0;
   --tertiary-color: #F5F5F5;
   --font-family-body: 'Karla', sans-serif;
   --font-color: #222;
   --font-color-alt: #fff;
-  --shadow-color: 0px 0px 1px rgba(0, 0, 0, 1);
+  --font-color-caption: #777;
 }
 
 html {
@@ -72,11 +73,12 @@ h4 {
 
 nav {
   height: 100%;
+  max-height: 64px;
   width: 100%;
   margin: 0 auto;
   overflow: scroll;
   scrollbar-width: none;
-  background: var(--font-color);
+  background: var(--nav-bg-color);
 }
 
 nav::-webkit-scrollbar {
@@ -310,11 +312,23 @@ footer>a {
   pointer-events: none;
 }
 
-#content img.float {
+#content figure.float {
   float: none;
   max-width: 100%;
   margin-right: 0;
   margin-bottom: 1rem;
+}
+
+img.float + figure {
+  float: right;
+}
+
+figcaption {
+  margin: 8px auto 0;
+  font-size: 14px;
+  font-style: italic;
+  text-align: center;
+  color: var(--font-color-caption);
 }
 
 #content h4 {
@@ -447,11 +461,11 @@ blockquote p {
     max-height: calc(100% - 12rem);
   }
 
-  #content img.float {
+  #content figure.float {
     float: left;
-    max-width: calc(50% - 1.5rem);
+    max-width: calc(50% - 1rem);
     margin-top: 8px;
-    margin-right: 1.5rem;
+    margin-right: 1rem;
     margin-bottom: 0rem;
   }
 

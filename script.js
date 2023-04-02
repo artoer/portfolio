@@ -36,6 +36,26 @@ images.forEach((img) => {
         modalImg.src = img.src;
         openInNewTabLink.href = img.src;
     });
+
+    // create figure element
+    const figure = document.createElement('figure');
+    // insert figure before img
+    img.before(figure);
+    // move img inside figure
+    figure.appendChild(img);
+
+    if (img.classList == 'float') {
+        figure.classList = 'float';
+    }
+
+    if (img.getAttribute('alt') != '') {
+        // create figcaption element
+        const figcaption = document.createElement('figcaption');
+        // get alt attribute from img and set as text content of figcaption
+        figcaption.textContent = img.getAttribute('alt');
+        // insert figcaption after img
+        img.after(figcaption);
+    }
 });
 
 // Add event listener to modal that closes the modal if clicked outside of the image
