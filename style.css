@@ -310,6 +310,7 @@ footer>a {
   display: block;
   width: 100%;
   pointer-events: none;
+  border-radius: 8px;
 }
 
 #content figure.float {
@@ -379,6 +380,7 @@ blockquote p {
   margin: auto;
   max-width: 90%;
   max-height: 90%;
+  border-radius: 0;
 }
 
 .close-btn {
