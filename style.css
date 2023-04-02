@@ -9,18 +9,6 @@
   color: var(--font-color);
 }
 
-/* :root {
-  --main-bg-color: #F1F1F1;
-  --surface-bg-color: #F8F8F8;
-  --nav-bg-color: #222;
-  --secondary-color: #5558D8;
-  --primary-color: #FD49A0;
-  --font-family-body: 'Karla', sans-serif;
-  --font-color: #222;
-  --font-color-light: #fff;
-  --font-color-caption: #777;
-} */
-
 :root {
   --main-bg-color: #F1F1F1;
   --nav-bg-color: #222;
@@ -192,15 +180,6 @@ main {
 .hero-text {
   padding: 0 16px;
 }
-
-/* .hero-text>h2>a,
-.hero-texth2>a:visited {
-  color: var(--primary-color);
-} */
-
-/* .hero-text h2, .hero-text h2 a{
-  font-family: 'Orbitron', sans-serif;
-} */
 
 .hero-text>h2>a:hover {
   color: var(--primary-color)
