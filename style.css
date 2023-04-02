@@ -38,12 +38,10 @@ a {
   font-weight: 600;
 }
 
-p>a {
-  text-decoration: underline;
-}
-
 a:hover {
-  color: var(--primary-color);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 1px;
 }
 
 p {
@@ -153,6 +151,7 @@ nav ul li a:hover,
 .active {
   color: var(--secondary-color);
   background-position: 0;
+  text-decoration: none;
 }
 
 nav ul li:not(:first-child) a:hover::before {
@@ -179,10 +178,6 @@ main {
 
 .hero-text {
   padding: 0 16px;
-}
-
-.hero-text>h2>a:hover {
-  color: var(--primary-color)
 }
 
 #card-container {
@@ -249,6 +244,7 @@ main {
   background-size: 200% 100%;
   background-position: 100%;
   transition: all 0.2s ease-in-out;
+  text-decoration: none;
 }
 
 
