@@ -14,19 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
     </ul>
 `);
 
-  const headTemplate = Handlebars.compile(`
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;600;700&family=Orbitron&display=swap" rel="stylesheet">
-    <meta name="description" content="Portfolio van Arthur Menken, UX Designer.">
-    <meta name="author" content="Arthur Menken">
-    <meta property="og:image" content="./img/logo.png">
-    <meta name="theme-color" content="#5558D8">
-    <meta name="robots" content="noindex,nofollow"/>
-    <link rel="icon" type="image/png" href="../img/favicon.png"/>
-    <title>Arthur Menken | Portfolio</title>
-`);
-
   // define the data
   var footerData = {
     currentYear: new Date().getFullYear(),
@@ -35,5 +22,4 @@ document.addEventListener("DOMContentLoaded", function () {
   // render the templates with the data
   document.querySelector('footer').innerHTML = footerTemplate(footerData);
   document.querySelector('nav').innerHTML = navTemplate();
-  document.querySelector('head').insertAdjacentHTML('beforeend', headTemplate());
 });
