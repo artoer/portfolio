@@ -207,7 +207,6 @@ main {
 
 .card {
   border-radius: 15px;
-  width: 1200px;
   max-width: calc(100vw - 32px);
   height: auto;
   margin: 0 auto;
