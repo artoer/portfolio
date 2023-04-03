@@ -127,9 +127,9 @@ nav ul li:first-of-type>a {
   font-family: 'Orbitron', sans-serif;
 }
 
-nav ul li:first-of-type>a:hover {
+/* nav ul li:first-of-type>a:hover {
   background-position: 100%;
-}
+} */
 
 nav ul li a {
   height: 100%;
@@ -173,7 +173,20 @@ nav ul li a:hover,
   text-decoration: none;
 }
 
-nav ul li:not(:first-child) a:hover::before {
+/* nav ul li:not(:first-child) a:hover::before {
+  width: 100%;
+} */
+
+nav ul li:first-of-type a:hover::before {
+  content: 'Home';
+  height: 100%;
+  width: 100%;
+  background: var(--nav-bg-color);
+  color: var(--primary-color);
+  z-index: 1;
+}
+
+nav ul li a:hover::before {
   width: 100%;
 }
 
