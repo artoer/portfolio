@@ -441,6 +441,7 @@ blockquote p {
   .modal-img {
     max-width: calc(100% - 2rem);
     max-height: calc(100% - 12rem);
+    min-width: 765px;
   }
 
   #content figure.float {

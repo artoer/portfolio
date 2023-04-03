@@ -13,9 +13,9 @@ document.addEventListener("DOMContentLoaded", function () {
       <li><a href="./about.html">About</a></li>
       <div class="toggle-container">
         <label class="switch">
-          <input type="checkbox" id="toggle-switch">
-          <span class="slider"></span>
-        </label>
+        <input type="checkbox" id="toggle-switch" aria-label="Toggle dark mode">
+        <span class="slider"></span>
+      </label>
     </div>
     </ul>
 `);
