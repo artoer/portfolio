@@ -1,3 +1,5 @@
+window.addEventListener("DOMContentLoaded", (event) => {
+
 // Create modal element
 const modal = document.createElement('div');
 modal.id = 'modal';
@@ -63,4 +65,37 @@ modal.addEventListener('click', (event) => {
     if (event.target === modal || event.target.parentNode === modal) {
         modal.style.display = 'none';
     }
+});
+
+const toggleSwitch = document.querySelector('#toggle-switch');
+
+function switchTheme(event) {
+  if (event.target.checked) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    localStorage.setItem('theme', 'dark');
+  } else {
+    document.documentElement.setAttribute('data-theme', 'light');
+    localStorage.setItem('theme', 'light');
+  }    
+}
+
+toggleSwitch.addEventListener('change', switchTheme);
+
+let currentTheme = localStorage.getItem('theme');
+if (!currentTheme) {
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    localStorage.setItem('theme', 'dark');
+  } else {
+    document.documentElement.setAttribute('data-theme', 'light');
+    localStorage.setItem('theme', 'light');
+  }
+} else {
+  document.documentElement.setAttribute('data-theme', currentTheme);
+  if (currentTheme === 'dark') {
+    toggleSwitch.checked = true;
+  }
+}
+
+console.log("DOM fully loaded and parsed");
 });
