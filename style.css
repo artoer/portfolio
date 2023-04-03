@@ -387,6 +387,18 @@ blockquote p {
   background-color: rgba(0, 0, 0, 0.35);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
+  opacity: 0;
+  animation: modalFadeIn 0.3s ease-in-out forwards;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 .modal-img {
@@ -399,7 +411,7 @@ blockquote p {
 
 .close-btn {
   font-size: 36px;
-  color: var(--font-color);
+  color: var(--primary-color);
   cursor: pointer;
   width: 32px;
   line-height: 26px;
@@ -408,14 +420,10 @@ blockquote p {
   text-align: center;
   font-weight: lighter;
   height: 32px;
-  background: var(--surface-bg-color);
-  opacity: .35;
+  background: none;
+  opacity: .75;
   border-radius: 50%;
-}
-
-.close-btn:hover {
-  color: var(--primary-color);
-  opacity: 1;
+  background-color: var(--nav-bg-color);
 }
 
 /* TABLET AND UP */
