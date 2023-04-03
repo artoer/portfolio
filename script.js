@@ -83,12 +83,12 @@ toggleSwitch.addEventListener('change', switchTheme);
 
 let currentTheme = localStorage.getItem('theme');
 if (!currentTheme) {
-  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    document.documentElement.setAttribute('data-theme', 'dark');
-    localStorage.setItem('theme', 'dark');
-  } else {
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
     document.documentElement.setAttribute('data-theme', 'light');
     localStorage.setItem('theme', 'light');
+  } else {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    localStorage.setItem('theme', 'dark');
   }
 } else {
   document.documentElement.setAttribute('data-theme', currentTheme);
@@ -96,6 +96,4 @@ if (!currentTheme) {
     toggleSwitch.checked = true;
   }
 }
-
-console.log("DOM fully loaded and parsed");
 });
