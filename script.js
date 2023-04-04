@@ -60,6 +60,24 @@ images.forEach((img) => {
     }
 });
 
+const blockquotes = document.querySelectorAll('#content blockquote');
+
+blockquotes.forEach(blockquote => {
+  const cite = blockquote.getAttribute('cite');
+
+  if (cite) {
+    const figure = document.createElement('figure');
+    const figcaption = document.createElement('figcaption');
+    
+    figure.classList = 'quote';
+    figcaption.innerText = cite;
+    
+    blockquote.parentNode.insertBefore(figure, blockquote);
+    figure.appendChild(blockquote);
+    figure.appendChild(figcaption);
+  }
+});
+
 // Add event listener to modal that closes the modal if clicked outside of the image
 modal.addEventListener('click', (event) => {
     if (event.target === modal || event.target.parentNode === modal) {

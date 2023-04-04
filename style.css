@@ -270,7 +270,7 @@ main {
   height: 300px;
   margin: 0px auto 16px;
   background: var(--surface-bg-color);
-  border-radius: 15px;
+  border-radius: 16px;
 }
 
 .hero-text {
@@ -284,7 +284,7 @@ main {
 }
 
 .card {
-  border-radius: 15px;
+  border-radius: 16px;
   max-width: calc(100vw - 32px);
   height: auto;
   margin: 0 auto;
@@ -429,16 +429,36 @@ figcaption {
   margin-top: 3rem;
 }
 
+#content figure.quote {
+  background-color: var(--surface-bg-color);
+  padding: 24px;
+  border-radius: 8px;
+}
+
+#content figure.quote figcaption {
+  font-size: 18px;
+}
+
+#content figure.quote figcaption::before {
+  content: '—';
+}
+
+#content figure.quote blockquote {
+  padding: 0;
+  border-radius: 0px;
+}
+
 #content blockquote {
-  background-color: rgba(0, 0, 0, .05);
-  padding: 32px;
+  background-color: var(--surface-bg-color);
+  padding: 24px;
   font-size: 18px;
   line-height: 150%;
+  border-radius: 8px;
   quotes: "\201C""\201D""\2018""\2019";
 }
 
 #content blockquote:before {
-  color: #ccc;
+  color: var(--primary-color);
   content: open-quote;
   font-size: 4em;
   line-height: 0.1em;
