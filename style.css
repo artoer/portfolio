@@ -34,7 +34,7 @@ html[data-theme="dark"] {
   --font-family-body: 'Karla', sans-serif;
   --font-color: #F1F1F1;
   --font-color-light: #F1F1F1;
-  --font-color-caption: #9f9f9f;
+  --font-color-caption: #ACACAC;
 }
 
 [data-theme="dark"] .card>div>a {
