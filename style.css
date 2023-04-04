@@ -97,6 +97,7 @@ nav {
   max-height: 64px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 1rem;
   overflow: scroll;
   scrollbar-width: none;
   background: var(--nav-bg-color);
@@ -110,7 +111,7 @@ nav ul {
   display: flex;
   flex-flow: row nowrap;
   box-sizing: border-box;
-  justify-content: space-evenly;
+  justify-content: space-between;
   max-width: 1200px;
   height: 100%;
   margin: 0 auto;
