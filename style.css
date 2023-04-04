@@ -527,10 +527,10 @@ blockquote p {
 .slider::before {
   position: absolute;
   content: "";
-  height: 28px;
-  width: 28px;
-  left: -1px;
-  bottom: -1px;
+  height: 24px;
+  width: 24px;
+  left: 1px;
+  bottom: 1px;
   background-color: var(--anchor-color);
   -webkit-transition: .4s;
   transition: .4s;
@@ -548,9 +548,9 @@ input:focus+.slider {
 }
 
 input:checked+.slider:before {
-  -webkit-transform: translateX(28px);
-  -ms-transform: translateX(28px);
-  transform: translateX(28px);
+  -webkit-transform: translateX(27px);
+  -ms-transform: translateX(27px);
+  transform: translateX(27px);
   background-color: var(--accent-color);
 }
 
