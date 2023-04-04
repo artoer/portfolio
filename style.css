@@ -252,8 +252,7 @@ input:checked+.slider:before {
   display: flex;
   align-items: center;
   justify-content: center;
-  column-gap: 4px;
-  padding: 0 16px;
+  padding: 0 8px;
 }
 
 main {
@@ -537,6 +536,10 @@ blockquote p {
   }
 
   nav ul li a {
+    padding: 0 16px;
+  }
+
+  .toggle-container {
     padding: 0 16px;
   }
 
