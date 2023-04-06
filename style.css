@@ -27,7 +27,7 @@
 
 html[data-theme="dark"] {
   --main-bg-color: #111;
-  --nav-bg-color: #222;
+  --nav-bg-color: #000;
   --surface-bg-color: #222;
   --primary-color: #FFBF00;
   --secondary-color: #1A1AFF;
