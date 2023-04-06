@@ -516,7 +516,7 @@ blockquote p {
 
 .close-btn {
   font-size: 36px;
-  color: var(--slider-color);
+  color: var(--slider-bg);
   cursor: pointer;
   width: 32px;
   line-height: 26px;
@@ -527,7 +527,7 @@ blockquote p {
   background: none;
   opacity: 1;
   border-radius: 50%;
-  background-color: var(--slider-bg);
+  background-color: var(--slider-color);
   align-self: end;
 }
 
