@@ -510,10 +510,6 @@ blockquote p {
   }
 }
 
-.modal-img {
-  display: none;
-}
-
 .close-btn {
   font-size: 36px;
   color: var(--slider-bg);
