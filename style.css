@@ -319,9 +319,10 @@ main {
 #open-in-new-tab {
   background: var(--surface-bg-color);
   height: 40px;
+  width: fit-content;
   line-height: 40px;
   padding: 0 16px;
-  margin: 0 0 2rem;
+  margin: 0;
   border-radius: 4px;
 }
 
@@ -488,6 +489,17 @@ blockquote p {
   animation: modalFadeIn 0.3s ease-in-out forwards;
 }
 
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+  padding: 2rem 0;
+}
+
 @keyframes modalFadeIn {
   from {
     opacity: 0;
@@ -499,27 +511,24 @@ blockquote p {
 }
 
 .modal-img {
-  display: block;
-  margin: auto;
-  max-width: 90%;
-  max-height: 90%;
-  border-radius: 0;
+  display: none;
 }
 
 .close-btn {
   font-size: 36px;
-  color: var(--primary-color);
+  color: var(--slider-color);
   cursor: pointer;
   width: 32px;
   line-height: 26px;
-  margin: 2rem 2rem 0 auto;
+  margin: 0;
   text-align: center;
   font-weight: lighter;
   height: 32px;
   background: none;
-  opacity: .75;
+  opacity: 1;
   border-radius: 50%;
-  background-color: var(--nav-bg-color);
+  background-color: var(--slider-bg);
+  align-self: end;
 }
 
 /* TABLET AND UP */
@@ -546,8 +555,12 @@ blockquote p {
   }
 
   .modal-img {
-    max-width: calc(100% - 2rem);
-    max-height: calc(100% - 12.5rem);
+    display: block;
+    margin: auto;
+    border-radius: 0;
+    max-width: 100%;
+    max-height: calc(100% - 8.5rem);
+    height: auto;
     min-width: 765px;
   }
 

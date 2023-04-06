@@ -22,9 +22,13 @@ openInNewTabLink.innerHTML = 'Open in New Tab';
 openInNewTabLink.addEventListener('click', () => {
     event.stopPropagation();
 });
-modal.appendChild(closeBtn);
-modal.appendChild(modalImg);
-modal.appendChild(openInNewTabLink);
+const modalContainer = document.createElement('div');
+modalContainer.classList = 'modal-container';
+modal.appendChild(modalContainer);
+
+modalContainer.appendChild(closeBtn);
+modalContainer.appendChild(modalImg);
+modalContainer.appendChild(openInNewTabLink);
 
 // Append modal to document body
 document.body.appendChild(modal);
