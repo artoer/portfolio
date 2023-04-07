@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;600;700&family=Orbitron&display=swap"
+    rel="stylesheet">
+  <meta name="description" content="Portfolio of Arthur Menken, UX Designer.">
+  <meta name="author" content="Arthur Menken">
+  <meta property="og:image" content="./img/logo.png">
+  <meta name="theme-color" content="#FFC107">
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="icon" type="image/png" href="./favicon.png" />
+  <script src="theme.js"></script>
+  <title>Portfolio | Arthur Menken </title>
+</head>
+
+<body>
+  <nav></nav>
+  <main>
+    <div class="heading">
+      <h2>Talpa eCommerce</h2>
+      <h3>Feature: Quantity Selector</h3>
+    </div>
+    <div id="content">
+      <h4>Introduction</h4>
+      <p>For my internship at Talpa eCommerce, I worked on a project for the e-commerce website Actie van de Dag, where
+        I was tasked with
+        designing a solution for selecting the quantity of products a customer wants to purchase. Currently, this
+        feature is only available as a dropdown in the shopping cart, but we wanted to also offer it on the product
+        detail page. This was particularly important for products like tickets to amusement parks, where customers often
+        buy them in multiples to go with family or friends.</p>
+      <h4>Research and Analysis</h4>
+      <p>To start off, I began by creating screenshots of the current situation to better understand the existing user
+        flow. It became clear that designing for mobile would be challenging, as we had a "sticky bottom bar" with the
+        call-to-action and price of the product, leaving limited space for a quantity selector.</p>
+      <p>I also looked for inspiration from competitors, such as Amazon, who used a dropdown instead of a counter for
+        quantity selection, while Coolblue had a counter. I then created rough sketches in Sketch, overlaying the
+        screenshots of Actie van de Dag's product detail page on both mobile and desktop, and explored different design
+        ideas. Given the limited space in the sticky bottom bar, I came up with the idea of integrating the price into
+        the call-to-action, allowing space for the quantity selector, with the price dynamically updating as the
+        quantity is adjusted.</p>
+      <h4>Design Iterations</h4>
+      <p>I presented two design variants to my team, taking into consideration worst-case scenarios where users may need
+        to make additional choices such as color or length for products like curtains or concert dates. I also addressed
+        concerns about the call-to-action looking crowded when displaying large numbers in the price. I experimented
+        with collapsible menus from the sticky bottom bar, but it felt cumbersome.</p>
+      <p>After receiving feedback from my team, we agreed that the best approach for mobile would be to have the price
+        and call-to-action prominently displayed at the top of the page, allowing ample space for the button, price,
+        quantity selector, and multiple choices. The bottom menu bar would then serve as a reference to this
+        information.</p>
+      <h4>Final Design</h4>
+      <p>I refined my design based on the feedback and created a Sketch canvas with all the iterations and explorations.
+        The final design solution includes a quantity selector integrated into the call-to-action button, with the price
+        dynamically updating as the quantity is adjusted. On mobile, the price and call-to-action are prominently
+        displayed at the top of the page, providing a seamless and intuitive user experience for selecting the quantity
+        of products to purchase.</p>
+      <h4>Conclusion</h4>
+      <p>Through this project, I was able to design an improved quantity selector feature for Actie van de Dag,
+        enhancing the user experience by offering a more convenient and intuitive way for customers to select the
+        desired quantity of products. I learned valuable lessons about designing for limited space on mobile devices,
+        considering worst-case scenarios, and incorporating feedback from stakeholders to arrive at an optimal design
+        solution.</p>
+    </div>
+  </main>
+  <footer></footer>
+  <script src="node_modules/handlebars/dist/handlebars.js"></script>
+  <script src="semantics.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
+
+<!--  -->

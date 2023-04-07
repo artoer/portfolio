@@ -94,6 +94,32 @@ h4 {
   font-size: 24px;
 }
 
+#content ol,
+#content ul {
+  list-style: inside decimal-leading-zero;
+  font-size: 18px; 
+  line-height: 150%;
+  text-indent: -2.15em;
+  padding-left: 2.15em;
+}
+
+#content ul {
+  list-style: inside disc;
+  text-indent: -1.25em;
+  padding-left: 1.25em;
+}
+
+#content ol li::marker,
+#content ul li::marker {
+  color: var(--anchor-color);
+  font-size: 24px;
+}
+
+#content ol li,
+#content ul li {
+  margin-bottom: .5rem;
+}
+
 /* NAV */
 
 nav {
