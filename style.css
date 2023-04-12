@@ -524,8 +524,8 @@ blockquote p {
   max-width: 1200px;
   width: fit-content;
   height: 100%;
-  padding: 2rem 0;
-  gap: 1rem;
+  padding: 0;
+  gap: 1.5rem;
 }
 
 @keyframes modalFadeIn {
@@ -590,8 +590,8 @@ blockquote p {
     margin: auto;
     border-radius: 0;
     width: auto;
-    max-height: calc(100vh - 8rem);
-    max-width: calc(100vw - 4rem);
+    max-height: calc(100vh - 12rem);
+    max-width: 1200px;
     min-width: 765px;
   }
 
