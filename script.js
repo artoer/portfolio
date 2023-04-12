@@ -26,8 +26,13 @@ const modalContainer = document.createElement('div');
 modalContainer.classList = 'modal-container';
 modal.appendChild(modalContainer);
 
-modalContainer.appendChild(closeBtn);
-modalContainer.appendChild(modalImg);
+const modalImgContainer = document.createElement('div');
+modalImgContainer.classList = 'modal-img-container';
+modalContainer.appendChild(modalImgContainer);
+
+// modalContainer.appendChild(closeBtn);
+modalImgContainer.appendChild(modalImg);
+modalImgContainer.appendChild(closeBtn);
 modalContainer.appendChild(openInNewTabLink);
 
 // Append modal to document body

@@ -97,7 +97,7 @@ h4 {
 #content ol,
 #content ul {
   list-style: inside decimal-leading-zero;
-  font-size: 18px; 
+  font-size: 18px;
   line-height: 150%;
   text-indent: -2.15em;
   padding-left: 2.15em;
@@ -312,6 +312,7 @@ main {
   border-radius: 16px;
   max-width: calc(100vw - 32px);
   height: auto;
+  width: 100%;
   margin: 0 auto;
   overflow: hidden;
   display: grid;
@@ -521,7 +522,7 @@ blockquote p {
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
-  width: 100%;
+  width: fit-content;
   height: 100%;
   padding: 2rem 0;
 }
@@ -550,7 +551,10 @@ blockquote p {
   opacity: 1;
   border-radius: 50%;
   background-color: var(--slider-color);
-  align-self: end;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
 }
 
 /* TABLET AND UP */
@@ -576,14 +580,21 @@ blockquote p {
     margin-right: auto;
   }
 
-  .modal-img {
+  .modal-img-container {
     display: block;
     margin: auto;
     border-radius: 0;
-    max-width: 100%;
-    max-height: calc(100% - 8.5rem);
+    width: auto;
+    max-height: calc(100% - 8rem);
+    max-width: calc(100% - 4rem);
     height: auto;
     min-width: 765px;
+    position: relative;
+  }
+
+  .modal-img-container img {
+    width: 100%;
+    height: 100%;
   }
 
   #content figure.float {
