@@ -443,8 +443,9 @@ footer>a {
 }
 
 figcaption {
-  margin: 8px auto 0;
-  font-size: 14px;
+  margin: 12px auto 0;
+  padding: 0 0 8px;
+  font-size: 16px;
   font-style: italic;
   text-align: center;
   color: var(--font-color-caption);
