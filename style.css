@@ -282,7 +282,7 @@ input:checked+.slider:before {
 
 main {
   max-width: calc(100% - 2rem);
-  margin: 48px auto 16px;
+  margin: 32px auto 16px;
   width: 1200px;
 }
 
