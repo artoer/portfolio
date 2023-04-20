@@ -8,8 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const navTemplate = Handlebars.compile(`
     <ul>
       <li><a href="./index.html">Arthur</a></li>
-      <!-- <li><a href="./index.html">Portfolio</a></li> -->
-      <li><a href="./docs/cv/AMenken-resume-english-2022.pdf" target="_blank">Resume</a></li>
+      <li><a href="./assets/Arthur-Menken_Resume-CV_2023.pdf" target="_blank">Resume</a></li>
       <li><a href="./about.html">About</a></li>
       <div class="toggle-container">
         <label class="switch">
