@@ -433,6 +433,8 @@ footer>a {
   width: 100%;
   pointer-events: none;
   border-radius: 8px;
+  max-height: 765px;
+  object-fit: contain;
 }
 
 #content figure.float {
@@ -593,7 +595,7 @@ blockquote p {
     width: 100%;
     max-height: calc(100vh - 12rem);
     max-width: calc(100vw - 4rem);
-    min-width: 765px;
+    object-fit: contain;
   }
 
   #content figure.float {

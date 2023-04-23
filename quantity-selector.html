@@ -27,41 +27,68 @@
     </div>
     <div id="content">
       <h4>Introduction</h4>
-      <p>For my internship at Talpa eCommerce, I worked on a project for their e-commerce website <a target="_blank" href="https://www.actievandedag.nl/">Actie van de Dag</a>, where
+      <p>For my internship at Talpa eCommerce, I worked on a project for their e-commerce website <a target="_blank"
+          href="https://www.actievandedag.nl/">Actie van de Dag</a>, where
         I was tasked with
         designing a solution for selecting the quantity of products a customer wants to purchase. Currently, this
         feature is only available as a dropdown in the shopping cart, but we wanted to also offer it on the product
-        detail page. This was particularly important for products like tickets to amusement parks, where customers often
+        detail page, a step before it in the user flow. This was particularly important for tickets for leisure such as
+        amusement parks, where customers often
         buy them in multiples to go with family or friends.</p>
       <h4>Research and Analysis</h4>
       <p>To start off, I began by creating screenshots of the current situation to better understand the existing user
         flow. It became clear that designing for mobile would be challenging, as we had a "sticky bottom bar" with the
         call-to-action and price of the product, leaving limited space for a quantity selector.</p>
+      <img src="./img/quantity-selector/8.png"
+        alt="Example of the current situation, note the user can only add one ticket for the zoo to the shopping cart at a time">
       <p>I also looked for inspiration from competitors, such as Amazon, who used a dropdown instead of a counter for
         quantity selection, while Coolblue had a counter. I then created rough sketches in Sketch, overlaying the
         screenshots of Actie van de Dag's product detail page on both mobile and desktop, and explored different design
         ideas. Given the limited space in the sticky bottom bar, I came up with the idea of integrating the price into
         the call-to-action, allowing space for the quantity selector, with the price dynamically updating as the
         quantity is adjusted.</p>
+      <img src="./img/quantity-selector/2.png"
+        alt="One of the first attempts at a solution, where the price is put into the call-to-action, which frees up space for a quantity selector.">
       <h4>Design Iterations</h4>
       <p>I presented two design variants to my team, taking into consideration worst-case scenarios where users may need
         to make additional choices such as color or length for products like curtains or concert dates. I also addressed
         concerns about the call-to-action looking crowded when displaying large numbers in the price. I experimented
         with collapsible menus from the sticky bottom bar, but it felt cumbersome.</p>
+      <img src="./img/quantity-selector/3.png"
+        alt="One of the many variants considered where the options are hidden under a toggle.">
       <p>After receiving feedback from my team, we agreed that the best approach for mobile would be to have the price
         and call-to-action prominently displayed at the top of the page, allowing ample space for the button, price,
-        quantity selector, and multiple choices. The bottom menu bar would then serve as an anchor link to scroll the user towards the quantity selector.</p>
+        quantity selector, and multiple choices. The bottom menu bar would then serve as an anchor link to scroll the
+        user towards the quantity selector.</p>
+      <img src="./img/quantity-selector/5.png"
+        alt="An overview of my Sketch canvas including many different iterations and ways to tackle certain scenarios.">
       <h4>Final Design</h4>
       <p>I refined my design based on the feedback and created a Sketch canvas with all the iterations and explorations.
         The final design solution includes a quantity selector integrated into the call-to-action button, with the price
         dynamically updating as the quantity is adjusted. On mobile, the price and call-to-action are prominently
         displayed at the top of the page, providing a seamless and intuitive user experience for selecting the quantity
         of products to purchase.</p>
+      <img src="./img/quantity-selector/6.png"
+        alt="The final designs, with on the left the worst case scenario where the user has to pick multiple options. This is what the users sees when scrolled to the top of the page.">
+      <img src="./img/quantity-selector/7.png"
+        alt="The final design for the sticky bottom bar, shown when the user is scrolled down the page, which lets the user pick a quantity of products, but will otherwise refer the user to the top of the page to pick one or more options.">
+      <h4>Challenges</h4>
+      <p>Adding a quantity selector sounds like an easy assignment, but what made things complicated are some of the
+        options some products offer, such as color or length of curtains, or the date of a concert. These had to remain
+        easily accessible to the user. After many different experiments to add these options to the sticky bottom bar,
+        it was decided to keep them at the top of the page to avoid visual clutter and maintain the ease of access for
+        the user.</p>
+      <p>Another challenge was indeed the limited screen real estate, in particular the sticky bottom bar. Originally
+        it contains the price of the product and a
+        call-to-action, but not much room for anything else. Many different options were explored, such as moving the
+        price to the call-to-action to make way for the quantity selector, or increasing the height of the sticky bottom
+        bar. In the end the price was moved to the top of the page, and the quantity selector and add to cart button
+        remained.</p>
       <h4>Conclusion</h4>
       <p>Through this project, I was able to design an improved quantity selector feature for Actie van de Dag,
         enhancing the user experience by offering a more convenient and intuitive way for customers to select the
         desired quantity of products. I learned valuable lessons about designing for limited space on mobile devices,
-        considering worst-case scenarios, and incorporating feedback from stakeholders to arrive at an optimal design
+        considering worst-case scenarios, and collaborating with colleagues to arrive at an optimal design
         solution.</p>
     </div>
   </main>
