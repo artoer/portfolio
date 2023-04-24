@@ -26,86 +26,172 @@
       <h3>Project PC Builder</h3>
     </div>
     <div id="content">
-      <h4>Overview</h4>
-      <p>As a junior UX designer, I was tasked with creating a user-friendly tool to assist experienced PC builders on
-        Tweakers, a popular online community for PC enthusiasts, in building their custom PCs. The goal was to design an
-        intuitive and efficient user experience that would streamline the process of selecting compatible components and
-        provide users with the necessary information to make informed decisions while building their PCs.</p>
-      <h4>Challenge</h4>
-      <p>The challenge was to create a tool that caters to the needs of experienced PC builders who are knowledgeable
-        about PC components and have specific requirements for their custom PCs. These users expect a high level of
-        flexibility and customization options in the tool, while also being able to easily compare different components
-        and make informed decisions.</p>
-      <h4>Solution</h4>
-      <p>To address this challenge, I followed a user-centered design approach, conducting research, prototyping, and
-        testing to ensure that the final solution meets the needs of the target users. The final solution, Tweaker's PC
-        Builder, is an intuitive and comprehensive tool that guides users through the PC building process, providing
-        them with relevant information and recommendations along the way.</p>
+      <h4>Introduction</h4>
+      <p><a target="_blank" href="https://www.tweakers.net/">Tweakers.net</a> is a popular Dutch consumer electronics
+        and technology website, with a strong focus on computers. As a
+        frequent visitor to the website, I noticed a lack of tools to help users easily assemble a computer. Currently,
+        users have to research and ensure compatibility of each component themselves. This presented an opportunity for
+        me as a CMD graduate to develop a solution, especially since Tweakers has an extensive database of components
+        with valuable information. In this case study, I will outline my process and conclusions in developing a
+        concept, validating it, and providing recommendations for future implementation.</p>
+      <img src="./img/pc-builder/2.png" alt="The front page of Tweakers.">
+      <img class="float" src="./img/pc-builder/3.png" alt="The Pricewatch page on Tweakers.">
+      <p>Tweakers primarily generates revenue through advertising and affiliate programs that redirect users to other
+        webshops. One of the key features of Tweakers is the Pricewatch, which allows users to compare prices of
+        electronics across various webshops. Many Tweakers users seek advice and information on computer components
+        before purchasing them to replace or build their own desktops.</p>
+      <h4>Problem Statement</h4>
+      <p>Many computer components have varying compatibility requirements and specifications, making it challenging for
+        users to select the right components to build their computer. Additionally, users must consider other factors
+        such as performance and budget.</p>
+      <h5>Design Challenge</h5>
+      <p><strong>"How can we create a digital interactive tool that assists Tweakers users, particularly experienced
+          computer
+          builders, in selecting the right components for their build?"</strong></p>
+      <h5>Sub-Questions</h5>
+      <ul>
+        <li>What are the needs and preferences of experienced computer builders who use Tweakers?</li>
+        <li>How can we design a digital interactive tool that meets the needs of Tweakers users?</li>
+        <li>How can the tool assist users in selecting the appropriate components for their build?</li>
+      </ul>
       <h4>Research</h4>
-      <p>I conducted extensive research to understand the needs and expectations of experienced PC builders on Tweakers.
-        This involved conducting user interviews, reviewing forum posts, and analyzing competitor tools. From this
-        research, I identified key pain points and opportunities for improvement.</p>
-      <p>One of the main pain points identified was the complexity and time-consuming nature of manually selecting
-        compatible components. Many users struggled with the technical jargon and the process of cross-referencing
-        specifications to ensure compatibility. Another pain point was the lack of clear and reliable information on
-        performance, reliability, and user reviews for different components, which made it challenging for users to make
-        informed decisions.</p>
-      <p>Based on these findings, I defined the following design goals for Tweaker's PC Builder:</p>
-      <ol>
-        <li>Simplify the component selection process: Reduce the complexity and time required to select compatible
-          components by providing an intuitive interface that guides users through the selection process.</li>
-        <li>Provide relevant and reliable information: Ensure that users have access to accurate and up-to-date
-          information on component performance, reliability, and user reviews to support their decision-making process.
+      <p>In the initial phase of the project, I conducted an exploratory competitive analysis to investigate how
+        competitors assist users in building a computer. I researched the functionalities that computer builders use on
+        the Tweakers website, such as the Pricewatch and Wishlist (Wenslijst in Dutch). The findings of this research
+        were utilized in the
+        ideation process and were also discussed during interviews.</p>
+      <img src="./img/pc-builder/0.png"
+        alt="Aside from the obvious competitors, I also liked to look at websites that took a different approach such as LogicalIncrements. A website that offers recommendations based on a budget rather than a tool. The website had some interesting ways to display information I took note of.">
+      <p>To better understand the target audience and the customer journey when building a computer, I conducted five
+        semi-structured interviews. I discovered that the price-to-performance ratio was the most important factor in
+        choosing a component. Gaming was the most common use case. Users relied heavily on recommendations, such as
+        guides, reviews, and YouTube videos, for individual components and complete builds. The competing PCPartPicker
+        tool was less frequently used due to a lack of Dutch webshop integration. Users mainly kept track of their
+        builds using Wordpad lists, shopping carts, or separate browser tabs for each component.</p>
+      <p>An important learning
+        from the interviews is that while most users I talked to were experienced, they too could make mistakes.</p>
+      <blockquote cite="An interviewee">...For example, I bought a small-form factor power supply on accident, and it
+        turned out the cables were too short to use in my mid-size case.</blockquote>
+      <p>I also conducted a survey to obtain new insights and validate my earlier research. I shared the survey on the
+        Tweakers website's Pricewatch pages for PC components, where my target audience was most accessible. With 425
+        respondents, the majority of computer builders were experienced or highly experienced, with over 68.2% having
+        built a computer more than four times. The survey validated that the target audience values the
+        price-to-performance ratio.</p>
+      <img src="./img/pc-builder/1.png"
+        alt='Poll: "What information do you find most important when choosing a pc component? The vast majority (64.7%) chose "price-to-performance ratio" (N=425).'>
+      <h5>Requirements</h5>
+      <p>Based on my research I set the following requirements:</p>
+      <ul>
+        <li>
+          <strong>The tool checks product compatibility</strong>
+          <p>Despite the audience's extensive experience in assembling computers, they may overlook incompatibilities,
+            which can ultimately cost them time and money.</p>
         </li>
-        <li>Offer customization options: Provide users with the flexibility to customize their PC based on their
-          specific requirements, such as budget, performance, and aesthetics.</li>
-        <li>Enable easy comparison: Allow users to easily compare different components based on their specifications,
-          price, and user ratings.</li>
-        <li>Enhance user confidence: Build trust with users by providing clear and concise feedback on their selections
-          and recommendations based on their requirements.</li>
-      </ol>
-      <h4>Design and Implementation</h4>
-      <p>I started the design process by creating low-fidelity wireframes to explore different layout and navigation
-        options for the tool. I collaborated with the development team to understand the technical feasibility of the
-        design concepts and iterated on the wireframes based on their feedback.</p>
-      <p>Once the wireframes were finalized, I created high-fidelity mockups using a modern and clean visual design
-        that
-        aligned with Tweakers' brand guidelines. I used a consistent color palette, typography, and iconography to
-        create a visually appealing and easy-to-use interface.</p>
-      <p>The final design of Tweaker's PC Builder consists of the following key features:</p>
-      <ol>
-        <li>Component Selection: The tool provides users with an intuitive interface to select components for their PC
-          build, including CPUs, GPUs, RAM, storage, power supplies, and more. Users can filter components based on
-          their requirements, such as brand, price, performance, and compatibility. The tool also provides real-time
-          feedback on the compatibility of selected components, reducing the risk of users selecting incompatible
-          components.
+        <li>
+          <strong>The tool provides insight into the most important information about components</strong>
+          <p>According to the audience, the most important information about components is performance and
+            price-performance ratio, performance, price, user reviews, and specifications.</p>
         </li>
-        <li>Component Information: Detailed information about each component, including specifications, performance
-          benchmarks, user ratings, and reviews, is displayed in a clear and organized manner. Users can easily
-          compare different components based on their specifications</li>
-        <li>Customization Options: The tool allows users to customize their PC build based on their specific
-          requirements, such as budget, performance, and aesthetics. Users can easily swap components in and out, and
-          the tool provides real-time feedback on the impact of changes to the overall performance and compatibility
-          of the build.</li>
-        <li>Comparison View: The tool offers a comparison view that allows users to compare different components side
-          by side, making it easy for them to evaluate and select the best options for their PC build. Users can
-          compare components based on their specifications, price, performance, and user ratings, making it easier to
-          make informed decisions.</li>
-        <li>Recommendations and Feedback: The tool provides users with recommendations and feedback based on their
-          selected components and requirements. It offers suggestions for alternative components that may better meet
-          their needs, and it provides feedback on the compatibility, performance, and reliability of their selected
-          components, helping users build their PCs with confidence.</li>
+        <li>
+          <strong>The tool offers recommendations to the user</strong>
+          <p>When assembling computers, the audience often relies on recommendations from others.</p>
+        </li>
+        <li>
+          <strong>The tool is clear and easy to navigate</strong>
+          <p>The user can easily maintain an overview, and the most important information is visible to the audience.
+          </p>
+        </li>
+      </ul>
+      <h4>Ideation</h4>
+      <p>During the ideation phase, I first analyzed the competition to identify best, good, and bad practices. One of
+        the best practices that inspired me was Newegg's tool, which was integrated into the product catalog, creating a
+        seamless user experience. I also found that tools that efficiently utilized screen space and provided important
+        information were good practices, while tools with long and cluttered component lists and inadequate information
+        were bad practices.</p>
+      <p>After creating a shortlist of requirements, I brainstormed potential solutions using the "how may we"
+        technique, followed by the Crazy Eight method to generate out-of-the-box ideas. I combined the ideas from both
+        sessions to create potential concept directions for my project.</p>
+      <p>Three conceptual directions were developed based on the ideas generated, which were presented to both fellow
+        students and stakeholders for feedback. These directions are:</p>
+      <ol>
+        <li><strong>"Overlay" Solution</strong>
+          <p>The tool is integrated on the right-hand side of the existing Pricewatch product list
+            view. The advantage is that it is technically feasible to integrate the tool within an existing page.
+            However,
+            the Pricewatch is not specifically designed for building PCs and it may be difficult to translate this
+            concept
+            to mobile devices.</p>
+        </li>
+        <li><strong>"Single Page" Solution</strong>
+          <p>The tool is limited to a single separate page. Components are chosen from a list that is specific to
+            building PCs. The advantage of this concept is that there is enough space to meet the requirements of the
+            target audience. The disadvantage is that the information density is very high.</p>
+        </li>
+        <li><strong>"Dashboard" Solution</strong>
+          <p>The user is provided with a user-friendly visual display that supports them in building a computer. The
+            advantage of the visual display is its user-friendliness and the overview it can provide. However,
+            experienced users may not need this level of support, and the visual elements take up valuable space.</p>
+        </li>
       </ol>
-      <h4>Outcome</h4>
-      <p>Tweaker's PC Builder was successfully showcased on the Tweakers website and received positive feedback from the
-        community. The intuitive and user-friendly interface of the tool made it easier for experienced PC builders to
-        select compatible components, customize their PC builds, and make informed decisions. The tool helped reduce the
-        complexity and time required for users to build their custom PCs, and it provided them with reliable information
-        and recommendations throughout the process. As a result, Tweaker's PC Builder became a popular tool among the
-        Tweakers community, empowering experienced PC builders to create their dream custom PCs with ease.</p>
+      <p>To better understand the target audience and an important stakeholder and to justify the choice of a conceptual
+        direction, two things were done: reaching out to two Tweakers editors, who are important stakeholders and
+        conducting a new survey to better gauge the target audience's preference and gain insights into how they build
+        PCs.</p>
+      <p>The editors' preferred conceptual direction was a hybrid of the first and second directions, but they leaned
+        more towards the second due to its better mobile compatibility. They didn't see the need for visual support
+        offered by the third direction. The survey was used to determine the target audience's preference for the tool
+        to be integrated as part of the "Pricewatch" or as a separate tool within their user profile.</p>
+      <h4>Designs</h4>
+      <h4>Concept</h4>
+      <h4>Validation</h4>
+      <p>The validation process of the PC Builder tool was done through two test rounds and a final validation with a
+        larger sample size. The purpose of the validation was to find and improve the "low hanging fruits" of the tool,
+        get feedback on the tool's usability, and assess the performance of the tool based on the shortlist criteria.
+      </p>
+      <p>In the first test round, two respondents tested the first version of the prototype, and their feedback was used
+        to find the major areas for improvement. The test revealed that the users did not feel triggered to open the
+        tool, leading them to miss out on essential information. Also, the tool only corrected errors after the fact and
+        did not offer a follow-up step after making an incorrect selection. The shortlist score, which included criteria
+        such as compatibility checks, component information, user recommendations, and tool usability, showed that the
+        tool had room for improvement.</p>
+      <p>Following the first test round, I brainstormed possible solutions and iteratively improved the tool.
+        The second test round involved two different respondents, and their feedback indicated a more positive user
+        experience. Users were notified about incompatible components beforehand and did not make any errors, as opposed
+        to the first test round, where they did. The tool was now more accessible, as it was open by default, and the
+        test respondents found it easy to use.</p>
+      <p>Finally, a larger sample size of 176 respondents validated the final version of the tool. The feedback from the
+        sample revealed that the tool was well-received, with 75% of respondents giving a score of 4 or higher for the
+        shortlist criteria. The compatibility check and component information features received high scores, indicating
+        that the tool fulfilled the users' needs.</p>
+      <p>In conclusion, the validation process shows that the PC Builder tool had undergone several iterations to
+        improve its usability, compatibility check, and information provision for the components. The feedback from the
+        larger sample validated that the final version was well-received by the users and fulfilled their needs.</p>
+      <h4>Future</h4>
+      <h5>Feasability</h5>
+      <p>To realize the concept, the client needs to invest in making the data more suitable for the tool. While it is
+        technically feasible, a considerable investment may be necessary. Additionally, there will always be edge cases
+        where the tool may not prevent all errors. The client needs to prepare for such scenarios, where users may try
+        to hold them accountable for any damages caused.</p>
+      <h5>Recommendations</h5>
+      <p>To make the concept a further success, I recommend
+        implementing several changes:</p>
+      <ul>
+        <li>Implement A/B testing for a clearer button or interaction to add a component to a list.</li>
+        <li>Explore ways to increase the authority of "Best Buy Guide" recommendations, such as displaying author names
+          or linking to articles.</li>
+        <li>Make the lists shareable to allow users to share them with friends and family.</li>
+        <li>Show performance and price-performance ratio in the Pricewatch component list to enable better comparison
+          before adding a component to a configuration.</li>
+        <li>Consider implementing a toggle to filter out incompatible choices, as many users expressed a preference for
+          not seeing incorrect choices at all.</li>
+      </ul>
+      <p>By implementing these changes, the client can make the tool more user-friendly, increase the authority of the
+        recommendations, and enable users to share their configurations with others. These changes would ultimately lead
+        to better user satisfaction and higher conversion rates.</p>
       <h4>Conclusion</h4>
       <p>As a junior UX designer, I am proud to have contributed to the design of Tweaker's PC Builder, a tool that
-        empowers experienced PC builders on Tweakers to build their custom PCs with confidence. Through a user-centered
+        empowers experienced PC builders on Tweakers to build their custom PCs with confidence. Through a
+        user-centered
         design approach, I was able to create an intuitive and efficient user experience that simplifies the component
         selection process, provides relevant information, offers customization options, enables easy comparison, and
         enhances user confidence. The successful launch and positive feedback from the community validate the
