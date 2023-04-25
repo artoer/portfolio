@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Arthur Menken">
+    <title>Tweakers PC Builder Prototype</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="cpu" style="margin-right: 704px;">
+    <nav id="menuwrapper"></nav>
+    <div class="category">
+        <div class="category-image"></div>
+        <h1>Processoren</h1>
+    </div>
+
+    <div class="content">
+        <div class="top">
+            <img class="tabs" src="./images/tabs.png" alt="">
+            <h3>vergelijken</h3>
+            <img class="selector" src="./images/uitvoeringen-producten.png" alt="">
+        </div>
+        <div class="pw-content">
+            <div class="filters"><img src="./images/filters.png" alt=""></div>
+            <div class="pw-listing">
+                <img src="./images/sort.png" alt="">
+            </div>
+        </div>
+
+        <div class="pc-builder">
+            <div class="toggle"></div>
+            <div class="pc-builder-container">
+                <div class="builder-title">
+                    <h2>PC Bouwer</h2>
+                </div>
+                <div class="builder-head">
+                    <div class="list-name-container">
+                        <h3 class="list-name">Mijn lijst</h3>
+                        <a class="edit"></a>
+                    </div>
+
+                    <div class="build-info">
+                        <div class="ps-dropdown">
+                            <div class="label"></div>
+                            <ul class="dropdown">
+                                <li value="100">Prestatiescore - 1080p</li>
+                                <li value="80">Prestatiescore - 1440p</li>
+                                <li value="50">Prestatiescore - 4K</li>
+                            </ul>
+                        </div>
+                        <div class="power">
+                            <div class="label"></div>
+                            <div class="power-value">0W</div>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="summary hidden">
+                        <!-- <div class="warning"></div> -->
+                        <ul>
+                            <li class="too-long critical">Je videokaart is te lang voor je behuizing.
+                            </li>
+                            <li class="not-enough-power critical">Je voeding levert te weinig vermogen voor je gekozen
+                                componenten.
+                            </li>
+                            <li class="too-much-power">Je verbruikt veel minder vermogen dan je gekozen voeding levert.
+                            </li>
+                            <li class="socket-mismatch critical"></li>
+                            <li class="ddr-mismatch critical">Je moederbord ondersteunt niet je gekozen geheugen.</li>
+                        </ul>
+                    </div>
+                
+                <div class="builder-info"></div>
+                <div class="builder-component-list">
+                    <ul class="bbg-recomendations">
+                        <div class="bbg">
+                            <div class="badge"></div>
+                            <div class="info">
+                                <div class="date">December 2023</div>
+                                <div class="name">Mainstream-gamesysteem</div>
+                                <div class="price">€ 1900,46</div>
+                            </div>
+                        </div>
+                        <div class="bbg">
+                            <div class="badge"></div>
+                            <div class="info">
+                                <div class="date">December 2023</div>
+                                <div class="name">Next-genready gamesysteem</div>
+                                <div class="price">€ 2290,01</div>
+                            </div>
+                        </div>
+                    </ul>
+                    <ul class="components">
+                        <li class="cpu">
+                            <div class="product-image"></div>
+                            <div class="product-info">
+                                <p class="product-name"></p>
+                                <p class="product-placeholder">Processor</p>
+                                <div class="actions">
+                                    <p class="price"></p>
+                                    <a class="delete"></a>
+                                    <a class="edit"></a>
+                                    <a class="add"></a>
+                                </div>
+                                <p class="product-specline"></p>
+
+
+                                <div class="performance">
+                                    <div class="power"></div>
+                                    <div class="score"></div>
+                                    <div class="price-performance"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mobo">
+                            <div class="product-image"></div>
+                            <div class="product-info">
+                                <p class="product-name"></p>
+                                <p class="product-placeholder">Moederbord</p>
+                                <div class="actions">
+                                    <p class="price"></p>
+                                    <a class="delete"></a>
+                                    <a class="edit"></a>
+                                    <a class="add"></a>
+                                </div>
+                                <p class="product-specline"></p>
+
+
+                                <div class="performance">
+                                    <div class="power"></div>
+                                    <div class="score"></div>
+                                    <div class="price-performance"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="gpu">
+                            <div class="product-image"></div>
+                            <div class="product-info">
+                                <p class="product-name"></p>
+                                <p class="product-placeholder">Videokaart</p>
+                                <div class="actions">
+                                    <p class="price"></p>
+                                    <a class="delete"></a>
+                                    <a class="edit"></a>
+                                    <a class="add"></a>
+                                </div>
+                                <p class="product-specline"></p>
+
+
+                                <div class="performance">
+                                    <div class="power"></div>
+                                    <div class="score"></div>
+                                    <div class="price-performance"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="ram">
+                            <div class="product-image"></div>
+                            <div class="product-info">
+                                <p class="product-name"></p>
+                                <p class="product-placeholder">Geheugen</p>
+                                <div class="actions">
+                                    <p class="price"></p>
+                                    <a class="delete"></a>
+                                    <a class="edit"></a>
+                                    <a class="add"></a>
+                                </div>
+                                <p class="product-specline"></p>
+
+
+                                <div class="performance">
+                                    <div class="power"></div>
+                                    <div class="score"></div>
+                                    <div class="price-performance"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="case">
+                            <div class="product-image"></div>
+                            <div class="product-info">
+                                <p class="product-name"></p>
+                                <p class="product-placeholder">Behuizing</p>
+                                <div class="actions">
+                                    <p class="price"></p>
+                                    <a class="delete"></a>
+                                    <a class="edit"></a>
+                                    <a class="add"></a>
+                                </div>
+                                <p class="product-specline"></p>
+
+
+                                <div class="performance">
+                                    <div class="power"></div>
+                                    <div class="score"></div>
+                                    <div class="price-performance"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="ssd">
+                            <div class="product-image"></div>
+                            <div class="product-info">
+                                <p class="product-name"></p>
+                                <p class="product-placeholder">Opslag</p>
+                                <div class="actions">
+                                    <p class="price"></p>
+                                    <a class="delete"></a>
+                                    <a class="edit"></a>
+                                    <a class="add"></a>
+                                </div>
+                                <p class="product-specline"></p>
+
+
+                                <div class="performance">
+                                    <div class="power"></div>
+                                    <div class="score"></div>
+                                    <div class="price-performance"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="pfan">
+                            <div class="product-image"></div>
+                            <div class="product-info">
+                                <p class="product-name"></p>
+                                <p class="product-placeholder">Processorkoeler</p>
+                                <div class="actions">
+                                    <p class="price"></p>
+                                    <a class="delete"></a>
+                                    <a class="edit"></a>
+                                    <a class="add"></a>
+                                </div>
+                                <p class="product-specline"></p>
+
+
+                                <div class="performance">
+                                    <div class="power"></div>
+                                    <div class="score"></div>
+                                    <div class="price-performance"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cfan">
+                            <div class="product-image"></div>
+                            <div class="product-info">
+                                <p class="product-name"></p>
+                                <p class="product-placeholder">Ventilatoren</p>
+                                <div class="actions">
+                                    <p class="price"></p>
+                                    <a class="delete"></a>
+                                    <a class="edit"></a>
+                                    <a class="add"></a>
+                                </div>
+                                <p class="product-specline"></p>
+
+
+                                <div class="performance">
+                                    <div class="power"></div>
+                                    <div class="score"></div>
+                                    <div class="price-performance"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="psu">
+                            <div class="product-image"></div>
+                            <div class="product-info">
+                                <p class="product-name"></p>
+                                <p class="product-placeholder">Voeding</p>
+                                <div class="actions">
+                                    <p class="price"></p>
+                                    <a class="delete"></a>
+                                    <a class="edit"></a>
+                                    <a class="add"></a>
+                                </div>
+                                <p class="product-specline"></p>
+
+
+                                <div class="performance">
+                                    <div class="power"></div>
+                                    <div class="score"></div>
+                                    <div class="price-performance"></div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="builder-price">
+                    <div class="total">
+                        <div class="label">Totaal:</div>
+                        <div class="value"></div>
+                    </div>
+                    <div class="controls">
+                        <a class="reset">Begin opnieuw</a>
+                        <a class="save">Bewaar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./script.js"></script>
+</body>
+
+</html>

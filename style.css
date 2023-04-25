@@ -63,6 +63,7 @@ a {
 
 #content a {
   white-space: nowrap;
+  display: inline-block;
 }
 
 a:hover {
@@ -95,7 +96,7 @@ h4 {
 }
 
 h5 {
-  font-size: 20px;
+  font-size: 22px;
 }
 
 #content ol,
@@ -483,7 +484,11 @@ figcaption {
   font-size: 18px;
   line-height: 150%;
   border-radius: 8px;
-  quotes: "\201C""\201D""\2018""\2019";
+  quotes: "\201C""\201D"
+}
+
+blockquote :last-child {
+  margin-bottom: 0;
 }
 
 #content blockquote:before {
@@ -496,7 +501,8 @@ figcaption {
 }
 
 blockquote p {
-  display: inline;
+  display: inline-block;
+  margin: 0 auto 1rem;
 }
 
 .modal {

@@ -28,12 +28,13 @@
     <div id="content">
       <h4>Introduction</h4>
       <p><a target="_blank" href="https://www.tweakers.net/">Tweakers.net</a> is a popular Dutch consumer electronics
-        and technology website, with a strong focus on computers. As a
-        frequent visitor to the website, I noticed a lack of tools to help users easily assemble a computer. Currently,
-        users have to research and ensure compatibility of each component themselves. This presented an opportunity for
-        me as a CMD graduate to develop a solution, especially since Tweakers has an extensive database of components
-        with valuable information. In this case study, I will outline my process and conclusions in developing a
-        concept, validating it, and providing recommendations for future implementation.</p>
+        and technology website, with a strong focus on computers. As a frequent visitor to the website, I noticed a lack
+        of tools to help users easily assemble a computer. Currently, users have to research and ensure compatibility of
+        each component themselves.</p>
+      <p>With the approval of Tweakers, I took it upon myself to explore and design a tool that would help the users of
+        Tweakers pick the right parts when building their PCs for my graduation project. In this case study, I will
+        outline my process and conclusions in developing a concept, validating it, and providing recommendations for
+        future implementation.</p>
       <img src="./img/pc-builder/2.png" alt="The front page of Tweakers.">
       <img class="float" src="./img/pc-builder/3.png" alt="The Pricewatch page on Tweakers.">
       <p>Tweakers primarily generates revenue through advertising and affiliate programs that redirect users to other
@@ -70,8 +71,10 @@
         builds using Wordpad lists, shopping carts, or separate browser tabs for each component.</p>
       <p>An important learning
         from the interviews is that while most users I talked to were experienced, they too could make mistakes.</p>
-      <blockquote cite="An interviewee">...For example, I bought a small-form factor power supply on accident, and it
-        turned out the cables were too short to use in my mid-size case.</blockquote>
+      <blockquote cite="An interviewee">
+        <p>...For example, I bought a small-form factor power supply on accident, and it
+          turned out the cables were too short to use in my mid-size case.</p>
+      </blockquote>
       <p>I also conducted a survey to obtain new insights and validate my earlier research. I shared the survey on the
         Tweakers website's Pricewatch pages for PC components, where my target audience was most accessible. With 425
         respondents, the majority of computer builders were experienced or highly experienced, with over 68.2% having
@@ -102,17 +105,20 @@
           </p>
         </li>
       </ul>
-      <h4>Ideation</h4>
+      <h4>Ideation & Concept</h4>
       <p>During the ideation phase, I first analyzed the competition to identify best, good, and bad practices. One of
         the best practices that inspired me was Newegg's tool, which was integrated into the product catalog, creating a
         seamless user experience. I also found that tools that efficiently utilized screen space and provided important
         information were good practices, while tools with long and cluttered component lists and inadequate information
         were bad practices.</p>
+      <img src="./img/pc-builder/7.png"
+        alt="During my best, good and bad practices comparison, I was greatly inspired by the tool on Newegg, which featured the tool as a sort of overlay on top of a catalogue of products much like Tweakers' Pricewatch.">
       <p>After creating a shortlist of requirements, I brainstormed potential solutions using the "how may we"
         technique, followed by the Crazy Eight method to generate out-of-the-box ideas. I combined the ideas from both
         sessions to create potential concept directions for my project.</p>
-      <p>Three conceptual directions were developed based on the ideas generated, which were presented to both fellow
-        students and stakeholders for feedback. These directions are:</p>
+      <h5>Concepts</h5>
+      <p>After the brainstorm session, I diverged, and I came up with three conceptual directions based on the ideas generated and prior insights. I presented these to both fellow
+        students and stakeholders for feedback. My three concept directions are:</p>
       <ol>
         <li><strong>"Overlay" Solution</strong>
           <p>The tool is integrated on the right-hand side of the existing Pricewatch product list
@@ -133,17 +139,27 @@
             experienced users may not need this level of support, and the visual elements take up valuable space.</p>
         </li>
       </ol>
+      <h5>Picking a direction</h5>
       <p>To better understand the target audience and an important stakeholder and to justify the choice of a conceptual
         direction, two things were done: reaching out to two Tweakers editors, who are important stakeholders and
         conducting a new survey to better gauge the target audience's preference and gain insights into how they build
         PCs.</p>
+      <img src="./img/pc-builder/6.png"
+        alt="To help decide on the right concept, I polled the target audience, who seemed to heavily prefer a solution integrated into the Pricewatch. Out of 445 responses, 83.1% of users say that they would rather see a tool that helps them build a pc on the Pricewatch rather than a seperate page in their account of profile.">
       <p>The editors' preferred conceptual direction was a hybrid of the first and second directions, but they leaned
         more towards the second due to its better mobile compatibility. They didn't see the need for visual support
         offered by the third direction. The survey was used to determine the target audience's preference for the tool
         to be integrated as part of the "Pricewatch" or as a separate tool within their user profile.</p>
-      <h4>Designs</h4>
-      <h4>Concept</h4>
-      <h4>Validation</h4>
+      <h4>Design Process</h4>
+      <h4>Prototype & Validation</h4>
+      <img src="./img/pc-builder/5.png" alt="A screenshot of the prototype as of its latest iteration.">
+      <p>Using my strong foundation in front-end code, I was able to quickly create a testable prototype. The tool is
+        inherently non-linear, and there are countless ways to use and navigate through it. With a programmatic
+        approach, I can test and demonstrate a large number of scenarios with my prototype.</p>
+      <a target="_blank" href=".\assets\pc-builder-prototype\index.html">Try the prototype out by clicking here!</a>
+      <p>Creating and providing a prototype that closely resembles the final implementation allowed me to gain valuable
+        insights, both qualitative and quantitative, during the project's validation phase.</p>
+      <h5>Validation</h5>
       <p>The validation process of the PC Builder tool was done through two test rounds and a final validation with a
         larger sample size. The purpose of the validation was to find and improve the "low hanging fruits" of the tool,
         get feedback on the tool's usability, and assess the performance of the tool based on the shortlist criteria.
@@ -188,15 +204,25 @@
       <p>By implementing these changes, the client can make the tool more user-friendly, increase the authority of the
         recommendations, and enable users to share their configurations with others. These changes would ultimately lead
         to better user satisfaction and higher conversion rates.</p>
-      <h4>Conclusion</h4>
-      <p>As a junior UX designer, I am proud to have contributed to the design of Tweaker's PC Builder, a tool that
-        empowers experienced PC builders on Tweakers to build their custom PCs with confidence. Through a
-        user-centered
-        design approach, I was able to create an intuitive and efficient user experience that simplifies the component
-        selection process, provides relevant information, offers customization options, enables easy comparison, and
-        enhances user confidence. The successful launch and positive feedback from the community validate the
-        effectiveness of the design solution in meeting the needs of the target users and achieving the project goals.
-      </p>
+      <h4>Client Feedback</h4>
+      <blockquote cite="Bozhan Chipev, Senior UX designer at Tweakers">
+        <p>As a UX designer at Tweakers and the supervisor of the internship programme at
+          the company, I would say that the PC Builder feature that Arthur designed and
+          prototyped is complete and fulfils all requirements we set at the beginning of the
+          project. The user journey is clear, there are helpful error messages and warnings
+          along the way, components have clearly indicated empty and filled states, and the
+          entire interaction has a clear end goal.</p>
+        <p>The success of the prototype I find is largely due to the rigorous research and testing
+          process that Arthur applied to his project. The fact he designed and developed the
+          tool iteratively, testing at each stage, meant that the decisions he took at each turn
+          were validated and supported by solid qualitative and quantitative insights. The final
+          evaluation of the prototype by the Tweakers community is a testament to this.</p>
+        <p>Lastly, the final version of the prototype Arthur leaves us with, and the list of next
+          steps he has devised, together represent the first major milestone towards delivering
+          the PC Builder feature to all Tweakers users. The handover is in fact so complete,
+          that our development team is eager to get started on implementation before our
+          product managers have even calculated its commercial viability.</p>
+      </blockquote>
     </div>
   </main>
   <footer></footer>
