@@ -62,6 +62,7 @@ a {
 }
 
 #content a {
+  font-size: 18px;
   white-space: nowrap;
   display: inline-block;
 }
@@ -108,7 +109,7 @@ h5 {
 
 #content ol li::marker,
 #content ul li::marker {
-  color: var(--anchor-color);
+  color: var(--accent-color);
 }
 
 #content ol li,
