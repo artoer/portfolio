@@ -401,14 +401,17 @@ footer>a {
 /* CASE STUDY PAGE */
 .heading {
   max-width: 640px;
-  margin: 0 auto;
-  padding: 16px 0 32px;
+  margin: 4rem auto;
+  padding: 0 0 2rem;
   border-bottom: 2px solid var(--accent-color);
+}
+
+.heading p {
+  margin: 1rem 0 0;
 }
 
 .heading h3 {
   font-size: 32px;
-  margin: 0 0 1rem;
 }
 
 .heading h2 {
