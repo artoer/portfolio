@@ -36,35 +36,23 @@
         outline my process and conclusions in developing a concept, validating it, and providing recommendations for
         future implementation.</p>
       <img src="./img/pc-builder/2.png" alt="The front page of Tweakers, featuring articles on tech-related news.">
-      <img class="float" src="./img/pc-builder/3.png" alt="The Pricewatch page on Tweakers.">
-      <p>Tweakers primarily generates revenue through advertising and affiliate programs that redirect users to other
-        webshops. One of the key features of Tweakers is the Pricewatch, which allows users to compare prices of
-        electronics across various webshops. Many Tweakers users seek advice and information on computer components
-        before purchasing them to replace or build their own desktops.</p>
       <h4>Problem Statement</h4>
       <p>Many computer components have varying compatibility requirements and specifications, making it challenging for
-        users to select the right components to build their computer. Additionally, users must consider other factors
-        such as performance and budget.</p>
-      <h5>Design Challenge</h5>
-      <p><strong>"How can we create a digital interactive tool that assists Tweakers users, particularly experienced
-          computer
-          builders, in selecting the right components for their build?"</strong></p>
-      <h5>Sub-Questions</h5>
-      <ul>
-        <li>What are the needs and preferences of experienced computer builders who use Tweakers?</li>
-        <li>How can we design a digital interactive tool that meets the needs of Tweakers users?</li>
-        <li>How can the tool assist users in selecting the appropriate components for their build?</li>
-      </ul>
+        users to select the right components to build their computer. Additionally, users must consider their own needs
+        when it comes to
+        criteria performance and budget.</p>
+      <h5>How can we create a digital interactive tool that assists Tweakers users, particularly experienced
+        computer
+        builders, in selecting the right components for their build?</h5>
       <h4>Research</h4>
-      <h5>Exploration</h5>
-      <p>In the initial phase of the project, I conducted an exploratory competitive analysis to investigate how
-        competitors assist users in building a computer. I researched the functionalities that computer builders use on
-        the Tweakers website, such as the Pricewatch and Wishlist (Wenslijst in Dutch). The findings of this research
-        were utilized in the
-        ideation process and were also discussed during interviews.</p>
+      <h5>Competitive Analysis</h5>
+      <p>I kicked off my research by conducting an exploratory competitive analysis to investigate how different
+        competitors assist users in building a computer, to explore how they approach the problem and to gain insights
+        on the strengths and weaknesses of
+        their approaches.</p>
       <img src="./img/pc-builder/0.png"
         alt="Aside from the obvious competitors, I also liked to look at websites that took a different approach such as LogicalIncrements. A website that offers recommendations based on a budget rather than a tool. The website had some interesting ways to display information I took note of.">
-      <h5>User Research</h5>
+      <h5>Interview</h5>
       <p>To better understand the target audience and the customer journey when building a computer, I conducted five
         semi-structured interviews. I discovered that the price-to-performance ratio was the most important factor in
         choosing a component. Gaming was the most common use case. Users relied heavily on recommendations, such as
@@ -77,16 +65,17 @@
         <p>...For example, I bought a small-form factor power supply on accident, and it
           turned out the cables were too short to use in my mid-size case.</p>
       </blockquote>
+      <h5>Survey</h5>
       <p>I also conducted a survey to obtain new insights and validate my earlier research. I shared the survey on the
         Tweakers website's Pricewatch pages for PC components, where my target audience was most accessible. With 425
         respondents, the majority of computer builders were experienced or highly experienced, with over 68.2% having
         built a computer more than four times. The survey validated that the target audience values the
         price-to-performance ratio.</p>
       <img src="./img/pc-builder/1.png"
-        alt='Poll: "What information do you find most important when choosing a pc component? The vast majority (64.7%) chose "price-to-performance ratio" (N=425).'>
-      <h5>Requirements</h5>
+        alt='Poll: "What information do you find most important when choosing a PC component? The vast majority (64.7%) chose "price-to-performance ratio" (N=425).'>
+      <h4>Concept Requirements</h4>
       <ul>
-        <p>Based on my research I set the following requirements:</p>
+        <p>Based on the biggest takeaways of my research I set the following requirements for the PC builder:</p>
         <li>
           <strong>The tool checks product compatibility</strong>
           <p>Despite the audience's extensive experience in assembling computers, they may overlook incompatibilities,
@@ -107,7 +96,7 @@
           </p>
         </li>
       </ul>
-      <h4>Ideation & Concept</h4>
+      <h4>Brainstorming & Ideation</h4>
       <p>During the ideation phase, I first analyzed the competition to identify best, good, and bad practices. One of
         the best practices that inspired me was Newegg's tool, which was integrated into the product catalog, creating a
         seamless user experience. I also found that tools that efficiently utilized screen space and provided important
@@ -115,88 +104,59 @@
         were bad practices.</p>
       <img src="./img/pc-builder/7.png"
         alt="During my analysis of good and bad practices, I was greatly inspired by the tool on Newegg, which featured the tool as a sort of overlay on top of a catalogue of products much like Tweakers' Pricewatch.">
-      <p>After creating a shortlist of requirements, I brainstormed potential solutions using the "how may we"
+      <p>With the set requirements in mind, I brainstormed potential solutions using the "how may we"
         technique, followed by the Crazy Eight method to generate out-of-the-box ideas. I combined the ideas from both
         sessions to create potential concept directions for my project.</p>
       <img src="./img/pc-builder/8.png"
         alt='"How may we provide insight into the compatibility between components?" Answered by using the Crazy Eight method. While valueable, in hindsight I should have done this with pen and paper.'>
-      <h5>Conceptualizing</h5>
-      <p>After the brainstorm session, I intentionally tried to diverge and came up with three conceptual directions
-        that were as different from each other as possible, based on the ideas generated and prior insights. I presented
-        these directions to both fellow students and stakeholders for feedback. My three concept directions are:</p>
-      <ol>
-        <li><strong>"Overlay" Solution</strong>
-          <p>The tool is integrated on the right-hand side of the existing Pricewatch product list
-            view. The advantage is that it is technically feasible to integrate the tool within an existing page.
-            However,
-            the Pricewatch is not specifically designed for building PCs and it may be difficult to translate this
-            concept
-            to mobile devices.</p>
-        </li>
-        <li><strong>"Single Page" Solution</strong>
-          <p>The tool is limited to a single separate page. Components are chosen from a list that is specific to
-            building PCs. The advantage of this concept is that there is enough space to meet the requirements of the
-            target audience. The disadvantage is that the information density is very high.</p>
-        </li>
-        <li><strong>"Dashboard" Solution</strong>
-          <p>The user is provided with a user-friendly visual display that supports them in building a computer. The
-            advantage of the visual display is its user-friendliness and the overview it can provide. However,
-            experienced users may not need this level of support, and the visual elements take up valuable space.</p>
-        </li>
-      </ol>
+      <p>I came up with three concept directions. The three concepts I explored included a solution which integrates the
+        tool on the
+        right-hand side of the existing Pricewatch product list view. A solution where the feature exists on its own
+        dedicated page, and lastly a user-friendly visual display on a seperate page to support building a
+        computer.</p>
       <img src="./img/pc-builder/9.jpg" alt='Concept 3, the "dashboard" solution. As mocked up in the FigJam file.'>
-      <h5>Picking a direction</h5>
-      <p>To better understand my target audience and justify my choice for a design direction, I reached out to two tech
-        journalists who write for Tweakers and conducted a new survey. During the expert interview, the tech journalists
-        appreciated the feedback that the tool provided and walked me through their thought process when building a
-        computer. They preferred a hybrid form between the first and second design direction, but ultimately found the
-        first direction more difficult to translate into a mobile format. They also expressed no interest in visual
-        support, so they didn't like the third design direction.</p>
+      <p>To better understand my target audience, I reached out to two tech journalists who write for Tweakers and
+        conducted a new survey. During the expert interview, the journalists appreciated the feedback that the tool
+        provided and preferred a hybrid form between the first and second design direction. They also expressed no
+        interest in visual support, so they didn't like the third design direction.</p>
       <img src="./img/pc-builder/6.png"
-        alt="To help decide on the right concept, I polled the target audience, who seemed to heavily prefer a solution integrated into the Pricewatch. Out of 445 responses, 83.1% of users say that they would rather see a tool that helps them build a pc on the Pricewatch rather than a seperate page in their account of profile.">
-      <p>Based on the results of the survey, I found that the target audience preferred the tool to be integrated within
-        the Pricewatch environment rather than hidden within their user profile. Considering both the expert interview
-        and the survey results, I decided to move forward with the first design direction where the tool is integrated
-        into the Pricewatch environment.</p>
-      <p>Overall, the expert interview and survey were helpful in gaining a better understanding of my target audience's
-        preferences and thought process when building a computer. This information guided my decision for the design
-        direction and will help ensure that the final product aligns with the needs and wants of the target audience.
-      </p>
+        alt="To help decide on the right concept, I polled the target audience, who seemed to heavily prefer a solution integrated into the Pricewatch. Out of 445 responses, 83.1% of users say that they would rather see a tool that helps them build a PC on the Pricewatch rather than a seperate page in their account of profile.">
+      <p>Based on the survey results, 83.1%
+        of users preferred the tool to be integrated within the Pricewatch environment rather than hidden within their
+        user profile.</p>
+      <p>With both the expert interview and survey results in mind, I decided to move forward with the
+        first design direction. The expert interview and survey helped me better understand my target audience's
+        preferences and thought process when building a computer, which guided my decision for the design direction and
+        ensured that the final product aligned with their needs and wants.</p>
       <img src="./img/pc-builder/10.jpg"
         alt='The chosen direction, Concept 1, where the tool is integrated into the Pricewatch page. Shown here is the first iteration mocked up in the FigJam file, the design would later be taken to Figma.'>
-      <h4>Design Process</h4>
+      <h4>Design Refinement</h4>
       <img src="./img/pc-builder/11.jpg"
         alt='This is the first iteration of the design in Figma. Note the width, which makes the tool feel cramped. I addressed this issue in later iterations.'>
-      <p>The design process involved several iterations with each iteration involving various changes and
-        additions to the tool. The first notable change was giving the tool more space by making it as wide as two grid
-        columns, in alignment with the design system of Tweakers. The tool also had buttons added to allow users to
-        access and adopt
-        recommendations from the Tweakers editorial team.</p>
-      <img src="./img/pc-builder/12.jpg"
-        alt='A later iteration, I added the "recommendation" buttons at the top of the tool. At this point, I spent a lot of time fine-tuning the feedback from the tool such as error messages and aligning the elements within the tool to ensure that they were harmonious in every scenario or state.'>
-      <p>In the third iteration, I added a summary of the problems with the selected components and included
-        warnings under the relevant components to provide a clear understanding of the issues. In addition, the rating
-        score of the products was added to give users an idea of how well the chosen components were rated by other
-        users.</p>
-      <p>In subsequent iterations, I worked on integrating the price-performance ratio into the tool by displaying
-        the performance score divided by the price. He experimented with various designs such as tables and icons to
-        present the performance score and price-performance ratio in a visually appealing manner. Iteration five saw
-        further improvements with the use of icons to convey important information about the components. I also
-        added a text link to indicate when more than one component could be selected. In the final iteration, I
-        continued refining the icons to improve the overall design of the tool.</p>
-      <img src="./img/pc-builder/13.png"
-        alt='I experimented with showing the performance of components in a table, which would then be placed under a chosen component, but this proved to cause too much bloat.'>
-      <h4>Final Concept</h4>
+      <p>During the design process, I made several iterations to the tool to improve its functionality and aesthetics.
+        In the first iteration, I addressed the issue of a cramped tool by increasing its width to align with the
+        Tweakers design system. In later iterations, I added "recommendation" buttons, fine-tuned feedback messages, and
+        warnings under components to provide a clear understanding of any issues. I also experimented with visually
+        appealing designs for displaying the price-performance ratio, including icons and tables, but ultimately decided
+        on a minimalist approach to avoid clutter.</p>
+      <h4>Concept Overview</h4>
       <img src="./img/pc-builder/14.jpg"
         alt='The final iteration in the Figma file showcases the various states and features. The prototype and subsequent iterations would build upon this design.'>
-      <p>The tool is designed to be integrated into the existing Tweakers Pricewatch platform, with the aim of providing
-        an all-in-one solution for building a custom PC. The tool has several features, including the ability to select
-        components, name and save configurations, choose a screen resolution for the performance score, view the power
-        consumption, and receive recommendations from Tweakers' Best Buy Guides.</p>
-      <p>The tool is also designed to be collapsible to minimize screen space when not in use, and it provides feedback
-        on which components have been selected and any potential issues. The collapsed state displays only the selected
-        components
-        and can be used for navigation to other categories.</p>
+      <ul>
+        <h5>Key Features</h5>
+        <li>Integration into the Tweakers Pricewatch page, enabling the use of existing features including powerful
+          filters, reduced development time and high dis</li>
+        <li>Uninterrupted navigation between product categories as the user browses and selects their components</li>
+        <li>The ability to view the performance and price-to-performance ratio of core components</li>
+        <li>The ability to view the power provision and consumption of the build</li>
+        <li>Import recommendations from Tweakers' Best Buy Guides</li>
+        <li>Collapsible when not in use, while still usable for navigation and able to provide feedback.</li>
+        <li>Provides feedback on selected components and potential issues</li>
+        <li>User-friendly and easy to navigate</li>
+      </ul>
+      <p>The final concept meets the set requirements by ensuring product compatibility, providing insight into the most
+        important information about components (performance, price-performance ratio, user reviews, and specifications),
+        offering recommendations to the user, and being clear and easy to navigate.</p>
       <p>Overall, this concept provides an excellent solution for building custom PCs. The tool is user-friendly and
         integrates well with the existing Tweakers Pricewatch platform. The various features and states of the tool
         ensure that users can build a custom PC that meets their needs while minimizing screen space and providing
@@ -207,54 +167,50 @@
         inherently non-linear, and there are countless ways to use and navigate through it. With a programmatic
         approach, I can test and demonstrate a large number of scenarios with my prototype.</p>
       <a target="_blank" href=".\assets\pc-builder-prototype\index.html">Try the prototype out by clicking here!</a>
-      <p>Creating and providing a prototype that closely resembles the final implementation allowed me to gain valuable
+      <p>Creating and providing a prototype that closely resembles the final implementation allowed me to gain
+        valuable
         insights, both qualitative and quantitative, during the project's validation phase.</p>
       <h5>Validation</h5>
-      <p>The validation process of the PC Builder tool was done through two test rounds and a final validation with a
-        larger sample size. The purpose of the validation was to find and improve the "low hanging fruits" of the tool,
-        get feedback on the tool's usability, and assess the performance of the tool based on the shortlist criteria.
-      </p>
-      <p>In the first test round, two respondents tested the first version of the prototype, and their feedback was used
-        to find the major areas for improvement. The test revealed that the users did not feel triggered to open the
-        tool, leading them to miss out on essential information. Also, the tool only corrected errors after the fact and
-        did not offer a follow-up step after making an incorrect selection. I also asked the two respondents to score
-        the prototype based on criteria that closely align with the set requirements.</p>
+      <p>I conducted a validation process for the PC Builder tool through two test rounds and a final validation with a
+        larger sample size to improve the tool's usability, compatibility check, and component information provision.
+        Two
+        respondents tested the first version, and their feedback was used to find major areas for improvement. After
+        brainstorming solutions, a second test round with two different respondents indicated a more positive user
+        experience. The final version was validated by a larger sample size of 176 respondents, with feedback showing
+        that
+        the tool was well-received and fulfilled users' needs, especially the price-to-performance ratio indication.</p>
       <img src="./img/pc-builder/16.png"
         alt="After the initial round of testing, I brainstormed some quick and simple solutions for the identified issues. This image shows my first idea, which involved using call-to-action prompts to guide users through the error correction process.">
-      <p>Following the first test round, I brainstormed possible solutions and iteratively improved the tool.
-        The second test round involved two different respondents, and their feedback indicated a more positive user
-        experience. Users were notified about incompatible components beforehand and did not make any errors, as opposed
-        to the first test round, where they did. The tool was now more accessible, as it was open by default, and the
-        test respondents found it easy to use.</p>
-      <p>Finally, a larger sample size of 176 respondents validated the final version of the tool. The feedback from the
-        sample revealed that the tool was well-received, with 75% of respondents giving a score of 4 or higher for the
-        shortlist criteria. The compatibility check and component information features received high scores, indicating
-        that the tool fulfilled the users' needs.</p>
       <img src="./img/pc-builder/15.png"
         alt="Users were especially enthusiastic about the price-to-performance ratio indication, proving it to be a well worthy addition.">
-      <p>In conclusion, the validation process shows that the PC Builder tool had undergone several iterations to
-        improve its usability, compatibility check, and information provision for the components. The feedback from the
-        larger sample validated that the final version was well-received by the users and fulfilled their needs.</p>
-      <h4>Future</h4>
+      <h4>Future Considerations</h4>
       <h5>Feasability</h5>
-      <p>To realize the concept, the client needs to invest in making the data more suitable for the tool. While it is
-        technically feasible, a considerable investment may be necessary. Additionally, there will always be edge cases
+      <p>To realize the concept, I learned from talking to stakeholders that Tweakers will need to invest in making
+        the
+        current existing product data more suitable for the tool. While the concept is
+        technically feasible, a considerable investment may be necessary. Additionally, there will always be edge
+        cases
         where the tool may not prevent all errors. The client needs to prepare for such scenarios, where users may try
         to hold them accountable for any damages caused.</p>
       <h5>Recommendations</h5>
-      <p>As a result of the usability tests and validation, I recommend the following for further implementation:</p>
+      <p>As a result of the usability tests and validation, I recommend Tweakers do the following when implementing
+        the
+        PC builder feature:</p>
       <ul>
         <li>Implement A/B testing for a clearer button or interaction to add a component to a list.</li>
-        <li>Explore ways to increase the authority of "Best Buy Guide" recommendations, such as displaying author names
+        <li>Explore ways to increase the authority of "Best Buy Guide" recommendations, such as displaying author
+          names
           or linking to articles.</li>
         <li>Make the lists shareable to allow users to share them with friends and family.</li>
         <li>Show performance and price-performance ratio in the Pricewatch component list to enable better comparison
           before adding a component to a configuration.</li>
-        <li>Consider implementing a toggle to filter out incompatible choices, as many users expressed a preference for
+        <li>Consider implementing a toggle to filter out incompatible choices, as many users expressed a preference
+          for
           not seeing incorrect choices at all.</li>
       </ul>
       <p>By implementing these changes, the client can make the tool more user-friendly, increase the authority of the
-        recommendations, and enable users to share their configurations with others. These changes would ultimately lead
+        recommendations, and enable users to share their configurations with others. These changes would ultimately
+        lead
         to better user satisfaction and higher conversion rates.</p>
       <h4>Client Feedback</h4>
       <blockquote cite="Bozhan Chipev, Senior UX designer at Tweakers">
