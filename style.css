@@ -100,6 +100,14 @@ h5 {
   font-size: 22px;
 }
 
+main li {
+  list-style-type: '— ';
+}
+
+main li::marker {
+  font-weight: 900;
+}
+
 #content ol,
 #content ul {
   list-style-position: inside;
@@ -114,7 +122,7 @@ h5 {
 
 #content ol *,
 #content ul * {
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
 }
 
 /* NAV */
@@ -307,13 +315,8 @@ main {
 
 .card {
   border-radius: 16px;
-  max-width: calc(100vw - 32px);
-  height: auto;
-  width: 100%;
-  margin: 0 auto;
-  overflow: hidden;
   display: grid;
-  grid-template-rows: calc(100vw - 32px) auto;
+  grid-template-rows: 300px auto;
   background: var(--surface-bg-color);
 }
 
@@ -331,7 +334,7 @@ main {
   flex-direction: column;
   margin: 0 auto;
   justify-content: center;
-  row-gap: 16px;
+  row-gap: 8px;
   align-items: center;
   text-align: left;
   color: var(--font-color-);
@@ -378,10 +381,13 @@ main {
   background-position: 0;
 }
 
-.card>div>p,
-.card>div>h4 {
+.card h2,
+.card h3,
+.card p {
   width: 100%;
   text-align: left;
+  line-height: 150%;
+  font-size: 20px;
 }
 
 footer {
@@ -417,7 +423,7 @@ footer>a {
 .heading h2 {
   font-size: 28px;
   font-weight: 400;
-  margin: 0 0 .25rem;
+  margin: 0 0 rem;
 }
 
 
@@ -629,7 +635,7 @@ blockquote p {
   .card {
     min-height: 300px;
     height: 300px;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 55% 45%;
     grid-template-rows: none;
   }
 
