@@ -410,7 +410,7 @@ footer>a {
 /* CASE STUDY PAGE */
 .heading {
   max-width: 640px;
-  margin: 4rem auto;
+  margin: 4rem auto 2rem;
   padding: 0 0 calc(2rem + 2px);
   border-bottom: 2px solid var(--accent-color);
 }
@@ -419,18 +419,14 @@ footer>a {
   margin: 1rem 0 0;
 }
 
-.heading h3 {
-  font-size: 24px;
+.heading h3, .heading h2 {
+  font-size: 22px;
   line-height: 150%;
 }
 
 .heading h2 {
-  font-size: 22px;
-  font-weight: 400;
-  margin: 0 0 1rem;
-  line-height: 150%;
+  margin: 0 0 .5rem;
 }
-
 
 #content {
   width: 100%;
