@@ -410,7 +410,7 @@ footer>a {
 /* CASE STUDY PAGE */
 .heading {
   max-width: 640px;
-  margin: 4rem auto 2rem;
+  margin: 4rem auto 3rem;
   padding: 0 0 calc(2rem + 2px);
   border-bottom: 2px solid var(--accent-color);
 }
@@ -471,14 +471,18 @@ figcaption {
   color: var(--font-color-caption);
 }
 
+#content h4:first-of-type {
+  margin: 0 auto 1rem;
+}
+
 #content h4 {
   border-left: 2px solid var(--accent-color);
-  padding: .5rem 0 .5rem 1rem;
+  padding: .25rem 0 .25rem 1rem;
   margin: 4rem auto 1rem;
 }
 
 #content h5 {
-  margin: 2rem auto 1rem;
+  margin: 1rem auto .5rem;
 }
 
 #content figure.quote {
