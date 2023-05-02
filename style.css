@@ -421,7 +421,8 @@ footer>a {
   margin: 1rem 0 0;
 }
 
-.heading h3, .heading h2 {
+.heading h3,
+.heading h2 {
   font-size: 22px;
   line-height: 150%;
 }
@@ -432,7 +433,7 @@ footer>a {
 
 #content {
   width: 100%;
-  max-width: 640px;
+  max-width: 765px;
   margin: 0 auto;
   padding: 0;
   background-color: var(--main-bg-color);
@@ -440,8 +441,14 @@ footer>a {
 }
 
 #content>* {
+  max-width: 640px;
   width: 100%;
   margin: 0 auto 2rem;
+}
+
+#content figure:not(.quote) {
+  max-width: 765px;
+  margin: 2rem auto;
 }
 
 #content>*:last-child {
@@ -466,6 +473,7 @@ footer>a {
 
 figcaption {
   margin: 12px auto 0;
+  max-width: 640px;
   padding: 0 0 8px;
   font-size: 16px;
   line-height: 150%;
@@ -660,8 +668,10 @@ blockquote p {
   } */
 
   #content img {
-    width: 100%;
+    width: auto;
     cursor: pointer;
     pointer-events: unset;
+    max-width: 100%;
+    margin: 0 auto;
   }
 }
