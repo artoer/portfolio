@@ -369,6 +369,7 @@ main {
   background-position: 100%;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
+  font-size: 18px;
 }
 
 
