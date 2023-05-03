@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Handlebars
   const footerTemplate = Handlebars.compile(`
+    <a href="https://www.linkedin.com/in/arthur-menken/">Connect on LinkedIn</a>
     &copy; Copyright {{currentYear}} — Arthur Menken
-    <a href="https://www.linkedin.com/in/arthur-menken/">LinkedIn</a>
 `);
 
   const navTemplate = Handlebars.compile(`

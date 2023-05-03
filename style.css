@@ -400,8 +400,8 @@ footer {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  row-gap: 8px;
-  padding: 64px 0 32px;
+  row-gap: 1rem;
+  margin: 4rem 0;
   width: 100%;
 }
 
