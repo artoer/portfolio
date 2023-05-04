@@ -330,7 +330,7 @@ main {
   align-items: center;
   text-align: left;
   color: var(--font-color-);
-  padding: 1rem 2rem;
+  padding: 2rem;
   border: none;
   border-top: 2px solid var(--accent-color);
 }
