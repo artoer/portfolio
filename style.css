@@ -276,7 +276,6 @@ input:checked+.slider:before {
   -webkit-transform: translateX(28px);
   -ms-transform: translateX(28px);
   transform: translateX(28px);
-  /* background-color: var(--accent-color); */
 }
 
 .toggle-container p {
@@ -316,7 +315,6 @@ main {
 #card-container {
   display: grid;
   row-gap: 16px;
-  scroll-margin-top: 16px;
 }
 
 .card {
@@ -510,7 +508,7 @@ figcaption {
 }
 
 #content h1 {
-  margin-top: 4rem;
+  padding-top: 3rem;
 }
 
 #content h4:first-of-type {
@@ -684,7 +682,7 @@ blockquote p {
   .card {
     min-height: 300px;
     height: 300px;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: calc(50% - 2px) auto;
     grid-template-rows: none;
   }
 
