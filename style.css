@@ -78,7 +78,6 @@ p {
   line-height: 150%;
 }
 
-h1,
 h2,
 h3,
 h4,
@@ -88,6 +87,7 @@ h5 {
 
 h1 {
   font-size: 28px;
+  line-height: 150%;
 }
 
 h2 {
@@ -305,7 +305,7 @@ main {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding: 4rem 0;
+  padding: 6rem 0;
   margin: 0px auto 2rem;
 }
 
