@@ -24,11 +24,11 @@
   <nav></nav>
   <main>
     <div class="heading">
-      <h2>Tweakers</h2>
+      <span>Tweakers</span>
       <h1>Designing a PC builder, a much-requested feature for the tech-focused Tweakers.net community.</h1>
     </div>
     <div id="content">
-      <h4>Overview</h4>
+      <h2>Overview</h2>
       <p><a target="_blank" href="https://www.tweakers.net/">Tweakers.net</a> is a popular Dutch consumer electronics
         and technology website, with a strong focus on computers. As a frequent visitor to the website, I noticed a lack
         of tools to help users easily assemble a computer. Currently, users have to research and ensure compatibility of
@@ -38,7 +38,7 @@
         outline my process and conclusions in developing a concept, validating it, and providing recommendations for
         future implementation.</p>
       <img src="./img/pc-builder/2.png" alt="The front page of Tweakers, featuring articles on tech-related news.">
-      <h4>Problem Statement</h4>
+      <h2>Problem Statement</h2>
       <p>Many computer components have varying compatibility requirements and specifications, making it challenging for
         users to select the right components to build their computer. Additionally, users must consider their own needs
         when it comes to
@@ -46,15 +46,15 @@
       <p><strong>How can we create a digital interactive tool that assists Tweakers users, particularly experienced
         computer
         builders, in selecting the right components for their build?</strong></p>
-      <h4>Research</h4>
-      <h5>Competitive Analysis</h5>
+      <h2>Research</h2>
+      <h3>Competitive Analysis</h3>
       <p>I kicked off my research by conducting an exploratory competitive analysis to investigate how different
         competitors assist users in building a computer, to explore how they approach the problem and to gain insights
         on the strengths and weaknesses of
         their approaches.</p>
       <img src="./img/pc-builder/0.png"
         alt="Aside from the obvious competitors, I also liked to look at websites that took a different approach such as LogicalIncrements. A website that offers recommendations based on a budget rather than a tool. The website had some interesting ways to display information I took note of.">
-      <h5>Interview</h5>
+      <h3>Interview</h3>
       <p>To better understand the target audience and the customer journey when building a computer, I conducted five
         semi-structured interviews. I discovered that the price-to-performance ratio was the most important factor in
         choosing a component. Gaming was the most common use case. Users relied heavily on recommendations, such as
@@ -67,7 +67,7 @@
         <p>...For example, I bought a small-form factor power supply on accident, and it
           turned out the cables were too short to use in my mid-size case.</p>
       </blockquote>
-      <h5>Survey</h5>
+      <h3>Survey</h3>
       <p>I also conducted a survey to obtain new insights and validate my earlier research. I shared the survey on the
         Tweakers website's Pricewatch pages for PC components, where my target audience was most accessible. With 425
         respondents, the majority of computer builders were experienced or highly experienced, with over 68.2% having
@@ -75,7 +75,7 @@
         price-to-performance ratio most of all.</p>
       <img src="./img/pc-builder/1.png"
         alt='Poll: "What information do you find most important when choosing a PC component? The vast majority (64.7%) chose "price-to-performance ratio" (N=425).'>
-      <h4>Concept Requirements</h4>
+      <h2>Concept Requirements</h2>
       <ul>
         <p>Based on the biggest takeaways of my research I set the following requirements for the PC builder:</p>
         <li>
@@ -98,7 +98,7 @@
           </p>
         </li>
       </ul>
-      <h4>Brainstorming & Ideation</h4>
+      <h2>Brainstorming & Ideation</h2>
       <p>During the ideation phase, I first analyzed the competition to identify best, good, and bad practices. One of
         the best practices that inspired me was Newegg's tool, which was integrated into the product catalog, creating a
         seamless user experience. I also found that tools that efficiently utilized screen space and provided important
@@ -132,7 +132,7 @@
         ensured that the final product aligned with their needs and wants.</p>
       <img src="./img/pc-builder/10.jpg"
         alt='The chosen direction, Concept 1, where the tool is integrated into the Pricewatch page. Shown here is the first iteration mocked up in the FigJam file, the design would later be taken to Figma.'>
-      <h4>Design Refinement</h4>
+      <h2>Design Refinement</h2>
       <img src="./img/pc-builder/11.jpg"
         alt='This is the first iteration of the design in Figma. Note the width, which makes the tool feel cramped. I addressed this issue in later iterations.'>
       <p>During the design process, I made several iterations to the tool to improve its functionality and aesthetics.
@@ -141,11 +141,11 @@
         warnings under components to provide a clear understanding of any issues. I also experimented with visually
         appealing designs for displaying the price-performance ratio, including icons and tables, but ultimately decided
         on a minimalist approach to avoid clutter.</p>
-      <h4>Concept Overview</h4>
+      <h2>Concept Overview</h2>
       <img src="./img/pc-builder/14.jpg"
         alt='The final iteration in the Figma file showcases the various states and features. The prototype and subsequent iterations would build upon this design.'>
       <ul>
-        <h5>Key Features</h5>
+        <h3>Key Features</h3>
         <li>Integration into the Tweakers Pricewatch page, leveraging existing features such as detailed
           filters, reducing development time, and enhancing discoverability.</li>
         <li>Uninterrupted navigation between product categories as the user browses and selects their components</li>
@@ -163,7 +163,7 @@
         integrates well with the existing Tweakers Pricewatch platform. The various features and states of the tool
         ensure that users can build a custom PC that meets their needs while minimizing screen space and providing
         feedback along the way.</p>
-      <h4>Prototype & Validation</h4>
+      <h2>Prototype & Validation</h2>
       <img src="./img/pc-builder/5.png" alt="A screenshot of the prototype as of its latest iteration.">
       <p>Using my strong foundation in front-end code, I was able to quickly create a testable prototype. The tool is
         inherently non-linear, and there are countless ways to use and navigate through it. With a programmatic
@@ -172,7 +172,7 @@
       <p>Creating and providing a prototype that closely resembles the final implementation allowed me to gain
         valuable
         insights, both qualitative and quantitative, during the project's validation phase.</p>
-      <h5>Validation</h5>
+      <h3>Validation</h3>
       <p>I conducted a validation process for the PC Builder tool through two test rounds and a final validation with a
         larger sample size to improve the tool's usability, compatibility check, and component information provision.
         Two
@@ -185,14 +185,14 @@
         alt="After the initial round of testing, I brainstormed some quick and simple solutions for the identified issues. This image shows my first idea, which involved using call-to-action prompts to guide users through the error correction process.">
       <img src="./img/pc-builder/15.png"
         alt="Users were especially enthusiastic about the price-to-performance ratio indication, proving it to be a well worthy addition.">
-      <h4>Future Considerations</h4>
-      <h5>Potential Impact</h5>
+      <h2>Future Considerations</h2>
+      <h3>Potential Impact</h3>
       <p>Implementing the PC builder tool on the Pricewatch page of Tweakers is reasonably expected to have a positive
         impact on revenue
         generation through increased referral links. The tool is likely to enhance users' confidence in their purchase
         decisions, resulting in more convenient and informed decision-making, thereby leading to more referral links.
       </p>
-      <h5>Feasability</h5>
+      <h3>Feasability</h3>
       <p>To realize the concept, I learned from talking to stakeholders that Tweakers will need to invest in making
         the
         current existing product data more suitable for the tool. While the concept is
@@ -200,7 +200,7 @@
         cases
         where the tool may not prevent all errors. The client needs to prepare for such scenarios, where users may try
         to hold them accountable for any damages caused.</p>
-      <h5>Recommendations</h5>
+      <h3>Recommendations</h3>
       <ul>
         <p>As a result of the usability tests and validation, I recommend Tweakers do the following when implementing
           the
@@ -220,7 +220,7 @@
         recommendations, and enable users to share their configurations with others. These changes would ultimately
         lead
         to better user satisfaction and higher conversion rates.</p>
-      <h4>Client Feedback</h4>
+      <h2>Client Feedback</h2>
       <blockquote cite="Bozhan Chipev, Senior UX designer at Tweakers">
         <p>As a UX designer at Tweakers and the supervisor of the internship programme at
           the company, I would say that the PC Builder feature that Arthur designed and

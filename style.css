@@ -80,13 +80,12 @@ p {
 
 h2,
 h3,
-h4,
-h5 {
+h4 {
   line-height: 120%;
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 32px;
   line-height: 150%;
 }
 
@@ -95,16 +94,7 @@ h2 {
 }
 
 h3 {
-  font-size: 28px;
-  font-weight: 400;
-}
-
-h4 {
   font-size: 24px;
-}
-
-h5 {
-  font-size: 22px;
 }
 
 main ul li {
@@ -115,20 +105,18 @@ main li::marker {
   font-weight: 900;
 }
 
-#content ol,
-#content ul {
+main li {
   list-style-position: inside;
   font-size: 20px;
   line-height: 150%;
 }
 
-#content ol li::marker,
-#content ul li::marker {
+main li::marker {
   color: var(--accent-color);
 }
 
-#content ol *,
-#content ul * {
+main ol *,
+main ul * {
   margin-bottom: .5rem;
 }
 
@@ -386,19 +374,6 @@ main {
   background-position: 0;
 }
 
-.card h2,
-.card h3,
-.card p {
-  width: 100%;
-  text-align: left;
-  line-height: 150%;
-  font-size: 20px;
-}
-
-.card h2 {
-  margin-bottom: .5rem;
-}
-
 footer {
   display: flex;
   align-items: center;
@@ -444,17 +419,20 @@ footer a:hover {
   margin: 1rem 0 0;
 }
 
-.card h3 {
+.card h2 {
   font-size: 20px;
   line-height: 150%;
+  font-weight: 400;
 }
 
-.heading h2,
-.card h2 {
+.heading span,
+.card span {
+  display: block;
   font-size: 18px;
   margin: 0 0 .5rem;
   text-transform: uppercase;
   font-weight: 600;
+  width: 100%;
 }
 
 #content {
@@ -499,9 +477,8 @@ footer a:hover {
 
 figcaption {
   margin: 1rem auto 0;
-  max-width: 640px;
   padding: 0 0 .5rem;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 150%;
   text-align: center;
   color: var(--font-color-caption);
@@ -511,17 +488,17 @@ figcaption {
   padding-top: 3rem;
 }
 
-#content h4:first-of-type {
+#content h2:first-of-type {
   margin: 0 auto 1rem;
 }
 
-#content h4 {
+#content h2 {
   border-left: 2px solid var(--accent-color);
   padding: 0 0 0 1rem;
   margin: 3.5rem auto 1rem;
 }
 
-#content h5 {
+#content h3 {
   margin: 1rem auto .5rem;
 }
 
