@@ -12,16 +12,19 @@ document.addEventListener("DOMContentLoaded", function () {
   const navTemplate = Handlebars.compile(`
     <ul>
       <li><a href="./index.html">Arthur</a></li>
+      <li><a href="./index.html">Work</a></li>
       <li><a href="./assets/Arthur-Menken_Resume-CV_2023.pdf" target="_blank">Resume</a></li>
       <li><a href="./about.html">About</a></li>
-      <div class="toggle-container">
-        <label class="switch">
-        <input type="checkbox" id="toggle-switch" aria-label="Toggle dark mode">
-        <span class="slider"></span>
-      </label>
-    </div>
+
+    
     </ul>
 `);
+
+/* <div class="toggle-container">
+<label class="switch">
+<input type="checkbox" id="toggle-switch" aria-label="Toggle dark mode">
+<span class="slider"></span>
+</label></div> */
 
   // define the data
   var footerData = {
