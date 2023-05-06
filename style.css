@@ -10,22 +10,6 @@
 }
 
 :root {
-  --main-bg-color: #F1F1F1;
-  --nav-bg-color: #222;
-  --surface-bg-color: #F8F8F8;
-  --primary-color: #FFBF00;
-  --secondary-color: #1A1AFF;
-  --slider-color: #222;
-  --slider-bg: #eee;
-  --anchor-color: #1A1AFF;
-  --accent-color: #FFBF00;
-  --font-family-body: 'Karla', sans-serif;
-  --font-color: #222;
-  --font-color-light: #F1F1F1;
-  --font-color-caption: #515151;
-}
-
-html[data-theme="dark"] {
   --main-bg-color: #111;
   --nav-bg-color: #000;
   --surface-bg-color: #222;
@@ -37,12 +21,8 @@ html[data-theme="dark"] {
   --accent-color: #FFBF00;
   --font-family-body: 'Karla', sans-serif;
   --font-color: #F1F1F1;
-  --font-color-light: #F1F1F1;
+  --font-color-dark: #222;
   --font-color-caption: #ACACAC;
-}
-
-[data-theme="dark"] .card>div>a {
-  color: #222;
 }
 
 html {
@@ -56,21 +36,23 @@ img {
 }
 
 a {
-  color: var(--anchor-color);
+  color: var(--anchor-color); 
+  text-decoration-color: var(--anchor-color);
+  text-decoration-thickness: .125rem;
+  text-underline-offset: .1875rem;
+  font-weight: 700;
+  text-decoration-style: underline;
+}
+
+h1 a {
   text-decoration: none;
-  font-weight: 600;
+  color: var(--primary-color);
 }
 
 #content a {
   font-size: 20px;
   white-space: nowrap;
   display: inline-block;
-}
-
-a:hover {
-  text-decoration: underline;
-  text-decoration-thickness: .125em;
-  text-underline-offset: .125em;
 }
 
 p {
@@ -352,7 +334,7 @@ main {
 
 .card>div>a {
   border-radius: 4px;
-  color: var(--font-color);
+  color: var(--font-color-dark);
   padding: 0 16px;
   margin: 2rem 0 0 auto;
   height: 40px;
@@ -375,7 +357,7 @@ main {
 }
 
 .card>div>a:hover {
-  color: var(--font-color-light);
+  color: var(--font-color);
   background-position: 0;
 }
 
@@ -402,14 +384,6 @@ footer a {
 
 footer a i {
   color: var(--anchor-color);
-}
-
-footer a:hover i {
-  color: var(--font-color);
-}
-
-footer a:hover {
-  text-decoration: none;
 }
 
 /* CASE STUDY PAGE */
@@ -482,10 +456,15 @@ footer a:hover {
 figcaption {
   margin: 1rem auto 0;
   padding: 0 0 .5rem;
+  max-width: 600px;
   font-size: 18px;
   line-height: 150%;
-  text-align: center;
+  text-align: left;
   color: var(--font-color-caption);
+}
+
+figure.quote figcaption {
+  text-align: center;
 }
 
 #content h1 {
