@@ -14,12 +14,12 @@
   --nav-bg-color: #000;
   --surface-bg-color: #222;
   --primary-color: #FFBF00;
-  --secondary-color: #1A1AFF;
+  --secondary-color: #640DFF;
   --slider-color: #222;
   --slider-bg: #FFBF00;
   --anchor-color: #FFBF00;
   --accent-color: #FFBF00;
-  --font-family-body: 'Karla', sans-serif;
+  --font-family-body: 'Jost', sans-serif;
   --font-color: #F1F1F1;
   --font-color-dark: #222;
   --font-color-caption: #ACACAC;
@@ -40,7 +40,7 @@ a {
   text-decoration-color: var(--anchor-color);
   text-decoration-thickness: .125rem;
   text-underline-offset: .1875rem;
-  font-weight: 700;
+  font-weight: 500;
   text-decoration-style: underline;
 }
 
@@ -64,11 +64,13 @@ h2,
 h3,
 h4 {
   line-height: 120%;
+  font-weight: 500;
 }
 
 h1 {
   font-size: 32px;
   line-height: 150%;
+  font-weight: 500;
 }
 
 h2 {
@@ -84,7 +86,7 @@ main ul li {
 }
 
 main li::marker {
-  font-weight: 900;
+  font-weight: 500;
 }
 
 main li {
@@ -157,7 +159,7 @@ nav ul li a {
   align-items: center;
   flex-direction: row;
   text-align: center;
-  font-weight: bold;
+  font-weight: 500;
   padding: 0 8px;
   background-image: linear-gradient(to right,
       var(--primary-color),
@@ -186,7 +188,6 @@ nav ul li a::before {
 
 nav ul li a:hover,
 .active {
-  color: var(--secondary-color);
   background-position: 0;
   text-decoration: none;
 }
@@ -410,7 +411,7 @@ footer a i {
   font-size: 20px;
   margin: 0 0 .5rem;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 500;
   width: 100%;
 }
 
@@ -482,7 +483,7 @@ figure.quote figcaption {
 }
 
 #content h3 {
-  margin: 1rem auto .5rem;
+  margin: 1rem auto;
 }
 
 #content figure.quote {
