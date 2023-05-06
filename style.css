@@ -19,7 +19,7 @@
   --slider-bg: #FFBF00;
   --anchor-color: #FFBF00;
   --accent-color: #FFBF00;
-  --font-family-body: 'Jost', sans-serif;
+  --font-family-body: 'Hind', sans-serif;
   --font-color: #F1F1F1;
   --font-color-dark: #222;
   --font-color-caption: #ACACAC;
@@ -47,6 +47,7 @@ a {
 h1 a {
   text-decoration: none;
   color: var(--primary-color);
+  font-weight: inherit;
 }
 
 #content a {
@@ -64,13 +65,13 @@ h2,
 h3,
 h4 {
   line-height: 120%;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 h1 {
   font-size: 32px;
   line-height: 150%;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 h2 {
@@ -86,7 +87,7 @@ main ul li {
 }
 
 main li::marker {
-  font-weight: 500;
+  font-weight: 700;
 }
 
 main li {
@@ -143,8 +144,9 @@ nav ul li {
 }
 
 nav ul li:first-of-type>a {
-  font-family: 'Orbitron', sans-serif;
-  background-position: 0 !important;
+  background-position: 100% !important;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 nav ul li:first-of-type>a::before {
@@ -339,7 +341,7 @@ main {
   padding: 0 16px;
   margin: 2rem 0 0 auto;
   height: 40px;
-  line-height: 40px;
+  line-height: 44px;
   background-image: linear-gradient(to right,
       var(--secondary-color),
       var(--secondary-color) 50%,
@@ -408,10 +410,10 @@ footer a i {
 .heading span,
 .card span {
   display: block;
-  font-size: 20px;
+  font-size: 18px;
   margin: 0 0 .5rem;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
   width: 100%;
 }
 
@@ -525,8 +527,9 @@ blockquote :last-child {
   font-size: 96px;
   position: absolute;
   left: 50%;
-  top: -27px;
+  top: -16px;
   transform: translateX(-50%);
+  font-family: 'Arial', sans-serif;
 }
 
 blockquote p {
