@@ -140,7 +140,6 @@ nav ul li {
   align-self: center;
   font-size: 18px;
   height: 64px;
-  letter-spacing: .3px;
 }
 
 nav ul li:first-of-type>a {
@@ -328,6 +327,7 @@ main {
 #open-in-new-tab {
   background: var(--surface-bg-color);
   height: 40px;
+  text-decoration: none;
   width: fit-content;
   line-height: 40px;
   padding: 0 16px;
@@ -553,7 +553,7 @@ blockquote p {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   opacity: 0;
-  animation: modalFadeIn 0.3s ease-in-out forwards;
+  animation: modalFadeIn 0.2s ease-in-out forwards;
 }
 
 .modal-container {
@@ -583,7 +583,7 @@ blockquote p {
   color: var(--slider-bg);
   cursor: pointer;
   width: 32px;
-  line-height: 26px;
+  line-height: 36px;
   margin: 0;
   text-align: center;
   font-weight: lighter;
