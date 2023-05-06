@@ -127,7 +127,7 @@ nav ul {
   flex-flow: row nowrap;
   box-sizing: border-box;
   justify-content: space-between;
-  max-width: 1200px;
+  max-width: 1024px;
   height: 100%;
   margin: 0 auto;
 }
@@ -271,7 +271,7 @@ input:checked+.slider:before {
 main {
   max-width: calc(100% - 2rem);
   margin: 32px auto 16px;
-  width: 1200px;
+  width: 1024px;
 }
 
 #hero {
@@ -560,7 +560,7 @@ blockquote p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1200px;
+  max-width: 1024px;
   width: 100%;
   height: 100%;
   padding: 0;
