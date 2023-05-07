@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   <a href="https://dribbble.com/artioer" target="_blank"><i class="fa-brands fa-dribbble fa-2xl"></i></a>
   <a href="mailto:arthur_menken@hotmail.com"><i class="fa-regular fa-at fa-2xl"></i></a>
   </div>
+    &copy; Copyright {{currentYear}}
 `);
 
   const navTemplate = Handlebars.compile(`
@@ -17,7 +18,12 @@ document.addEventListener("DOMContentLoaded", function () {
     </ul>
 `);
 
+  // define the data
+  var footerData = {
+    currentYear: new Date().getFullYear(),
+  };
+
   // render the templates with the data
-  document.querySelector('footer').innerHTML = footerTemplate();
+  document.querySelector('footer').innerHTML = footerTemplate(footerData);
   document.querySelector('nav').innerHTML = navTemplate();
 });
