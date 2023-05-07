@@ -6,15 +6,15 @@ document.addEventListener("DOMContentLoaded", function () {
   <a href="https://dribbble.com/artioer" target="_blank"><i class="fa-brands fa-dribbble fa-2xl"></i></a>
   <a href="mailto:arthur_menken@hotmail.com"><i class="fa-regular fa-at fa-2xl"></i></a>
   </div>
-    &copy; Copyright {{currentYear}}
+    &copy; {{currentYear}}
 `);
 
   const navTemplate = Handlebars.compile(`
     <ul>
       <li><a href="./index.html">Arthur</a></li>
       <li><a href="./index.html">Work</a></li>
-      <li><a href="./assets/Arthur-Menken_Resume-CV_2023.pdf" target="_blank">Resume</a></li>
       <li><a href="./about.html">About</a></li>
+      <li><a href="./assets/Arthur-Menken_Resume-CV_2023.pdf" target="_blank">Resume</a></li>
     </ul>
 `);
 

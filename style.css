@@ -82,10 +82,6 @@ h3 {
   font-size: 24px;
 }
 
-main ul li {
-  list-style-type: '— ';
-}
-
 main li::marker {
   font-weight: 700;
 }
@@ -102,7 +98,7 @@ main li::marker {
 
 main ol *,
 main ul * {
-  margin-bottom: .5rem;
+  margin-bottom: .5em;
 }
 
 /* NAV */
@@ -377,7 +373,7 @@ footer {
 footer div {
   display: flex;
   flex-flow: row;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 footer a {
@@ -427,12 +423,12 @@ footer a i {
 
 #content>* {
   width: 100%;
-  margin: 0 auto 1.5rem;
+  margin: 0 auto 1.5em;
 }
 
 #content figure:not(.quote) {
   max-width: 680px;
-  margin: 2rem auto 1.5rem;
+  margin: 2rem auto 1.5em;
 }
 
 #content>*:last-child {
@@ -469,22 +465,27 @@ figure.quote figcaption {
   text-align: center;
 }
 
-#content h1 {
+#content.about h1 {
   padding-top: 3rem;
 }
 
+#content.about h2 {
+  padding-left: 0;
+  border: none;
+}
+
 #content h2:first-of-type {
-  margin: 0 auto 1rem;
+  margin: 0 auto 1em;
 }
 
 #content h2 {
   border-left: 2px solid var(--accent-color);
   padding: 0 0 0 1rem;
-  margin: 3.5rem auto 1rem;
+  margin: 2em auto 1em;
 }
 
 #content h3 {
-  margin: 1rem auto;
+  margin: 1em auto .75em;
 }
 
 #content figure.quote {
