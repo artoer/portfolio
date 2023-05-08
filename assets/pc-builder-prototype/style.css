@@ -187,6 +187,7 @@ body {
     background: #d2d3d3;
     margin-right: 0;
     transition: margin 0.7s ease-in-out;
+    padding-bottom: 100px;
 }
 
 a {

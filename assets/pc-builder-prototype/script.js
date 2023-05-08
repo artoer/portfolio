@@ -72,7 +72,7 @@ let components = {
         "price": 339,
         "power": 105,
         "socket": "Socket AM4",
-        "score": 172.0
+        "score": 211.7
     }, {
         "name": "AMD Ryzen 9 7950X Boxed",
         "image": "./images/cpu2.png",
@@ -80,7 +80,7 @@ let components = {
         "price": 619,
         "power": 170,
         "socket": "Socket AM5",
-        "score": 173.8
+        "score": 203
     }, {
         "name": "Intel Core i7-13700K Boxed",
         "image": "./images/cpu3.png",
@@ -88,7 +88,7 @@ let components = {
         "price": 485.30,
         "power": 253,
         "socket": "Socket 1700",
-        "score": 188.0
+        "score": 229.2
     }, {
         "name": "Intel Core i5-13600K Boxed",
         "image": "./images/cpu4.png",
@@ -96,7 +96,7 @@ let components = {
         "price": 339,
         "power": 181,
         "socket": "Socket 1700",
-        "score": 174.3
+        "score": 209.7
     }, {
         "name": "Intel Core i5-12600K Boxed",
         "image": "./images/cpu5.png",
@@ -104,157 +104,258 @@ let components = {
         "price": 289,
         "power": 150,
         "socket": "Socket 1700",
-        "score": 165.6
+        "score": 162.1
+    }, {
+        "name": "AMD Ryzen 7 7700X Boxed",
+        "image": "./images/cpu6.png",
+        "specs": "AM5 socket • Octa (8) core @ 4,5GHz-5,4GHz",
+        "price": 299,
+        "power": 105,
+        "socket": "Socket AM5",
+        "score": 205.5
     }],
 
     mobo: [{
-        "name": "Gigabyte B550 AORUS ELITE V2",
-        "image": "./images/mobo1.png",
-        "specs": "Socket AM4 • ATX • AMD B550 chipset",
-        "price": 139.99,
-        "socket": "Socket AM4",
-        "ddr": 4
-    },
-    {
-        "name": "ASUS ROG Strix B650E-F GAMING WIFI",
-        "image": "./images/mobo2.png",
-        "specs": "Socket AM5 • ATX • AMD B650 chipset",
-        "price": 319.90,
-        "socket": "Socket AM5",
-        "ddr": 5
-    },
-    {
-        "name": "Gigabyte AORUS Z790 ELITE AX",
-        "image": "./images/mobo3.png",
-        "specs": "Socket 1700 • ATX • Intel Z790 chipset",
-        "price": 299,
-        "socket": "Socket 1700",
-        "ddr": 5
-    }
+            "name": "Gigabyte B550 AORUS ELITE V2",
+            "image": "./images/mobo1.png",
+            "specs": "Socket AM4 • ATX • AMD B550 chipset",
+            "price": 139.99,
+            "socket": "Socket AM4",
+            "ddr": 4,
+            "form" : "ATX"
+        },
+        {
+            "name": "ASUS ROG Strix B650E-F GAMING WIFI",
+            "image": "./images/mobo2.png",
+            "specs": "Socket AM5 • ATX • AMD B650 chipset",
+            "price": 319.90,
+            "socket": "Socket AM5",
+            "ddr": 5,
+            "form" : "ATX"
+        },
+        {
+            "name": "Gigabyte AORUS Z790 ELITE AX",
+            "image": "./images/mobo3.png",
+            "specs": "Socket 1700 • ATX • Intel Z790 chipset",
+            "price": 299,
+            "socket": "Socket 1700",
+            "ddr": 5,
+            "form" : "ATX"
+        },
+        {
+            "name": "Gigabyte B550M DS3H (rev. 1.0/1.1/1.2/1.3)",
+            "image": "./images/mobo4.png",
+            "specs": "Socket AM4 • Micro-ATX • AMD B550 chipset",
+            "price": 89.9,
+            "socket": "Socket AM4",
+            "ddr": 4,
+            "form" : "mATX"
+        },
+        {
+            "name": "MSI MAG B660M Mortar DDR4",
+            "image": "./images/mobo5.png",
+            "specs": "Socket 1700 • Micro-ATX • Intel B660 chipset",
+            "price": 166.98,
+            "socket": "Socket 1700",
+            "ddr": 4,
+            "form" : "mATX"
+        },
+        {
+            "name": "ASRock B650M PG Riptide",
+            "image": "./images/mobo6.png",
+            "specs": "Socket AM5 • Micro-ATX • AMD B650 chipset",
+            "price": 179,
+            "socket": "Socket AM5",
+            "ddr": 5,
+            "form" : "mATX"
+        }
     ],
 
     gpu: [{
-        "name": "Gigabyte GeForce RTX 4070 Ti Gaming OC 12G",
-        "image": "./images/gpu1.png",
-        "specs": "Max. 2,64GHz • GDDR6X • 3x DP, HDMI",
-        "price": 969,
-        "mlength": 336,
-        "power": 291,
-        // "score4k": 84.4,
-        // "score1440": 141.1,
-        "score": 185.1
-    },
-    {
-        "name": "Inno3D GeForce RTX 3050 Twin X2 OC",
-        "image": "./images/gpu2.png",
-        "specs": "Max. 1,822GHz • GDDR6 • 3x DP, HDMI",
-        "price": 299,
-        "mlength": 240,
-        "power": 231,
-        // "score4k": 28.5,
-        // "score1440": 51.2,
-        "score": 69.2
-    },
-    {
-        "name": "Gigabyte GeForce RTX 3070 Ti GAMING OC 8G",
-        "image": "./images/gpu3.png",
-        "specs": "Max. 1,83GHz • GDDR6X • 2x DP, 2x HDMI",
-        "price": 739,
-        "mlength": 320,
-        "power": 311,
-        // "score4k": 60.6,
-        // "score1440": 99.4,
-        "score": 113.8
-    },
+            "name": "Gigabyte GeForce RTX 4070 Ti Gaming OC 12G",
+            "image": "./images/gpu1.png",
+            "specs": "Max. 2,64GHz • GDDR6X • 3x DP, HDMI",
+            "price": 969,
+            "mlength": 336,
+            "power": 291,
+            "score": 185.1
+        },
+        {
+            "name": "Inno3D GeForce RTX 3050 Twin X2 OC",
+            "image": "./images/gpu2.png",
+            "specs": "Max. 1,822GHz • GDDR6 • 3x DP, HDMI",
+            "price": 299,
+            "mlength": 240,
+            "power": 231,
+            "score": 69.2
+        },
+        {
+            "name": "Gigabyte GeForce RTX 3070 Ti GAMING OC 8G",
+            "image": "./images/gpu3.png",
+            "specs": "Max. 1,83GHz • GDDR6X • 2x DP, 2x HDMI",
+            "price": 739,
+            "mlength": 320,
+            "power": 311,
+            "score": 113.8
+        },
+        {
+            "name": "Nvidia GeForce RTX 3080 Founders Edition",
+            "image": "./images/gpu4.png",
+            "specs": "Max. 1,71GHz • 10GB GDDR6X • 3x DP, HDMI",
+            "price": 1024.99,
+            "mlength": 285,
+            "power": 320,
+            "score": 150.5
+        }
+        ,
+        {
+            "name": "Sapphire Nitro+ Radeon RX 6700 XT (11306-01-20G)",
+            "image": "./images/gpu5.png",
+            "specs": "Max. 2,622GHz • 12GB GDDR6 • 3x DP, HDMI",
+            "price": 999,
+            "mlength": 310,
+            "power": 260,
+            "score": 143.5
+        }
     ],
 
     ram: [{
-        "name": "Corsair Vengeance LPX CMK16GX4M2B3200C16",
-        "image": "./images/ram1.png",
-        "specs": "16GB DDR4 @ 3.200MT/s, kit van 2",
-        "price": 48.99,
-        "ddr": 4
-    },
-    {
-        "name": "Corsair Vengeance RGB Pro CMW32GX4M2Z3600C18",
-        "image": "./images/ram2.png",
-        "specs": "32GB DDR4 @ 3.600MT/s, kit van 2",
-        "price": 99.99,
-        "ddr": 4
-    },
-    {
-        "name": "Corsair Vengeance CMK32GX5M2B5600C36",
-        "image": "./images/ram3.png",
-        "specs": "32GB DDR5 @ 5.600MT/s, kit van 2",
-        "price": 99.99,
-        "ddr": 5
-    },
+            "name": "Corsair Vengeance LPX CMK16GX4M2B3200C16",
+            "image": "./images/ram1.png",
+            "specs": "16GB DDR4 @ 3.200MT/s, kit van 2",
+            "price": 48.99,
+            "ddr": 4
+        },
+        {
+            "name": "Corsair Vengeance RGB Pro CMW32GX4M2Z3600C18",
+            "image": "./images/ram2.png",
+            "specs": "32GB DDR4 @ 3.600MT/s, kit van 2",
+            "price": 99.99,
+            "ddr": 4
+        },
+        {
+            "name": "Corsair Vengeance CMK32GX5M2B5600C36",
+            "image": "./images/ram3.png",
+            "specs": "32GB DDR5 @ 5.600MT/s, kit van 2",
+            "price": 99.99,
+            "ddr": 5
+        },
+        {
+            "name": "G.Skill Trident Z5 Neo F5-6000J3038F16GX2-TZ5N",
+            "image": "./images/ram4.png",
+            "specs": "32GB DDR5 @ 6.000MT/s, kit van 2",
+            "price": 178.86,
+            "ddr": 5
+        },
+        {
+            "name": "Kingston Fury Beast KF548C38BB-16",
+            "image": "./images/ram5.png",
+            "specs": "32GB DDR5 @ 5.600MT/s, kit van 2",
+            "price": 64.03,
+            "ddr": 5
+        },
     ],
 
     case: [{
-        "name": "Fractal Design North - TG Clear Charcoal Black",
-        "image": "./images/case1.png",
-        "specs": "Tower • 4 interne bays",
-        "price": 163.23,
-        "form": "ATX",
-        "mlength": 355
-    },
-    {
-        "name": "Cooler Master MasterBox NR200P Zwart",
-        "image": "./images/case2.png",
-        "specs": "Small form factor • 3 interne bays",
-        "price": 63,
-        "form": "ATX",
-        "mlength": 330
-    },
-    {
-        "name": "Corsair 4000D Airflow Tempered Glass Zwart",
-        "image": "./images/case3.png",
-        "specs": "Tower • 4 interne bays",
-        "price": 103.90,
-        "form": "ATX",
-        "mlength": 360
-    },
+            "name": "Fractal Design North - TG Clear Charcoal Black",
+            "image": "./images/case1.png",
+            "specs": "Tower • 4 interne bays",
+            "price": 163.23,
+            "form": "ATX",
+            "mlength": 355
+        },
+        {
+            "name": "Cooler Master MasterBox NR200P Zwart",
+            "image": "./images/case2.png",
+            "specs": "Small form factor • 3 interne bays",
+            "price": 63,
+            "form": "mATX",
+            "mlength": 330
+        },
+        {
+            "name": "Corsair 4000D Airflow Tempered Glass Zwart",
+            "image": "./images/case3.png",
+            "specs": "Tower • 4 interne bays",
+            "price": 103.90,
+            "form": "ATX",
+            "mlength": 360
+        },{
+            "name": "NZXT H7 Flow Zwart",
+            "image": "./images/case4.png",
+            "specs": "Tower • 8 interne bays",
+            "price": 129.90 ,
+            "form": "ATX",
+            "mlength": 400
+        },{
+            "name": "Fractal Design Pop Air Black TG Clear",
+            "image": "./images/case5.png",
+            "specs": "Tower • 4 interne + 2 externe bays",
+            "price": 79.37 ,
+            "form": "ATX",
+            "mlength": 405
+        },
     ],
 
     ssd: [{
-        "name": "Samsung 980 1TB",
-        "image": "./images/ssd1.png",
-        "specs": "M.2 80mm • 3d v-nand (TLC) • PCI-e 3.0 x4",
-        "price": 75
-    },
-    {
-        "name": "WD Blue SN570 1TB",
-        "image": "./images/ssd2.png",
-        "specs": "M.2 80mm • 3d v-nand (TLC) • PCI-e 3.0 x4",
-        "price": 59.89
-    },
-    {
-        "name": "Kingston NV2 1TB",
-        "image": "./images/ssd3.png",
-        "specs": "M.2 80mm • 3d v-nand (QLC) • PCI-e 4.0 x4",
-        "price": 53.84
-    },
+            "name": "Samsung 980 1TB",
+            "image": "./images/ssd1.png",
+            "specs": "M.2 80mm • 3d v-nand (TLC) • PCI-e 3.0 x4",
+            "price": 75
+        },
+        {
+            "name": "WD Blue SN570 1TB",
+            "image": "./images/ssd2.png",
+            "specs": "M.2 80mm • 3d v-nand (TLC) • PCI-e 3.0 x4",
+            "price": 59.89
+        },
+        {
+            "name": "Kingston NV2 1TB",
+            "image": "./images/ssd3.png",
+            "specs": "M.2 80mm • 3d v-nand (QLC) • PCI-e 4.0 x4",
+            "price": 53.84
+        },{
+            "name": "Samsung 970 Evo Plus 2TB",
+            "image": "./images/ssd4.png",
+            "specs": "M.2 80mm • 3d v-nand (TLC) • PCI-e 3.0 x4",
+            "price": 129
+        },{
+            "name": "Samsung 980 Pro (zonder heatsink) 2TB",
+            "image": "./images/ssd5.png",
+            "specs": "M.2 80mm • 3d v-nand (TLC) • PCI-e 4.0 x4",
+            "price": 177.60
+        },
     ],
 
     pfan: [{
-        "name": "Cooler Master Hyper 212 Black Edition with LGA1700",
-        "image": "./images/pfan1.png",
-        "specs": "120mm diameter met 26dB geluidsproductie",
-        "price": 36.91
-    },
-    {
-        "name": "be quiet! Pure Rock 2 Zwart",
-        "image": "./images/pfan2.png",
-        "specs": "120mm diameter met 26,8dB geluidsproductie",
-        "price": 39.55
-    },
-    {
-        "name": "be quiet! Dark Rock Pro 4",
-        "image": "./images/pfan3.png",
-        "specs": "135mm diameter met 24,3dB geluidsproductie",
-        "price": 88.35
-    }
+            "name": "Cooler Master Hyper 212 Black Edition with LGA1700",
+            "image": "./images/pfan1.png",
+            "specs": "120mm diameter met 26dB geluidsproductie",
+            "price": 36.91
+        },
+        {
+            "name": "be quiet! Pure Rock 2 Zwart",
+            "image": "./images/pfan2.png",
+            "specs": "120mm diameter met 26,8dB geluidsproductie",
+            "price": 39.55
+        },
+        {
+            "name": "be quiet! Dark Rock Pro 4",
+            "image": "./images/pfan3.png",
+            "specs": "135mm diameter met 24,3dB geluidsproductie",
+            "price": 88.35
+        },
+        {
+            "name": "Scythe Mugen 5 Rev.C",
+            "image": "./images/pfan4.png",
+            "specs": "120mm diameter met 26dB geluidsproductie",
+            "price": 54.4
+        },
+        {
+            "name": "be quiet! Dark Rock Pro 4",
+            "image": "./images/pfan5.png",
+            "specs": "135mm diameter met 24,3dB geluidsproductie",
+            "price": 88.35
+        }
     ],
 
     cfan: [{
@@ -275,7 +376,20 @@ let components = {
         "specs": "19,8dB bij maximaal 1.000rpm",
         "price": 10.17,
         "fsize": 140
-    },],
+    }, {
+        "name": "Noctua NF-A12x25 PWM Bruin, 120mm",
+        "image": "./images/cfan4.png",
+        "specs": "22,6dB bij maximaal 2.000rpm",
+        "price": 28.8,
+        "fsize": 120
+    }, {
+        "name": "Noctua NF-A14 PWM Bruin, 140mm",
+        "image": "./images/cfan5.png",
+        "specs": "24,6dB bij maximaal 1.500rpm",
+        "price": 23.9,
+        "fsize": 140
+    }, 
+],
 
     psu: [{
         "name": "Corsair RM850x (2021) Zwart",
@@ -295,7 +409,20 @@ let components = {
         "specs": "550W (80 Plus Gold) • volledig modulair",
         "price": 97.89,
         "power": 550
-    },]
+    }, {
+        "name": "Corsair RM750 (2019)",
+        "image": "./images/psu4.png",
+        "specs": "750W (80 Plus Gold) • volledig modulair",
+        "price": 103.96,
+        "power": 750
+    }, {
+        "name": "Corsair SF750 (2018)",
+        "image": "./images/psu5.png",
+        "specs": "750W (80 Plus Platinum EU) • volledig modulair",
+        "price": 168.92,
+        "power": 750
+    }, 
+]
 }
 
 // bron: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
