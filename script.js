@@ -55,8 +55,8 @@ window.addEventListener("DOMContentLoaded", (event) => {
     // move img inside figure
     figure.appendChild(img);
 
-    if (img.classList == 'float') {
-      figure.classList = 'float';
+    if (img.classList == 'bg') {
+      figure.classList = 'bg';
     }
 
     if (img.getAttribute('alt') != '') {
