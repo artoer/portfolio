@@ -1,5 +1,4 @@
 /* ROOT */
-/* test */
 
 * {
   padding: 0;
@@ -11,10 +10,11 @@
 }
 
 :root {
-  --main-bg-color: #111;
-  --surface-bg-color: #222;
+  --main-bg-color: #0E0C12;
+  --surface-bg-color: #1F1B26;
   --primary-color: #FFBF00;
   --secondary-color: #640DFF;
+  --img-bg-color: linear-gradient(to top left, #1F1B26, #4C0ABF);
   --slider-color: #222;
   --slider-bg: #FFBF00;
   --anchor-color: #FFBF00;
@@ -36,7 +36,7 @@ img {
 }
 
 a {
-  color: var(--anchor-color); 
+  color: var(--anchor-color);
   text-decoration-color: var(--anchor-color);
   text-decoration-thickness: .125rem;
   text-underline-offset: .1875rem;
@@ -68,13 +68,13 @@ h4 {
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 36px;
   line-height: 135%;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 32px;
 }
 
 h3 {
@@ -290,7 +290,7 @@ main {
 }
 
 .card {
-  border-radius: 16px;
+  border-radius: 24px;
   display: grid;
   grid-template-rows: 300px auto;
   background: var(--surface-bg-color);
@@ -386,7 +386,7 @@ footer a i {
 
 /* CASE STUDY PAGE */
 .heading {
-  max-width: 680px;
+
   margin: 0 auto 3.5rem;
   padding: calc(3rem + 2px) 0;
   border-bottom: 2px solid var(--accent-color);
@@ -405,29 +405,37 @@ footer a i {
 .heading span,
 .card span {
   display: block;
-  font-size: 18px;
-  margin: 0 0 .5rem;
+  font-size: 20px;
+  margin: 0 auto .5rem;
   font-weight: 600;
   width: 100%;
 }
 
 #content {
   width: 100%;
-  max-width: 680px;
+
   margin: 0 auto;
   padding: 0;
   background-color: var(--main-bg-color);
   color: var(--font-color);
 }
 
+.heading>* {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
 #content>* {
+  max-width: 680px;
   width: 100%;
   margin: 0 auto 1.5em;
 }
 
 #content figure:not(.quote) {
-  max-width: 680px;
-  margin: 2rem auto 1.5em;
+  display: flex;
+  flex-direction: column;
+  max-width: none;
+  margin-top: 2rem;
 }
 
 #content>*:last-child {
@@ -438,8 +446,8 @@ footer a i {
   display: block;
   width: 100%;
   pointer-events: none;
-  border-radius: 8px;
-  max-height: 768px;
+  border-radius: 0px;
+  max-height: calc(100vh - 10rem);
   object-fit: contain;
 }
 
@@ -451,10 +459,11 @@ footer a i {
 }
 
 figcaption {
-  margin: 1rem auto 0;
-  padding: 0 0 .5rem;
-  max-width: 600px;
-  font-size: 18px;
+  margin: 1em auto 0;
+  padding: 0 0 .5em;
+  max-width: 680px;
+  width: 100%;
+  font-size: 20px;
   line-height: 150%;
   text-align: left;
   color: var(--font-color-caption);
@@ -491,7 +500,7 @@ figure.quote figcaption {
 #content figure.quote {
   background-color: var(--surface-bg-color);
   padding: 4rem 1.5rem 1.5rem;
-  border-radius: 8px;
+  border-radius: 24px;
 }
 
 #content figure.quote figcaption {
@@ -513,7 +522,7 @@ figure.quote figcaption {
   padding: 24px;
   font-size: 18px;
   line-height: 150%;
-  border-radius: 8px;
+  border-radius: 24px;
   quotes: "\201C""\201D"
 }
 
@@ -561,7 +570,6 @@ blockquote p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1200px;
   width: 100%;
   height: 100%;
   padding: 0;
@@ -659,15 +667,14 @@ blockquote p {
     margin: 2rem auto 0 0;
   }
 
-  /* .heading {
-    padding: 16px 0;
-  } */
-
   #content img {
     width: auto;
     cursor: pointer;
     pointer-events: unset;
     max-width: 100%;
-    margin: 0 auto;
+    padding: 1.5rem;
+    aspect-ratio: 16 / 10;
+    background: var(--img-bg-color);
+    border-radius: 24px;
   }
 }
