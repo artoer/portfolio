@@ -64,7 +64,7 @@ h2,
 h3,
 h4 {
   line-height: 120%;
-  font-weight: 640;
+  font-weight: 600;
 }
 
 h1 {
@@ -407,7 +407,7 @@ footer a i {
   display: block;
   font-size: 20px;
   margin: 0 auto .5rem;
-  font-weight: 640;
+  font-weight: 600;
   width: 100%;
 }
 
@@ -441,7 +441,7 @@ footer a i {
 
 #content figure:not(.quote) {
   max-width: none;
-  margin-top: 3rem;
+  margin-top: 1.5em;
 }
 
 #content figure.bg:not(.quote) {
@@ -669,7 +669,7 @@ blockquote p {
     cursor: pointer;
     pointer-events: unset;
     max-width: 100%;
-    max-height: 640px;
+    max-height: 600px;
     margin: 0 auto;
     border-radius: 4px;
   }
