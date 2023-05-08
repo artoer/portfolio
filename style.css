@@ -64,7 +64,7 @@ h2,
 h3,
 h4 {
   line-height: 120%;
-  font-weight: 600;
+  font-weight: 640;
 }
 
 h1 {
@@ -122,7 +122,7 @@ nav ul {
   flex-flow: row nowrap;
   box-sizing: border-box;
   justify-content: space-between;
-  max-width: 1200px;
+  max-width: 1280px;
   height: 100%;
   margin: 0 auto;
 }
@@ -266,11 +266,11 @@ input:checked+.slider:before {
 main {
   max-width: calc(100% - 2rem);
   margin: 32px auto 16px;
-  width: 1200px;
+  width: 980px;
 }
 
 #hero {
-  max-width: 680px;
+  max-width: 640px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -407,7 +407,7 @@ footer a i {
   display: block;
   font-size: 20px;
   margin: 0 auto .5rem;
-  font-weight: 600;
+  font-weight: 640;
   width: 100%;
 }
 
@@ -421,12 +421,12 @@ footer a i {
 }
 
 .heading>* {
-  max-width: 680px;
+  max-width: 640px;
   margin: 0 auto;
 }
 
 #content>* {
-  max-width: 680px;
+  max-width: 640px;
   width: 100%;
   margin: 0 auto 1.5em;
 }
@@ -440,8 +440,6 @@ footer a i {
 }
 
 #content figure:not(.quote) {
-  /* display: flex;
-  flex-direction: column; */
   max-width: none;
   margin-top: 3rem;
 }
@@ -464,7 +462,7 @@ footer a i {
 figcaption {
   margin: 1em auto 0;
   padding: 0 0 .5em;
-  max-width: 680px;
+  max-width: 640px;
   width: 100%;
   font-size: 20px;
   line-height: 150%;
@@ -671,7 +669,7 @@ blockquote p {
     cursor: pointer;
     pointer-events: unset;
     max-width: 100%;
-    max-height: 750px;
+    max-height: 640px;
     margin: 0 auto;
     border-radius: 4px;
   }
