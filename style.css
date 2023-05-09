@@ -441,7 +441,7 @@ footer a i {
 
 #content figure:not(.quote) {
   max-width: none;
-  margin-top: 1.5em;
+  margin: 1.5em auto 2em;
 }
 
 #content figure.bg:not(.quote) {
@@ -464,7 +464,7 @@ figcaption {
   padding: 0 0 .5em;
   max-width: 640px;
   width: 100%;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 150%;
   text-align: left;
   color: var(--font-color-caption);
@@ -479,6 +479,10 @@ figure.quote figcaption {
   margin-bottom: 1rem;
 }
 
+#content.about h2:first-of-type {
+  margin-top: 0;
+}
+
 #content.about h2 {
   padding-left: 0;
   border: none;
@@ -489,6 +493,10 @@ figure.quote figcaption {
   padding: 0 0 0 1rem;
   margin: 2em auto 1.5rem;
 }
+
+/* #content h2:first-of-type {
+  margin-top: 1em;
+} */
 
 #content h3 {
   margin: 1em auto 1rem;
@@ -501,7 +509,7 @@ figure.quote figcaption {
 }
 
 #content figure.quote figcaption {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 #content figure.quote figcaption::before {
@@ -669,7 +677,7 @@ blockquote p {
     cursor: pointer;
     pointer-events: unset;
     max-width: 100%;
-    max-height: 600px;
+    max-height: 612.5px;
     margin: 0 auto;
     border-radius: 4px;
   }
