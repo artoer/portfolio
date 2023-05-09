@@ -336,7 +336,7 @@ main {
   padding: 0 16px;
   margin: 2rem 0 0 auto;
   height: 40px;
-  line-height: 44px;
+  line-height: 42px;
   background-image: linear-gradient(to right,
       var(--secondary-color),
       var(--secondary-color) 50%,
@@ -347,7 +347,6 @@ main {
   text-decoration: none;
   font-size: 18px;
 }
-
 
 .card>div>a::after {
   margin-left: 8px;
@@ -398,6 +397,7 @@ footer a i {
 
 .card h2 {
   font-size: 20px;
+  width: 100%;
   line-height: 150%;
   font-weight: 400;
 }
@@ -493,10 +493,6 @@ figure.quote figcaption {
   padding: 0 0 0 1rem;
   margin: 2em auto 1.5rem;
 }
-
-/* #content h2:first-of-type {
-  margin-top: 1em;
-} */
 
 #content h3 {
   margin: 1em auto 1rem;
@@ -677,8 +673,10 @@ blockquote p {
     cursor: pointer;
     pointer-events: unset;
     max-width: 100%;
-    max-height: 612.5px;
+    min-width: 640px;
+    max-height: 551.25px;
     margin: 0 auto;
+    background: var(--surface-bg-color);
     border-radius: 4px;
   }
 
