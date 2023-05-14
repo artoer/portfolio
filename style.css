@@ -197,7 +197,7 @@ nav ul li a:hover::before {
   width: 56px;
   height: 28px;
   background: var(--slider-bg);
-  border-radius: 24px;
+  border-radius: 12px;
 }
 
 .switch input {
@@ -217,7 +217,7 @@ nav ul li a:hover::before {
   background-position: calc(100% - 5px) 5px;
   -webkit-transition: .4s;
   transition: .4s;
-  border-radius: 24px;
+  border-radius: 12px;
 }
 
 .slider::before {
@@ -230,7 +230,7 @@ nav ul li a:hover::before {
   background-color: var(--slider-color);
   -webkit-transition: .4s;
   transition: .4s;
-  border-radius: 24px;
+  border-radius: 12px;
 }
 
 input:checked+.slider {
@@ -276,6 +276,7 @@ main {
   align-items: start;
   padding: 6rem 0;
   margin: 0px auto 2rem;
+  gap: .25rem;
 }
 
 .hero-text {
@@ -288,9 +289,9 @@ main {
 }
 
 .card {
-  border-radius: 24px;
+  border-radius: 12px;
   display: grid;
-  grid-template-rows: 300px auto;
+  grid-template-rows: 256px auto;
   background: var(--surface-bg-color);
   overflow: hidden;
 }
@@ -474,7 +475,7 @@ figure.quote figcaption {
 
 #content.about h1 {
   padding-top: 3rem;
-  margin-bottom: 0;
+  margin-bottom: .25rem;
 }
 
 #content.about h2:first-of-type {
@@ -499,7 +500,7 @@ figure.quote figcaption {
 #content figure.quote {
   background-color: var(--surface-bg-color);
   padding: 5rem 1.5rem 1.5rem;
-  border-radius: 24px;
+  border-radius: 12px;
 }
 
 #content figure.quote figcaption {
@@ -521,7 +522,7 @@ figure.quote figcaption {
   padding: 24px;
   font-size: 20px;
   line-height: 150%;
-  border-radius: 24px;
+  border-radius: 12px;
   quotes: "\201C""\201D"
 }
 
@@ -583,13 +584,13 @@ blockquote p {
 #typing-text::after {
   content: "";
   display: inline-block;
-  height: 1em;
+  height: 1.2em;
   width: .125rem;
   background-color: var(--font-color);
   position: absolute;
-  top: .75em;
+  top: 50%;
   transform: translateY(-50%);
-  right: -0.1em;
+  right: -0.125em;
   animation: blink-caret 0.75s infinite;
 }
 
@@ -611,7 +612,7 @@ blockquote p {
 
 .close-btn {
   font-size: 36px;
-  color: var(--slider-bg);
+  color: var(--primary-color);
   cursor: pointer;
   width: 32px;
   line-height: 36px;
@@ -622,7 +623,7 @@ blockquote p {
   background: none;
   opacity: 1;
   border-radius: 50%;
-  background-color: var(--slider-color);
+  background-color: var(--surface-bg-color);
   position: absolute;
   top: 0;
   right: 0;
@@ -679,8 +680,8 @@ blockquote p {
   }
 
   .card {
-    min-height: 300px;
-    height: 300px;
+    min-height: 256px;
+    height: 256px;
     grid-template-columns: calc(50% - 2px) auto;
     grid-template-rows: none;
   }
@@ -710,6 +711,6 @@ blockquote p {
     padding: 1.5rem;
     aspect-ratio: 4 / 3;
     background: var(--img-bg-color);
-    border-radius: 24px;
+    border-radius: 12px;
   }
 }

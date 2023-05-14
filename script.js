@@ -95,36 +95,38 @@ window.addEventListener("DOMContentLoaded", (event) => {
   });
 });
 
-const skills = ["designing", "researching", "defining", "ideating", "creating", "prototyping", "validating", "optimizing"];
-let currentSkillIndex = 0;
+if (document.getElementById("typing-text")) {
+  const skills = ["designing", "researching", "defining", "ideating", "creating", "prototyping", "validating", "optimizing"];
+  let currentSkillIndex = 0;
 
-function typeSentence() {
-  const typingText = document.getElementById("typing-text");
-  const currentSkill = skills[currentSkillIndex];
-  const typingDelay = 100; // Delay between each character typing
-  const erasingDelay = 80; // Delay between removing each character
+  function typeSentence() {
+    const typingText = document.getElementById("typing-text");
+    const currentSkill = skills[currentSkillIndex];
+    const typingDelay = 100; // Delay between each character typing
+    const erasingDelay = 80; // Delay between removing each character
 
-  // Typing effect
-  for (let i = 0; i <= currentSkill.length; i++) {
-    setTimeout(() => {
-      typingText.textContent = currentSkill.slice(0, i);
-    }, i * typingDelay);
-  }
-
-  // Wait before erasing the text and moving to the next skill
-  setTimeout(() => {
-    // Erase the text
-    for (let i = currentSkill.length; i >= 0; i--) {
+    // Typing effect
+    for (let i = 0; i <= currentSkill.length; i++) {
       setTimeout(() => {
         typingText.textContent = currentSkill.slice(0, i);
-      }, (currentSkill.length - i) * erasingDelay);
+      }, i * typingDelay);
     }
 
-    // Move to the next skill
-    currentSkillIndex = (currentSkillIndex + 1) % skills.length;
-    setTimeout(typeSentence, currentSkill.length * erasingDelay);
-  }, currentSkill.length * typingDelay + 2000); // Delay before moving to the next skill
-}
+    // Wait before erasing the text and moving to the next skill
+    setTimeout(() => {
+      // Erase the text
+      for (let i = currentSkill.length; i >= 0; i--) {
+        setTimeout(() => {
+          typingText.textContent = currentSkill.slice(0, i);
+        }, (currentSkill.length - i) * erasingDelay);
+      }
 
-// Start the typing animation when the page loads
-window.addEventListener("load", typeSentence);
+      // Move to the next skill
+      currentSkillIndex = (currentSkillIndex + 1) % skills.length;
+      setTimeout(typeSentence, currentSkill.length * erasingDelay);
+    }, currentSkill.length * typingDelay + 2000); // Delay before moving to the next skill
+  }
+
+  // Start the typing animation when the page loads
+  window.addEventListener("load", typeSentence);
+}
