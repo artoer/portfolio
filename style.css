@@ -274,7 +274,8 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  padding: 6rem 0;
+  height: 320px;
+  padding: 0;
   margin: 0px auto 2rem;
   gap: .25rem;
 }
