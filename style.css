@@ -283,15 +283,15 @@ main {
   padding: 0 16px;
 }
 
-#card-container {
+#work {
   display: grid;
-  row-gap: 16px;
+  row-gap: 2rem;
 }
 
 .card {
   border-radius: 12px;
   display: grid;
-  grid-template-rows: 256px auto;
+  grid-template-rows: auto auto;
   background: var(--surface-bg-color);
   overflow: hidden;
 }
@@ -313,7 +313,7 @@ main {
   align-items: center;
   text-align: left;
   color: var(--font-color-);
-  padding: 2rem;
+  padding: 1.5rem;
   border: none;
   border-top: 2px solid var(--primary-color);
 }
@@ -680,10 +680,8 @@ blockquote p {
   }
 
   .card {
-    min-height: 256px;
-    height: 256px;
-    grid-template-columns: calc(50% - 2px) auto;
-    grid-template-rows: none;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
   }
 
   .card>div {

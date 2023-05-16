@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const navTemplate = Handlebars.compile(`
     <ul>
-      <li><a href="./index.html">Arthur</a></li>
-      <li><a href="./index.html">Work</a></li>
+      <li><a href="./">Arthur</a></li>
+      <li><a href="./#work">Work</a></li>
       <li><a href="./about.html">About</a></li>
       <li><a href="./assets/Arthur-Menken_Resume-CV_2023.pdf" target="_blank">Resume</a></li>
     </ul>
