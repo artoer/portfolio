@@ -383,6 +383,12 @@ footer a i {
   color: var(--primary-color);
 }
 
+footer span {
+  /* margin-left: -1.25em; */
+  color: var(--font-color-caption);
+  font-size: 18px;
+}
+
 /* CASE STUDY PAGE */
 .heading {
   max-width: 900px;
