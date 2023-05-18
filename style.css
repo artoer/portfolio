@@ -121,7 +121,7 @@ nav ul {
   flex-flow: row nowrap;
   box-sizing: border-box;
   justify-content: space-between;
-  max-width: 1280px;
+  max-width: 1200px;
   height: 100%;
   margin: 0 auto;
 }
@@ -264,8 +264,8 @@ input:checked+.slider:before {
 
 main {
   max-width: calc(100% - 2rem);
-  margin: 32px auto 16px;
-  width: 980px;
+  margin: 2rem auto;
+  width: 1200px;
 }
 
 #hero {
@@ -290,14 +290,15 @@ main {
 }
 
 .card {
-  border-radius: 12px;
   display: grid;
   grid-template-rows: auto auto;
   background: var(--surface-bg-color);
+  border-radius: 12px;
   overflow: hidden;
 }
 
 .card>img {
+  border-radius: 0px;
   height: 100%;
   width: 100%;
   overflow: hidden;
@@ -314,9 +315,8 @@ main {
   align-items: center;
   text-align: left;
   color: var(--font-color-);
-  padding: 1.5rem;
+  padding: 1.5rem 2rem;
   border: none;
-  border-top: 2px solid var(--primary-color);
 }
 
 #open-in-new-tab {
@@ -364,7 +364,7 @@ footer {
   justify-content: center;
   flex-direction: column;
   row-gap: 2rem;
-  margin: 6rem 0 4rem;
+  padding: 6rem 0 4rem;
   width: 100%;
 }
 
@@ -385,9 +385,9 @@ footer a i {
 
 /* CASE STUDY PAGE */
 .heading {
-
+  max-width: 900px;
   margin: 0 auto 3.5rem;
-  padding: calc(3rem + 2px) 0;
+  padding: 3rem 0 2.5rem;
   border-bottom: 2px solid var(--primary-color);
 }
 
@@ -406,14 +406,14 @@ footer a i {
 .card span {
   display: block;
   font-size: 20px;
-  margin: 0 auto .125rem;
+  margin: 0 auto .125rem 0;
   font-weight: 600;
   width: 100%;
 }
 
 #content {
+  max-width: 900px;
   width: 100%;
-
   margin: 0 auto;
   padding: 0;
   background-color: var(--main-bg-color);
@@ -421,14 +421,13 @@ footer a i {
 }
 
 .heading>* {
-  max-width: 640px;
-  margin: 0 auto;
+  margin: 0 auto 0 0;
 }
 
 #content>* {
-  max-width: 640px;
+  max-width: 680px;
   width: 100%;
-  margin: 0 auto 1.5em;
+  margin: 0 auto 1.5em 0;
 }
 
 #content>*:first-child {
@@ -440,8 +439,12 @@ footer a i {
 }
 
 #content figure:not(.quote) {
-  max-width: none;
-  margin: 1.5em auto 2em;
+  margin: 1.5em auto 2em 0;
+  display: flex;
+  flex-flow: column nowrap;
+  min-width: min-content;
+  width: auto;
+  max-width: 100%;
 }
 
 #content figure.bg:not(.quote) {
@@ -460,9 +463,8 @@ footer a i {
 
 
 figcaption {
-  margin: 1em auto 0;
-  padding: 0 0 .5em;
-  max-width: 640px;
+  margin: 1.25rem auto 0 0;
+  padding: 0 1.5rem 1.25rem;
   width: 100%;
   font-size: 18px;
   line-height: 150%;
@@ -475,7 +477,7 @@ figure.quote figcaption {
 }
 
 #content.about h1 {
-  padding-top: 3rem;
+  padding-top: 6rem;
   margin-bottom: .25rem;
 }
 
@@ -490,12 +492,12 @@ figure.quote figcaption {
 
 #content h2 {
   border-left: 2px solid var(--primary-color);
-  padding: 0 0 0 1rem;
-  margin: 2em auto 1.5rem;
+  padding: 5px 0 0 1.5rem;
+  margin: 2em auto 1.5rem 0;
 }
 
 #content h3 {
-  margin: 1em auto 1rem;
+  margin: 1em auto 1rem 0;
 }
 
 #content figure.quote {
@@ -680,28 +682,29 @@ blockquote p {
     margin-bottom: 0rem;
   }
 
-  .card {
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr;
+  .card>img {
+    border-radius: 12px;
   }
 
-  .card>div {
-    border: none;
-    border-left: 2px solid var(--primary-color);
+  .card {
+    background: none;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: auto;
+    border-radius: 0px;
   }
 
   .card>div>a {
-    margin: 1.5rem auto 0 0;
+    margin: 2rem auto 0 0;
   }
 
   #content img {
-    width: auto;
+    width: 100%;
     cursor: pointer;
     pointer-events: unset;
-    max-width: 100%;
-    min-width: 640px;
-    max-height: 551.25px;
-    margin: 0 auto;
+    /* max-width: 100%; */
+    min-width: 680px;
+    max-height: 506.25px;
+    margin: 0 auto 0 0;
     background: var(--surface-bg-color);
     border-radius: 4px;
   }
