@@ -10,14 +10,14 @@
 }
 
 :root {
-  --main-bg-color: #0E0C12;
+  --main-bg-color: #131017;
   --surface-bg-color: #1F1B26;
   --primary-color: #FFBF00;
   --secondary-color: #640DFF;
   --font-family-body: 'Hind', sans-serif;
-  --font-color: #F1F1F1;
-  --font-color-dark: #0E0C12;
-  --font-color-caption: #ACACAC;
+  --font-color: #E6E6E6;
+  --font-color-dark: #1A1A1A;
+  --font-color-caption: #B3B3B3;
 }
 
 html {
@@ -431,7 +431,7 @@ footer span {
 }
 
 #content>* {
-  max-width: 680px;
+  max-width: 640px;
   width: 100%;
   margin: 0 auto 1.5em 0;
 }
@@ -709,8 +709,8 @@ blockquote p {
     width: auto;
     cursor: pointer;
     pointer-events: unset;
-    min-width: 680px;
-    max-height: 680px;
+    min-width: 640px;
+    max-height: 640px;
     margin: 0;
     border-radius: 4px;
   }
