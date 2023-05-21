@@ -364,7 +364,7 @@ footer {
   justify-content: center;
   flex-direction: column;
   row-gap: 2rem;
-  padding: 6rem 0 4rem;
+  padding: 6rem 0 6rem;
   width: 100%;
 }
 
@@ -392,13 +392,9 @@ footer span {
 /* CASE STUDY PAGE */
 .heading {
   max-width: 768px;
-  margin: 0 auto 4rem;
-  padding: 3rem 0 1rem;
+  margin: 0 auto 3rem;
+  padding: 3rem 0 1.5rem;
   border-bottom: 2px solid var(--primary-color);
-}
-
-.heading p {
-  margin: 1rem 0 0;
 }
 
 .card h2 {
@@ -433,7 +429,7 @@ footer span {
 #content>* {
   max-width: 640px;
   width: 100%;
-  margin: 0 auto 1.5em 0;
+  margin: 0 auto 1.5rem 0;
 }
 
 #content>*:first-child {
@@ -445,11 +441,13 @@ footer span {
 }
 
 #content figure:not(.quote) {
-  margin: 1.5em auto 2em 0;
+  margin: 1.5rem auto 2rem 0;
   display: flex;
   flex-flow: column nowrap;
   width: min-content;
   max-width: 100%;
+  background: var(--surface-bg-color);
+  border-radius: 4px;
 }
 
 #content figure.bg:not(.quote) {
@@ -471,8 +469,8 @@ footer span {
 
 
 figcaption {
-  margin: 1.25rem 0 0 0;
-  padding: 0 1.5rem 0;
+  margin: 1.5rem 0 0 0;
+  padding: 0 1.5rem 1.5rem;
   width: auto;
   font-size: 18px;
   line-height: 150%;
@@ -485,7 +483,7 @@ figure.quote figcaption {
 }
 
 #content.about h1 {
-  padding-top: 6rem;
+  padding-top: 4rem;
   margin-bottom: .25rem;
 }
 
@@ -494,18 +492,19 @@ figure.quote figcaption {
 }
 
 #content.about h2 {
-  padding-left: 0;
+  padding: 0;
   border: none;
 }
 
 #content h2 {
-  border-left: 2px solid var(--primary-color);
-  padding: 5px 0 0 1.5rem;
-  margin: 2em auto 1.5rem 0;
+  border-bottom: 2px solid var(--primary-color);
+  padding: 0 0 1rem;
+  margin: 4.5rem auto 1.5rem 0;
+  max-width: 100%;
 }
 
 #content h3 {
-  margin: 1em auto 1rem 0;
+  margin: 1.5rem auto 1rem 0;
 }
 
 #content figure.quote {
@@ -516,6 +515,7 @@ figure.quote figcaption {
 
 #content figure.quote figcaption {
   font-size: 18px;
+  padding: 0 1.5rem .5rem;
 }
 
 #content figure.quote figcaption::before {
@@ -695,10 +695,8 @@ blockquote p {
   }
 
   .card {
-    background: none;
     grid-template-columns: 3fr 2fr;
     grid-template-rows: auto;
-    border-radius: 0px;
   }
 
   .card>div>a {
