@@ -384,7 +384,6 @@ footer a i {
 }
 
 footer span {
-  /* margin-left: -1.25em; */
   color: var(--font-color-caption);
   font-size: 18px;
 }
@@ -414,6 +413,7 @@ footer span {
 }
 
 #content {
+  position: relative;
   max-width: 768px;
   width: 100%;
   margin: 0 auto;
@@ -448,6 +448,8 @@ footer span {
   max-width: 100%;
   background: var(--surface-bg-color);
   border-radius: 4px;
+  min-width: 100vw;
+  margin-left: calc(100vw - 100% - 3rem);
 }
 
 #content figure.bg:not(.quote) {
@@ -461,12 +463,9 @@ footer span {
   pointer-events: none;
   border-radius: 0px;
   max-height: calc(100vh - 10rem);
-  min-width: 100vw;
-  margin-left: calc(100vw - 100% - 3rem);
   object-fit: contain;
   background: var(--surface-bg-color);
 }
-
 
 figcaption {
   margin: 1.5rem 0 0 0;
@@ -682,12 +681,38 @@ blockquote p {
     object-fit: contain;
   }
 
-  #content figure.float {
+  body #content figure.float {
     float: right;
-    max-width: calc(50% - 1rem);
-    margin-top: 8px;
-    margin-right: 1rem;
-    margin-bottom: 0rem;
+    max-width: calc(100% - 440px);
+    height: auto;
+    margin-top: .5rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+
+  body #content figure.float.profile {
+    z-index: 1;
+    margin-bottom: 1.5rem;
+    border-radius: 16px;
+  }
+
+  body #content figure.float.profile::after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    display: block;
+    height: calc(100% + 4px);
+    width: calc(100% + 4px);
+    background: linear-gradient(to bottom right, var(--secondary-color), var(--primary-color));
+    top: -2px;
+    left: -2px;
+    border-radius: inherit;
+  }
+
+  #content figure.float.profile img {
+    min-width: unset;
+    border-radius: inherit;
   }
 
   .card>img {
@@ -718,5 +743,10 @@ blockquote p {
     aspect-ratio: 4 / 3;
     background: var(--img-bg-color);
     border-radius: 12px;
+  }
+
+  #content figure:not(.quote) {
+    min-width: unset;
+    margin: 1.5rem auto 2rem 0;
   }
 }
