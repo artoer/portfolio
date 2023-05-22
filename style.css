@@ -280,13 +280,9 @@ main {
   gap: .25rem;
 }
 
-.hero-text {
-  padding: 0 16px;
-}
-
 #work {
   display: grid;
-  row-gap: 2rem;
+  row-gap: 1.5rem;
 }
 
 .card {
@@ -308,19 +304,19 @@ main {
   display: flex;
   height: 100%;
   width: 100%;
-  color: var(--primary-color);
   flex-direction: column;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
   text-align: left;
-  color: var(--font-color-);
+  color: var(--font-color);
   padding: 1.5rem 2rem;
   border: none;
 }
 
 #open-in-new-tab {
-  background: var(--surface-bg-color);
+  background: var(--primary-color);
+  color: var(--font-color-dark);
   height: 40px;
   text-decoration: none;
   width: fit-content;
@@ -412,6 +408,12 @@ footer span {
   width: 100%;
 }
 
+.heading span.about {
+  display: inline-block;
+  font-size: inherit;
+  width: auto;
+}
+
 #content {
   position: relative;
   max-width: 768px;
@@ -479,20 +481,6 @@ figcaption {
 
 figure.quote figcaption {
   text-align: center;
-}
-
-#content.about h1 {
-  padding-top: 4rem;
-  margin-bottom: .25rem;
-}
-
-#content.about h2:first-of-type {
-  margin-top: 0;
-}
-
-#content.about h2 {
-  padding: 0;
-  border: none;
 }
 
 #content h2 {
@@ -685,34 +673,14 @@ blockquote p {
     float: right;
     max-width: calc(100% - 440px);
     height: auto;
-    margin-top: .5rem;
-    margin-left: 1rem;
-    margin-bottom: 1rem;
+    margin-top: .25rem;
+    margin-left: 1.25rem;
+    margin-bottom: 1.25rem;
     position: relative;
   }
 
-  body #content figure.float.profile {
-    z-index: 1;
-    margin-bottom: 1.5rem;
-    border-radius: 16px;
-  }
-
-  body #content figure.float.profile::after {
-    content: '';
-    z-index: -1;
-    position: absolute;
-    display: block;
-    height: calc(100% + 4px);
-    width: calc(100% + 4px);
-    background: linear-gradient(to bottom right, var(--secondary-color), var(--primary-color));
-    top: -2px;
-    left: -2px;
-    border-radius: inherit;
-  }
-
-  #content figure.float.profile img {
+  #content figure.float img {
     min-width: unset;
-    border-radius: inherit;
   }
 
   .card>img {
