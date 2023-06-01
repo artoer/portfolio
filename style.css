@@ -329,10 +329,10 @@ main {
 .card>div>a {
   border-radius: 4px;
   color: var(--font-color-dark);
-  padding: 0 16px;
+  padding: 0 1.5rem;
   margin: 2rem 0 0 auto;
-  height: 40px;
-  line-height: 42px;
+  height: 48px;
+  line-height: 48px;
   background-image: linear-gradient(to right,
       var(--secondary-color),
       var(--secondary-color) 50%,
@@ -342,6 +342,7 @@ main {
   transition: all 0.2s ease-in-out;
   text-decoration: none;
   font-size: 18px;
+  box-shadow: 0 0 24px -8px var(--primary-color);
 }
 
 .card>div>a::after {
@@ -352,6 +353,7 @@ main {
 .card>div>a:hover {
   color: var(--font-color);
   background-position: 0;
+  box-shadow: 0 0 24px -8px var(--secondary-color);
 }
 
 footer {
