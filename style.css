@@ -332,7 +332,6 @@ main {
   padding: 0 1.5rem;
   margin: 2rem 0 0 auto;
   height: 48px;
-  line-height: 48px;
   background-image: linear-gradient(to right,
       var(--secondary-color),
       var(--secondary-color) 50%,
@@ -342,12 +341,16 @@ main {
   transition: all 0.2s ease-in-out;
   text-decoration: none;
   font-size: 18px;
+  font-weight: 600;
   box-shadow: 0 0 24px -8px var(--primary-color);
+  display: flex;
+  flex-direction: row;
+  gap: .75rem;
+  align-items: center;
 }
 
-.card>div>a::after {
-  margin-left: 8px;
-  content: '»';
+.card>div>a>i {
+  color:inherit;
 }
 
 .card>div>a:hover {
