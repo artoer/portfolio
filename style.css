@@ -288,13 +288,12 @@ main {
 .card {
   display: grid;
   grid-template-rows: auto auto;
-  background: var(--surface-bg-color);
   border-radius: 12px;
   overflow: hidden;
 }
 
 .card>img {
-  border-radius: 0px;
+  border-radius: 12px;
   height: 100%;
   width: 100%;
   overflow: hidden;
@@ -310,7 +309,7 @@ main {
   align-items: center;
   text-align: left;
   color: var(--font-color);
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 2rem 2rem;
   border: none;
 }
 
@@ -329,9 +328,10 @@ main {
 .card>div>a {
   border-radius: 4px;
   color: var(--font-color-dark);
-  padding: 0 1.5rem;
-  margin: 2rem 0 0 auto;
+  padding: 0 2rem;
+  margin: 1.5rem 0 0 auto;
   height: 48px;
+  width: 100%;
   background-image: linear-gradient(to right,
       var(--secondary-color),
       var(--secondary-color) 50%,
@@ -345,12 +345,13 @@ main {
   box-shadow: 0 0 24px -8px var(--primary-color);
   display: flex;
   flex-direction: row;
+  justify-content: center;
   gap: .75rem;
   align-items: center;
 }
 
 .card>div>a>i {
-  color:inherit;
+  color: inherit;
 }
 
 .card>div>a:hover {
@@ -688,17 +689,14 @@ blockquote p {
     min-width: unset;
   }
 
-  .card>img {
-    border-radius: 12px;
-  }
-
   .card {
     grid-template-columns: 3fr 2fr;
     grid-template-rows: auto;
   }
 
   .card>div>a {
-    margin: 2rem auto 0 0;
+    margin: 1.5rem auto 0 0;
+    width: auto;
   }
 
   #content img {
