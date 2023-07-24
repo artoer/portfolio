@@ -96,7 +96,16 @@ window.addEventListener("DOMContentLoaded", (event) => {
 });
 
 if (document.getElementById("typing-text")) {
-  const skills = ["designing", "researching", "defining", "ideating", "creating", "prototyping", "validating", "optimizing"];
+  const skills = [
+    "designing",
+    "researching",
+    "prototyping",
+    "testing",
+    "conceptualizing",
+    "implementing",
+    "evaluating",
+    "collaborating"
+  ];
   let currentSkillIndex = 0;
 
   function typeSentence() {

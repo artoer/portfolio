@@ -309,7 +309,7 @@ main {
   align-items: center;
   text-align: left;
   color: var(--font-color);
-  padding: 1.5rem 2rem 2rem;
+  padding: 1.5rem 0 2rem;
   border: none;
 }
 
@@ -692,6 +692,10 @@ blockquote p {
   .card {
     grid-template-columns: 3fr 2fr;
     grid-template-rows: auto;
+  }
+
+  .card>div {
+    padding: 0 2rem 2rem;
   }
 
   .card>div>a {
