@@ -104,7 +104,7 @@ if (document.getElementById("typing-text")) {
     "conceptualizing",
     "implementing",
     "evaluating",
-    "collaborating"
+    "collaborating on"
   ];
   let currentSkillIndex = 0;
 
