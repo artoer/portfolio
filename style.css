@@ -25,7 +25,7 @@ html {
   background-color: var(--main-bg-color);
   overflow-y: scroll;
   scrollbar-width: thin;
-  scrollbar-color: var(--primary-color) rgba(0, 0, 0, .3);
+  scrollbar-color: rgba(255, 191, 0, .8) rgba(0, 0, 0, .3);
 }
 
 img {
