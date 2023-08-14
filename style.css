@@ -10,8 +10,9 @@
 }
 
 :root {
-  --main-bg-color: #131017;
-  --surface-bg-color: #1F1B26;
+  --main-bg-color: #20112D;
+  --surface-bg-color: rgba(0, 0, 0, .25);
+  --main-bg-gradient: linear-gradient(135deg, #010004, #0D0026, #332233);
   --primary-color: #FFBF00;
   --secondary-color: #640DFF;
   --font-family-body: 'Hind', sans-serif;
@@ -21,10 +22,12 @@
 }
 
 html {
+  height: 100%;
   scroll-behavior: smooth;
   background-color: var(--main-bg-color);
+  background-image: var(--main-bg-gradient);
+  background-attachment: fixed;
   overflow-y: scroll;
-  scrollbar-color: rgba(255, 191, 0, .8) rgba(0, 0, 0, .3);
 }
 
 img {
@@ -103,14 +106,12 @@ main ul * {
 /* NAV */
 
 nav {
-  height: 100%;
-  max-height: 64px;
+  height: 96px;
   width: 100%;
   margin: 0 auto;
   padding: 0 1rem;
   overflow: scroll;
   scrollbar-width: none;
-  background: var(--surface-bg-color);
 }
 
 nav::-webkit-scrollbar {
@@ -156,7 +157,7 @@ nav ul li a {
   flex-direction: row;
   text-align: center;
   font-weight: 500;
-  padding: 0 8px;
+  padding: 0 8px 0;
   background-image: linear-gradient(to right,
       var(--primary-color),
       var(--primary-color) 50%,
@@ -277,7 +278,7 @@ main {
   align-items: start;
   height: 360px;
   padding: 0;
-  margin: 0px auto 2rem;
+  margin: 0px auto 4rem;
   gap: .5rem;
 }
 
@@ -427,7 +428,6 @@ footer span {
   width: 100%;
   margin: 0 auto;
   padding: 0;
-  background-color: var(--main-bg-color);
   color: var(--font-color);
 }
 
@@ -453,7 +453,6 @@ footer span {
   margin: 1.5rem auto 2rem 0;
   display: flex;
   flex-flow: column nowrap;
-  width: min-content;
   max-width: 100%;
   background: var(--surface-bg-color);
   border-radius: 4px;
@@ -473,7 +472,6 @@ footer span {
   border-radius: 0px;
   max-height: calc(100vh - 10rem);
   object-fit: contain;
-  background: var(--surface-bg-color);
 }
 
 figcaption {
@@ -505,6 +503,9 @@ figure.quote figcaption {
   background-color: var(--surface-bg-color);
   padding: 5rem 1.5rem 1.5rem;
   border-radius: 12px;
+  max-width: none;
+  min-width: 100vw;
+  margin-left: calc(100vw - 100% - 3rem);
 }
 
 #content figure.quote figcaption {
@@ -520,10 +521,11 @@ figure.quote figcaption {
   padding: 0;
   border-radius: 0px;
   position: relative;
+  max-width: 640px;
+  margin: 0 auto;
 }
 
 #content blockquote {
-  background-color: var(--surface-bg-color);
   padding: 24px;
   font-size: 20px;
   line-height: 150%;
@@ -628,7 +630,7 @@ blockquote p {
   background: none;
   opacity: 1;
   border-radius: 50%;
-  background-color: var(--surface-bg-color);
+  background-color: var(--font-color-dark);
   position: absolute;
   top: 0;
   right: 0;
@@ -647,7 +649,7 @@ blockquote p {
   }
 
   nav ul li a {
-    padding: 0 16px;
+    padding: 0 1rem 0;
   }
 
   .toggle-container {
@@ -688,6 +690,11 @@ blockquote p {
 
   #content figure.float img {
     min-width: unset;
+  }
+
+  #content figure.quote {
+    min-width: unset;
+    margin: 0;
   }
 
   .card {
