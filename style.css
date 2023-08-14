@@ -24,7 +24,6 @@ html {
   scroll-behavior: smooth;
   background-color: var(--main-bg-color);
   overflow-y: scroll;
-  scrollbar-width: thin;
   scrollbar-color: rgba(255, 191, 0, .8) rgba(0, 0, 0, .3);
 }
 
@@ -276,10 +275,10 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  height: 320px;
+  height: 360px;
   padding: 0;
-  margin: 0px auto 2rem;
-  gap: .25rem;
+  margin: 0px auto 4rem;
+  gap: .5rem;
 }
 
 #work {
