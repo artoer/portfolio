@@ -7,8 +7,12 @@ window.addEventListener("DOMContentLoaded", (event) => {
   const modalImg = document.createElement('img');
   modalImg.id = 'modal-img';
   modalImg.classList.add('modal-img');
+  modalImg.addEventListener('click', () => {
+    window.open(modalImg.src, '_blank');
+  });
   const closeBtn = document.createElement('span');
   closeBtn.id = 'close-btn';
+  closeBtn.title = 'Close'
   closeBtn.classList.add('close-btn');
   closeBtn.innerHTML = '&times;';
   closeBtn.addEventListener('click', () => {
@@ -18,7 +22,8 @@ window.addEventListener("DOMContentLoaded", (event) => {
   openInNewTabLink.id = 'open-in-new-tab';
   openInNewTabLink.classList.add('open-in-new-tab');
   openInNewTabLink.target = '_blank';
-  openInNewTabLink.innerHTML = 'Open in New Tab';
+  openInNewTabLink.title = "Open in New Tab"
+  openInNewTabLink.innerHTML = '<i class="fa-solid fa-expand fa-xl"></i>';
   openInNewTabLink.addEventListener('click', () => {
     event.stopPropagation();
   });
@@ -30,10 +35,9 @@ window.addEventListener("DOMContentLoaded", (event) => {
   modalImgContainer.classList = 'modal-img-container';
   modalContainer.appendChild(modalImgContainer);
 
-  // modalContainer.appendChild(closeBtn);
   modalImgContainer.appendChild(modalImg);
   modalImgContainer.appendChild(closeBtn);
-  modalContainer.appendChild(openInNewTabLink);
+  modalImgContainer.appendChild(openInNewTabLink);
 
   // Append modal to document body
   document.body.appendChild(modal);
@@ -94,6 +98,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
     }
   });
 });
+
 
 if (document.getElementById("typing-text")) {
   const skills = [
