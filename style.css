@@ -689,8 +689,8 @@ blockquote p {
     margin: auto;
     border-radius: 0;
     width: 100%;
-    max-height: calc(100vh - 6rem);
-    max-width: calc(100vw - 6rem);
+    max-height: calc(100vh - 16rem);
+    max-width: calc(100vw - 16rem);
     object-fit: contain;
     cursor: zoom-in;
   }
