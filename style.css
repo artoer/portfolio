@@ -472,8 +472,6 @@ footer span {
   max-width: 100%;
   background: var(--surface-bg-color);
   border-radius: 4px;
-  min-width: 100vw;
-  margin-left: calc(100vw - 100% - 3rem);
 }
 
 #content figure.bg:not(.quote) {
@@ -486,7 +484,7 @@ footer span {
   width: auto;
   pointer-events: none;
   border-radius: 0px;
-  max-height: calc(100vh - 10rem);
+  max-height: calc(100vh - 8rem);
   object-fit: contain;
 }
 
@@ -520,8 +518,6 @@ figure.quote figcaption {
   padding: 5rem 1.5rem 1.5rem;
   border-radius: 12px;
   max-width: none;
-  min-width: 100vw;
-  margin-left: calc(100vw - 100% - 3rem);
 }
 
 #content figure.quote figcaption {
