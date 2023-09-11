@@ -263,7 +263,7 @@ input:checked+.slider:before {
 
 main {
   max-width: calc(100% - 2rem);
-  margin: 2rem auto;
+  margin: 0 auto;
   width: 1200px;
 }
 
@@ -288,7 +288,6 @@ main {
   display: grid;
   grid-template-rows: auto auto;
   border-radius: 12px;
-  overflow: hidden;
 }
 
 .card>img {
