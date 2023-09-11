@@ -10,13 +10,13 @@
 }
 
 :root {
-  --main-bg-color: #E6E6E6;
+  --main-bg-color: #EEE;
   --surface-bg-color: rgba(0, 0, 0, .05);
   --primary-color: #640DFF;
   --secondary-color: #FFF;
   --font-family-body: 'Hind', sans-serif;
-  --font-color: #1A1A1A;
-  --font-color-dark: #E6E6E6;
+  --font-color: #222;
+  --font-color-dark: #EEE;
 }
 
 html {
