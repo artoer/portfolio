@@ -10,13 +10,13 @@
 }
 
 :root {
-  --main-bg-color: #EEE;
+  --main-bg-color: #F7F5FA;
   --surface-bg-color: rgba(0, 0, 0, .05);
   --primary-color: #640DFF;
   --secondary-color: #FFF;
   --font-family-body: 'Archivo', sans-serif;
   --font-color: #222;
-  --font-color-dark: #EEE;
+  --font-color-alt: #F7F5FA;
 }
 
 html {
@@ -330,12 +330,12 @@ main {
 }
 
 #open-in-new-tab i {
-  color: var(--font-color-dark);
+  color: var(--font-color-alt);
 }
 
 .card>div>a {
   border-radius: 4px;
-  color: var(--font-color-dark);
+  color: var(--font-color-alt);
   padding: 0 2rem;
   margin: 1rem 0 0 auto;
   height: 48px;
@@ -638,7 +638,7 @@ blockquote p {
   background: none;
   opacity: 1;
   border-radius: 50%;
-  background-color: var(--font-color-dark);
+  background-color: var(--font-color-alt);
   position: absolute;
   top: 0;
   right: 0;
