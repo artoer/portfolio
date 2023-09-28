@@ -11,8 +11,8 @@
 
 :root {
   --main-bg-color: #F7F5FA;
-  --surface-bg-color: rgba(0, 0, 0, .05);
   --primary-color: #640DFF;
+  --surface-bg-color: rgba(100, 13, 255, .05);
   --secondary-color: #FFF;
   --font-family-body: 'Archivo', sans-serif;
   --font-color: #222;
@@ -536,7 +536,7 @@ figure.quote figcaption {
 #content blockquote {
   padding: 24px;
   font-size: 20px;
-  line-height: 1.6;
+  line-height: 52px;
   border-radius: 12px;
   quotes: "\201C""\201D"
 }
@@ -545,10 +545,10 @@ blockquote :last-child {
   margin-bottom: 0;
 }
 
-#content blockquote:before {
+#content blockquote::before {
   color: var(--primary-color);
   content: open-quote;
-  font-size: 96px;
+  font-size: 128px;
   position: absolute;
   left: 50%;
   top: -28px;
