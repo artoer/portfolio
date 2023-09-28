@@ -57,18 +57,18 @@ h1 span {
 
 p {
   font-size: 20px;
-  line-height: 150%;
+  line-height: 1.6;
 }
 
 h2,
 h3,
 h4 {
-  line-height: 120%;
+  line-height: 1.2;
   font-weight: 600;
 }
 
 h1 {
-  line-height: 120%;
+  line-height: 1.2;
   font-size: 36px;
   font-weight: 700;
 }
@@ -88,7 +88,7 @@ main li::marker {
 main li {
   list-style-position: inside;
   font-size: 20px;
-  line-height: 150%;
+  line-height: 1.6;
 }
 
 main li::marker {
@@ -415,7 +415,7 @@ footer span {
 .card h2 {
   font-size: 20px;
   width: 100%;
-  line-height: 150%;
+  line-height: 1.6;
   font-weight: 400;
 }
 
@@ -489,7 +489,7 @@ figcaption {
   padding: 0 1.5rem 1.5rem;
   width: auto;
   font-size: 18px;
-  line-height: 150%;
+  line-height: 1.6;
   text-align: left;
   color: var(--font-color);
 }
@@ -536,7 +536,7 @@ figure.quote figcaption {
 #content blockquote {
   padding: 24px;
   font-size: 20px;
-  line-height: 150%;
+  line-height: 1.6;
   border-radius: 12px;
   quotes: "\201C""\201D"
 }
