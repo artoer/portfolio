@@ -4,7 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: var(--font-family-body);
+  font-family: var(--font-family);
   text-rendering: optimizeLegibility;
   color: var(--font-color);
 }
@@ -14,7 +14,7 @@
   --primary-color: #640DFF;
   --surface-bg-color: rgba(100, 13, 255, .05);
   --secondary-color: #FFF;
-  --font-family-body: 'Archivo', sans-serif;
+  --font-family: 'Archivo', sans-serif;
   --font-color: #222;
   --font-color-alt: #F7F5FA;
 }
@@ -206,7 +206,7 @@ main {
   max-width: 1024px;
   padding: 0;
   margin: 0px auto 4rem;
-  gap: .5rem;
+  gap: .25rem;
 }
 
 #work {
@@ -507,8 +507,6 @@ blockquote p {
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.35);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
   opacity: 0;
   animation: modalFadeIn 0.2s ease-in-out forwards;
 }
