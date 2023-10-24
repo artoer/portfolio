@@ -4,19 +4,55 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: var(--font-family);
   text-rendering: optimizeLegibility;
   color: var(--font-color);
+  font-family: var(--font-family-b);
 }
 
 :root {
   --main-bg-color: #F7F5FA;
   --primary-color: #640DFF;
-  --surface-bg-color: rgba(100, 13, 255, .05);
-  --secondary-color: #FFF;
-  --font-family: 'Archivo', sans-serif;
+  --surface-bg-color: rgba(0, 0, 0, 0.05);
+  --secondary-color: #FFC926;
+  --font-family-h: 'Archivo', sans-serif;
+  --font-family-b: 'Onest', sans-serif;
   --font-color: #222;
   --font-color-alt: #F7F5FA;
+}
+
+/* Archivo - Bold */
+@font-face {
+  font-family: 'Archivo';
+  src: url('./assets/fonts/Archivo-Bold.ttf') format('truetype');
+  font-weight: 700; /* Use 700 for Bold */
+}
+
+/* Archivo - Medium */
+@font-face {
+  font-family: 'Archivo';
+  src: url('./assets/fonts/Archivo-Medium.ttf') format('truetype');
+  font-weight: 500; /* Use 500 for Medium */
+}
+
+/* Archivo - Semibold */
+@font-face {
+  font-family: 'Archivo';
+  src: url('./assets/fonts/Archivo-Semibold.ttf') format('truetype');
+  font-weight: 600; /* Use 600 for Semibold */
+}
+
+/* Onest - Medium */
+@font-face {
+  font-family: 'Onest';
+  src: url('./assets/fonts/Onest-Medium.ttf') format('truetype');
+  font-weight: 500; /* Use 500 for Medium */
+}
+
+/* Onest - Regular */
+@font-face {
+  font-family: 'Onest';
+  src: url('./assets/fonts/Onest-Regular.ttf') format('truetype');
+  font-weight: 400; /* Use 400 for Regular */
 }
 
 html {
@@ -31,17 +67,30 @@ img {
   object-fit: cover;
 }
 
+h1,
+h2,
+h3,
+h4,
+nav a {
+  font-family: var(--font-family-h);
+}
+
 a {
   color: var(--primary-color);
   text-decoration-color: var(--primary-color);
   text-decoration-thickness: .125rem;
   text-underline-offset: .1875rem;
   font-weight: 500;
+  font-family: inherit;
 }
 
 h1 a {
   text-decoration: none;
-  color: var(--primary-color);
+  font-weight: inherit;
+}
+
+span {
+  font-family: inherit;
   font-weight: inherit;
 }
 
@@ -58,6 +107,7 @@ h1 span {
 p {
   font-size: 20px;
   line-height: 1.6;
+  font-feature-settings: "ss02" 1;
 }
 
 h2,
@@ -423,6 +473,7 @@ figcaption {
   line-height: 1.6;
   text-align: left;
   color: var(--font-color);
+  font-feature-settings: "ss02" 1;
 }
 
 figure.quote figcaption {
@@ -557,23 +608,25 @@ blockquote p {
 }
 
 .close-btn {
-  font-size: 48px;
-  color: var(--primary-color);
+  background-color: var(--font-color-alt);
+  text-decoration: none;
   cursor: pointer;
   width: 48px;
-  line-height: 42px;
   margin: 0;
-  text-align: center;
-  font-weight: lighter;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 48px;
-  background: none;
   opacity: 1;
   border-radius: 50%;
-  background-color: var(--font-color-alt);
   position: absolute;
   top: 0;
   right: 0;
   transform: translate(50%, -50%);
+}
+
+.close-btn i {
+  color: var(--primary-color);
 }
 
 /* TABLET AND UP */

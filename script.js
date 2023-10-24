@@ -14,7 +14,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
   closeBtn.id = 'close-btn';
   closeBtn.title = 'Close'
   closeBtn.classList.add('close-btn');
-  closeBtn.innerHTML = '&times;';
+  closeBtn.innerHTML = '<i class="fa-solid fa-xmark fa-2xl"></i>';
   closeBtn.addEventListener('click', () => {
     modal.style.display = 'none';
   });
