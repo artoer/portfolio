@@ -474,7 +474,6 @@ figcaption {
   line-height: 1.6;
   text-align: left;
   color: var(--font-color);
-  font-feature-settings: "ss02" 1;
 }
 
 figure.quote figcaption {
