@@ -7,6 +7,7 @@
   text-rendering: optimizeLegibility;
   color: var(--font-color);
   font-family: var(--font-family-b);
+  font-feature-settings: "ss01" 1;
 }
 
 :root {
@@ -73,6 +74,7 @@ h3,
 h4,
 nav a {
   font-family: var(--font-family-h);
+  font-feature-settings: normal;
 }
 
 a {
@@ -107,7 +109,6 @@ h1 span {
 p {
   font-size: 20px;
   line-height: 1.6;
-  font-feature-settings: "ss02" 1;
 }
 
 h2,
