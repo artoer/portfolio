@@ -25,35 +25,35 @@
 @font-face {
   font-family: 'Archivo';
   src: url('./assets/fonts/Archivo-Bold.ttf') format('truetype');
-  font-weight: 700; /* Use 700 for Bold */
+  font-weight: 700;
 }
 
 /* Archivo - Medium */
 @font-face {
   font-family: 'Archivo';
   src: url('./assets/fonts/Archivo-Medium.ttf') format('truetype');
-  font-weight: 500; /* Use 500 for Medium */
+  font-weight: 500;
 }
 
 /* Archivo - Semibold */
 @font-face {
   font-family: 'Archivo';
   src: url('./assets/fonts/Archivo-Semibold.ttf') format('truetype');
-  font-weight: 600; /* Use 600 for Semibold */
+  font-weight: 600;
 }
 
 /* Onest - Medium */
 @font-face {
   font-family: 'Onest';
   src: url('./assets/fonts/Onest-Medium.ttf') format('truetype');
-  font-weight: 500; /* Use 500 for Medium */
+  font-weight: 500;
 }
 
 /* Onest - Regular */
 @font-face {
   font-family: 'Onest';
   src: url('./assets/fonts/Onest-Regular.ttf') format('truetype');
-  font-weight: 400; /* Use 400 for Regular */
+  font-weight: 400;
 }
 
 html {
@@ -390,9 +390,17 @@ footer span {
 /* CASE STUDY PAGE */
 .heading {
   max-width: 768px;
-  margin: 0 auto 2.125rem;
-  padding: 3rem 0 1.5rem;
-  border-bottom: 2px solid var(--primary-color);
+  margin: 0 auto 2.25rem;
+  padding: 3rem 0 0rem;
+}
+
+.heading::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 100%;
+  margin: 1.5rem 0 0;
+  background: var(--primary-color);
 }
 
 .card h2 {
@@ -430,7 +438,7 @@ footer span {
 }
 
 #content>* {
-  max-width: 640px;
+  max-width: 600px;
   width: 100%;
   margin: 0 auto 1.5rem 0;
 }
@@ -481,10 +489,17 @@ figure.quote figcaption {
 }
 
 #content h2 {
-  border-bottom: 2px solid var(--primary-color);
-  padding: 0 0 1rem;
   margin: 4.5rem auto 1.5rem 0;
   max-width: 100%;
+}
+
+#content h2::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 100%;
+  margin: 1rem 0 0;
+  background: var(--primary-color);
 }
 
 #content h3 {
