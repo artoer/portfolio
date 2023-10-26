@@ -24,35 +24,35 @@
 /* Archivo - Bold */
 @font-face {
   font-family: 'Archivo';
-  src: url('./assets/fonts/Archivo-Bold.ttf') format('truetype');
+  src: url('../assets/fonts/Archivo-Bold.ttf') format('truetype');
   font-weight: 700;
 }
 
 /* Archivo - Medium */
 @font-face {
   font-family: 'Archivo';
-  src: url('./assets/fonts/Archivo-Medium.ttf') format('truetype');
+  src: url('../assets/fonts/Archivo-Medium.ttf') format('truetype');
   font-weight: 500;
 }
 
 /* Archivo - Semibold */
 @font-face {
   font-family: 'Archivo';
-  src: url('./assets/fonts/Archivo-Semibold.ttf') format('truetype');
+  src: url('../assets/fonts/Archivo-SemiBold.ttf') format('truetype');
   font-weight: 600;
 }
 
 /* Onest - Medium */
 @font-face {
   font-family: 'Onest';
-  src: url('./assets/fonts/Onest-Medium.ttf') format('truetype');
+  src: url('../assets/fonts/Onest-Medium.ttf') format('truetype');
   font-weight: 500;
 }
 
 /* Onest - Regular */
 @font-face {
   font-family: 'Onest';
-  src: url('./assets/fonts/Onest-Regular.ttf') format('truetype');
+  src: url('../assets/fonts/Onest-Regular.ttf') format('truetype');
   font-weight: 400;
 }
 
