@@ -13,11 +13,12 @@
 :root {
   --main-bg-color: #F7F5FA;
   --primary-color: #640DFF;
-  --surface-bg-color: rgba(0, 0, 0, 0.05);
+  --surface-bg-color: rgba(0, 0, 0, 0.02);
   --secondary-color: #FFC926;
   --font-family-h: 'Archivo', sans-serif;
   --font-family-b: 'Onest', sans-serif;
   --font-color: #222;
+  --font-color-figc: #535353;
   --font-color-alt: #F7F5FA;
 }
 
@@ -220,7 +221,7 @@ nav ul li a {
   position: relative;
 }
 
-nav ul li a::before {
+/* nav ul li a::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -229,7 +230,7 @@ nav ul li a::before {
   height: 2px;
   background-color: var(--primary-color);
   transition: all 0.2s ease-in-out;
-}
+} */
 
 nav ul li a:hover,
 .active {
@@ -242,9 +243,8 @@ nav ul li a:hover::before {
 }
 
 main {
-  max-width: calc(100% - 2rem);
   margin: 0 auto;
-  width: 1280px;
+  width: 100%;
 }
 
 #hero {
@@ -255,14 +255,17 @@ main {
   align-items: start;
   height: 360px;
   max-width: 1024px;
-  padding: 0;
-  margin: 0px auto 4rem;
+  padding: 0 1rem;
+  margin: 0 auto 4rem;
   gap: .25rem;
 }
 
 #work {
   display: grid;
   row-gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .card {
@@ -391,19 +394,19 @@ footer span {
 
 /* CASE STUDY PAGE */
 .heading {
-  max-width: 768px;
   margin: 0 auto 2.25rem;
-  padding: 3rem 0 0rem;
+  padding: 3rem 1rem;
+  background: var(--primary-color);
 }
 
-.heading::after {
+/* .heading::after {
   content: '';
   display: block;
   height: 2px;
   width: 100%;
   margin: 1.5rem 0 0;
   background: var(--primary-color);
-}
+} */
 
 .card h2 {
   font-size: 20px;
@@ -415,7 +418,7 @@ footer span {
 .heading span {
   display: block;
   font-size: 20px;
-  margin: 0 auto .125rem 0;
+  margin: 0 auto .125rem auto;
   font-weight: 600;
   width: 100%;
 }
@@ -426,17 +429,25 @@ footer span {
   width: auto;
 }
 
+.heading img {
+  display: block;
+  margin: 1.5rem auto 0 auto;
+  width: 100%;
+}
+
 #content {
   position: relative;
   max-width: 768px;
   width: 100%;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 1rem;
   color: var(--font-color);
 }
 
-.heading>* {
-  margin: 0 auto 0 0;
+.heading > * {
+  margin: 0 auto;
+  max-width: 768px;
+  color: var(--font-color-alt);
 }
 
 #content>* {
@@ -458,7 +469,6 @@ footer span {
   display: flex;
   flex-flow: column nowrap;
   max-width: 100%;
-  background: var(--surface-bg-color);
   border-radius: 4px;
 }
 
@@ -474,16 +484,19 @@ footer span {
   border-radius: 0px;
   max-height: calc(100vh - 8rem);
   object-fit: contain;
+  background: var(--surface-bg-color);
 }
 
 figcaption {
-  margin: 1.5rem 0 0 0;
-  padding: 0 1.5rem 1.5rem;
+  margin: .75rem 0 0 0;
+  padding: 0 0 .75rem;
   width: auto;
   font-size: 18px;
   line-height: 1.6;
   text-align: left;
-  color: var(--font-color);
+  color: var(--font-color-figc);
+  border-bottom: 1px solid var(--font-color-figc);
+  font-style: italic;
 }
 
 figure.quote figcaption {
@@ -519,6 +532,8 @@ figure.quote figcaption {
   font-size: 20px;
   font-weight: 500;
   padding: 0 1.5rem .5rem;
+  border: none;
+  font-style: normal;
 }
 
 #content figure.quote figcaption::before {
@@ -649,6 +664,10 @@ blockquote p {
 /* TABLET AND UP */
 @media all and (min-width: 768px) {
 
+  main {
+    max-width: none;
+  }
+
   nav ul li:first-of-type a::after {
     content: '\00a0Menken'
   }
@@ -678,6 +697,10 @@ blockquote p {
     max-width: calc(100vw - 16rem);
     object-fit: contain;
     cursor: zoom-in;
+  }
+
+  #content, #hero, #work {
+    padding: 0;
   }
 
   body #content figure.float {
@@ -721,6 +744,7 @@ blockquote p {
     max-height: 640px;
     margin: 0;
     border-radius: 4px;
+    border: 1px solid var(--surface-bg-color);
   }
 
   #content figure.bg img {
