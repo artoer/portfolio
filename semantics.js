@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
       <li><a href="./">Arthur</a></li>
       <li><a href="./#work">Work</a></li>
       <li><a href="./about.html">About</a></li>
-      <li><a href="./assets/Arthur-Menken_Resume-CV_2023.pdf" target="_blank">Resume</a></li>
+      <li><a href="./assets/Arthur-Menken_Resume-CV.pdf" target="_blank">Resume</a></li>
     </ul>
 `);
 
