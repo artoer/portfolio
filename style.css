@@ -569,7 +569,7 @@ blockquote :last-child {
   left: 50%;
   top: -28px;
   transform: translateX(-50%);
-  font-family: 'Arial', sans-serif;
+  font-family: var(--font-family-h);
 }
 
 blockquote p {
