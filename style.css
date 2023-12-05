@@ -334,7 +334,7 @@ main {
       var(--secondary-color),
       var(--secondary-color) 50%,
       var(--primary-color) 50%);
-  background-size: calc(200% + .1px) 100%;
+  background-size: 200% 100%;
   background-position: 100%;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
@@ -504,7 +504,7 @@ figure.quote figcaption {
 }
 
 #content h2 {
-  margin: 4.5rem auto 1.5rem 0;
+  margin: 4rem auto 1.5rem 0;
   max-width: 100%;
 }
 
