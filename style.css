@@ -7,7 +7,7 @@
   text-rendering: optimizeLegibility;
   color: var(--font-color);
   font-family: var(--font-family-b);
-  font-feature-settings: "ss01" 1;
+  font-feature-settings: "ss01"1;
 }
 
 :root {
@@ -147,9 +147,14 @@ main li::marker {
   color: var(--primary-color);
 }
 
+main #content ol,
+main #content ul {
+  max-width: none;
+}
+
 main ol *,
 main ul * {
-  margin-bottom: .5em;
+  margin-bottom: .5rem;
 }
 
 /* NAV */
@@ -444,7 +449,7 @@ footer span {
   color: var(--font-color);
 }
 
-.heading > * {
+.heading>* {
   margin: 0 auto;
   max-width: 768px;
   color: var(--font-color-alt);
@@ -699,7 +704,9 @@ blockquote p {
     cursor: zoom-in;
   }
 
-  #content, #hero, #work {
+  #content,
+  #hero,
+  #work {
     padding: 0;
   }
 
