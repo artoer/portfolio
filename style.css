@@ -154,7 +154,7 @@ main #content ul {
 
 main ol *,
 main ul * {
-  margin-bottom: .5rem;
+  margin-bottom: .25rem;
 }
 
 /* NAV */
@@ -712,7 +712,7 @@ blockquote p {
 
   body #content figure.float {
     float: right;
-    max-width: calc(100% - 440px);
+    max-width: calc(100% - 480px);
     height: auto;
     margin-top: .25rem;
     margin-left: 1.25rem;
