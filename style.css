@@ -147,11 +147,6 @@ main li::marker {
   color: var(--primary-color);
 }
 
-main #content ol,
-main #content ul {
-  max-width: none;
-}
-
 main ol *,
 main ul * {
   margin-bottom: .25rem;
@@ -438,6 +433,7 @@ footer span {
   display: block;
   margin: 1.5rem auto 0 auto;
   width: 100%;
+  max-width: 768px;
 }
 
 #content {
@@ -451,14 +447,14 @@ footer span {
 
 .heading>* {
   margin: 0 auto;
-  max-width: 768px;
+  max-width: 600px;
   color: var(--font-color-alt);
 }
 
 #content>* {
   max-width: 600px;
   width: 100%;
-  margin: 0 auto 1.5rem 0;
+  margin: 0 auto 1.5rem;
 }
 
 #content>*:first-child {
@@ -509,8 +505,7 @@ figure.quote figcaption {
 }
 
 #content h2 {
-  margin: 4rem auto 1.5rem 0;
-  max-width: 100%;
+  margin: 4rem auto 1.5rem;
 }
 
 #content h2::after {
@@ -523,7 +518,7 @@ figure.quote figcaption {
 }
 
 #content h3 {
-  margin: 1.5rem auto .5rem 0;
+  margin: 1.5rem auto .5rem;
 }
 
 #content figure.quote {
