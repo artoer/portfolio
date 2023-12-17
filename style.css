@@ -394,7 +394,7 @@ footer span {
 
 /* CASE STUDY PAGE */
 .heading {
-  margin: 0 auto 2.25rem;
+  margin: 0 auto 4rem;
   padding: 3rem 1rem;
   background: var(--primary-color);
 }
@@ -433,7 +433,8 @@ footer span {
   display: block;
   margin: 1.5rem auto 0 auto;
   width: 100%;
-  max-width: 768px;
+  max-width: 1280px;
+  border-radius: 4px;
 }
 
 #content {
@@ -490,14 +491,12 @@ footer span {
 
 figcaption {
   margin: .75rem 0 0 0;
-  padding: 0 0 .75rem;
+  padding: 0;
   width: auto;
   font-size: 18px;
   line-height: 1.6;
   text-align: left;
   color: var(--font-color-figc);
-  border-bottom: 1px solid var(--font-color-figc);
-  font-style: italic;
 }
 
 figure.quote figcaption {
