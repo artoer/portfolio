@@ -328,7 +328,7 @@ main {
   color: var(--font-color-alt);
   padding: 0 2rem;
   margin: 1rem 0 0 auto;
-  height: 48px;
+  height: 52px;
   width: 100%;
   background-image: linear-gradient(to right,
       var(--secondary-color),
