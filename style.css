@@ -12,7 +12,7 @@
 
 :root {
   --main-bg-color: #F7F5FA;
-  --primary-color: #640DFF;
+  --primary-color: #600DFF;
   --surface-bg-color: rgba(0, 0, 0, 0.02);
   --secondary-color: #FFC926;
   --font-family-h: 'Archivo', sans-serif;
@@ -544,7 +544,7 @@ figure.quote figcaption {
   padding: 0;
   border-radius: 0px;
   position: relative;
-  max-width: 640px;
+  max-width: 600px;
   margin: 0 auto;
 }
 
@@ -741,8 +741,8 @@ blockquote p {
     width: auto;
     cursor: pointer;
     pointer-events: unset;
-    min-width: 640px;
-    max-height: 640px;
+    min-width: 600px;
+    max-height: 600px;
     margin: 0;
     border-radius: 4px;
     border: 1px solid var(--surface-bg-color);
