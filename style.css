@@ -576,6 +576,17 @@ blockquote p {
   margin: 0 auto 1rem;
 }
 
+main #content q {
+  display: block;
+  line-height: 1.6;
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 24px;
+  margin: 1.5rem auto;
+  /* max-width: calc(100% - 480px); */
+  /* margin: .25rem 0 1.25rem 1.25rem; */
+}
+
 .modal {
   display: none;
   position: fixed;
@@ -708,9 +719,7 @@ blockquote p {
     float: right;
     max-width: calc(100% - 480px);
     height: auto;
-    margin-top: .25rem;
-    margin-left: 1.25rem;
-    margin-bottom: 1.25rem;
+    margin: .25rem 0 1.25rem 1.25rem;
     position: relative;
   }
 
