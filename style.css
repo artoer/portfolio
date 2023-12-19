@@ -7,7 +7,7 @@
   text-rendering: optimizeLegibility;
   color: var(--font-color);
   font-family: var(--font-family-b);
-  font-feature-settings: "ss01"1;
+  /* font-feature-settings: "ss01"1; */
 }
 
 :root {
