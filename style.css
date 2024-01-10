@@ -22,13 +22,6 @@
   --font-color-alt: #F7F5FA;
 }
 
-/* Archivo - Light */
-@font-face {
-  font-family: 'Archivo';
-  src: url('../assets/fonts/Archivo-Light.ttf') format('truetype');
-  font-weight: 300;
-}
-
 /* Archivo - Medium */
 @font-face {
   font-family: 'Archivo';
@@ -196,8 +189,8 @@ nav ul li {
 
 nav ul li:first-of-type>a {
   background-position: 100% !important;
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 22px;
+  font-weight: 600;
 }
 
 nav ul li:first-of-type>a::before {
@@ -686,7 +679,6 @@ main #content q {
 
   nav ul li:first-of-type a::after {
     content: '\00a0Menken';
-    font-weight: 400;
   }
 
   nav ul li {
