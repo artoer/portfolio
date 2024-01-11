@@ -149,7 +149,7 @@ main li::marker {
 
 main ol *,
 main ul * {
-  margin-bottom: .25rem;
+  margin-bottom: .5rem;
 }
 
 /* NAV */
@@ -494,10 +494,6 @@ figcaption:last-of-type {
   margin: 1rem auto 0;
 }
 
-figure.quote figcaption {
-  text-align: center;
-}
-
 #content h2 {
   margin: 4rem auto 1.5rem;
 }
@@ -515,7 +511,7 @@ figure.quote figcaption {
   margin: 1.5rem auto .5rem;
 }
 
-#content figure.quote {
+#content figure.quote, #content figure.insert  {
   background-color: var(--surface-bg-color);
   padding: 3rem 1rem;
   border-radius: 0 12px 12px 0;
@@ -523,21 +519,21 @@ figure.quote figcaption {
   border-left: 4px solid var(--primary-color);
 }
 
-#content figure.quote figcaption {
+figure.quote figcaption {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
   padding: 0 1.5rem .5rem;
   margin: 1.5rem auto 0;
   border: none;
   font-style: normal;
 }
 
-#content figure.quote figcaption::before {
+figure.quote figcaption::before, #content figure.insert figcaption::before {
   content: '—';
   margin-right: .5rem;
 }
 
-#content blockquote {
+blockquote {
 margin: 0 auto;
 }
 
@@ -550,18 +546,9 @@ blockquote p {
   margin: 0 auto 1.5rem;
 }
 
-figure.insert blockquote {
-  width: 100%;
-  font-weight: 600;
-  font-size: 24px;
-  margin: 1.5rem auto;
-  padding: 1.5rem 1rem;
-  border-left: 4px solid var(--secondary-color);
-  background-color: var(--surface-bg-color);
-}
-
 .insert p {
   font-size: 24px;
+  font-weight: 600;
 }
 
 .modal {
