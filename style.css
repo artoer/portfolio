@@ -221,17 +221,6 @@ nav ul li a {
   position: relative;
 }
 
-/* nav ul li a::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: var(--primary-color);
-  transition: all 0.2s ease-in-out;
-} */
-
 nav ul li a:hover,
 .active {
   background-position: 0;
@@ -399,15 +388,6 @@ footer span {
   background: var(--primary-color);
 }
 
-/* .heading::after {
-  content: '';
-  display: block;
-  height: 2px;
-  width: 100%;
-  margin: 1.5rem 0 0;
-  background: var(--primary-color);
-} */
-
 .card h2 {
   font-size: 20px;
   width: 100%;
@@ -466,7 +446,7 @@ footer span {
   margin-bottom: 0;
 }
 
-#content figure:not(.quote) {
+#content figure {
   margin: 1.5rem auto 2rem 0;
   display: flex;
   flex-flow: column nowrap;
@@ -474,7 +454,7 @@ footer span {
   border-radius: 4px;
 }
 
-#content figure.bg:not(.quote) {
+#content figure {
   display: flex;
   flex-direction: column
 }
@@ -489,14 +469,29 @@ footer span {
   background: var(--surface-bg-color);
 }
 
+#content img.float {
+  float: right;
+  max-width: unset;
+  width: 100%;
+  min-width: unset;
+  height: auto;
+  margin: .25rem 0 1.25rem 1.25rem;
+  position: relative;
+}
+
 figcaption {
-  margin: .75rem 0 0 0;
+  margin: 1rem auto 1.5rem;
   padding: 0;
-  width: auto;
+  width: 100%;
+  max-width: 600px;
   font-size: 18px;
   line-height: 1.6;
   text-align: left;
   color: var(--font-color-figc);
+}
+
+figcaption:last-of-type {
+  margin: 1rem auto 0;
 }
 
 figure.quote figcaption {
@@ -522,68 +517,51 @@ figure.quote figcaption {
 
 #content figure.quote {
   background-color: var(--surface-bg-color);
-  padding: 5rem 1.5rem 1.5rem;
-  border-radius: 12px;
+  padding: 3rem 1rem;
+  border-radius: 0 12px 12px 0;
   max-width: none;
+  border-left: 4px solid var(--primary-color);
 }
 
 #content figure.quote figcaption {
   font-size: 20px;
   font-weight: 500;
   padding: 0 1.5rem .5rem;
+  margin: 1.5rem auto 0;
   border: none;
   font-style: normal;
 }
 
 #content figure.quote figcaption::before {
   content: '—';
-  margin-right: .125rem;
-}
-
-#content figure.quote blockquote {
-  padding: 0;
-  border-radius: 0px;
-  position: relative;
-  max-width: 600px;
-  margin: 0 auto;
+  margin-right: .5rem;
 }
 
 #content blockquote {
-  padding: 24px;
-  font-size: 20px;
-  line-height: 52px;
-  border-radius: 12px;
-  quotes: "\201C""\201D"
+margin: 0 auto;
 }
 
 blockquote :last-child {
   margin-bottom: 0;
 }
 
-#content blockquote::before {
-  color: var(--primary-color);
-  content: open-quote;
-  font-size: 128px;
-  position: absolute;
-  left: 50%;
-  top: -28px;
-  transform: translateX(-50%);
-  font-family: var(--font-family-h);
-}
-
 blockquote p {
-  display: inline-block;
-  margin: 0 auto 1rem;
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
 }
 
-main #content q {
-  display: block;
-  line-height: 1.6;
-  color: var(--primary-color);
+figure.insert blockquote {
+  width: 100%;
   font-weight: 600;
   font-size: 24px;
   margin: 1.5rem auto;
-  padding: 0 1.5rem;
+  padding: 1.5rem 1rem;
+  border-left: 4px solid var(--secondary-color);
+  background-color: var(--surface-bg-color);
+}
+
+.insert p {
+  font-size: 24px;
 }
 
 .modal {
@@ -714,23 +692,6 @@ main #content q {
     padding: 0;
   }
 
-  body #content figure.float {
-    float: right;
-    max-width: calc(100% - 480px);
-    height: auto;
-    margin: .25rem 0 1.25rem 1.25rem;
-    position: relative;
-  }
-
-  #content figure.float img {
-    min-width: unset;
-  }
-
-  #content figure.quote {
-    min-width: unset;
-    margin: 0;
-  }
-
   .card {
     grid-template-columns: 3fr 2fr;
     grid-template-rows: auto;
@@ -753,18 +714,10 @@ main #content q {
     max-height: 600px;
     margin: 0;
     border-radius: 4px;
-    border: 1px solid var(--surface-bg-color);
+    border: 2px solid var(--surface-bg-color);
   }
 
-  #content figure.bg img {
-    padding: 1.5rem;
-    aspect-ratio: 4 / 3;
-    background: var(--img-bg-color);
-    border-radius: 12px;
-  }
-
-  #content figure:not(.quote) {
-    min-width: unset;
-    margin: 1.5rem auto 2rem 0;
+  #content img.float {
+    max-width: calc(100% - 480px);
   }
 }

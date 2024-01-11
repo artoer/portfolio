@@ -51,44 +51,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
       modalImg.src = img.src;
       openInNewTabLink.href = img.src;
     });
-
-    // create figure element
-    const figure = document.createElement('figure');
-    // insert figure before img
-    img.before(figure);
-    // move img inside figure
-    figure.appendChild(img);
-
-    if (img.classList.contains('float')) {
-      figure.classList = img.classList;
-    }
-
-    if (img.getAttribute('alt') != '') {
-      // create figcaption element
-      const figcaption = document.createElement('figcaption');
-      // get alt attribute from img and set as text content of figcaption
-      figcaption.textContent = img.getAttribute('alt');
-      // insert figcaption after img
-      img.after(figcaption);
-    }
-  });
-
-  const blockquotes = document.querySelectorAll('#content blockquote');
-
-  blockquotes.forEach(blockquote => {
-    const cite = blockquote.getAttribute('cite');
-
-    if (cite) {
-      const figure = document.createElement('figure');
-      const figcaption = document.createElement('figcaption');
-
-      figure.classList = 'quote';
-      figcaption.innerText = cite;
-
-      blockquote.parentNode.insertBefore(figure, blockquote);
-      figure.appendChild(blockquote);
-      figure.appendChild(figcaption);
-    }
   });
 
   // Add event listener to modal that closes the modal if clicked outside of the image
