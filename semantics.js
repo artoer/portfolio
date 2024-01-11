@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   <a href="https://dribbble.com/artioer" title="Dribbble" target="_blank"><i class="fa-brands fa-dribbble fa-2xl"></i></a>
   <a href="mailto:arthur_menken@hotmail.com" title="Email"><i class="fa-regular fa-at fa-2xl"></i></a>
   </div>
-    <span>&copy; 2023</span>
+    <span>&copy; 2024</span>
 `);
 
   const navTemplate = Handlebars.compile(`
