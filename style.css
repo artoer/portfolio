@@ -13,7 +13,7 @@
 :root {
   --main-bg-color: #F7F5FA;
   --primary-color: #600DFF;
-  --surface-bg-color: rgba(0, 0, 0, 0.02);
+  --surface-bg-color: #FFF;
   --secondary-color: #FFC926;
   --font-family-h: 'Archivo', sans-serif;
   --font-family-b: 'Onest', sans-serif;
