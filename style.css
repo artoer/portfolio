@@ -380,6 +380,7 @@ footer span {
 
 /* CASE STUDY PAGE */
 .heading {
+  position: relative;
   margin: 0 auto 4rem;
   padding: 3rem 1rem;
   background: var(--primary-color);
@@ -508,7 +509,8 @@ figcaption:last-of-type {
   margin: 1.5rem auto .5rem;
 }
 
-#content figure.quote, #content figure.insert  {
+#content figure.quote,
+#content figure.insert {
   background-color: var(--surface-bg-color);
   padding: 3rem 1rem;
   border-radius: 0 12px 12px 0;
@@ -516,7 +518,8 @@ figcaption:last-of-type {
   border-left: 2px solid var(--primary-color);
 }
 
-figure.quote figcaption, figure.insert figcaption {
+figure.quote figcaption,
+figure.insert figcaption {
   font-size: 20px;
   font-weight: 500;
   padding: 0;
@@ -525,13 +528,14 @@ figure.quote figcaption, figure.insert figcaption {
   font-style: normal;
 }
 
-figure.quote figcaption::before, #content figure.insert figcaption::before {
+figure.quote figcaption::before,
+#content figure.insert figcaption::before {
   content: '—';
   margin-right: .5rem;
 }
 
 blockquote {
-margin: 0 auto;
+  margin: 0 auto;
 }
 
 blockquote :last-child {
@@ -688,6 +692,26 @@ blockquote p {
   .card>div>a {
     margin: 1.5rem auto 0 0;
     width: auto;
+  }
+
+  .heading:not(.about) h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    background: var(--primary-color);
+    border-radius: 4px;
+    line-height: 100%;
+    max-width: unset;
+  }
+
+  .heading img {
+    margin: 0 auto;
+  }
+
+  .heading span {
+    display: none;
   }
 
   #content img {
