@@ -394,7 +394,8 @@ footer span {
 }
 
 .heading span {
-  display: block;
+  /* display: block; */
+  display: none;
   font-size: 20px;
   margin: 0 auto .125rem auto;
   font-weight: 600;
