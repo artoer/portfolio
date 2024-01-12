@@ -521,7 +521,7 @@ figcaption:last-of-type {
 figure.quote figcaption,
 figure.insert figcaption {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
   padding: 0;
   margin: 1.5rem auto 0;
   border: none;
@@ -531,7 +531,7 @@ figure.insert figcaption {
 figure.quote figcaption::before,
 #content figure.insert figcaption::before {
   content: '—';
-  margin-right: .5rem;
+  margin-right: .25rem;
 }
 
 blockquote {
