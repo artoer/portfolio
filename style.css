@@ -257,6 +257,7 @@ main {
 .card {
   display: grid;
   grid-template-rows: auto auto;
+  background: var(--surface-bg-color);
   border-radius: 12px;
   height: 100%;
   width: 100%;
@@ -279,7 +280,6 @@ main {
   align-items: start;
   text-align: left;
   color: var(--font-color);
-  background: var(--surface-bg-color);
   padding: 1.5rem 1rem;
   border: none;
 }
