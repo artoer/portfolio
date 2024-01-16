@@ -279,7 +279,8 @@ main {
   align-items: start;
   text-align: left;
   color: var(--font-color);
-  padding: 1.5rem 0 2rem;
+  background: var(--surface-bg-color);
+  padding: 1.5rem 1rem;
   border: none;
 }
 
