@@ -728,6 +728,6 @@ blockquote p {
   }
 
   #content img.float {
-    max-width: calc(100% - 480px);
+    max-width: 240px;
   }
 }
