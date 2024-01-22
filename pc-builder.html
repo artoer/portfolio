@@ -38,67 +38,86 @@
       <img src="./img/pc-builder/logo.png" alt="">
     </div>
     <div id="content">
-      <h2>Overview</h2>
-      <h3>About Tweakers</h3>
+      <h2>Problem</h2>
       <p><a target="_blank" href="https://www.tweakers.net/">Tweakers.net</a> is a consumer electronics and
         technology-focused website, specializing in computers. Its revenue model relies on advertising and affiliate
-        programs, including the Pricewatch, a prominent price comparison tool for electronics.</p>
-      <h3>About the Product</h3>
-      <p>I developed a tool for Tweakers designed to assist experienced users in building custom PCs. Integrated into
-        the existing Pricewatch functionality, the tool provides insights into price-performance ratios, component
-        information, ensures compatibility, and offers recommendations from the Tweakers editorial team.</p>
+        programs, including the Pricewatch, a prominent price comparison tool for electronics and important driver of
+        website referals.</p>
+      <p>User interviews showed that Tweakers users, while experienced with building PCs, are still prone to mistakes
+        and have a desire for more guidance when choosing computer parts.</p>
+      <p> As Tweakers boasts an extensive database of PC components and expert knowledge with it's testing lab and
+        editorial team, I saw an opportunity to design a tool that fulfills these user needs.</p>
       <h3>My Role</h3>
       <p>As part of my graduation project, I independently managed the end-to-end design process for the PC Builder
         tool. My responsibilities included user research, stakeholder management, requirement definition, brainstorming,
         wireframing, creating a clickable prototype using HTML, CSS and Javascript, and validating the design with
         users.</p>
-      <h3>Challenges</h3>
-      <p>Designing a digital tool to assist experienced computer builders involved addressing compatibility issues, user
-        preferences, and budget constraints. Identifying user needs and creating a tool that guides them in selecting
-        the right components for custom PC builds posed a significant challenge.</p>
-      <h3>Deliverables</h3>
-      <p>A successfully tested clickable prototype of the PC Builder tool, along with conclusive recommendations for
-        future implementations.</p>
+      <h3>Challenges and Constraints</h3>
+      <ul>
+        <li><strong>User Needs:</strong> Providing value to Tweakers users, an audience already experienced with
+          computers.</li>
+        <li><strong>Product Design:</strong> Defining the tool's appearance, positioning within the website, and user
+          interaction.</li>
+        <li><strong>Technical Viability:</strong> Ensuring the backend supports required functionality and availability
+          of usable component data.</li>
+      </ul>
+      <h2>Result</h2>
+      <h3>Solution</h3>
+      <p>The tool for Tweakers is designed to assist experienced users in building custom PCs. Integrated into
+        the existing Pricewatch page, the tool provides insights into price-performance ratios, component
+        information, ensures compatibility, and offers recommendations from the Tweakers editorial team.</p>
       <p>View the prototype <a target="_blank" href=".\assets\pc-builder-prototype\index.html">here</a>.</p>
-      <h2>Research</h2>
-      <p>My strategy included a competitive analysis, user interviews, and surveys to gather insights on existing
-        solutions and understand user needs.</p>
+      <h3>Impact</h3>
+      <p>By making it easier for users to plan their custom PC builds on the Tweakers website, users will make more use of
+        referal links as they explore their options or finalize their purchases at web shops, and engage more
+        with ad-sponsored editorial content as they seek to further inform their purchase decisions.</p>
+      <figure>
+        <img src="./img/pc-builder/18.png" alt="">
+        <figcaption>Final version of the clickable prototype, addressing identified issues and incorporating feedback
+          during usability testing.</figcaption>
+      </figure>
+      <h3>Key features</h3>
+      <ul>
+        <li>Provides valuable insights into what users care most about when choosing components: performance and value
+          metrics, key specifications and power consumption</li>
+        <li>Safeguards users from potential mistakes by providing both feed forward and feedback during component
+          choice, and guides user in resolving these issues or conflicts</li>
+        <li>Integration with Tweakers' Pricewatch, leveraging its extensive filters and offering the cheapest
+          available
+          price alongside the tool</li>
+        <li>Fill the tool with editorial recommendations at the click of a button, offering a good starting point for
+          users or options to consider</li>
+        <li>User-friendly and described as clear and easy to use during usability testing</li>
+      </ul>
+      <h2>How I got there</h2>
+      <h3>Initial research</h3>
+      <p>Starting out with user interviews shed light on key aspects. It became clear that seasoned PC builders
+        prioritize
+        maximizing value for their budget. Interestingly, despite their experience, they also shared instances of
+        making
+        mistakes during the building process.</p>
       <figure class="insert">
         <blockquote>
           <p>For me, by far the most important thing is getting the most bang for my buck.</p>
         </blockquote>
         <figcaption>A Tweakers User</figcaption>
       </figure>
-      <p>Insights from user interviews shed light on key aspects. It became clear that seasoned PC builders prioritize
-        maximizing value for their budget. Interestingly, despite their experience, they shared instances of making
-        mistakes during the building process. For example, one user recounted encountering issues with a wrongly sized
-        power supply unit, highlighting the frustrations of dealing with customer service and the wait for a
-        replacement.</p>
-      <p>I followed up on my findings by conducting a survey on Tweakers, this helped me validate and expand on some of
-        my earlier insights. For example by asking what users find the most challenging about choosing their components.</p>
+      <p>I followed up on my findings by conducting a survey on Tweakers, this helped me validate and expand on some
+        of
+        my earlier insights. For example by asking what users find the most challenging about choosing their
+        components.
+      </p>
       <figure>
         <img src="./img/pc-builder/1.png" alt="">
-        <figcaption>User poll: "What information do you find most important when choosing a PC component?" (N=425, 64.7%
+        <figcaption>Follow-up survey: "What information do you find most important when choosing a PC component?"
+          (N=425, 64.7%
           prioritize "price-performance ratio").</figcaption>
       </figure>
-      <p>The insights gathered from my initial research shaped the following
-        must-have requirements:</p>
-      <ul>
-        <li><strong>Compatibility Check —</strong> The tool addresses the common issue of users, even experienced ones,
-          overlooking
-          incompatibilities during PC builds, potentially resulting in wasted time and money.</li>
-        <li><strong>Component Information —</strong> Users prioritize key information such as performance,
-          price-performance ratio, user reviews, and specifications when selecting components.</li>
-        <li><strong>Recommendations —</strong> Acknowledging the reliance of users on recommendations, the tool offers
-          valuable suggestions during the component selection process.</li>
-        <li><strong>Usability —</strong> The tool maintains clarity and user-friendliness, ensuring that users can
-          easily
-          navigate and access essential information throughout the process.</li>
-      </ul>
-      <h2>Ideation</h2>
-      <p>During the ideation phase, I employed sketching and brainstorming techniques like Crazy Eight, for example to
-        find effective ways to communicate the price-to-performance ratio to users. This led me to explore various
-        solutions, eventually combining them into conceptual ideas to address the project requirements and to find the
+      <h3>Crazy Eight and Figma</h3>
+      <p>To begin synthesizing my learnings into a solution I employed sketching and brainstorming techniques like
+        Crazy
+        Eight, for instance to
+        find effective ways to communicate the price-to-performance ratio to users and to find the
         layout, form and positioning that works for Tweakers.
       </p>
       <figure>
@@ -106,90 +125,51 @@
         <figcaption>Initial idea as a result of a Crazy Eight brainstorming session: The tool as an expandable and
           collapsible overlay on the Pricewatch page.</figcaption>
       </figure>
-      <p>Continuously engaging with users and stakeholders at Tweakers validated previous design choices and revealed
-        new insights that shaped the overall tool and its flow.</p>
-      <ul>
-        <li><strong>User Journey —</strong> Users and the Tweakers editorial team demonstrated a strong preference for
-          starting the component
-          selection with the processor, motherboard, and graphics card, respectively.</li>
-        <li><strong>Positioning —</strong> Stakeholders also expressed a preference for hosting the tool on the
-          Pricewatch page, emphasizing its
-          integration with component browsing and pricing</li>
-      </ul>
-      <figure>
-        <img src="./img/pc-builder/6.png" alt="">
-        <figcaption>User preference survey result: 83.1% prefer a tool integrated into the Pricewatch.</figcaption>
-      </figure>
-      <h2>Iteration</h2>
-      <p>Having identified the concept that best aligned with user and stakeholder needs, I advanced to the next phase
-        by translating my ideas into concrete designs. Taking my sketches to Figma, I initiated the wireframing process
-        to visualize the initial structure of the PC Builder tool.</p>
+      <p>I brought my ideas and sketches together in Figma, visualizing the first of many high fidelity iterations of
+        the tool.</p>
       <figure>
         <img src="./img/pc-builder/21.jpg" alt="">
         <figcaption>Initial wireframe sketch showcasing the tool's interface, used to pitch to stakeholders.
         </figcaption>
       </figure>
-      <p>While sketching and wireframing I learned a lot about the challenges and constraints of the taken direction,
-        such as the limited amount of space. Iterations focused on striking the right balance of the size of the
-        elements and clarity, exploring ways to compactly yet effectively convey important component information. I also
-        ensured that the design as a whole felt at home for Tweakers.</p>
+      <p>Sketching and wireframing helped highlight the challenges and constraints, such as trying to satisfy various
+        user needs within limited screen real estate.
+        My iterations focused on balancing information density and clarity,
+        while also ensuring that the design as a whole aligned seamlessly with Tweakers.</p>
       <figure>
         <img src="./img/pc-builder/14.jpg" alt="">
         <figcaption>The tool's interface several iterations in, incorporating insights from the sketching process and
           stakeholder feedback.</figcaption>
       </figure>
-      <p>When the design was ready and all possible interactions were accounted for, I transitioned to turning these
-        into a
-        prototype using HTML, CSS and Javascript. Leveraging my technical skills to make a prototype that can handle
-        various user scenarios during usability testing, making it feel like a real version of the tool.</p>
-      <h2>Result</h2>
+      <p>When the design was ready and all possible interactions were accounted for, I leveraged my technical skills
+        to
+        make a prototype using code, providing a comprehensive non-linear testing environment.</p>
+      <h3>Testing with users</h3>
+      <p>With a finished prototype I moved on to user testing to gather initial
+        feedback from participants, as well as discover the low-hanging fruit regarding usability and discoverability.
+      </p>
       <figure>
-        <img src="./img/pc-builder/18.png" alt="">
-        <figcaption>Final version of the clickable prototype, addressing identified issues and incorporating feedback
-          during usability testing.</figcaption>
-      </figure>
-      <ul>
-        <p><strong>Key features:</strong></p>
-        <li>Provides valuable insights into what users care most about when choosing components: performance and value
-          metrics, key specifications and power consumption</li>
-        <li>Safeguards users from potential mistakes by providing both feed forward and feedback during component
-          choice, and guides user in resolving these issues or conflicts</li>
-        <li>Integration with Tweakers' Pricewatch, leveraging its extensive filters and offering the cheapest available
-          price alongside the tool</li>
-        <li>Fill the tool with editorial recommendations at the click of a button, offering a good starting point for
-          users or options to consider</li>
-        <li>User-friendly and described as clear and easy to use during usability testing</li>
-      </ul>
-      <h2>Validation</h2>
-      <p>After finalizing the design and prototype, I conducted comprehensive testing to refine the tool.
-        Initial
-        feedback from participants revealed areas for enhancement, such as providing feed forward for error prevention,
-        as well as some low-hanging fruit regarding usability and discoverability.</p>
-      <figure class="insert">
-        <blockquote>
-          <p>The first iteration did a good job of giving the user feedback on their component choices; however,
-            users truly
-            missed feedforward as well—showing what components would be incompatible even before being
-            picked.</p>
-        </blockquote>
+        <img src="./img/pc-builder/22.png" alt="">
+        <figcaption>One such low hanging fruit was that test participants felt the tool didn't warn them ahead of time
+          of
+          incompatibilities — this was addressed by giving incompatible components on the Pricewatch a warning symbol
+          in
+          the product list.
+        </figcaption>
       </figure>
       <p>
-        Once these issues were addressed the tool was received well in the tests that followed and by the community, who
-        at this stage had
-        been given access to the prototype to gauge sentiment and gather feedback.</p>
+        The iteration that followed performed significantly better in the follow-up test. The prototype was shared on
+        the community forum where the reactions were broadly
+        positive.</p>
       <figure>
         <img src="./img/pc-builder/19.png" alt="">
         <figcaption>Overall impression of the Tweakers community regarding the PC Builder tool (higher is better).
         </figcaption>
       </figure>
-      <p>Future recommendations
-        include A/B testing for clearer interactions, enhancing the visibility of recommendations, enabling list
-        sharing,
-        and displaying performance metrics in the Pricewatch list. These refinements aim to further elevate the tool's
-        functionality and user engagement.</p>
+      <h2>Final thoughts from my mentor</h2>
       <figure class="quote">
         <blockquote>
-          <p>As a UX designer at Tweakers and the supervisor of the internship programme at
+          <p>"As a UX designer at Tweakers and the supervisor of the internship programme at
             the company, I would say that the PC Builder feature that Arthur designed and
             prototyped is complete and fulfils all requirements we set at the beginning of the
             project. The user journey is clear, there are helpful error messages and warnings
@@ -204,7 +184,7 @@
             steps he has devised, together represent the first major milestone towards delivering
             the PC Builder feature to all Tweakers users. The handover is in fact so complete,
             that our development team is eager to get started on implementation before our
-            product managers have even calculated its commercial viability.</p>
+            product managers have even calculated its commercial viability."</p>
         </blockquote>
         <figcaption>Bozhan, Senior UX designer at Tweakers</figcaption>
       </figure>

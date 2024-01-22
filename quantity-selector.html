@@ -38,59 +38,84 @@
       <img src="./img/quantity-selector/logo.png" alt="">
     </div>
     <div id="content">
-      <h2>Overview</h2>
-      <h3>About the Project</h3>
-      <p>During my internship at Talpa eCommerce, I undertook the challenge of enhancing the e-commerce experience for
-        <a target="_blank" href="https://www.actievandedag.nl/">Actie van de Dag</a> by implementing a mobile quantity
-        selector on the product detail page and in the shopping cart dropdown. This feature was crucial for products
-        like concert tickets, often purchased in multiples.</p>
+      <h2>Problem</h2>
+      <p><a target="_blank" href="https://www.actievandedag.nl/">Actie van de Dag</a> is a platform owned by Talpa
+        eCommerce that specializes in
+        selling a variety of discounted products, from furniture and electronics to hotel stays.</p>
+      <p>Insights from Hotjar showed that users were missing the ability to buy multiples of a product on the product
+        detail page, as right now it was only possible in the shopping cart page.</p>
       <h3>My Role</h3>
-      <p>As the designated designer for this project, my responsibilities included assessing the current state,
-        gathering inspiration from competitors, iteratively designing using Sketch, and presenting multiple design
-        options to the team. The final design was refined based on collaborative feedback.</p>
-      <h3>Challenges</h3>
-      <p>The primary challenge was integrating a quantity selector into the existing mobile design, characterized by a
-        sticky bottom bar with limited screen space. Addressing scenarios involving products with multiple options
-        further complicated the task.</p>
-      <h3>Deliverables</h3>
+      <p>During my internship at Talpa eCommerce, I undertook the challenge of incorporating a quantity selector into
+        the product detail page.</p>
+      <p>My responsibilities included assessing the current state,
+        gathering inspiration from competitors, iteratively crafting mobile-first designs using Sketch, and gathering
+        peer feedback for
+        further refinement.</p>
+      <h3>Challenges and Constraints</h3>
+      <ul>
+        <li><strong>Limited Screen Real Estate:</strong> Designing the "sticky bottom bar" for mobile, which already
+          contains price and call-to-action.</li>
+        <li><strong>Products with Variants:</strong> Managing additional screen space required for products with
+          multiple options.</li>
+        <li><strong>Alignment with Brand Guidelines:</strong> Crafting a design that fits seamlessly with the current
+          layout and brand identity.</li>
+      </ul>
+      <h2>Result</h2>
+      <h3>Solution</h3>
       <p>I provided Sketch designs ready for handover, accounting for various scenarios and considerations in the
         implementation of the quantity selector.</p>
-      <h2>Strategy</h2>
+      <figure>
+        <img src="./img/quantity-selector/6.png" alt="">
+        <figcaption>Final designs, demonstrating the worst-case scenario where users must choose multiple options. Shown
+          when scrolled to the top of the page.</figcaption>
+      </figure>
+      <p>The final design addressed the challenge by displaying options, price, and add-to-cart button at the top of the
+        page, complementing the sticky bottom bar. The latter appears upon scrolling, featuring a quantity selector and
+        add-to-cart button. If options need selection, the button smoothly scrolls users to the top of the page.</p>
+      <figure>
+        <img src="./img/quantity-selector/7.png" alt="">
+        <figcaption>Final sticky bottom bar design, revealed upon scrolling down, allowing users to pick a quantity. If
+          users are required to pick options they will be scrolled to the top of the page to do so..</figcaption>
+      </figure>
+      <h3>Impact</h3>
+      <p>By allowing users to purchase multiples of products earlier in the journey, friction was reduced, resulting in
+        increased conversions. This is particularly beneficial for products often sold in multiples, such as concert
+        tickets.</p>
+      <h2>Process</h2>
+      <h3>Research</h3>
       <p>My approach began with an in-depth assessment of the existing situation, uncovering complexities in adding a
-        quantity selector to the sticky bottom bar. Extensive research on design patterns employed by other e-commerce
-        platforms and numerous experimental iterations were key elements of the strategy.</p>
+        quantity selector to the sticky bottom bar.</p>
       <figure>
         <img src="./img/quantity-selector/8.png" alt="">
-        <figcaption>Snapshot of the current situation above the fold, highlighting the challenges of integrating a
-          quantity selector within the sticky bottom bar.</figcaption>
+        <figcaption>Snapshot of the current situation above the fold. Note the sticky bottom bar always being present,
+          even when scrolled to the top of the page, leaving us with a limited area to work with if we keep this
+          behavior
+          intact.</figcaption>
       </figure>
-      <h2>Iterations</h2>
+      <p>After, I focused on exploring design patterns employed by other e-commerce
+        platforms before diving into Sketch.</p>
+      <figure>
+        <img src="./img/quantity-selector/9.png" alt="">
+        <figcaption>During my research I often encountered this dropdown pattern as well, which I tried — but decided
+          against in favor of the more mobile friendly counter.</figcaption>
+      </figure>
+      <h3>Iterations</h3>
       <p>The iterative design process involved collaboration with my team, exploring various solutions through sketches
         and prototypes.</p>
       <figure>
         <img src="./img/quantity-selector/2.png" alt="">
         <figcaption>Initial attempt: Merging the price into the call-to-action to accommodate a quantity selector, but
           facing challenges with limited screen space.</figcaption>
-
+      </figure>
+      <figure>
         <img src=" ./img/quantity-selector/3.png" alt=''>
         <figcaption>Variant with options hidden under an "options" toggle, expanding the sticky bottom bar to reveal
           available choices.</figcaption>
-
+      </figure>
+      <figure>
         <img src="./img/quantity-selector/5.png" alt="">
         <figcaption>Sketch canvas showcasing diverse iterations and approaches to tackle different scenarios.
         </figcaption>
-      </figure>
-      <h2>Result</h2>
-      <p>The final design addressed the challenge by displaying options, price, and add-to-cart button at the top of the
-        page, complementing the sticky bottom bar. The latter appears upon scrolling, featuring a quantity selector and
-        add-to-cart button. If options need selection, the button smoothly scrolls users to the top of the page.</p>
-      <figure>
-        <img src="./img/quantity-selector/6.png" alt="">
-        <figcaption>Final designs, demonstrating the worst-case scenario where users must choose multiple options. Shown
-          when scrolled to the top of the page.</figcaption>
-        <img src="./img/quantity-selector/7.png" alt="">
-        <figcaption>Final sticky bottom bar design, revealed upon scrolling down, allowing users to pick a quantity and
-          seamlessly scrolling them to the top if options need selection.</figcaption>
       </figure>
     </div>
   </main>
