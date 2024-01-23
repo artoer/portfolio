@@ -480,6 +480,7 @@ footer span {
   height: auto;
   margin: .25rem 0 1.25rem 1.25rem;
   position: relative;
+  border-radius: 4px;
 }
 
 figcaption {
@@ -744,10 +745,6 @@ blockquote p {
     border-radius: 4px;
     aspect-ratio: 16 / 10;
     }
-
-  figcaption {
-    padding: 2rem;
-  }
 
   #content img.float {
     max-width: 192px;
