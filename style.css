@@ -727,6 +727,10 @@ blockquote p {
     display: none;
   }
 
+  .two-col {
+    columns: 2;
+  }
+
   #content figure {
     grid-template-columns: auto 400px;
   }
