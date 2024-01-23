@@ -433,7 +433,7 @@ footer span {
 .heading>* {
   margin: 0 auto;
   max-width: 620px;
-  color: var(--font-color-alt);
+  color: var(--font-color);
 }
 
 #content>* {
@@ -713,6 +713,10 @@ blockquote p {
     border-radius: 4px;
     line-height: 100%;
     max-width: unset;
+  }
+
+  .heading>* {
+    color: var(--font-color-alt);
   }
 
   .heading img {
