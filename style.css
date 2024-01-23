@@ -485,6 +485,7 @@ figcaption {
   margin: 0;
   padding: 1rem;
   width: 100%;
+  max-width: 620px;
   font-size: 16px;
   line-height: 1.6;
   text-align: left;
