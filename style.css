@@ -152,9 +152,9 @@ main ul * {
 /* NAV */
 
 nav {
-  height: 96px;
+  height: auto;
   width: 100%;
-  margin: 0 auto;
+  margin: 1.5rem auto 0;
   padding: 0 1rem;
   overflow: scroll;
   scrollbar-width: none;
