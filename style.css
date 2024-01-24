@@ -13,14 +13,13 @@
 :root {
   --primary-color: #600DFF;
   --secondary-color: #FFC926;
-  --main-bg-color: #F3F3FC;
-  --content-bg-color: #FAFAFA;
+  --main-bg-color: #F8F8FC;
   --surface-bg-color: #FFF;
   --font-family-h: 'Archivo', sans-serif;
   --font-family-b: 'Onest', sans-serif;
   --font-color: #222;
-  --font-color-figc: #535353;
-  --font-color-alt: #F3F3FC;
+  --font-color-figc: #555;
+  --font-color-alt: #F8F8FC;
 }
 
 /* Archivo - Medium */
@@ -234,6 +233,13 @@ main {
   width: 100%;
 }
 
+#hero-container {
+  max-width: 1280px;
+  margin: 1.5rem auto;
+  background: var(--surface-bg-color);
+  border-radius: 4px;
+}
+
 #hero {
   position: relative;
   display: flex;
@@ -243,7 +249,7 @@ main {
   height: 360px;
   max-width: 1024px;
   padding: 0 1rem;
-  margin: 0 auto 4rem;
+  margin: 0 auto;
   gap: .25rem;
 }
 
@@ -259,13 +265,13 @@ main {
   display: grid;
   grid-template-rows: auto auto;
   background: var(--surface-bg-color);
-  border-radius: 12px;
+  border-radius: 4px;
   height: 100%;
   width: 100%;
 }
 
 .card>img {
-  border-radius: 12px;
+  border-radius: 4px;
   height: 100%;
   width: 100%;
   overflow: hidden;
@@ -428,7 +434,7 @@ footer span {
   border-radius: 4px;
   padding: 4rem 1rem 6rem;
   color: var(--font-color);
-  background: var(--content-bg-color);
+  background: var(--surface-bg-color);
 }
 
 .heading>* {
