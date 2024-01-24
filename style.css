@@ -384,7 +384,7 @@ footer span {
 .heading {
   position: relative;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 1.5rem 1rem;
 }
 
 .card h2 {
@@ -403,7 +403,7 @@ footer span {
 }
 
 #content.about {
-  margin: 2rem auto 0;
+  margin: 1.5rem auto 0;
 }
 
 .heading span.about {
