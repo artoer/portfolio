@@ -475,9 +475,7 @@ footer span {
 
 #content img.float {
   float: right;
-  max-width: unset;
   padding: 0;
-  min-width: unset;
   height: auto;
   margin: .25rem 0 1.25rem 1.25rem;
   position: relative;
