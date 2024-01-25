@@ -500,7 +500,11 @@ figcaption {
 } */
 
 #content h2 {
-  margin: 3.75rem auto 2rem;
+  margin: 2.75rem auto 2rem;
+  padding: 1rem 0 0;
+  position: sticky;
+  top: 0;
+  background: var(--surface-bg-color);
 }
 
 #content h2::after {
