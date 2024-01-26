@@ -240,7 +240,7 @@ main {
   max-width: 1280px;
   margin: 2rem auto;
   background: var(--main-bg-color);
-  border-radius: 4px;
+  border-radius: 8px;
   border: 1px solid var(--border-color);
 }
 
@@ -270,16 +270,16 @@ main {
   grid-template-rows: auto auto;
   background: var(--main-bg-color);
   border: 1px solid var(--border-color);
-  border-radius: 4px;
+  border-radius: 8px;
+  overflow: hidden;
   height: 100%;
   width: 100%;
 }
 
 .card>img {
-  border-radius: 4px;
   height: 100%;
   width: 100%;
-  overflow: hidden;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .card>div {
@@ -428,7 +428,7 @@ footer span {
   margin: 1.5rem auto 0 auto;
   width: 100%;
   max-width: 1280px;
-  border-radius: 4px;
+  border-radius: 8px;
   border: 1px solid var(--border-color);
 }
 
@@ -437,7 +437,7 @@ footer span {
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
-  border-radius: 4px;
+  border-radius: 8px;
   padding: 4rem 1rem 6rem;
   color: var(--font-color);
   background: var(--main-bg-color);
@@ -696,6 +696,11 @@ blockquote p {
   .card {
     grid-template-columns: 3fr 2fr;
     grid-template-rows: auto;
+  }
+
+  .card>img {
+    border: 0;
+    border-right: 1px solid var(--border-color);
   }
 
   .card>div {
