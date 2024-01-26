@@ -250,7 +250,7 @@ main {
   justify-content: center;
   align-items: start;
   height: 360px;
-  max-width: 1024px;
+  max-width: 768px;
   padding: 0 1rem;
   margin: 0 auto;
   gap: .25rem;
