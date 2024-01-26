@@ -7,14 +7,13 @@
   text-rendering: optimizeLegibility;
   color: var(--font-color);
   font-family: var(--font-family-b);
-  /* font-feature-settings: "ss01"1; */
 }
 
 :root {
   --primary-color: #600DFF;
   --secondary-color: #FFC926;
-  --main-bg-color: #F8F8FC;
-  --surface-bg-color: #FFF;
+  --main-bg-color: #FEFEFE;
+  --border-color: #DDD;
   --font-family-h: 'Archivo', sans-serif;
   --font-family-b: 'Onest', sans-serif;
   --font-color: #222;
@@ -152,12 +151,16 @@ main ul * {
 /* NAV */
 
 nav {
+  position: fixed;
+  z-index: 2;
   height: auto;
   width: 100%;
-  margin: 1.5rem auto 0;
-  padding: 0 1rem;
+  margin: calc(-73px + -1.5rem) auto 0;
+  padding: .5rem 1rem;
   overflow: scroll;
   scrollbar-width: none;
+  background: var(--main-bg-color);
+  border-bottom: 1px solid var(--border-color);
 }
 
 nav::-webkit-scrollbar {
@@ -181,7 +184,7 @@ nav ul li {
   justify-content: center;
   align-self: center;
   font-size: 18px;
-  height: 64px;
+  height: 56px;
 }
 
 nav ul li:first-of-type>a {
@@ -229,15 +232,16 @@ nav ul li a:hover::before {
 }
 
 main {
-  margin: 0 auto;
+  margin: calc(73px + 1.5rem) auto 0;
   width: 100%;
 }
 
 #hero-container {
   max-width: 1280px;
   margin: 1.5rem auto;
-  background: var(--surface-bg-color);
+  background: var(--main-bg-color);
   border-radius: 4px;
+  border: 1px solid var(--border-color);
 }
 
 #hero {
@@ -264,7 +268,8 @@ main {
 .card {
   display: grid;
   grid-template-rows: auto auto;
-  background: var(--surface-bg-color);
+  background: var(--main-bg-color);
+  border: 1px solid var(--border-color);
   border-radius: 4px;
   height: 100%;
   width: 100%;
@@ -389,8 +394,8 @@ footer span {
 /* CASE STUDY PAGE */
 .heading {
   position: relative;
-  margin: 0 auto;
-  padding: 1.5rem 1rem;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
 }
 
 .card h2 {
@@ -424,6 +429,7 @@ footer span {
   width: 100%;
   max-width: 1280px;
   border-radius: 4px;
+  border: 1px solid var(--border-color);
 }
 
 #content {
@@ -434,7 +440,8 @@ footer span {
   border-radius: 4px;
   padding: 4rem 1rem 6rem;
   color: var(--font-color);
-  background: var(--surface-bg-color);
+  background: var(--main-bg-color);
+  border: 1px solid var(--border-color);
 }
 
 .heading>* {
@@ -460,7 +467,7 @@ footer span {
 #content figure {
   margin: 2rem auto;
   border-radius: 4px;
-  /* background: var(--surface-bg-color); */
+  /* background: var(--main-bg-color); */
 }
 
 #content img {
@@ -485,7 +492,7 @@ footer span {
 figcaption {
   display: flex;
   align-items: center;
-  margin: 1rem 0;
+  margin: 1rem auto 0;
   width: 100%;
   font-size: 18px;
   line-height: 1.6;
@@ -493,16 +500,12 @@ figcaption {
   color: var(--font-color-figc);
 }
 
-/* figcaption:last-of-type {
-  margin: 1rem auto 0;
-} */
-
 #content h2 {
-  margin: 2.75rem auto 2rem;
-  padding: 1rem 0 0;
-  position: sticky;
-  top: 0;
-  background: var(--surface-bg-color);
+  margin: 3.75rem auto 2rem;
+  padding: 0;
+  /* position: sticky;
+  top: 0; */
+  background: var(--main-bg-color);
 }
 
 #content h2::after {
@@ -522,7 +525,7 @@ figcaption {
 #content figure.insert {
   display: flex;
   flex-flow: column nowrap;
-  background-color: var(--surface-bg-color);
+  background-color: var(--main-bg-color);
   padding: 1rem;
   border-radius: 0 12px 12px 0;
   border-left: 2px solid var(--primary-color);
