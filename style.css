@@ -155,7 +155,7 @@ nav {
   z-index: 2;
   height: auto;
   width: 100%;
-  margin: calc(-81px + -2rem) auto 0;
+  margin: -80px auto 0;
   padding: .5rem 1rem;
   overflow: scroll;
   scrollbar-width: none;
@@ -232,7 +232,7 @@ nav ul li a:hover::before {
 }
 
 main {
-  margin: calc(81px + 2rem) auto 0;
+  margin: 80px auto 0;
   width: 100%;
 }
 
@@ -240,7 +240,6 @@ main {
   max-width: 1280px;
   margin: 2rem auto;
   background: var(--main-bg-color);
-  border-radius: 8px;
   border: 1px solid var(--border-color);
 }
 
@@ -405,6 +404,10 @@ footer span {
   font-weight: 400;
 }
 
+.heading:not(.about) h1 {
+  padding: 1rem 0 0;
+}
+
 .heading span {
   display: none;
   font-size: 20px;
@@ -437,7 +440,6 @@ footer span {
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
-  border-radius: 8px;
   padding: 4rem 1rem 6rem;
   color: var(--font-color);
   background: var(--main-bg-color);
@@ -475,6 +477,7 @@ footer span {
   height: 100%;
   pointer-events: none;
   border-radius: 0px;
+  border: 1px solid var(--border-color);
   max-height: calc(100vh - 8rem);
   object-fit: contain;
 }
@@ -527,7 +530,8 @@ figcaption {
   background-color: var(--main-bg-color);
   padding: 1rem;
   border-radius: 0 12px 12px 0;
-  border-left: 2px solid var(--primary-color);
+  border: 1px solid var(--border-color);
+  border-left: 4px solid var(--primary-color);
 }
 
 figure.quote figcaption,
@@ -654,6 +658,11 @@ blockquote p {
 
   main {
     max-width: none;
+    margin: calc(81px + 2rem) auto 0;
+  }
+
+  nav {
+    margin: calc(-81px + -2rem) auto 0;
   }
 
   nav ul li:first-of-type a::after {
@@ -687,7 +696,10 @@ blockquote p {
     cursor: zoom-in;
   }
 
-  /* #content, */
+  #hero-container, #content {
+    border-radius: 8px;
+  }
+
   #hero,
   #work {
     padding: 0;
