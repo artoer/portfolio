@@ -153,10 +153,10 @@ main ul * {
 nav {
   position: fixed;
   z-index: 2;
-  height: auto;
+  height: 64px;
   width: 100%;
-  margin: -80px auto 0;
-  padding: .5rem 1rem;
+  margin: -64px auto 0;
+  padding: 0 1rem;
   overflow: scroll;
   scrollbar-width: none;
   background: var(--main-bg-color);
@@ -184,7 +184,7 @@ nav ul li {
   justify-content: center;
   align-self: center;
   font-size: 18px;
-  height: 64px;
+  height: 100%;
 }
 
 nav ul li:first-of-type>a {
@@ -232,7 +232,7 @@ nav ul li a:hover::before {
 }
 
 main {
-  margin: 80px auto 0;
+  margin: 64px auto 0;
   width: 100%;
 }
 
@@ -658,11 +658,11 @@ blockquote p {
 
   main {
     max-width: none;
-    margin: calc(81px + 2rem) auto 0;
+    margin: calc(64px + 2rem) auto 0;
   }
 
   nav {
-    margin: calc(-81px + -2rem) auto 0;
+    margin: calc(-64px + -2rem) auto 0;
   }
 
   nav ul li:first-of-type a::after {
