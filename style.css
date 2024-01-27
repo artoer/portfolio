@@ -418,6 +418,7 @@ footer span {
 
 #content.about {
   margin: 2rem auto 0;
+  border-radius: 8px;
 }
 
 .heading span.about {
@@ -704,6 +705,7 @@ blockquote p {
   #content {
     padding: 4rem 1rem;
     border: 1px solid var(--border-color);
+    border-radius: 0 0 8px 8px;
   }
 
   #hero,
@@ -744,6 +746,7 @@ blockquote p {
 
   .heading {
     padding: 0;
+    margin: 2rem auto 0;
   }
 
   .heading>* {
@@ -752,6 +755,8 @@ blockquote p {
 
   .heading img {
     margin: 0 auto;
+    border-radius: 8px 8px 0 0;
+    border-bottom: none;
   }
 
   .heading span {
