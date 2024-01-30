@@ -250,7 +250,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  height: 360px;
+  height: 320px;
   max-width: 768px;
   padding: 0 1rem;
   margin: 0 auto;
@@ -761,7 +761,7 @@ blockquote p {
   }
 
   .heading img {
-    height: 360px;
+    height: 320px;
     margin: 0 auto;
     border-radius: 8px 8px 0 0;
     border-bottom: none;
