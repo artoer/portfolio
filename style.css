@@ -17,6 +17,8 @@
   --border-color: #DDD;
   --font-family-h: 'Archivo', sans-serif;
   --font-family-b: 'Onest', sans-serif;
+  --font-size-b: clamp(1.125rem, 1.0313rem + 0.4167vw, 1.25rem);
+  --font-size-c: clamp(1rem, 0.9063rem + 0.4167vw, 1.125rem);
   --font-color: #222;
   --font-color-figc: #555;
   --font-color-alt: #F8F8FC;
@@ -108,7 +110,7 @@ h1 span {
 } */
 
 p {
-  font-size: 20px;
+  font-size: var(--font-size-b);
   line-height: 1.6;
 }
 
@@ -135,7 +137,7 @@ h3 {
 
 main li {
   list-style-position: inside;
-  font-size: 20px;
+  font-size: var(--font-size-b);
   line-height: 1.6;
 }
 
@@ -499,7 +501,7 @@ figcaption {
   align-items: center;
   margin: 1rem auto 0;
   width: 100%;
-  font-size: 18px;
+  font-size: var(--font-size-c);
   line-height: 1.6;
   text-align: left;
   color: var(--font-color-figc);
@@ -540,7 +542,7 @@ figcaption {
 figure.quote figcaption,
 figure.insert figcaption {
   max-width: 640px;
-  font-size: 20px;
+  font-size: var(--font-size-b);
   font-weight: 600;
   padding: 0;
   border: none;
