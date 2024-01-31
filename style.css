@@ -17,8 +17,8 @@
   --border-color: #DDD;
   --font-family-h: 'Archivo', sans-serif;
   --font-family-b: 'Onest', sans-serif;
-  --font-size-b: clamp(1.125rem, 1.0313rem + 0.4167vw, 1.25rem);
-  --font-size-c: clamp(1rem, 0.9063rem + 0.4167vw, 1.125rem);
+  --font-size-b: clamp(1.125rem, 0.8864rem + 0.9091vw, 1.25rem);
+  --font-size-c: clamp(1rem, 0.7614rem + 0.9091vw, 1.125rem);
   --font-color: #222;
   --font-color-figc: #555;
   --font-color-alt: #F8F8FC;
