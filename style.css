@@ -435,7 +435,7 @@ footer span {
   margin: 1.5rem auto 0 auto;
   width: 100%;
   max-width: 1280px;
-  border-radius: 8px;
+  border-radius: 0;
   border: 1px solid var(--border-color);
 }
 
