@@ -14,6 +14,7 @@
   --secondary-color: #FFC926;
   --primary-bg-color: #FCFCFF;
   --secondary-bg-color: #FEFEFE;
+  --surface-bg-color: #FBf9ff;;
   --border-color: #DDD;
   --font-family-h: 'Archivo', sans-serif;
   --font-family-b: 'Onest', sans-serif;
@@ -21,7 +22,7 @@
   --font-size-c: clamp(1rem, 0.7614rem + 0.9091vw, 1.125rem);
   --font-color: #222;
   --font-color-figc: #555;
-  --font-color-alt: #F8F8FC;
+  --font-color-alt: #FCFCFF;
 }
 
 /* Archivo - Medium */
@@ -532,7 +533,7 @@ figcaption {
 #content figure.insert {
   display: flex;
   flex-flow: column nowrap;
-  background-color: var(--secondary-bg-color);
+  background-color: var(--surface-bg-color);
   padding: 1rem;
   border-radius: 0 4px 4px 0;
   border: 1px solid var(--border-color);
@@ -779,7 +780,7 @@ blockquote p {
 
   #content figure.quote,
   #content figure.insert {
-    padding: 2rem;
+    padding: 1.5rem 2rem;
     border-left: 4px solid var(--primary-color);
   }
 
