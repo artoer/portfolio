@@ -551,6 +551,15 @@ figure.insert figcaption {
   margin: 1rem auto 0;
 }
 
+.insert p:first-of-type::before {
+  content: '"';
+}
+
+.insert p:last-of-type::after {
+  content: '"';
+}
+
+
 figure.quote figcaption::before,
 #content figure.insert figcaption::before {
   content: '—';
