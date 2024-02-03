@@ -551,12 +551,12 @@ figure.insert figcaption {
   margin: 1rem auto 0;
 }
 
-.insert p:first-of-type::before {
-  content: '"';
+.quote p:first-of-type::before, .insert p:first-of-type::before {
+  content: '“';
 }
 
-.insert p:last-of-type::after {
-  content: '"';
+.quote p:last-of-type::after, .insert p:last-of-type::after {
+  content: '”';
 }
 
 
