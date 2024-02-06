@@ -68,9 +68,7 @@ if (document.getElementById("typing-text")) {
     "researching",
     "prototyping",
     "testing",
-    "conceptualizing",
-    "implementing",
-    "evaluating",
+    "optimizing",
     "collaborating on"
   ];
   let currentSkillIndex = 0;
