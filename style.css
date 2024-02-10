@@ -10,19 +10,19 @@
 }
 
 :root {
-  --primary-color: #600DFF;
-  --secondary-color: #FFC926;
-  --primary-bg-color: #FCFCFF;
-  --secondary-bg-color: #FEFEFE;
-  --surface-bg-color: #FBf9ff;;
-  --border-color: #DDD;
+  --primary-color: hsl(264, 100%, 50%);
+  --secondary-color: hsl(48, 100%, 50%);
+  --primary-bg-color: hsl(264, 100%, 99%);
+  --secondary-bg-color: hsl(264, 100%, 99.5%);
+  --surface-bg-color: hsl(264, 100%, 100%);
+  --border-color: hsl(0, 0%, 90%);
   --font-family-h: 'Archivo', sans-serif;
   --font-family-b: 'Onest', sans-serif;
   --font-size-b: clamp(1.125rem, 0.8864rem + 0.9091vw, 1.25rem);
   --font-size-c: clamp(1rem, 0.7614rem + 0.9091vw, 1.125rem);
-  --font-color: #222;
-  --font-color-figc: #555;
-  --font-color-alt: #FCFCFF;
+  --font-color: hsl(0, 0%, 25%);
+  --font-color-figc: hsl(0, 0%, 33.3%);
+  --font-color-alt: hsl(0, 100%, 99.5%);
 }
 
 /* Archivo - Medium */
@@ -336,7 +336,7 @@ a.cta {
       var(--secondary-color),
       var(--secondary-color) 50%,
       var(--primary-color) 50%);
-  background-size: 200% 100%;
+  background-size: calc(200% + .5px) 100%;
   background-position: 100%;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
@@ -551,11 +551,13 @@ figure.insert figcaption {
   margin: 1rem auto 0;
 }
 
-.quote p:first-of-type::before, .insert p:first-of-type::before {
+.quote p:first-of-type::before,
+.insert p:first-of-type::before {
   content: '“';
 }
 
-.quote p:last-of-type::after, .insert p:last-of-type::after {
+.quote p:last-of-type::after,
+.insert p:last-of-type::after {
   content: '”';
 }
 
@@ -711,7 +713,8 @@ blockquote p {
     cursor: zoom-in;
   }
 
-  #hero-container, #content {
+  #hero-container,
+  #content {
     border-radius: 8px;
   }
 
