@@ -420,10 +420,6 @@ footer span {
   width: 100%;
 }
 
-#content.about {
-  margin: 2rem auto 0;
-  border-radius: 8px;
-}
 
 .heading span.about {
   display: inline-block;
@@ -714,7 +710,7 @@ blockquote p {
   }
 
   #hero-container,
-  #content {
+  #content, #content.about {
     border-radius: 8px;
   }
 
