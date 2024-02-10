@@ -336,7 +336,7 @@ a.cta {
       var(--secondary-color),
       var(--secondary-color) 50%,
       var(--primary-color) 50%);
-  background-size: calc(200% + .5px) 100%;
+  background-size: calc(200% + 1%) 100%;
   background-position: 100%;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
