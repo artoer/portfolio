@@ -465,7 +465,7 @@ footer span {
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 2rem 1rem 4rem;
   color: var(--font-color);
   background: var(--secondary-bg-color);
   border-top: 1px solid var(--border-color);
