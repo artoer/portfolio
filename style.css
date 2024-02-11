@@ -585,7 +585,7 @@ figure.insert figcaption {
 figure.quote figcaption::before,
 #content figure.insert figcaption::before {
   content: '—';
-  margin-right: .25rem;
+  margin: 0 .25rem auto 0;
 }
 
 blockquote {
