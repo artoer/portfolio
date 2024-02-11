@@ -83,16 +83,20 @@ nav a {
 
 a {
   color: var(--primary-color);
-  text-decoration-color: var(--primary-color);
-  text-decoration-thickness: .125rem;
-  text-underline-offset: .1875rem;
+  text-decoration: none;
   font-weight: inherit;
   font-family: inherit;
 }
 
-h1 a {
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--primary-color);
+  text-decoration-thickness: .125rem;
+  text-underline-offset: .1875rem;
+}
+
+h1 a:hover, footer a:hover {
   text-decoration: none;
-  font-weight: inherit;
 }
 
 span {
