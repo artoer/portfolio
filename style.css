@@ -15,7 +15,7 @@
   --primary-bg-color: hsl(264, 100%, 99%);
   --secondary-bg-color: hsl(264, 100%, 99.5%);
   --surface-bg-color: hsl(264, 100%, 100%);
-  --border-color: hsl(0, 0%, 90%);
+  --border-color: hsl(0, 0%, 25%);
   --font-family-h: 'Archivo', sans-serif;
   --font-family-b: 'Onest', sans-serif;
   --font-size-b: clamp(1.125rem, 0.8864rem + 0.9091vw, 1.25rem);
