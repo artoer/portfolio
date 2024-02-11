@@ -95,7 +95,8 @@ a:hover {
   text-underline-offset: .1875rem;
 }
 
-h1 a:hover, footer a:hover {
+h1 a:hover,
+footer a:hover {
   text-decoration: none;
 }
 
@@ -228,6 +229,25 @@ nav ul li a {
   text-decoration: none;
   position: relative;
 }
+
+
+/* nav ul li:not(:first-of-type) a::after {
+  content: '';
+  display: block;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-image: linear-gradient(to right, var(--primary-color), var(--primary-color) 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: all 0.2s ease-in-out;
+}
+
+
+nav ul li:not(:first-of-type) a:hover::after {
+  background-position: 0;
+} */
 
 nav ul li a:hover,
 .active {
@@ -714,12 +734,13 @@ blockquote p {
   }
 
   #hero-container,
-  #content, #content.about {
+  #content,
+  #content.about {
     border-radius: 8px;
   }
 
   #content {
-    padding: 6rem 1rem;
+    padding: 4rem 1rem 6rem;
     border: 1px solid var(--border-color);
     border-radius: 0 0 8px 8px;
   }
