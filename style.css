@@ -118,6 +118,7 @@ h1 span {
 p {
   font-size: var(--font-size-b);
   line-height: 1.6;
+  column-span: all;
 }
 
 h2,
@@ -145,6 +146,10 @@ main li {
   list-style-position: inside;
   font-size: var(--font-size-b);
   line-height: 1.6;
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  list-style-position: inside;
 }
 
 main li::marker {
@@ -529,7 +534,7 @@ figcaption {
 }
 
 #content h2 {
-  margin: 3.75rem auto 2rem;
+  margin: 3.75rem auto 1.5rem;
   padding: 0;
   /* position: sticky;
   top: 0; */
