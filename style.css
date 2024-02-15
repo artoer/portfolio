@@ -526,7 +526,7 @@ figcaption {
   display: flex;
   align-items: center;
   margin: 1rem auto 0;
-  padding: 0 2rem;
+  padding: 0 1rem;
   width: 100%;
   font-size: var(--font-size-c);
   line-height: 1.6;
@@ -821,6 +821,10 @@ blockquote p {
 
   .two-col {
     columns: 2;
+  }
+
+  figcaption {
+    padding: 0 2rem;
   }
 
   #content figure.quote,
