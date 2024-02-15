@@ -130,16 +130,16 @@ h4 {
 
 h1 {
   line-height: 1.2;
-  font-size: 36px;
+  font-size: 40px;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 32px;
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 26px;
 }
 
 main li {
@@ -526,6 +526,7 @@ figcaption {
   display: flex;
   align-items: center;
   margin: 1rem auto 0;
+  padding: 0 2rem;
   width: 100%;
   font-size: var(--font-size-c);
   line-height: 1.6;
@@ -534,10 +535,8 @@ figcaption {
 }
 
 #content h2 {
-  margin: 3.75rem auto 1.5rem;
-  padding: 0;
-  /* position: sticky;
-  top: 0; */
+  margin: 3rem auto 2rem;
+  padding: 1.25rem 0 0;
   background: var(--secondary-bg-color);
 }
 
@@ -551,7 +550,7 @@ figcaption {
 }
 
 #content h3 {
-  margin: 2rem auto .5rem;
+  margin: 2.5rem auto .75rem;
 }
 
 #content figure.quote,
@@ -753,6 +752,14 @@ blockquote p {
   #hero,
   #work {
     padding: 0;
+  }
+
+  #hero h2, #work h2{
+    font-size: 28px;
+  }
+
+  #hero h3, #work h3{
+    font-size: 24px;
   }
 
   .card {
