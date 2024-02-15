@@ -606,8 +606,12 @@ blockquote p {
 }
 
 .insert p {
-  font-size: 24px;
-  font-weight: 600;
+  font-family: var(--font-family-h);
+  font-size: 22px;
+}
+
+.insert p strong {
+  color: var(--primary-color); 
 }
 
 .modal {
