@@ -23,6 +23,8 @@
   --font-color: hsl(0, 0%, 25%);
   --font-color-figc: hsl(0, 0%, 33.3%);
   --font-color-alt: hsl(0, 100%, 99.5%);
+  --container-width: 1280px;
+  --content-width: 640px;
 }
 
 /* Archivo - Medium */
@@ -190,7 +192,7 @@ nav ul {
   flex-flow: row nowrap;
   box-sizing: border-box;
   justify-content: space-between;
-  max-width: 1280px;
+  max-width: var(--container-width);;
   height: 100%;
   margin: 0 auto;
 }
@@ -274,7 +276,7 @@ main {
 }
 
 #hero-container {
-  max-width: 1280px;
+  max-width: var(--container-width);;
   height: 320px;
   margin: 2rem auto;
   background: var(--secondary-bg-color);
@@ -291,13 +293,17 @@ main {
   max-width: 768px;
   padding: 0 1rem;
   margin: 0 auto;
-  gap: .25rem;
+}
+
+#hero p {
+  color: var(--font-color-figc);
+  margin: 1.5rem 0 0;
 }
 
 #work {
   display: grid;
   row-gap: 2rem;
-  max-width: 1280px;
+  max-width: var(--container-width);;
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -465,14 +471,14 @@ footer span {
   display: block;
   margin: 1.5rem auto 0 auto;
   width: 100%;
-  max-width: 1280px;
+  max-width: var(--container-width);;
   border-radius: 0;
   border: 1px solid var(--border-color);
 }
 
 #content {
   position: relative;
-  max-width: 1280px;
+  max-width: var(--container-width);;
   width: 100%;
   margin: 0 auto;
   padding: 2rem 1rem 4rem;
@@ -484,12 +490,12 @@ footer span {
 
 .heading>* {
   margin: 0 auto;
-  max-width: 640px;
+  max-width: var(--content-width);;
   color: var(--font-color);
 }
 
 #content>* {
-  max-width: 640px;
+  max-width: var(--content-width);;
   width: 100%;
   margin: 0 auto 1.5rem;
 }
@@ -571,7 +577,7 @@ figcaption {
 
 figure.quote figcaption,
 figure.insert figcaption {
-  max-width: 640px;
+  max-width: var(--content-width);;
   font-size: var(--font-size-b);
   font-weight: 600;
   padding: 0;
@@ -606,7 +612,7 @@ blockquote :last-child {
 }
 
 blockquote p {
-  max-width: 640px;
+  max-width: var(--content-width);;
   margin: 0 auto 1.5rem;
 }
 
