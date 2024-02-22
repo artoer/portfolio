@@ -788,7 +788,7 @@ blockquote p {
 
 
   .card {
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 2fr;
     grid-template-rows: auto;
   }
 
@@ -798,7 +798,7 @@ blockquote p {
   }
 
   .card>div {
-    padding: 0 2rem;
+    padding: 4rem;
   }
 
   a.cta {
