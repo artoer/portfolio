@@ -12,7 +12,7 @@
 :root {
   --primary-color: hsl(264, 100%, 50%);
   --secondary-color: hsl(48, 100%, 50%);
-  --primary-bg-color: hsl(264, 100%, 98%);
+  --primary-bg-color: hsl(264, 100%, 99%);
   --secondary-bg-color: hsl(264, 100%, 99.5%);
   --surface-bg-color: hsl(264, 100%, 100%);
   --border-color: hsl(0, 0%, 25%);
@@ -280,7 +280,6 @@ main {
   height: 320px;
   margin: 2rem auto;
   background: var(--secondary-bg-color);
-  border: 1px solid var(--border-color);
 }
 
 #hero {
