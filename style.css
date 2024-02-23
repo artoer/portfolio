@@ -14,8 +14,7 @@
   --secondary-color: hsl(48, 100%, 50%);
 
   --primary-bg-color: hsl(264, 100%, 100%);
-  --secondary-bg-color: hsl(264, 100%, 99.5%);
-  --surface-bg-color: hsl(264, 100%, 99%);
+  --secondary-bg-color: hsl(264, 100%, 99%);
 
   --border-color: hsl(0, 0%, 25%);
 
@@ -70,7 +69,7 @@
 html {
   height: 100%;
   scroll-behavior: smooth;
-  background-color: var(--surface-bg-color);
+  background-color: var(--secondary-bg-color);
   background-attachment: fixed;
   overflow-y: scroll;
 }
@@ -184,8 +183,8 @@ nav {
   padding: 0 1rem;
   overflow: scroll;
   scrollbar-width: none;
-  background: var(--primary-bg-color);
-  border-bottom: 1px solid var(--border-color);
+  background: var(--secondary-bg-color);
+  /* border-bottom: 2px solid var(--border-color); */
 }
 
 nav::-webkit-scrollbar {
@@ -315,8 +314,8 @@ main {
 .card {
   display: grid;
   grid-template-rows: auto auto;
-  background: var(--secondary-bg-color);
-  border: 1px solid var(--border-color);
+  background: var(--primary-bg-color);
+  border: 2px solid var(--border-color);
   border-radius: 8px;
   overflow: hidden;
   height: 100%;
@@ -326,7 +325,7 @@ main {
 .card>img {
   height: 100%;
   width: 100%;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 2px solid var(--border-color);
 }
 
 .card>div {
@@ -372,7 +371,7 @@ main {
 a.cta {
   border-radius: 4px;
   color: var(--font-color-alt);
-  padding: 0 2rem;
+  padding: 0 2.5rem;
   margin: 1rem 0 0 auto;
   height: 52px;
   width: 100%;
@@ -391,6 +390,8 @@ a.cta {
   justify-content: center;
   gap: .75rem;
   align-items: center;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 0 0 var(--border-color);
 }
 
 a.cta>i {
@@ -441,7 +442,7 @@ footer span {
 /* CASE STUDY PAGE */
 .heading {
   position: relative;
-  margin: 2rem auto;
+  margin: 0;
   padding: 0 1rem;
 }
 
@@ -474,22 +475,19 @@ footer span {
 .heading img {
   display: block;
   margin: 1.5rem auto 0 auto;
+  border: 2px solid var(--border-color);
   width: 100%;
-  max-width: var(--max-width);
-  border: 1px solid var(--border-color);
+  max-width: var(--container-width);
   border-radius: 0;
 }
 
 #content {
   position: relative;
-  max-width: var(--container-width);;
   width: 100%;
   margin: 0 auto;
   padding: 2rem 1rem 4rem;
   color: var(--font-color);
   background: var(--secondary-bg-color);
-  border-top: 1px solid var(--border-color);
-  border-bottom: 1px solid var(--border-color);
 }
 
 .heading>* {
@@ -523,7 +521,8 @@ footer span {
   height: auto;
   pointer-events: none;
   border-radius: 0px;
-  border: 1px solid var(--border-color);
+  border: 2px solid var(--border-color);
+  background: var(--primary-bg-color);
   max-height: calc(100vh - 8rem);
   object-fit: contain;
 }
@@ -575,7 +574,7 @@ figcaption {
   background-color: var(--primary-bg-color);
   padding: 1rem;
   border-radius: 0 4px 4px 0;
-  border: 1px solid var(--border-color);
+  border: 2px solid var(--border-color);
   border-left: 4px solid var(--surface-color);
 }
 
@@ -781,9 +780,7 @@ blockquote p {
 
   #content {
     padding: 4rem 1rem 6rem;
-    border: 1px solid var(--border-color);
     border-radius: 8px;
-    margin-top: -4rem;
   }
 
   #hero,
@@ -800,7 +797,7 @@ blockquote p {
 
   .card>img {
     border: 0;
-    border-right: 1px solid var(--border-color);
+    border-right: 2px solid var(--border-color);
   }
 
   .card>div {
@@ -820,7 +817,7 @@ blockquote p {
 
   .heading:not(.about) h1 {
     position: absolute;
-    top: calc(50% - 2rem);
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 1rem;
@@ -840,9 +837,9 @@ blockquote p {
   }
 
   .heading img {
-    height: 384px;
+    height: 480px;
     margin: 0 auto;
-    border-radius: 16px;
+    border-radius: 8px;
   }
 
   .heading span {
