@@ -10,12 +10,15 @@
 }
 
 :root {
-  --primary-color: hsl(264, 100%, 50%);
+  --surface-color: hsl(264, 100%, 50%);
   --secondary-color: hsl(48, 100%, 50%);
-  --primary-bg-color: hsl(264, 100%, 99%);
+
+  --primary-bg-color: hsl(264, 100%, 100%);
   --secondary-bg-color: hsl(264, 100%, 99.5%);
-  --surface-bg-color: hsl(264, 100%, 100%);
+  --surface-bg-color: hsl(264, 100%, 99%);
+
   --border-color: hsl(0, 0%, 25%);
+
   --font-family-h: 'Archivo', sans-serif;
   --font-family-b: 'Onest', sans-serif;
   --font-size-b: clamp(1.125rem, 0.8864rem + 0.9091vw, 1.25rem);
@@ -23,7 +26,9 @@
   --font-color: hsl(0, 0%, 25%);
   --font-color-figc: hsl(0, 0%, 33.3%);
   --font-color-alt: hsl(0, 100%, 99.5%);
-  --container-width: 1280px;
+
+  --max-width: 1280px;
+  --container-width: 960px;
   --content-width: 640px;
 }
 
@@ -65,7 +70,7 @@
 html {
   height: 100%;
   scroll-behavior: smooth;
-  background-color: var(--primary-bg-color);
+  background-color: var(--surface-bg-color);
   background-attachment: fixed;
   overflow-y: scroll;
 }
@@ -84,7 +89,7 @@ nav a {
 }
 
 a {
-  color: var(--primary-color);
+  color: var(--surface-color);
   text-decoration: none;
   font-weight: inherit;
   font-family: inherit;
@@ -92,7 +97,7 @@ a {
 
 a:hover {
   text-decoration: underline;
-  text-decoration-color: var(--primary-color);
+  text-decoration-color: var(--surface-color);
   text-decoration-thickness: .125rem;
   text-underline-offset: .1875rem;
 }
@@ -108,7 +113,7 @@ span {
 }
 
 h1 span {
-  color: var(--primary-color);
+  color: var(--surface-color);
 }
 
 /* #content a {
@@ -160,7 +165,7 @@ main li {
 
 main li::marker {
   font-weight: 700;
-  color: var(--primary-color);
+  color: var(--surface-color);
 }
 
 main ol *,
@@ -179,7 +184,7 @@ nav {
   padding: 0 1rem;
   overflow: scroll;
   scrollbar-width: none;
-  background: var(--secondary-bg-color);
+  background: var(--primary-bg-color);
   border-bottom: 1px solid var(--border-color);
 }
 
@@ -192,7 +197,7 @@ nav ul {
   flex-flow: row nowrap;
   box-sizing: border-box;
   justify-content: space-between;
-  max-width: var(--container-width);;
+  max-width: var(--max-width);;
   height: 100%;
   margin: 0 auto;
 }
@@ -228,8 +233,8 @@ nav ul li a {
   font-weight: 500;
   padding: 0 8px 0;
   background-image: linear-gradient(to right,
-      var(--primary-color),
-      var(--primary-color) 50%,
+      var(--surface-color),
+      var(--surface-color) 50%,
       var(--font-color) 50%);
   background-size: 200% 100%;
   background-position: 100%;
@@ -249,7 +254,7 @@ nav ul li a {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background-image: linear-gradient(to right, var(--primary-color), var(--primary-color) 50%, transparent 50%);
+  background-image: linear-gradient(to right, var(--surface-color), var(--surface-color) 50%, transparent 50%);
   background-size: 200% 100%;
   background-position: 100%;
   transition: all 0.2s ease-in-out;
@@ -276,7 +281,7 @@ main {
 }
 
 #hero-container {
-  max-width: var(--container-width);;
+  max-width: var(--max-width);;
   height: 320px;
   margin: 2rem auto;
   background: var(--secondary-bg-color);
@@ -302,7 +307,7 @@ main {
 #work {
   display: grid;
   row-gap: 2rem;
-  max-width: var(--container-width);;
+  max-width: var(--max-width);;
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -343,7 +348,7 @@ main {
 }
 
 #open-in-new-tab {
-  background-color: var(--primary-color);
+  background-color: var(--surface-color);
   text-decoration: none;
   cursor: pointer;
   width: 48px;
@@ -374,7 +379,7 @@ a.cta {
   background-image: linear-gradient(to right,
       var(--secondary-color),
       var(--secondary-color) 50%,
-      var(--primary-color) 50%);
+      var(--surface-color) 50%);
   background-size: calc(200% + 1%) 100%;
   background-position: 100%;
   transition: all 0.2s ease-in-out;
@@ -425,7 +430,7 @@ footer a {
 }
 
 footer a i {
-  color: var(--primary-color);
+  color: var(--surface-color);
 }
 
 footer span {
@@ -470,9 +475,9 @@ footer span {
   display: block;
   margin: 1.5rem auto 0 auto;
   width: 100%;
-  max-width: var(--container-width);;
-  border-radius: 0;
+  max-width: var(--max-width);
   border: 1px solid var(--border-color);
+  border-radius: 0;
 }
 
 #content {
@@ -556,7 +561,7 @@ figcaption {
   height: 4px;
   width: 100%;
   margin: 1.5rem 0 0;
-  background: var(--primary-color);
+  background: var(--surface-color);
 }
 
 #content h3 {
@@ -567,11 +572,11 @@ figcaption {
 #content figure.insert {
   display: flex;
   flex-flow: column nowrap;
-  background-color: var(--surface-bg-color);
+  background-color: var(--primary-bg-color);
   padding: 1rem;
   border-radius: 0 4px 4px 0;
   border: 1px solid var(--border-color);
-  border-left: 4px solid var(--primary-color);
+  border-left: 4px solid var(--surface-color);
 }
 
 figure.quote figcaption,
@@ -620,7 +625,7 @@ blockquote p {
 } */
 
 .insert p strong {
-  color: var(--primary-color); 
+  color: var(--surface-color); 
   font-family: inherit;
 }
 
@@ -653,7 +658,7 @@ blockquote p {
 }
 
 #typing-text {
-  color: var(--primary-color);
+  color: var(--surface-color);
   position: relative;
 }
 
@@ -705,7 +710,7 @@ blockquote p {
 }
 
 .close-btn i {
-  color: var(--primary-color);
+  color: var(--surface-color);
 }
 
 /* TABLET AND UP */
@@ -777,7 +782,8 @@ blockquote p {
   #content {
     padding: 4rem 1rem 6rem;
     border: 1px solid var(--border-color);
-    border-radius: 0 0 8px 8px;
+    border-radius: 8px;
+    margin-top: -4rem;
   }
 
   #hero,
@@ -814,11 +820,11 @@ blockquote p {
 
   .heading:not(.about) h1 {
     position: absolute;
-    top: 50%;
+    top: calc(50% - 2rem);
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 1rem;
-    background: var(--primary-color);
+    background: var(--surface-color);
     border-radius: 4px;
     line-height: 100%;
     max-width: unset;
@@ -834,10 +840,9 @@ blockquote p {
   }
 
   .heading img {
-    height: 320px;
+    height: 384px;
     margin: 0 auto;
-    border-radius: 8px 8px 0 0;
-    border-bottom: none;
+    border-radius: 16px;
   }
 
   .heading span {
@@ -855,7 +860,7 @@ blockquote p {
   #content figure.quote,
   #content figure.insert {
     padding: 1.5rem 2rem;
-    border-left: 4px solid var(--primary-color);
+    border-left: 4px solid var(--surface-color);
   }
 
   #content figure img {
