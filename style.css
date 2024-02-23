@@ -390,7 +390,7 @@ a.cta {
   justify-content: center;
   gap: .75rem;
   align-items: center;
-  border: 1px solid var(--border-color);
+  border: 2px solid var(--border-color);
   box-shadow: 0 4px 0 0 var(--border-color);
 }
 
@@ -512,7 +512,7 @@ footer span {
 
 #content figure {
   margin: 2rem auto;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 
 #content img {
@@ -533,7 +533,7 @@ footer span {
   height: auto;
   margin: .25rem 0 1.25rem 1.25rem;
   position: relative;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 
 figcaption {
@@ -573,9 +573,9 @@ figcaption {
   flex-flow: column nowrap;
   background-color: var(--primary-bg-color);
   padding: 1rem;
-  border-radius: 0 4px 4px 0;
+  border-radius: 8px;
   border: 2px solid var(--border-color);
-  border-left: 4px solid var(--surface-color);
+  box-shadow: 0 4px 0 0 var(--border-color);
 }
 
 figure.quote figcaption,
@@ -779,7 +779,7 @@ blockquote p {
   }
 
   #content {
-    padding: 4rem 1rem 6rem;
+    padding: 2rem 1rem 6rem;
     border-radius: 8px;
   }
 
@@ -857,7 +857,6 @@ blockquote p {
   #content figure.quote,
   #content figure.insert {
     padding: 1.5rem 2rem;
-    border-left: 4px solid var(--surface-color);
   }
 
   #content figure img {
