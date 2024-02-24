@@ -14,7 +14,7 @@
   --secondary-color: hsl(48, 100%, 50%);
 
   --primary-bg-color: hsl(264, 100%, 100%);
-  --secondary-bg-color: hsl(264, 100%, 98%);
+  --secondary-bg-color: hsl(264, 100%, 99%);
 
   --border-color: hsl(0, 0%, 25%);
 
@@ -315,8 +315,8 @@ main {
   display: grid;
   grid-template-rows: auto auto;
   background: var(--primary-bg-color);
-  /* border: 2px solid var(--border-color);
-  box-shadow: 0 4px 0 0 var(--border-color); */
+  border: 1px solid var(--border-color);
+  /* box-shadow: 0 4px 0 0 var(--border-color); */
   border-radius: 8px;
   overflow: hidden;
   height: 100%;
@@ -326,6 +326,7 @@ main {
 .card>img {
   height: 100%;
   width: 100%;
+  box-shadow: rgba(0, 0, 0,.02) 0px 0px 1rem 0px;
   /* border-bottom: 1px solid var(--border-color); */
 }
 
@@ -389,7 +390,7 @@ a.cta {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: .75rem;
+  gap: 1rem;
   align-items: center;
   border: 2px solid var(--border-color);
   box-shadow: 0 4px 0 0 var(--border-color);
@@ -401,7 +402,7 @@ a.cta>i {
 
 a.cta:hover {
   color: var(--font-color);
-  background-position: 0;
+  background-position: -.5px;
 }
 
 footer {
@@ -477,10 +478,11 @@ footer span {
   display: block;
   margin: 1.5rem auto 0 auto;
   width: 100%;
-  max-width: var(--container-width);
+  max-width: var(--max-width);
   /* border: 1px solid var(--border-color); */
   /* box-shadow: 0 2px 0 0 var(--border-color); */
-  border-radius: 0;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 0px 1rem 0px;
+  border-radius: 4px;
 }
 
 #content {
@@ -526,6 +528,7 @@ footer span {
   max-height: calc(100vh - 8rem);
   object-fit: contain;
   margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 0px 1rem 0px;
   /* box-shadow: 0px 0px 24px rgba(0,0,0,.1); */
   /* border: 1px solid var(--border-color); */
 }
@@ -767,7 +770,7 @@ blockquote p {
   .modal-img-container img {
     display: block;
     margin: auto;
-    border-radius: 0;
+    border-radius: 4px;
     width: 100%;
     max-height: calc(100vh - 16rem);
     max-width: calc(100vw - 16rem);
@@ -843,7 +846,7 @@ blockquote p {
     height: auto;
     margin: 0 auto;
     border-radius: 8px;
-    aspect-ratio: 3 / 1;
+    aspect-ratio: 4 / 1;
   }
 
   .heading span {
