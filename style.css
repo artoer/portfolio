@@ -14,7 +14,7 @@
   --secondary-color: hsl(48, 100%, 50%);
 
   --primary-bg-color: hsl(264, 100%, 100%);
-  --secondary-bg-color: hsl(264, 100%, 99%);
+  --secondary-bg-color: hsl(264, 100%, 98%);
 
   --border-color: hsl(0, 0%, 25%);
 
@@ -315,8 +315,8 @@ main {
   display: grid;
   grid-template-rows: auto auto;
   background: var(--primary-bg-color);
-  border: 1px solid var(--border-color);
-  /* box-shadow: 0 2px 0 0 var(--border-color); */
+  /* border: 2px solid var(--border-color);
+  box-shadow: 0 4px 0 0 var(--border-color); */
   border-radius: 8px;
   overflow: hidden;
   height: 100%;
@@ -326,7 +326,7 @@ main {
 .card>img {
   height: 100%;
   width: 100%;
-  border-bottom: 1px solid var(--border-color);
+  /* border-bottom: 1px solid var(--border-color); */
 }
 
 .card>div {
@@ -478,7 +478,7 @@ footer span {
   margin: 1.5rem auto 0 auto;
   width: 100%;
   max-width: var(--container-width);
-  border: 1px solid var(--border-color);
+  /* border: 1px solid var(--border-color); */
   /* box-shadow: 0 2px 0 0 var(--border-color); */
   border-radius: 0;
 }
@@ -527,7 +527,7 @@ footer span {
   object-fit: contain;
   margin: 0 auto;
   /* box-shadow: 0px 0px 24px rgba(0,0,0,.1); */
-  border: 1px solid var(--border-color);
+  /* border: 1px solid var(--border-color); */
 }
 
 #content img.float {
@@ -782,7 +782,7 @@ blockquote p {
   }
 
   #content {
-    padding: 2rem 1rem 6rem;
+    padding: 3rem 1rem 6rem;
     border-radius: 8px;
   }
 
@@ -800,7 +800,7 @@ blockquote p {
 
   .card>img {
     border: 0;
-    border-right: 1px solid var(--border-color);
+    /* border-right: 1px solid var(--border-color); */
   }
 
   .card>div {
