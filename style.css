@@ -13,8 +13,8 @@
   --surface-color: hsl(264, 100%, 50%);
   --secondary-color: hsl(48, 100%, 50%);
 
-  --primary-bg-color: hsl(264, 100%, 100%);
-  --secondary-bg-color: hsl(264, 100%, 99%);
+  --primary-bg-color: hsl(264, 50%, 98%);
+  --secondary-bg-color: hsl(264, 50%, 100%);
 
   --border-color: hsl(0, 0%, 25%);
 
@@ -315,8 +315,6 @@ main {
   display: grid;
   grid-template-rows: auto auto;
   background: var(--primary-bg-color);
-  border: 1px solid var(--border-color);
-  /* box-shadow: 0 4px 0 0 var(--border-color); */
   border-radius: 8px;
   overflow: hidden;
   height: 100%;
@@ -326,7 +324,7 @@ main {
 .card>img {
   height: 100%;
   width: 100%;
-  box-shadow: rgba(0, 0, 0,.05) 0px 0px 1rem 0px;
+
   /* border-bottom: 1px solid var(--border-color); */
 }
 
@@ -392,8 +390,6 @@ a.cta {
   justify-content: center;
   gap: 1rem;
   align-items: center;
-  border: 2px solid var(--border-color);
-  box-shadow: 0 4px 0 0 var(--border-color);
 }
 
 a.cta>i {
@@ -480,8 +476,8 @@ footer span {
   width: 100%;
   max-width: var(--max-width);
   /* border: 1px solid var(--border-color); */
-  /* box-shadow: 0 2px 0 0 var(--border-color); */
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 1rem 0px;
+
+
   border-radius: 4px;
 }
 
@@ -524,12 +520,12 @@ footer span {
   height: auto;
   pointer-events: none;
   border-radius: 0px;
-  background: var(--primary-bg-color);
+  background: #FFF;
   max-height: calc(100vh - 8rem);
   object-fit: contain;
   margin: 0 auto;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 1rem 0px;
-  /* box-shadow: 0px 0px 24px rgba(0,0,0,.1); */
+
+
   /* border: 1px solid var(--border-color); */
 }
 
@@ -577,7 +573,7 @@ figcaption {
 #content figure.insert {
   display: flex;
   flex-flow: column nowrap;
-  background-color: var(--primary-bg-color);
+  background-color: #FFF;
   padding: 1rem;
   border-radius: 8px;
   border: 2px solid var(--border-color);
@@ -614,6 +610,10 @@ figure.quote figcaption::before,
 
 blockquote {
   margin: 0 auto;
+}
+
+blockquote:not(:last-of-type) {
+  margin-bottom: 1.5rem;
 }
 
 blockquote :last-child {
