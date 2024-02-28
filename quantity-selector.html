@@ -80,10 +80,8 @@
         quantity selector to the sticky bottom bar.</p>
       <figure>
         <img src="./img/quantity-selector/8.png" alt="">
-        <figcaption>Snapshot of the current situation above the fold. Note the sticky bottom bar always being present,
-          even when scrolled to the top of the page, leaving us with a limited area to work with if we keep this
-          behavior
-          intact.</figcaption>
+        <figcaption>Current situation. Note the sticky bottom bar, containing price and call-to-action, always being present
+          even when scrolled above the fold. Limiting the addition of complex user interactions such as a quantity selector.</figcaption>
       </figure>
       <p>After, I focused on exploring design patterns employed by other e-commerce
         platforms before diving into Sketch.</p>
@@ -112,10 +110,14 @@
         </figcaption>
       </figure>
       <h2>Solution</h2>
-      <p>After many iterations and feedback rounds with stakeholders, it was decided to display the options, price, and
+      <p>After many iterations, gathering continuous feedback from the product owner, UX designer, and CRO specialist
+        along the way, it was collaboratively decided to display the options, price, and
         add-to-cart button at the top of the
         page, while the sticky bottom bar would contain a quantity selector and add-to-cart button. If options need
-        selection, the user would be taken to the top of the page.</p>
+        selection, the user would be taken to the top of the page. After much experimentation, I came to recognize the
+        importance of prioritizing
+        key functions in the sticky bottom bar, ensuring a streamlined purchasing process while utilizing the space
+        above the fold for more complex user interactions.</p>
       <figure>
         <img src="./img/quantity-selector/6.png" alt="">
         <figcaption>Designs illustrating above-the-fold scenarios where users are prompted to make selections or choose
@@ -130,7 +132,8 @@
       <p>The final designs were shared in a Jira ticket, ensuring that they were easily accessible for further
         consideration and implementation by the development team.</p>
       <h3>Validation</h3>
-      <p>As a continuation, and partially validating the solution, an A/B test was conducted to assess featuring the add-to-cart
+      <p>As a continuation, and partially validating the solution, an A/B test was conducted to assess featuring the
+        add-to-cart
         call-to-action both above the
         fold and during scroll. Tracking call-to-action clicks revealed a notable increase, supporting the positive
         impact of this adjustment and suggesting the potential for integrating a quantity selector feature.</p>
