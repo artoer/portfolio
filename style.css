@@ -26,9 +26,8 @@
   --font-color-figc: hsl(0, 0%, 35%);
   --font-color-alt: hsl(0, 0%, 98%);
 
-  --max-width: 1280px;
-  --container-width: 960px;
-  --content-width: 640px;
+  --max-width: 1440px;
+  --content-width: 720px;
 }
 
 /* Archivo - Medium */
@@ -343,7 +342,7 @@ main {
 }
 
 .card>div>h3 {
-  margin: 0 0 .25rem;
+  margin: 0 0 .75rem;
 }
 
 #open-in-new-tab {
@@ -811,7 +810,7 @@ blockquote p {
   }
 
   a.cta {
-    margin: 1.5rem auto 0 0;
+    margin: 2rem auto 0 0;
     width: auto;
   }
 
