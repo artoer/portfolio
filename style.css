@@ -126,6 +126,10 @@ p {
   column-span: all;
 }
 
+#content p:has(+ ul) {
+  margin-bottom: .75rem;
+}
+
 h2,
 h3,
 h4 {
@@ -568,7 +572,11 @@ figcaption {
   margin: 3rem auto .75rem;
 }
 
-#content h2 + * {
+#content h4 {
+  margin: 1.5rem auto .75rem;
+}
+
+#content h2 + *, #content h3 + figure  {
   margin-top: 1.5rem;
 }
 
