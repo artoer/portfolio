@@ -173,6 +173,7 @@ main li::marker {
 main ol *,
 main ul * {
   margin-bottom: .75rem;
+  text-indent: 19px hanging;
 }
 
 /* NAV */
