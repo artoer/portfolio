@@ -167,13 +167,19 @@ main li {
 
 main li::marker {
   font-weight: 700;
+  font-size: 24px;
   color: var(--surface-color);
+}
+
+li:before {
+  content: "";
+  margin-left: .5rem;
 }
 
 main ol *,
 main ul * {
-  margin-bottom: .75rem;
-  text-indent: 19px hanging;
+  margin-bottom: .5rem;
+  text-indent: calc(23px + .5rem) hanging;
 }
 
 /* NAV */
