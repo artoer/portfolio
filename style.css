@@ -807,12 +807,13 @@ blockquote p {
     border-radius: 8px;
   }
 
-  #hero,
   #work {
     padding: 0;
   }
 
-
+  #hero {
+    padding: 0 0 2rem;
+  }
 
   .card {
     grid-template-columns: 3fr 2fr;
