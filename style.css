@@ -10,7 +10,7 @@
 }
 
 :root {
-  --surface-color: hsl(264, 100%, 50%);
+  --primary-color: hsl(264, 100%, 50%);
   --secondary-color: hsl(48, 100%, 50%);
 
   --primary-bg-color: hsl(264, 100%, 98%);
@@ -87,7 +87,7 @@ nav a {
 }
 
 a {
-  color: var(--surface-color);
+  color: var(--primary-color);
   text-decoration: none;
   font-weight: inherit;
   font-family: inherit;
@@ -95,7 +95,7 @@ a {
 
 a:hover {
   text-decoration: underline;
-  text-decoration-color: var(--surface-color);
+  text-decoration-color: var(--primary-color);
   text-decoration-thickness: .125rem;
   text-underline-offset: .1875rem;
 }
@@ -111,7 +111,7 @@ span {
 }
 
 h1 span {
-  color: var(--surface-color);
+  color: var(--primary-color);
 }
 
 /* #content a {
@@ -168,7 +168,7 @@ main li {
 main li::marker {
   font-weight: 700;
   font-size: 24px;
-  color: var(--surface-color);
+  color: var(--primary-color);
 }
 
 li:before {
@@ -242,8 +242,8 @@ nav ul li a {
   font-weight: 500;
   padding: 0 8px 0;
   background-image: linear-gradient(to right,
-      var(--surface-color),
-      var(--surface-color) 50%,
+      var(--primary-color),
+      var(--primary-color) 50%,
       var(--font-color) 50%);
   background-size: 200% 100%;
   background-position: 100%;
@@ -263,7 +263,7 @@ nav ul li a {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background-image: linear-gradient(to right, var(--surface-color), var(--surface-color) 50%, transparent 50%);
+  background-image: linear-gradient(to right, var(--primary-color), var(--primary-color) 50%, transparent 50%);
   background-size: 200% 100%;
   background-position: 100%;
   transition: all 0.2s ease-in-out;
@@ -357,7 +357,7 @@ main {
 }
 
 #open-in-new-tab {
-  background-color: var(--surface-color);
+  background-color: var(--primary-color);
   text-decoration: none;
   cursor: pointer;
   width: 48px;
@@ -388,7 +388,7 @@ a.cta {
   background-image: linear-gradient(to right,
       var(--secondary-color),
       var(--secondary-color) 50%,
-      var(--surface-color) 50%);
+      var(--primary-color) 50%);
   background-size: calc(200% + 1%) 100%;
   background-position: 100%;
   transition: all 0.2s ease-in-out;
@@ -439,7 +439,7 @@ footer a {
 }
 
 footer a i {
-  color: var(--surface-color);
+  color: var(--primary-color);
 }
 
 footer span {
@@ -572,7 +572,7 @@ figcaption {
   height: 4px;
   width: 100%;
   margin: 1rem 0 0;
-  background: var(--surface-color);
+  background: var(--primary-color);
 }
 
 #content h3 {
@@ -648,7 +648,7 @@ blockquote p {
 } */
 
 .insert p strong {
-  color: var(--surface-color); 
+  color: var(--primary-color); 
   font-family: inherit;
 }
 
@@ -681,7 +681,7 @@ blockquote p {
 }
 
 #typing-text {
-  color: var(--surface-color);
+  color: var(--primary-color);
   position: relative;
 }
 
@@ -733,7 +733,7 @@ blockquote p {
 }
 
 .close-btn i {
-  color: var(--surface-color);
+  color: var(--primary-color);
 }
 
 /* TABLET AND UP */
@@ -816,7 +816,7 @@ blockquote p {
   }
 
   .card {
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 4fr 3fr;
     grid-template-rows: auto;
   }
 
@@ -846,7 +846,7 @@ blockquote p {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 1rem;
-    background: var(--surface-color);
+    background: var(--primary-color);
     border-radius: 4px;
     line-height: 100%;
     max-width: unset;
