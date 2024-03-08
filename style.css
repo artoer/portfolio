@@ -291,7 +291,7 @@ main {
 
 #hero-container {
   max-width: var(--max-width);;
-  height: 320px;
+  height: 360px;
   margin: 0 auto 2rem;
   background: var(--secondary-bg-color);
 }
