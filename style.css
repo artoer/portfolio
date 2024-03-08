@@ -681,7 +681,6 @@ blockquote p {
 }
 
 #typing-text {
-  color: var(--primary-color);
   position: relative;
 }
 
