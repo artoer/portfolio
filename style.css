@@ -13,8 +13,8 @@
   --accent-color: hsl(0, 0%, 95%);
   --secondary-color: hsl(48, 100%, 50%);
 
-  --primary-bg-color: #5201CC;
-  --secondary-bg-color: #180D26;
+  --primary-bg-color: hsl(266, 100%, 40%);
+  --secondary-bg-color: hsl(266, 50%, 10%);
   --tertiary-bg-color: rgba(255, 255, 255, .05);
   --nav-bg-color: rgba(0,0,0,.35);
 
@@ -89,6 +89,7 @@ html {
 
 img {
   object-fit: cover;
+  opacity: .9;
 }
 
 h1,
@@ -317,6 +318,12 @@ main {
 #hero h2 {
   color: var(--font-color-figc);
   font-size: 26px;
+  font-weight: 500;
+}
+
+#hero h2 span {
+  opacity: .5;
+  margin: 0 .25em;
 }
 
 #hero p {
@@ -678,6 +685,10 @@ blockquote p {
   background-color: rgba(0, 0, 0, 0.32);
   opacity: 0;
   animation: modalFadeIn 0.2s ease-in-out forwards;
+}
+
+.modal img {
+  opacity: 1;
 }
 
 .modal-container {
