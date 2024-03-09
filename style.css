@@ -9,8 +9,8 @@
   font-family: var(--font-family-b);
 }
 
-/* :root {
-  --accent-color: hsl(264, 100%, 50%);
+:root {
+  --primary-color: hsl(264, 100%, 50%);
   --secondary-color: hsl(48, 100%, 50%);
 
   --primary-bg-color: hsl(264, 100%, 98%);
@@ -28,29 +28,7 @@
 
   --max-width: 1440px;
   --content-width: 720px;
-} */
-
-:root {
-  --accent-color: hsl(0, 0%, 95%);
-  --secondary-color: hsl(48, 100%, 50%);
-
-  --primary-bg-color: #5201CC;
-  --secondary-bg-color: #180D26;
-
-  --border-color: hsl(0, 0%, 25%);
-
-  --font-family-h: 'Archivo', sans-serif;
-  --font-family-b: 'Onest', sans-serif;
-  --font-size-b: clamp(1.125rem, 0.8864rem + 0.9091vw, 1.25rem);
-  --font-size-c: clamp(1rem, 0.7614rem + 0.9091vw, 1.125rem);
-  --font-color-alt: hsl(0, 0%, 25%);
-  --font-color-figc: hsl(0, 0%, 90%);
-  --font-color: hsl(0, 0%, 95%);
-
-  --max-width: 1440px;
-  --content-width: 720px;
 }
-
 
 /* Archivo - Medium */
 @font-face {
@@ -90,13 +68,9 @@
 html {
   height: 100%;
   scroll-behavior: smooth;
-  background:
-    linear-gradient(to bottom, var(--primary-bg-color), var(--secondary-bg-color))
-    /* First gradient */
-    var(--secondary-bg-color) no-repeat;
-  /* Solid color */
+  background-color: var(--secondary-bg-color);
+  background-attachment: fixed;
   overflow-y: scroll;
-  scrollbar-color: var(--font-color-figc) var(--font-color-alt);
 }
 
 img {
@@ -113,7 +87,7 @@ nav a {
 }
 
 a {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   text-decoration: none;
   font-weight: inherit;
   font-family: inherit;
@@ -121,7 +95,7 @@ a {
 
 a:hover {
   text-decoration: underline;
-  text-decoration-color: var(--secondary-color);
+  text-decoration-color: var(--primary-color);
   text-decoration-thickness: .125rem;
   text-underline-offset: .1875rem;
 }
@@ -137,7 +111,7 @@ span {
 }
 
 h1 span {
-  color: var(--accent-color);
+  color: var(--primary-color);
 }
 
 /* #content a {
@@ -194,7 +168,7 @@ main li {
 main li::marker {
   font-weight: 700;
   font-size: 24px;
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 main li:before {
@@ -219,6 +193,8 @@ nav {
   padding: 0 1rem;
   overflow: scroll;
   scrollbar-width: none;
+  background: var(--secondary-bg-color);
+  /* border-bottom: 2px solid var(--border-color); */
 }
 
 nav::-webkit-scrollbar {
@@ -230,8 +206,7 @@ nav ul {
   flex-flow: row nowrap;
   box-sizing: border-box;
   justify-content: space-between;
-  max-width: var(--max-width);
-  ;
+  max-width: var(--max-width);;
   height: 100%;
   margin: 0 auto;
 }
@@ -267,8 +242,8 @@ nav ul li a {
   font-weight: 500;
   padding: 0 8px 0;
   background-image: linear-gradient(to right,
-      var(--secondary-color),
-      var(--secondary-color) 50%,
+      var(--primary-color),
+      var(--primary-color) 50%,
       var(--font-color) 50%);
   background-size: 200% 100%;
   background-position: 100%;
@@ -288,7 +263,7 @@ nav ul li a {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background-image: linear-gradient(to right, var(--accent-color), var(--accent-color) 50%, transparent 50%);
+  background-image: linear-gradient(to right, var(--primary-color), var(--primary-color) 50%, transparent 50%);
   background-size: 200% 100%;
   background-position: 100%;
   transition: all 0.2s ease-in-out;
@@ -315,11 +290,10 @@ main {
 }
 
 #hero-container {
-  max-width: var(--max-width);
-  ;
-  height: 512px;
+  max-width: var(--max-width);;
+  height: 360px;
   margin: 0 auto 2rem;
-
+  background: var(--secondary-bg-color);
 }
 
 #hero {
@@ -327,54 +301,11 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   height: 100%;
+  max-width: 768px;
   padding: 0 1rem;
   margin: 0 auto;
-}
-
-#hero h1,
-#hero h2 {
-  text-transform: uppercase;
-}
-
-#hero h1 {
-  font-size: 64px;
-  line-height: 1;
-  color: transparent;
-  -webkit-text-stroke: 2px #FFF;
-  margin: 0 0 1rem;
-  /* background-image:
-    linear-gradient(to right, transparent 5%, white 5%,
-      white 10%, transparent 10%,
-      transparent 20%, white 20%,
-      white 30%, transparent 30%,
-      transparent 40%, white 40%,
-      white 60%, transparent 60%,
-      transparent 70%, white 70%,
-      white 80%, transparent 80%,
-      transparent 90%, white 90%, white 95%, transparent 95%, transparent 95%, white 95%); */
-  background-image:
-    linear-gradient(to right, transparent, transparent 50%, white 50%, white);
-  background-size: 200% 100%;
-  background-position: center;
-  animation: ripple 10s infinite linear;
-  background-clip: text;
-  -webkit-background-clip: text;
-}
-
-@keyframes ripple {
-  from {
-    background-position: 200% 0;
-  }
-
-  to {
-    background-position: 0 0;
-  }
-}
-
-#hero h2 {
-  color: var(--font-color-figc);
 }
 
 #hero p {
@@ -384,8 +315,8 @@ main {
 
 #work {
   display: grid;
-  row-gap: 3rem;
-  max-width: var(--max-width);
+  row-gap: 2rem;
+  max-width: var(--max-width);;
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -393,6 +324,8 @@ main {
 .card {
   display: grid;
   grid-template-rows: auto auto;
+  background: var(--primary-bg-color);
+  border-radius: 8px;
   overflow: hidden;
   height: 100%;
   width: 100%;
@@ -415,7 +348,7 @@ main {
   align-items: start;
   text-align: left;
   color: var(--font-color);
-  padding: 2rem 0;
+  padding: 2rem;
   border: none;
 }
 
@@ -424,7 +357,7 @@ main {
 }
 
 #open-in-new-tab {
-  background-color: var(--accent-color);
+  background-color: var(--primary-color);
   text-decoration: none;
   cursor: pointer;
   width: 48px;
@@ -449,14 +382,13 @@ a.cta {
   border-radius: 4px;
   color: var(--font-color-alt);
   padding: 0 2.5rem;
-  margin: 2rem 0 0 auto;
+  margin: 1rem 0 0 auto;
   height: 52px;
-  min-width: 256px;
   width: 100%;
   background-image: linear-gradient(to right,
-      var(--accent-color),
-      var(--accent-color) 50%,
-      var(--secondary-color) 50%);
+      var(--secondary-color),
+      var(--secondary-color) 50%,
+      var(--primary-color) 50%);
   background-size: calc(200% + 1%) 100%;
   background-position: 100%;
   transition: all 0.2s ease-in-out;
@@ -475,7 +407,7 @@ a.cta>i {
 }
 
 a.cta:hover {
-  /* color: var(--font-color); */
+  color: var(--font-color);
   background-position: -.5px;
 }
 
@@ -507,7 +439,7 @@ footer a {
 }
 
 footer a i {
-  color: inherit;
+  color: var(--primary-color);
 }
 
 footer span {
@@ -531,8 +463,6 @@ footer span {
 
 .heading:not(.about) h1 {
   padding: 2rem 0 0;
-  color: #fff;
-  text-transform: uppercase;
 }
 
 .heading span {
@@ -571,14 +501,12 @@ footer span {
 
 .heading>* {
   margin: 0 auto;
-  max-width: var(--content-width);
-  ;
+  max-width: var(--content-width);;
   color: var(--font-color);
 }
 
 #content>* {
-  max-width: var(--content-width);
-  ;
+  max-width: var(--content-width);;
   width: 100%;
   margin: 0 auto 1.5rem;
 }
@@ -602,6 +530,7 @@ footer span {
   height: auto;
   pointer-events: none;
   border-radius: 0px;
+  background: #FFF;
   max-height: calc(100vh - 8rem);
   object-fit: contain;
   margin: 0 auto;
@@ -634,7 +563,7 @@ figcaption {
 #content h2 {
   margin: 4rem auto 2rem;
   padding: 1.25rem 0 0;
-
+  background: var(--secondary-bg-color);
 }
 
 #content h2::after {
@@ -643,7 +572,7 @@ figcaption {
   height: 4px;
   width: 100%;
   margin: 1rem 0 0;
-  background: var(--secondary-color);
+  background: var(--primary-color);
 }
 
 #content h3 {
@@ -654,8 +583,7 @@ figcaption {
   margin: 1.5rem auto .75rem;
 }
 
-#content h2+*,
-#content h3+figure {
+#content h2 + *, #content h3 + figure  {
   margin-top: 1.5rem;
 }
 
@@ -663,14 +591,16 @@ figcaption {
 #content figure.insert {
   display: flex;
   flex-flow: column nowrap;
-  background: var(--primary-bg-color);
-  padding: 2rem 1rem;
+  background-color: #FFF;
+  padding: 1rem;
   border-radius: 8px;
+  border: 2px solid var(--border-color);
+  box-shadow: 0 4px 0 0 var(--border-color);
 }
 
 figure.quote figcaption,
 figure.insert figcaption {
-  max-width: var(--content-width);
+  max-width: var(--content-width);;
   font-size: var(--font-size-b);
   font-weight: 600;
   padding: 0;
@@ -709,7 +639,7 @@ blockquote :last-child {
 }
 
 blockquote p {
-  max-width: var(--content-width);
+  max-width: var(--content-width);;
   margin: 0 auto 1.5rem;
 }
 
@@ -718,7 +648,7 @@ blockquote p {
 } */
 
 .insert p strong {
-  color: var(--accent-color);
+  color: var(--primary-color); 
   font-family: inherit;
 }
 
@@ -802,7 +732,7 @@ blockquote p {
 }
 
 .close-btn i {
-  color: var(--accent-color);
+  color: var(--primary-color);
 }
 
 /* TABLET AND UP */
@@ -816,11 +746,11 @@ blockquote p {
   h1 {
     font-size: 40px;
   }
-
+  
   h2 {
     font-size: 32px;
   }
-
+  
   h3 {
     font-size: 26px;
   }
@@ -828,7 +758,7 @@ blockquote p {
   h4 {
     font-size: 20px;
   }
-
+  
 
   nav {
     margin: calc(-64px + -2rem) auto 0;
@@ -884,25 +814,22 @@ blockquote p {
     padding: 0 0 2rem;
   }
 
-  #hero h1 {
-    font-size: 96px;
-  }
-
   .card {
     grid-template-columns: 4fr 3fr;
     grid-template-rows: auto;
   }
 
   .card>img {
-    border-radius: 8px;
+    border: 0;
+    /* border-right: 1px solid var(--border-color); */
   }
 
   .card>div {
-    padding: 3rem;
+    padding: 4rem;
   }
 
   a.cta {
-    margin: 3rem auto 0 0;
+    margin: 2rem auto 0 0;
     width: auto;
   }
 
@@ -914,25 +841,19 @@ blockquote p {
 
   .heading:not(.about) h1 {
     position: absolute;
-    font-size: 96px;
-    bottom: 1rem;
-    left: 1rem;
-    transform: translate(0%, 0%);
-    padding: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    background: var(--primary-color);
     border-radius: 4px;
-    line-height: 1;
+    line-height: 100%;
     max-width: unset;
-    text-align: left;
-    color: #FFF;
-    -webkit-text-stroke: 2px var(--font-color-alt);
-    text-transform: uppercase;
-    text-shadow: 0 0 24px rgba(0,0,0,.15);
   }
 
   .heading {
     padding: 0;
     margin: 2rem auto 0;
-    max-width: var(--max-width);
   }
 
   .heading>* {
@@ -960,15 +881,15 @@ blockquote p {
 
   #content figure.quote,
   #content figure.insert {
-    padding: 3rem 2rem;
+    padding: 1.5rem 2rem;
   }
 
   #content figure img {
     cursor: pointer;
     pointer-events: unset;
-    max-height: 640px;
+    max-height: 600px;
     margin: auto;
-    border-radius: 4px;
+    border-radius: 8px;
   }
 
   #content img.float {
