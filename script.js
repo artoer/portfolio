@@ -61,6 +61,27 @@ window.addEventListener("DOMContentLoaded", (event) => {
   });
 });
 
+// Function to update --card-height property
+if (document.querySelector('.card')) {
+  function updateCardHeight() {
+    // Get the first .card element
+    const firstCard = document.querySelector('.card');
+
+    // Measure the height of the first .card element
+    const cardHeight = firstCard.clientHeight;
+
+    // Apply the height to the CSS custom property --card-height
+    const heroContainer = document.getElementById('hero-container');
+    heroContainer.style.setProperty('--card-height', cardHeight + 'px');
+  }
+
+  // Call the function initially
+  updateCardHeight();
+
+  // Add event listener for window resize
+  window.addEventListener('resize', updateCardHeight);
+}
+
 
 if (document.getElementById("typing-text")) {
   const skills = [

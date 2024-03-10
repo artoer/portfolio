@@ -282,10 +282,8 @@ main {
 
 #hero-container {
   max-width: var(--max-width);
-  ;
-  height: 512px;
+  height: calc(100vh - 64px);
   margin: 0 auto 2rem;
-
 }
 
 #hero {
@@ -295,7 +293,7 @@ main {
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding: 0 1rem;
+  padding: 0 1rem 4rem;
   margin: 0 auto;
 }
 
@@ -832,8 +830,13 @@ blockquote p {
     padding: 0;
   }
 
+  #hero-container {
+    min-height: 420px;
+    height: calc(100vh - 10rem - var(--card-height));
+  }
+
   #hero {
-    padding: 0 0 2rem;
+    padding: 0 0 4rem;
   }
 
   #hero h1 {
