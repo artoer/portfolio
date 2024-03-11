@@ -305,12 +305,9 @@ main {
 #hero h1 {
   font-size: 64px;
   line-height: 1;
-  color: #FFF;
+  color: var(--font-color);
   margin: 0 0 1rem;
   transform: skew(-5deg);
-
-  /* color: transparent;
-  -webkit-text-stroke: 2px #FFF; */
 }
 
 #hero h2 {
@@ -480,7 +477,7 @@ footer span {
   font-size: 48px;
   padding: 0;
   color: transparent;
-  -webkit-text-stroke: 2px #FFF;
+  -webkit-text-stroke: 2px var(--font-color);
   text-transform: uppercase;
   text-align: center;
   transform: skew(-5deg);
