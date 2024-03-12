@@ -485,7 +485,7 @@ footer span {
   color: transparent;
   -webkit-text-stroke: 2px var(--font-color);
   text-transform: uppercase;
-  text-align: center;
+  text-align: left;
   transform: skew(-5deg);
   margin: 0 auto;
   max-width: var(--max-width);
@@ -868,6 +868,7 @@ blockquote p {
 
   .heading h1 {
     font-size: 96px;
+    text-align: center;
     -webkit-text-stroke: 1px var(--font-color);
   }
 
