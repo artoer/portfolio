@@ -866,7 +866,7 @@ blockquote p {
 
   .heading h1 {
     font-size: 96px;
-    -webkit-text-stroke: 1px var(--font-color);
+    -webkit-text-stroke: 1.5px var(--font-color);
   }
 
   .heading {
