@@ -285,7 +285,7 @@ main {
 
 #hero-container {
   max-width: var(--max-width);
-  height: calc(100vh - 64px);
+  height: calc(100vh - 6.5rem);
   margin: 0 auto 2rem;
 }
 
@@ -300,8 +300,7 @@ main {
   margin: 0 auto;
 }
 
-#hero h1,
-#hero h2 {
+#hero h1 {
   text-transform: uppercase;
 }
 
@@ -835,7 +834,7 @@ blockquote p {
 
   #hero-container {
     min-height: 420px;
-    height: calc(100vh - 10rem - var(--card-height));
+    height: calc(100vh - 9.5rem - var(--card-height));
   }
 
   #hero {
