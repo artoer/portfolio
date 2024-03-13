@@ -301,15 +301,13 @@ main {
 }
 
 #hero h1 {
-  text-transform: uppercase;
-}
-
-#hero h1 {
   font-size: 64px;
   line-height: 1;
   color: var(--font-color);
   margin: 0 0 1rem;
   transform: skew(-5deg);
+  text-transform: uppercase;
+  letter-spacing: -0.025em;
 }
 
 #hero h2 {
