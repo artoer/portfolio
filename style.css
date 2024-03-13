@@ -8,7 +8,7 @@
   color: var(--font-color);
   font-family: var(--font-family-b);
 }
-
+ 
 
 :root {
   --primary-color: hsl(264, 100%, 50%);
