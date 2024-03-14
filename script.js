@@ -59,68 +59,25 @@ window.addEventListener("DOMContentLoaded", (event) => {
       modal.style.display = 'none';
     }
   });
-
-  // Function to update --card-height property
-  if (document.querySelector('.card')) {
-    function updateCardHeight() {
-      // Get the first .card element
-      const firstCard = document.querySelector('.card');
-
-      // Measure the height of the first .card element
-      const cardHeight = firstCard.clientHeight;
-
-      // Apply the height to the CSS custom property --card-height
-      const heroContainer = document.getElementById('hero-container');
-      heroContainer.style.setProperty('--card-height', cardHeight + 'px');
-    }
-
-    // Call the function initially
-    updateCardHeight();
-
-    // Add event listener for window resize
-    window.addEventListener('resize', updateCardHeight);
-  }
 });
 
-if (document.getElementById("typing-text")) {
-  const skills = [
-    "designing",
-    "researching",
-    "prototyping",
-    "testing",
-    "optimizing",
-    "creating"
-  ];
-  let currentSkillIndex = 0;
+// Function to update --card-height property
+if (document.querySelector('.card')) {
+  function updateCardHeight() {
+    // Get the first .card element
+    const firstCard = document.querySelector('.card');
 
-  function typeSentence() {
-    const typingText = document.getElementById("typing-text");
-    const currentSkill = skills[currentSkillIndex];
-    const typingDelay = 100; // Delay between each character typing
-    const erasingDelay = 80; // Delay between removing each character
+    // Measure the height of the first .card element
+    const cardHeight = firstCard.clientHeight;
 
-    // Typing effect
-    for (let i = 0; i <= currentSkill.length; i++) {
-      setTimeout(() => {
-        typingText.textContent = currentSkill.slice(0, i);
-      }, i * typingDelay);
-    }
-
-    // Wait before erasing the text and moving to the next skill
-    setTimeout(() => {
-      // Erase the text
-      for (let i = currentSkill.length; i >= 0; i--) {
-        setTimeout(() => {
-          typingText.textContent = currentSkill.slice(0, i);
-        }, (currentSkill.length - i) * erasingDelay);
-      }
-
-      // Move to the next skill
-      currentSkillIndex = (currentSkillIndex + 1) % skills.length;
-      setTimeout(typeSentence, currentSkill.length * erasingDelay);
-    }, currentSkill.length * typingDelay + 2000); // Delay before moving to the next skill
+    // Apply the height to the CSS custom property --card-height
+    const heroContainer = document.getElementById('hero-container');
+    heroContainer.style.setProperty('--card-height', cardHeight + 'px');
   }
 
-  // Start the typing animation when the page loads
-  window.addEventListener("load", typeSentence);
+  // Call the function initially
+  updateCardHeight();
+
+  // Add event listener for window resize
+  window.addEventListener('resize', updateCardHeight);
 }
