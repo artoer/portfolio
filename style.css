@@ -401,8 +401,8 @@ a.cta {
   min-width: 256px;
   width: 100%;
   background-image: linear-gradient(to right,
-  var(--secondary-color),
-  var(--secondary-color) 50%,
+      var(--secondary-color),
+      var(--secondary-color) 50%,
       var(--primary-color) 50%);
   background-size: calc(200% + 1%) 100%;
   background-position: 100%;
