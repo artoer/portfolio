@@ -285,6 +285,7 @@ main {
   background:var(--secondary-bg-color);
   height: calc(100vh - 6rem);
   margin: 0 auto 3rem;
+  padding: 0 1rem;
 }
 
 #hero {
@@ -294,7 +295,7 @@ main {
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding: 0 1rem 6rem;
+  padding: 0 0 6rem;
   margin: 0 auto;
 }
 
@@ -327,9 +328,10 @@ main {
 #work {
   display: grid;
   row-gap: 3rem;
-  max-width: var(--max-width);
+  width: var(--max-width);
+  max-width: calc(100vw - 2rem);
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0;
 }
 
 .card {
@@ -530,8 +532,8 @@ div.tags span {
   content: "Role";
 }
 
-.tags .period:before {
-  content: "Period";
+.tags .date:before {
+  content: "Date";
 }
 
 .tags .client:before {
@@ -871,11 +873,16 @@ blockquote p {
   }
 
   #hero {
-    padding: 0 0 6rem;
+    padding: 0 1rem 6rem;
   }
 
   #hero h1 {
     font-size: 124px;
+    text-align: center;
+  }
+
+  #hero h2 {
+    text-align: center;
   }
 
   .card {
