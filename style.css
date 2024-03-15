@@ -868,12 +868,12 @@ blockquote p {
   }
 
   #hero-container {
-    min-height: 420px;
+    min-height: 512px;
     height: calc(100vh - 10rem - var(--card-height));
   }
 
   #hero {
-    padding: 0 1rem 6rem;
+    padding: 0 1rem 3rem;
   }
 
   #hero h1 {
