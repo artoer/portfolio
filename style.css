@@ -89,7 +89,6 @@ html {
 
 img {
   object-fit: cover;
-  opacity: .9;
 }
 
 h1,
@@ -742,12 +741,6 @@ blockquote p {
   transform: translateY(-50%);
   right: -0.125em;
   animation: blink-caret 0.75s infinite;
-}
-
-@keyframes blink-caret {
-  50% {
-    opacity: 0;
-  }
 }
 
 @keyframes modalFadeIn {
