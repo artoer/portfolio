@@ -63,8 +63,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
   // Function to update --card-height property
   if (document.querySelector('.card')) {
     function updateCardHeight() {
-      console.log('yes');
-
       // Get the first .card element
       const firstCard = document.querySelector('.card');
 
