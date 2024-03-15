@@ -8,13 +8,13 @@
   color: var(--font-color);
   font-family: var(--font-family-b);
 }
- 
+
 
 :root {
   --primary-color: hsl(264, 100%, 50%);
   --secondary-color: hsl(48, 100%, 50%);
 
-  --primary-bg-color: hsl(264, 100%, 98%);
+  --primary-bg-color: hsl(264, 100%, 98.5%);
   --secondary-bg-color: hsl(264, 100%, 100%);
 
   --border-color: hsl(0, 0%, 25%);
@@ -24,9 +24,7 @@
   --font-size-b: clamp(1.125rem, 0.8864rem + 0.9091vw, 1.25rem);
   --font-size-c: clamp(1rem, 0.7614rem + 0.9091vw, 1.125rem);
   --font-color: hsl(0, 0%, 25%);
-  --font-color-figc: hsl(0, 0%, 35%);
-  --font-color-light: hsl(0, 0%, 45%);
-  --font-color-lightest: hsl(0, 0%, 75%);
+  --font-color-figc: hsl(0, 0%, 40%);
   --font-color-alt: hsl(0, 0%, 98%);
 
   --max-width: 1440px;
@@ -87,7 +85,6 @@ html {
   scroll-behavior: smooth;
   background: var(--primary-bg-color);
   overflow-y: scroll;
-  scrollbar-color: var(--font-color-figc) var(--font-color-alt);
 }
 
 img {
@@ -126,6 +123,8 @@ footer a:hover {
 span {
   font-family: inherit;
   font-weight: inherit;
+  font-size: var(--font-size-c);
+  color: var(--font-color-figc);
 }
 
 h1 span {
@@ -206,8 +205,7 @@ nav {
   padding: 0 1rem;
   overflow: scroll;
   scrollbar-width: none;
-  background: var(--primary-bg-color);
-  backdrop-filter: blur(12px) saturate(1.5);
+  background: var(--secondary-bg-color);
 }
 
 nav::-webkit-scrollbar {
@@ -284,9 +282,9 @@ main {
 }
 
 #hero-container {
-  max-width: var(--max-width);
-  height: calc(100vh - 6.5rem);
-  margin: 0 auto 2rem;
+  background:var(--secondary-bg-color);
+  height: calc(100vh - 6rem);
+  margin: 0 auto 3rem;
 }
 
 #hero {
@@ -311,13 +309,13 @@ main {
 }
 
 #hero h2 {
-  color: var(--font-color-light);
+  color: var(--font-color-figc);
   font-size: 24px;
   font-weight: 500;
 }
 
 #hero h2 span {
-  color: var(--font-color-lightest);
+  color: var(--font-color-figc);
   margin: 0 .25em;
 }
 
@@ -367,7 +365,11 @@ main {
 }
 
 .card>div>h3 {
-  margin: 0 0 .75rem;
+  margin: 0 0 .5rem;
+}
+
+.card>div>span {
+  margin: 0 0 1rem;
 }
 
 #open-in-new-tab {
@@ -466,7 +468,13 @@ footer span {
 .heading {
   position: relative;
   margin: 0;
-  padding: 4rem 1rem 1.5rem;
+  padding: 3rem 1rem 1.5rem;
+  background: var(--secondary-bg-color);
+}
+
+.heading div {
+  max-width: var(--content-width);
+  margin: 3rem auto 0;
 }
 
 .card h2 {
@@ -479,50 +487,67 @@ footer span {
 .heading h1 {
   font-size: 48px;
   padding: 0;
-  color: transparent;
-  -webkit-text-stroke: 2px var(--font-color);
+  color: var(--font-color);
   text-transform: uppercase;
   text-align: left;
   transform: skew(-5deg);
   margin: 0 auto;
   max-width: var(--max-width);
+  letter-spacing: -0.025em;
 }
 
-.heading span {
-  display: none;
-  font-size: 20px;
-  margin: 0 auto .125rem auto;
+.tags {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: start;
+  gap: 0;
+}
+
+div.tags span {
+  display: flex;
+  flex-flow: column;
+  align-items: start;
+  width: 50%;
+  border-radius: 8px;
+  padding: 1rem 0;
+  height: 100%;
+  margin:0;
+}
+
+.tags *:before {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 .5rem;
   font-weight: 600;
-  width: 100%;
 }
 
-
-.heading span.about {
-  display: inline-block;
-  font-size: inherit;
-  width: auto;
+.tags .type:before {
+  content: "Type";
 }
 
-.heading img {
-  display: block;
-  margin: 1.5rem auto 0 auto;
-  width: 100%;
-  max-width: var(--max-width);
-  /* border: 1px solid var(--border-color); */
-
-
-  border-radius: 4px;
+.tags .role:before {
+  content: "Role";
 }
+
+.tags .period:before {
+  content: "Period";
+}
+
+.tags .client:before {
+  content: "Client";
+}
+
 
 #content {
   position: relative;
   width: 100%;
   margin: 0 auto;
-  padding: 0 1rem 4rem;
+  padding: 1.5rem 1rem 4rem;
   color: var(--font-color);
 }
 
-#content>* {
+#content>*,.heading div>* {
   max-width: var(--content-width);
   ;
   width: 100%;
@@ -592,7 +617,7 @@ figcaption {
   background: var(--primary-color);
 }
 
-#content h3 {
+#content h3, .heading div h3 {
   margin: 3rem auto .75rem;
 }
 
@@ -601,7 +626,7 @@ figcaption {
 }
 
 #content h2+*,
-#content h3+figure {
+#content h3, .heading div h3+figure {
   margin-top: 1.5rem;
 }
 
@@ -759,8 +784,8 @@ blockquote p {
 @media all and (min-width: 768px) {
 
   main {
-    max-width: calc(100% - 4rem);
-    margin: calc(64px + 2rem) auto 0;
+    /* max-width: calc(100% - 4rem); */
+    margin: 64px auto 0;
   }
 
   h1 {
@@ -781,7 +806,7 @@ blockquote p {
 
 
   nav {
-    margin: calc(-64px + -2rem) auto 0;
+    margin: -64px auto 0;
   }
 
   nav ul li:first-of-type a::after {
@@ -821,8 +846,18 @@ blockquote p {
     border-radius: 8px;
   }
 
+  .tags {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  div.tags span {
+    width: auto;
+  }
+
   #content {
-    padding: 0 1rem 6rem;
+    padding: 3rem 1rem 6rem;
     border-radius: 8px;
   }
 
@@ -832,11 +867,11 @@ blockquote p {
 
   #hero-container {
     min-height: 420px;
-    height: calc(100vh - 9.5rem - var(--card-height));
+    height: calc(100vh - 10rem - var(--card-height));
   }
 
   #hero {
-    padding: 0 0 4rem;
+    padding: 0 0 6rem;
   }
 
   #hero h1 {
@@ -866,7 +901,6 @@ blockquote p {
   .heading h1 {
     font-size: 96px;
     text-align: center;
-    -webkit-text-stroke: 1px var(--font-color);
   }
 
   .heading {
@@ -878,10 +912,6 @@ blockquote p {
     margin: 0 auto;
     border-radius: 8px;
     aspect-ratio: 4 / 1;
-  }
-
-  .heading span {
-    display: none;
   }
 
   .two-col {

@@ -59,25 +59,28 @@ window.addEventListener("DOMContentLoaded", (event) => {
       modal.style.display = 'none';
     }
   });
-});
 
-// Function to update --card-height property
-if (document.querySelector('.card')) {
-  function updateCardHeight() {
-    // Get the first .card element
-    const firstCard = document.querySelector('.card');
+  // Function to update --card-height property
+  if (document.querySelector('.card')) {
+    function updateCardHeight() {
+      console.log('yes');
 
-    // Measure the height of the first .card element
-    const cardHeight = firstCard.clientHeight;
+      // Get the first .card element
+      const firstCard = document.querySelector('.card');
 
-    // Apply the height to the CSS custom property --card-height
-    const heroContainer = document.getElementById('hero-container');
-    heroContainer.style.setProperty('--card-height', cardHeight + 'px');
+      // Measure the height of the first .card element
+      const cardHeight = firstCard.clientHeight;
+
+      // Apply the height to the CSS custom property --card-height
+      const heroContainer = document.getElementById('hero-container');
+      heroContainer.style.setProperty('--card-height', cardHeight + 'px');
+    };
+
+    // Add event listener for window resize
+    window.addEventListener('resize', updateCardHeight);
+
+
+    // Call the function initially
+    updateCardHeight();
   }
-
-  // Call the function initially
-  updateCardHeight();
-
-  // Add event listener for window resize
-  window.addEventListener('resize', updateCardHeight);
-}
+});
