@@ -717,6 +717,8 @@ blockquote :last-child {
 blockquote p {
   max-width: var(--content-width);
   margin: 0 auto 1.5rem;
+  font-style: italic;
+  font-weight: 500;
 }
 
 /* .insert p {
