@@ -946,7 +946,7 @@ blockquote p {
   .heading h1 {
     font-size: 96px;
     text-align: center;
-    padding: 3rem;
+    padding: 3rem 0;
   }
 
   .heading {
