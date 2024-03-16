@@ -524,12 +524,12 @@ p.intro {
 
 p.tags {
   font-size: var(--font-size-b);
+  font-weight: 500;
 }
 
 p.tags span {
   color: var(--secondary-color);
   font-size: inherit;
-  font-weight: bolder;
 }
 
 /* .tags *:before {
