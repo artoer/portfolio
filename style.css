@@ -462,7 +462,7 @@ footer a {
 }
 
 footer a:hover i {
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 footer span {
