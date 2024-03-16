@@ -650,7 +650,7 @@ figcaption {
 }
 
 #content h2+*, .heading h2+*,
-#content h3, .heading div h3+figure {
+#content h3, #content h3+figure {
   margin-top: 1.5rem;
 }
 
@@ -658,7 +658,7 @@ figure.quote,
 figure.insert {
   display: flex;
   flex-flow: column nowrap;
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 3rem;
 }
 
 figure.insert {
@@ -952,9 +952,8 @@ blockquote p {
     padding: 0 2rem;
   }
 
-  figure.quote,
-  figure.insert {
-    padding: 1.5rem 3rem;
+  figure.quote {
+    padding: 0.5rem 0 .5rem 3rem;
   }
 
   
