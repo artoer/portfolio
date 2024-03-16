@@ -477,7 +477,7 @@ footer span {
 }
 
 .heading div {
-  max-width: var(--content-width);
+  max-width: var(--max-width);
   margin: 3rem auto 0;
 }
 
@@ -567,7 +567,6 @@ p.tags span {
 
 #content>*,.heading div>* {
   max-width: var(--content-width);
-
   width: 100%;
   margin: 0 auto 1.5rem;
 }
@@ -659,9 +658,16 @@ figure.quote,
 figure.insert {
   display: flex;
   flex-flow: column nowrap;
-  padding: 2rem 1rem;
+  padding: 1.5rem 2rem;
+}
+
+figure.insert {
   border-top: 2px solid var(--primary-color);
   border-bottom: 2px solid var(--primary-color);
+}
+
+figure.quote {
+  border-left: 2px solid var(--primary-color); 
 }
 
 figure.insert p {
@@ -882,7 +888,7 @@ blockquote p {
   }
 
   #hero {
-    padding: 0 1rem 3rem;
+    padding: 0 1rem 4rem;
   }
 
   #hero h1 {
@@ -931,6 +937,11 @@ blockquote p {
     aspect-ratio: 4 / 1;
   }
 
+  .heading p {
+    max-width: var(--max-width);
+    text-align: center;
+  }
+
   .two-col {
     columns: 2;
   }
@@ -941,10 +952,13 @@ blockquote p {
 
   figure.quote,
   figure.insert {
-    border:none;
-    border-left: 4px solid var(--primary-color);
     padding: 1.5rem 3rem;
   }
+
+  
+figure.quote {
+  border-left: 4px solid var(--primary-color); 
+}
 
   #content figure img {
     cursor: pointer;
