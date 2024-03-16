@@ -14,7 +14,7 @@
   --primary-color: hsl(264, 100%, 50%);
   --secondary-color: hsl(48, 100%, 50%);
 
-  --primary-bg-color: hsl(264, 0%, 98%);
+  --primary-bg-color: hsl(264, 15%, 98%);
   --secondary-bg-color: hsl(264, 0%, 15%);
 
   --border-color: hsl(0, 0%, 25%);
@@ -156,6 +156,7 @@ h1 {
 
 h2 {
   font-size: 26px;
+  font-weight: 700;
 }
 
 h3 {
@@ -320,8 +321,9 @@ main {
 }
 
 #hero h2 span {
-  color: var(--font-color-figc);
-  margin: 0 .25em;
+  color: var(--secondary-color);
+  margin: 0;
+  font-size: inherit;
 }
 
 #hero p {
@@ -334,7 +336,7 @@ main {
   row-gap: 3rem;
   width: var(--max-width);
   max-width: calc(100vw - 2rem);
-  margin: 0 auto;
+  margin: 0 auto 3rem;
   padding: 0;
 }
 
@@ -349,9 +351,8 @@ main {
 
 .card>img {
   height: 100%;
-  width: 100%;
-
-  /* border-bottom: 1px solid var(--border-color); */
+  width: 100%;  
+  border-radius: 8px;
 }
 
 .card>div {
@@ -435,11 +436,12 @@ a.cta:hover {
 footer {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
   row-gap: 2rem;
-  padding: 6rem 0 6rem;
+  padding: 6rem 0 4rem;
   width: 100%;
+  margin: 0;
 }
 
 footer div {
@@ -460,12 +462,12 @@ footer a {
 }
 
 footer a:hover i {
-  color: inherit;
+  color: var(--secondary-color);
 }
 
 footer span {
   color: var(--font-color);
-  font-size: 18px;
+  font-size: var(--font-size-c);
 }
 
 /* CASE STUDY PAGE */
@@ -561,11 +563,19 @@ p.tags span {
   position: relative;
   width: 100%;
   margin: 0 auto;
-  padding: 1.5rem 1rem 4rem;
+  padding: 0;
   color: var(--font-color);
 }
 
-#content>*,.heading div>* {
+#content section {
+  padding: 3rem 1rem;
+}
+
+#content section:nth-of-type(even) {
+  background: hsl(264, 15%, 95%);
+}
+
+#content section>*,.heading div>* {
   max-width: var(--content-width);
   width: 100%;
   margin: 0 auto 1.5rem;
@@ -579,11 +589,11 @@ p.tags span {
   color: var(--secondary-color);
 }
 
-#content>*:first-child {
+#content section>*:first-child {
   margin-top: 0;
 }
 
-#content>*:last-child {
+#content section>*:last-child {
   margin-bottom: 0;
 }
 
@@ -628,8 +638,7 @@ figcaption {
 
 #content h2, .heading h2 {
   margin: 4rem auto 2rem;
-  padding: 1.25rem 0 0;
-
+  padding: 0;
 }
 
 #content h2::after {
@@ -658,7 +667,7 @@ figure.quote,
 figure.insert {
   display: flex;
   flex-flow: column nowrap;
-  padding: 1.5rem 3rem;
+  padding: 1.5rem 2rem;
 }
 
 figure.insert {
@@ -820,19 +829,19 @@ blockquote p {
   }
 
   h1 {
-    font-size: 40px;
+    font-size: 64px;
   }
 
   h2 {
-    font-size: 32px;
+    font-size: 42px;
   }
 
   h3 {
-    font-size: 24px;
+    font-size: 28px;
   }
 
   h4 {
-    font-size: 20px;
+    font-size: 24px;
   }
 
 
@@ -876,8 +885,11 @@ blockquote p {
   }
 
   #content {
-    padding: 6rem 1rem;
-    border-radius: 8px;
+    padding: 0;
+  }
+
+  #content section {
+    padding: 6rem 0;
   }
 
   #work {
@@ -908,7 +920,8 @@ blockquote p {
   }
 
   .card>div {
-    padding: 3rem;
+    padding: 0;
+    padding-left: 4rem;
   }
 
   a.cta {
@@ -955,6 +968,11 @@ blockquote p {
   figure.quote {
     padding: 0.5rem 0 .5rem 3rem;
   }
+
+  
+figure.insert p {
+  font-size: 28px;
+}
 
   
 figure.quote {
