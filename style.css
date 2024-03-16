@@ -597,6 +597,14 @@ p.tags span {
   margin-bottom: 0;
 }
 
+#content figure:has(img) {
+  max-width: var(--max-width);
+}
+
+#content figure:has(img) figcaption {
+  max-width: var(--content-width);
+}
+
 #content figure, .heading figure {
   margin: 3rem auto;
 }
