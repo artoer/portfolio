@@ -25,7 +25,7 @@
   --font-color-figc: hsl(0, 0%, 40%);
   --font-color-alt: hsl(0, 0%, 98%);
 
-  --xl-width: 1440px;
+  --max-width: 1440px;
   --l-width: 1080px;
   --m-width: 720px;
 }
@@ -216,7 +216,7 @@ nav ul {
   flex-flow: row nowrap;
   box-sizing: border-box;
   justify-content: space-between;
-  xl-width: var(--xl-width);
+  max-width: var(--xl-width);
   height: 100%;
   margin: 0 auto;
 }
@@ -334,7 +334,7 @@ main {
   display: grid;
   row-gap: 3rem;
   width: var(--xl-width);
-  xl-width: calc(100vw - 2rem);
+  max-width: calc(100vw - 2rem);
   margin: 0 auto 3rem;
   padding: 0;
 }
@@ -478,7 +478,7 @@ footer span {
 }
 
 .heading div {
-  xl-width: var(--xl-width);
+  max-width: var(--xl-width);
   margin: 3rem auto 0;
 }
 
@@ -515,7 +515,7 @@ footer span {
   text-align: left;
   transform: skew(-5deg);
   margin: 0 auto;
-  xl-width: var(--xl-width);
+  max-width: var(--xl-width);
   letter-spacing: -0.025em;
 }
 
@@ -575,7 +575,7 @@ p.tags span {
 }
 
 #content section>*,.heading div>* {
-  xl-width: var(--m-width);
+  max-width: var(--m-width);
   width: 100%;
   margin: 0 auto 1.5rem;
 }
@@ -597,11 +597,11 @@ p.tags span {
 }
 
 #content figure:has(img) {
-  xl-width: var(--l-width);
+  max-width: var(--l-width);
 }
 
 #content figure:has(img) figcaption {
-  xl-width: var(--m-width);
+  max-width: var(--m-width);
 }
 
 #content figure, .heading figure {
@@ -610,7 +610,7 @@ p.tags span {
 
 #content img {
   display: block;
-  xl-width: 100%;
+  max-width: 100%;
   height: auto;
   pointer-events: none;
   border-radius: 0px;
@@ -694,7 +694,7 @@ figure.insert p {
 
 figure.quote figcaption,
 figure.insert figcaption {
-  xl-width: var(--m-width);
+  max-width: var(--m-width);
   font-size: var(--font-size-b);
   font-weight: 600;
   padding: 0;
@@ -731,7 +731,7 @@ blockquote :last-child {
 }
 
 blockquote p {
-  xl-width: var(--m-width);
+  max-width: var(--m-width);
   margin: 0 auto 1.5rem;
   font-style: italic;
   font-weight: 500;
@@ -831,7 +831,7 @@ blockquote p {
 @media all and (min-width: 768px) {
 
   main {
-    /* xl-width: calc(100% - 4rem); */
+    /* max-width: calc(100% - 4rem); */
     margin: 64px auto 0;
   }
 
@@ -882,7 +882,7 @@ blockquote p {
     border-radius: 4px;
     width: 100%;
     max-height: calc(100vh - 16rem);
-    xl-width: calc(100vw - 16rem);
+    max-width: calc(100vw - 16rem);
     object-fit: contain;
     cursor: zoom-in;
   }
@@ -939,7 +939,7 @@ blockquote p {
   #content a.cta {
     margin: 2rem auto 1.5rem;
     width: auto;
-    xl-width: fit-content;
+    max-width: fit-content;
   }
 
   .heading h1 {
@@ -960,7 +960,7 @@ blockquote p {
   }
 
   .heading p {
-    xl-width: var(--xl-width);
+    max-width: var(--xl-width);
     text-align: center;
   }
 
@@ -995,6 +995,6 @@ figure.quote {
   }
 
   #content img.float {
-    xl-width: 192px;
+    max-width: 192px;
   }
 }
