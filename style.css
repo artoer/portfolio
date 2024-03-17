@@ -887,10 +887,6 @@ blockquote p {
     cursor: zoom-in;
   }
 
-  .heading div {
-    margin: 0 auto;
-  }
-
   #content {
     padding: 0;
   }
@@ -945,7 +941,6 @@ blockquote p {
   .heading h1 {
     font-size: 96px;
     text-align: center;
-    padding: 3rem 0;
   }
 
   .heading {
