@@ -871,6 +871,15 @@ blockquote p {
     width: auto;
   }
 
+  nav ul li::after {
+    content: '/';
+    color: var(--font-color-figc);
+  }
+
+  nav ul li:first-of-type::after, nav ul li:last-of-type::after {
+    content: none;
+  }
+
   nav ul li a {
     padding: 0 1.5rem 0;
   }
