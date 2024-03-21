@@ -870,11 +870,15 @@ blockquote p {
 
   nav ul li {
     width: auto;
+    position: relative;
   }
 
   nav ul li::after {
     content: '/';
     color: var(--font-color-figc);
+    position: absolute;
+    right: 0;
+    transform: translateX(50%);
   }
 
   nav ul li:first-of-type::after, nav ul li:last-of-type::after {
