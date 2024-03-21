@@ -515,7 +515,7 @@ footer span {
 }
 
 .heading h1 {
-  font-size: 48px;
+  font-size: 42px;
   padding: 0;
   color: var(--font-color);
   text-transform: uppercase;
@@ -524,6 +524,7 @@ footer span {
   margin: 0 auto;
   max-width: var(--xl-width);
   letter-spacing: -0.025em;
+  word-break: break-word;
 }
 
 p.intro {
