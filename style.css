@@ -131,10 +131,10 @@ p {
   column-span: all;
 }
 
-#content section p:has(+ ul),
+/* #content section p:has(+ ul),
 #content section h3:has(+ ul) {
   margin-bottom: 1rem;
-}
+} */
 
 h2,
 h3,
@@ -158,18 +158,18 @@ h1 {
 h2 {
   font-size: 28px;
   font-weight: 700;
-  margin: 4rem auto 2rem 0;
+  margin: 4rem auto 1.5rem 0;
   padding: 0;
 }
 
 h3 {
   font-size: 24px;
-  margin: 0 auto .75rem 0;
+  margin: 0 auto .5rem 0;
 }
 
 h4 {
   font-size: 20px;
-  margin: 0 auto .75rem 0;
+  margin: 0 auto .25rem 0;
 }
 
 main li {
@@ -480,6 +480,12 @@ footer span {
 .heading {
   position: relative;
   margin: 0;
+
+  & a.cta {
+    width: fit-content;
+    margin: 1.5rem auto;
+    box-shadow: 0px 0px 24px rgba(255,255,255,.1)
+  }
 }
 
 .heading>div {
@@ -549,7 +555,6 @@ footer span {
   & h3 {
     padding: 3rem 0 1.5rem;
     color: var(--font-color-alt);
-    text-align: center;
   }
 
   & div {
@@ -564,18 +569,18 @@ footer span {
       align-items: center;
       row-gap: 2.5rem;
       width: 100%;
-      padding: 3rem 2rem 2rem;
-      border: 1px solid white;
+      padding: 3.5rem 2rem 2rem;
+      background: #FFF;
       border-radius: 8px;
 
       & p {
-        color: var(--font-color-alt);
+        color: var(--font-color);
         text-align: left;
         word-break: keep-all;
       }
 
       & i {
-        color: var(--font-color-alt);
+        color: var(--font-color);
       }
     }
   }
@@ -701,11 +706,11 @@ footer span {
   margin: 0 auto 1.5rem;
 }
 
-.heading a,
+/* .heading a,
 .heading a:hover {
   color: var(--secondary-color);
   text-decoration-color: var(--secondary-color);
-}
+} */
 
 p.intro {
   font-weight: 500;
@@ -1068,12 +1073,12 @@ blockquote p {
   }
 
   a.cta {
-    margin: 2rem auto 0 0;
+    margin: 1.5rem auto 3rem 2rem;
     width: auto;
   }
 
   #content a.cta {
-    margin: 2rem auto 1.5rem 2rem;
+    margin: 1.5rem auto 3rem 2rem;
     width: auto;
     max-width: fit-content;
   }
@@ -1138,7 +1143,7 @@ blockquote p {
   }
 
   figcaption {
-    padding: 0 1.5rem;
+    padding: 0 2rem;
   }
 
   figure.quote {
