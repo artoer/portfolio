@@ -550,7 +550,6 @@ footer span {
     padding: 3rem 0 1.5rem;
     color: var(--font-color-alt);
     text-align: center;
-    margin: 0;
   }
 
   & div {
@@ -754,7 +753,10 @@ p.tags span {
   background: var(--primary-bg-color);
 }
 
-#content div>* {
+#content p,
+#content ul,
+#content ol,
+#content figure {
   max-width: var(--m-width);
   width: 100%;
   margin: 0 auto 1.5rem;
@@ -1136,18 +1138,16 @@ blockquote p {
   }
 
   figcaption {
-    padding: 0 2rem;
+    padding: 0 1.5rem;
   }
 
   figure.quote {
     padding: 1rem 0 1rem 3rem;
   }
 
-
   figure.insert p {
     font-size: 28px;
   }
-
 
   figure.quote {
     border-left: 4px solid var(--primary-color);
@@ -1161,10 +1161,5 @@ blockquote p {
     border-radius: 4px;
     margin-left: 0;
     max-width: var(--l-width);
-    min-width: var(--m-width);
-  }
-
-  #content img.float {
-    max-width: 192px;
   }
 }
