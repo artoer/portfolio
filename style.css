@@ -1073,7 +1073,7 @@ blockquote p {
   }
 
   a.cta {
-    margin: 1.5rem auto 3rem 2rem;
+    margin: 1.5rem auto 3rem 0;
     width: auto;
   }
 
