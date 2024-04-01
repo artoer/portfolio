@@ -14,8 +14,8 @@
   --primary-color: hsl(264, 100%, 50%);
   --secondary-color: hsl(48, 100%, 50%);
 
-  --primary-bg-color: hsl(264, 15%, 97%);
-  --secondary-bg-color: hsl(264, 15%, 95%);
+  --primary-bg-color: hsl(264, 15%, 98%);
+  --secondary-bg-color: hsl(264, 15%, 96%);
   --tertiary-bg-color: hsl(264, 5%, 10%);
 
   --font-family-h: 'Archivo', sans-serif;
@@ -344,7 +344,7 @@ main {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  background-color: var(--primary-bg-color);
+  background-color: #FFF;
   border-radius: 8px;
 }
 
