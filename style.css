@@ -413,7 +413,7 @@ a.cta {
   border-radius: 4px;
   color: var(--font-color-alt);
   padding: 0 2.5rem;
-  margin: 2rem 0 0 auto;
+  margin: 1.5rem 0 0;
   height: 52px;
   min-width: 256px;
   width: 100%;
@@ -1081,7 +1081,6 @@ blockquote p {
   }
 
   a.cta {
-    margin: 1.5rem auto 3rem 0;
     width: auto;
   }
 
