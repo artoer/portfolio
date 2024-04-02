@@ -597,8 +597,11 @@ footer span {
 
       & span {
         font-size: 32px;
-        color: var(--primary-color);
+        color: var(--font-color-alt);
         font-family: 'Archivo Black';
+        padding: .5rem 1rem;
+        background: var(--primary-color);
+        border-radius: 4px;
       }
 
     }
