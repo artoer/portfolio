@@ -891,6 +891,7 @@ figure.insert {
   display: flex;
   flex-flow: column nowrap;
   padding: 1.5rem 2rem;
+  background: #FFF;
 }
 
 figure.insert {
@@ -944,15 +945,22 @@ blockquote:not(:last-of-type) {
   margin-bottom: 1.5rem;
 }
 
-blockquote :last-child {
+blockquote :last-child, #content blockquote p:last-of-type {
   margin-bottom: 0;
 }
 
-blockquote p {
+.quote blockquote p {
   max-width: var(--m-width);
   margin: 0 auto 1.5rem;
   font-style: italic;
   font-weight: 500;
+}
+
+.quote blockquote {
+  margin: 0 auto;
+  line-height: 1.6;
+  font-size: var(--font-size-b);
+  font-style: italic;
 }
 
 .insert p strong {
@@ -1212,15 +1220,12 @@ blockquote p {
   }
 
   figure.quote {
-    padding: 1rem 0 1rem 3rem;
+    padding: 1.5rem 3rem;
+    border-left: 4px solid var(--primary-color);
   }
 
   figure.insert p {
     font-size: 28px;
-  }
-
-  figure.quote {
-    border-left: 4px solid var(--primary-color);
   }
 
   #content figure img {
