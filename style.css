@@ -7,6 +7,9 @@
   text-rendering: optimizeLegibility;
   color: var(--font-color);
   font-family: var(--font-family-b);
+
+  /* debug */
+  /* outline: 1px solid #f00 !important; */
 }
 
 
@@ -770,7 +773,7 @@ p.tags span {
     flex-direction: row;
     justify-content: start;
     align-items: center;
-    width: var(--l-width);
+    max-width: var(--l-width);
     margin: 0 auto;
     gap: 1.5rem;
 
