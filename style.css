@@ -12,20 +12,20 @@
 
 :root {
   --primary-color: hsl(264, 100%, 50%);
-  --secondary-color: hsl(48, 100%, 50%);
-  --tertiary-color: hsl(264, 100%, 95%);
+  --secondary-color: hsl(160, 100%, 50%);
+  --tertiary-color: hsl(52, 100%, 50%);
 
   --primary-bg-color: hsl(264, 15%, 98%);
   --secondary-bg-color: hsl(264, 15%, 96%);
-  --tertiary-bg-color: hsl(264, 5%, 10%);
+  --tertiary-bg-color: hsl(264, 5%, 15%);
 
   --font-family-h: 'Archivo', sans-serif;
   --font-family-b: 'Onest', sans-serif;
   --font-size-b: clamp(1.125rem, 0.8864rem + 0.9091vw, 1.25rem);
   --font-size-c: clamp(1rem, 0.7614rem + 0.9091vw, 1.125rem);
-  --font-color: hsl(0, 0%, 25%);
-  --font-color-figc: hsl(0, 0%, 40%);
-  --font-color-alt: hsl(0, 0%, 97%);
+  --font-color: hsl(0, 0%, 15%);
+  --font-color-figc: hsl(0, 0%, 35%);
+  --font-color-alt: hsl(0, 0%, 98%);
 
   --xl-width: 1440px;
   --l-width: 1080px;
@@ -499,7 +499,7 @@ footer span {
   width: 100%;
   max-width: 100%;
   padding: 3rem 1rem;
-  box-shadow: inset 0px 0px 12px rgba(0, 0, 0, .01);
+  box-shadow: inset 0px 0px 24px rgba(0, 0, 0, .025);
 }
 
 .heading img,
@@ -536,6 +536,13 @@ footer span {
   display: block;
 }
 
+.heading-item span.pct {
+  display: block;
+  font-size: 64px;
+  font-family: 'Archivo Black';
+  color: var(--font-color);
+}
+
 .heading-item figure:has(blockquote) {
   display: flex;
   flex-direction: column;
@@ -560,7 +567,7 @@ footer span {
   margin: 0 auto;
 
   & h3 {
-    padding: 3rem 0 1.5rem;
+    padding: 3rem 0 1rem;
     color: var(--font-color-alt);
   }
 
@@ -579,8 +586,8 @@ footer span {
       width: 100%;
       padding: 2rem;
       background: var(--primary-bg-color);
-      border-left: 4px solid var(--primary-color);
-      border-radius: 0 4px 4px 0;
+      border-bottom: 4px solid var(--primary-color);
+      border-radius: 4px 4px 0 0;
 
       &>* {
         z-index: 1;
@@ -661,13 +668,6 @@ footer span {
   font-weight: 600;
 }
 
-.heading-item span.pct {
-  display: block;
-  font-size: 64px;
-  font-family: 'Archivo Black';
-  color: var(--primary-color);
-}
-
 .heading-item>* {
   width: 100%;
   height: 100%;
@@ -703,14 +703,6 @@ footer span {
   align-items: start;
 }
 
-.heading-item span.pct {
-  display: block;
-  font-size: 64px;
-  font-family: 'Archivo Black';
-  color: var(--primary-color);
-}
-
-
 .heading>div>* {
   max-width: var(--l-width);
   margin: 0 auto 1.5rem;
@@ -730,18 +722,23 @@ footer span {
 }
 
 .heading .solution {
-  background: linear-gradient(180deg, #6600FF 0%, #330080 100%);
-}
+  background: var(--tertiary-bg-color);
+  /* background: linear-gradient(180deg, #6600FF 0%, #330080 100%); */
+  /* background: linear-gradient(180deg, var(--primary-color), var(--tertiary-color)); */
 
-.heading .solution h2 {
-  color: var(--font-color-alt);
+  & h2 {
+    color: var(--font-color-alt);
+  }
 }
 
 .headline * {
   color: var(--font-color-alt);
 }
 
-.headline h1,
+.headline h1 {
+  margin: 0 auto 1.5rem;
+}
+
 .headline p.intro {
   margin: 0 auto 1rem;
 }
@@ -765,11 +762,8 @@ p.tags span {
 }
 
 .read-more {
-  display: flex;
   padding: 6rem 1rem;
-  background: var(--primary-color);
-  justify-content: start;
-  align-items: start;
+  background: var(--secondary-color);
 
   & div {
     display: flex;
@@ -782,7 +776,7 @@ p.tags span {
 
     & h2,
     i {
-      color: var(--font-color-alt);
+      color: var(--font-color);
       margin: 0;
     }
   }
@@ -812,7 +806,7 @@ p.tags span {
 
 #content section {
   padding: 3rem 1rem;
-  box-shadow: inset 0px 0px 12px rgba(0, 0, 0, .01);
+  box-shadow: inset 0px 0px 24px rgba(0, 0, 0, .025);
 }
 
 #content section:nth-of-type(odd) {
@@ -945,7 +939,8 @@ blockquote:not(:last-of-type) {
   margin-bottom: 1.5rem;
 }
 
-blockquote :last-child, #content blockquote p:last-of-type {
+blockquote :last-child,
+#content blockquote p:last-of-type {
   margin-bottom: 0;
 }
 
@@ -1190,13 +1185,6 @@ blockquote :last-child, #content blockquote p:last-of-type {
 
   .heading-item.xl p {
     font-size: 32px;
-  }
-
-  .heading-item span.pct {
-    display: block;
-    font-size: 64px;
-    font-family: 'Archivo Black';
-    color: var(--primary-color);
   }
 
   .heading img {
