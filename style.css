@@ -12,6 +12,12 @@
   /* outline: 1px solid #f00 !important; */
 }
 
+*:focus-visible {
+  outline: 4px solid var(--primary-color);
+  background: #FFF !important;
+  color: #000 !important;
+  -webkit-text-fill-color: #000 !important;
+}
 
 :root {
   --primary-color: hsl(264, 100%, 50%);
@@ -1079,6 +1085,25 @@ blockquote :last-child,
     position: absolute;
     right: 0;
     transform: translateX(50%);
+  }
+
+  nav ul li:not(:first-of-type):before {
+    content: '';
+    width: calc(100% - 2rem);
+    height: 2px;
+    background-image: linear-gradient(to right, var(--secondary-color), var(--secondary-color) 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: 100%;
+    position: absolute;
+    bottom: .25rem;
+    left: 50%;
+    transform: translate(-50%);
+    transition: all 0.2s ease-in-out;
+  }
+
+  nav ul li:Hover:not(:first-of-type):before {
+    background-position: 0;
+    text-decoration: none;
   }
 
   nav ul li:first-of-type::after,
