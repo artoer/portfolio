@@ -865,6 +865,7 @@ p.tags span {
   pointer-events: none;
   border-radius: 0px;
   max-height: calc(100vh - 8rem);
+  min-width: 300px;
   object-fit: contain;
   margin: 0 auto;
 }
@@ -1245,10 +1246,10 @@ blockquote :last-child,
   #content figure img {
     cursor: pointer;
     pointer-events: unset;
-    max-height: 640px;
     margin: auto;
     border-radius: 4px;
     margin-left: 0;
     max-width: var(--l-width);
+    max-height: 65vh;
   }
 }
