@@ -21,7 +21,7 @@
 
 :root {
   --primary-color: hsl(264, 100%, 50%);
-  --secondary-color: hsl(52, 100%, 50%);
+  --secondary-color: hsl(48, 100%, 50%);
   --tertiary-color: hsl(160, 100%, 50%);
 
   --primary-bg-color: hsl(264, 15%, 98%);
@@ -731,10 +731,7 @@ footer span {
 }
 
 .heading .solution {
-  background: var(--primary-color);
-  background: linear-gradient(to bottom right, #5c00e6, #00e699);
-  background: #608BFF;
-  background-attachment: fixed;
+  background: #68F;
 
   & h2 {
     color: var(--font-color-alt);
