@@ -162,7 +162,7 @@ h1 {
   margin: 0 0 1rem;
   transform: skew(-4deg);
   text-transform: uppercase;
-  letter-spacing: -0.0125em;
+  letter-spacing: -0.05em;
 }
 
 h2 {
@@ -1044,7 +1044,7 @@ blockquote :last-child,
   }
 
   h1 {
-    font-size: 64px;
+    font-size: 96px;
   }
 
   h2 {
