@@ -733,6 +733,8 @@ footer span {
 .heading .solution {
   background: var(--primary-color);
   background: linear-gradient(to bottom right, #5c00e6, #00e699);
+  background: #608BFF;
+  background-attachment: fixed;
 
   & h2 {
     color: var(--font-color-alt);
