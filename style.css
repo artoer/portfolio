@@ -577,13 +577,13 @@ footer span {
 
   & h3 {
     padding: 3rem 0 1rem;
-    color: var(--font-color-alt);
+    color: var(--font-color);
   }
 
   & div {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: .25rem;
 
     & div {
       position: relative;
@@ -731,10 +731,10 @@ footer span {
 }
 
 .heading .solution {
-  background: #68F;
+  background: hsl(264, 15%, 94%);
 
   & h2 {
-    color: var(--font-color-alt);
+    color: var(--font-color);
   }
 }
 
