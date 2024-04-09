@@ -338,6 +338,17 @@ main {
   }
 }
 
+#content img.profile-pic {
+  height: 160px;
+  width: 160px;
+  min-height: 160px;
+  min-width: 160px;
+  margin: 0 auto 1.5rem;
+  min-width: 0;
+  border-radius: 999px;
+  border: 2px solid var(--tertiary-bg-color);
+}
+
 #work {
   display: grid;
   row-gap: 4rem;
@@ -1248,5 +1259,10 @@ blockquote :last-child,
     margin-left: 0;
     max-width: var(--l-width);
     max-height: 65vh;
+  }
+
+  #content img.profile-pic {
+    float: left;
+    margin: .75rem 2rem 0 0;
   }
 }
