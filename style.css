@@ -500,7 +500,6 @@ footer span {
     position: relative;
     width: fit-content;
     margin: 1.5rem auto;
-    box-shadow: 0px 0px 24px rgba(255, 255, 255, .1);
   }
 }
 
@@ -508,7 +507,6 @@ footer span {
   width: 100%;
   max-width: 100%;
   padding: 3rem 1rem;
-  box-shadow: inset 0px 0px 24px rgba(0, 0, 0, .025);
 }
 
 .heading img,
@@ -692,7 +690,7 @@ footer span {
   margin: 0;
   height: 100%;
   width: 100%;
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, .1);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, .05);
 }
 
 .heading-item figure img {
@@ -813,7 +811,6 @@ p.tags span {
 
 #content section {
   padding: 3rem 1rem;
-  box-shadow: inset 0px 0px 24px rgba(0, 0, 0, .025);
 }
 
 #content section:nth-of-type(odd) {
