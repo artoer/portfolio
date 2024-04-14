@@ -1229,7 +1229,7 @@ blockquote :last-child,
   }
 
   #hero {
-    padding: 6rem 1rem;
+    padding: 6rem 1rem 10rem;
     text-align: center;
 
     & h1 {
