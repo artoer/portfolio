@@ -345,7 +345,6 @@ main {
   margin: 0 auto 1.5rem;
   min-width: 0;
   border-radius: 999px;
-  border: 2px solid var(--tertiary-bg-color);
 }
 
 #work {
@@ -1223,7 +1222,6 @@ blockquote :last-child,
 
   #work {
     max-width: calc(100vw - 4rem);
-    row-gap: 6rem;
     margin: 0 auto 6rem;
     padding: 0;
   }
