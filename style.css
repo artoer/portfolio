@@ -720,8 +720,8 @@ footer span {
 }
 
 .heading>div>div {
-  max-width: var(--l-width);
   text-align: left;
+  max-width: var(--m-width);
 }
 
 .heading .headline {
@@ -749,12 +749,21 @@ footer span {
 }
 
 .heading h1, .heading h2 {
-  margin: 0 auto 1.5rem;
+  margin: 0 auto 3rem;
   max-width: var(--l-width);
+  text-align: center;
 }
 
 .headline p.challenge {
   margin: 0 auto 1rem;
+}
+
+.headline p.challenge::before {
+  content:"“";
+}
+
+.headline p.challenge::after {
+  content:"”";
 }
 
 .headline div {
