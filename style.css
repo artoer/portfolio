@@ -1172,7 +1172,7 @@ blockquote :last-child,
 
   nav ul li:not(:first-of-type):before {
     content: '';
-    width: calc(100% - 2rem);
+    width: calc(100% - 3rem);
     height: 2px;
     background-image: linear-gradient(to right, var(--secondary-color), var(--secondary-color) 50%, transparent 50%);
     background-size: 200% 100%;
