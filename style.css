@@ -34,7 +34,7 @@
   --font-size-c: clamp(1rem, 0.7614rem + 0.9091vw, 1.125rem);
   --font-color: hsl(0, 0%, 15%);
   --font-color-figc: hsl(0, 0%, 35%);
-  --font-color-alt: hsl(0, 0%, 98%);
+  --font-color-alt: hsl(0, 0%, 95%);
 
   --xl-width: 1440px;
   --l-width: 1080px;
@@ -750,7 +750,7 @@ footer span {
 
 .heading h1,
 .heading h2 {
-  margin: 0 auto 1.5rem;
+  margin: 0 auto 2rem;
   max-width: var(--m-width);
 }
 
