@@ -431,8 +431,8 @@ main {
 a.cta {
   border-radius: 4px;
   color: var(--font-color-alt);
-  padding: 0 2.5rem;
-  margin: 1.5rem 0 0;
+  padding: 0 3rem;
+  margin: 2rem 0 0;
   height: 52px;
   min-width: 256px;
   width: 100%;
