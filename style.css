@@ -228,9 +228,9 @@ nav {
   width: 100%;
   margin: -64px auto 0;
   padding: 0 1rem;
-  overflow: scroll;
   scrollbar-width: none;
   background: var(--tertiary-bg-color);
+  border-bottom: 1px solid var(--font-color-figc);
 }
 
 nav::-webkit-scrollbar {
@@ -1173,6 +1173,7 @@ blockquote :last-child,
     position: absolute;
     right: 0;
     transform: translateX(50%);
+    pointer-events: none;
   }
 
   nav ul li:not(:first-of-type):before {
@@ -1183,7 +1184,7 @@ blockquote :last-child,
     background-size: 200% 100%;
     background-position: 100%;
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 50%;
     transform: translate(-50%);
     transition: all 0.2s ease-in-out;
@@ -1241,7 +1242,7 @@ blockquote :last-child,
   }
 
   #hero {
-    padding: 6rem 1rem 10rem;
+    padding: 8rem 1rem 10rem;
     text-align: center;
 
     & h1 {
