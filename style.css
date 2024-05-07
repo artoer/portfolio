@@ -776,7 +776,6 @@ p.challenge {
   margin: 0 auto 1.5rem;
   line-height: 1.4;
   font-family: var(--font-family-h);
-  text-transform: uppercase;
   text-align: left;
   font-weight: 600;
   font-size: 26px;
@@ -932,7 +931,6 @@ aside p {
   margin: 0 !important;
   line-height: 1.4;
   font-family: var(--font-family-h);
-  text-transform: uppercase;
   text-align: center;
   font-weight: 600;
   font-size: 26px;
