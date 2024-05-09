@@ -260,8 +260,12 @@ nav ul li {
 
 nav ul li:first-of-type>a {
   background-position: 100% !important;
-  font-size: 22px;
-  font-weight: 600;
+  font-size: 18px;
+  font-family: 'Archivo Black', sans-serif;
+  transform: skew(-4deg);
+  text-transform: uppercase;
+  letter-spacing: -0.025em;
+  padding: 2px 8px 0;
 }
 
 nav ul li:first-of-type>a::before {
@@ -308,6 +312,7 @@ main {
 }
 
 #hero-container {
+  display: none;
   background: var(--tertiary-bg-color);
   margin: 0 auto 4rem;
   padding: 0 1rem;
@@ -349,11 +354,11 @@ main {
 
 #work {
   display: grid;
-  row-gap: 3rem;
+  row-gap: 2rem;
   width: var(--xl-width);
   max-width: calc(100vw - 2rem);
-  margin: 0 auto 4rem;
-  padding: 0;
+  margin: 0 auto;
+  padding: 4rem 0;
 }
 
 .card {
@@ -748,10 +753,13 @@ footer span {
   color: var(--font-color-alt);
 }
 
-.heading h1,
-.heading h2 {
-  margin: 0 auto 2rem;
+.heading h1 {
+  margin: 0 auto;
   max-width: var(--m-width);
+}
+
+.heading h1:has(+ div) {
+  margin: 0 auto 2rem;
 }
 
 .headline p.challenge {
@@ -1156,6 +1164,10 @@ blockquote :last-child,
     margin: -64px auto 0;
   }
 
+  nav ul li:first-of-type>a {
+    font-size: 26px;
+  }
+
   nav ul li:first-of-type a::after {
     content: '\00a0Menken';
   }
@@ -1235,8 +1247,8 @@ blockquote :last-child,
 
   #work {
     max-width: calc(100vw - 4rem);
-    margin: 0 auto 6rem;
-    padding: 0;
+    margin: 0 auto;
+    padding: 4rem 0;
   }
 
   #hero {

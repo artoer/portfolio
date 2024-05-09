@@ -59,26 +59,4 @@ window.addEventListener("DOMContentLoaded", (event) => {
       modal.style.display = 'none';
     }
   });
-
-  // Function to update --card-height property
-  if (document.querySelector('.card img')) {
-    function updateCardHeight() {
-      // Get the first .card element
-      const firstCard = document.querySelector('.card');
-
-      // Measure the height of the first .card element
-      const cardHeight = firstCard.clientHeight;
-
-      // Apply the height to the CSS custom property --card-height
-      const heroContainer = document.getElementById('hero-container');
-      heroContainer.style.setProperty('--card-height', cardHeight + 'px');
-    };
-
-    // Add event listener for window resize
-    window.addEventListener('resize', updateCardHeight);
-
-
-    // Call the function initially
-    updateCardHeight();
-  }
 });
