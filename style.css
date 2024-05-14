@@ -265,7 +265,7 @@ nav ul li:first-of-type>a {
   transform: skew(-4deg);
   text-transform: uppercase;
   letter-spacing: -0.025em;
-  padding: 0 8px 0;
+  padding: 0 1.5rem 0;
 }
 
 nav ul li:first-of-type>a::before {
