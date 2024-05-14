@@ -265,7 +265,7 @@ nav ul li:first-of-type>a {
   transform: skew(-4deg);
   text-transform: uppercase;
   letter-spacing: -0.025em;
-  padding: 0 1.5rem 0;
+  padding: 0 8px 0;
 }
 
 nav ul li:first-of-type>a::before {
@@ -1158,14 +1158,13 @@ blockquote :last-child,
     font-size: 24px;
   }
 
-
-
   nav {
     margin: -64px auto 0;
   }
 
   nav ul li:first-of-type>a {
     font-size: 26px;
+    padding: 0 1.5rem 0;
   }
 
   nav ul li:first-of-type a::after {
