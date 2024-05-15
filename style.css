@@ -911,6 +911,7 @@ p.tags span {
   min-width: 300px;
   object-fit: contain;
   margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 6px -1px;
 }
 
 figcaption {
