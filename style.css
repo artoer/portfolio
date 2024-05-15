@@ -264,7 +264,7 @@ nav ul li:first-of-type>a {
   font-family: 'Archivo Black', sans-serif;
   transform: skew(-4deg);
   text-transform: uppercase;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.05em;
   padding: 0 8px 0;
 }
 
@@ -1163,7 +1163,7 @@ blockquote :last-child,
   }
 
   nav ul li:first-of-type>a {
-    font-size: 26px;
+    font-size: 32px;
     padding: 0 1.5rem 0;
   }
 
