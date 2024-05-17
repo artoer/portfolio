@@ -22,19 +22,18 @@
 :root {
   --primary-color: hsl(264, 100%, 50%);
   --secondary-color: hsl(48, 100%, 50%);
-  --tertiary-color: hsl(160, 100%, 50%);
 
   --primary-bg-color: hsl(264, 15%, 98%);
   --secondary-bg-color: hsl(264, 15%, 96%);
-  --tertiary-bg-color: hsl(264, 15%, 10%);
+  --tertiary-bg-color: linear-gradient(144deg, hsl(264, 100%, 50%),hsl(264, 100%, 10%)) fixed;
 
   --font-family-h: 'Archivo', sans-serif;
-  --font-family-b: 'Onest', sans-serif;
+  --font-family-b: 'DM Sans', sans-serif;
   --font-size-b: clamp(1.125rem, 0.8864rem + 0.9091vw, 1.25rem);
   --font-size-c: clamp(1rem, 0.7614rem + 0.9091vw, 1.125rem);
   --font-color: hsl(0, 0%, 15%);
   --font-color-figc: hsl(0, 0%, 35%);
-  --font-color-alt: hsl(0, 0%, 95%);
+  --font-color-alt: hsl(0, 0%, 98%);
 
   --xl-width: 1440px;
   --l-width: 1080px;
@@ -74,19 +73,19 @@
   font-weight: 400;
 }
 
-/* Onest - Medium */
+/* DM Sans - Medium */
 @font-face {
-  font-family: 'Onest';
-  src: url('../assets/fonts/Onest-Medium.ttf') format('truetype');
-  src: url('./assets/fonts/Onest-Medium.ttf') format('truetype');
+  font-family: 'DM Sans';
+  src: url('../assets/fonts/DMSans-Medium.ttf') format('truetype');
+  src: url('./assets/fonts/DMSans-Medium.ttf') format('truetype');
   font-weight: 500;
 }
 
-/* Onest - Regular */
+/* DM Sans - Regular */
 @font-face {
-  font-family: 'Onest';
-  src: url('../assets/fonts/Onest-Regular.ttf') format('truetype');
-  src: url('./assets/fonts/Onest-Regular.ttf') format('truetype');
+  font-family: 'DM Sans';
+  src: url('../assets/fonts/DMSans-Regular.ttf') format('truetype');
+  src: url('./assets/fonts/DMSans-Regular.ttf') format('truetype');
   font-weight: 400;
 }
 
@@ -104,8 +103,7 @@ img {
 h1,
 h2,
 h3,
-h4,
-nav a {
+h4 {
   font-family: var(--font-family-h);
   font-feature-settings: normal;
 }
@@ -155,15 +153,14 @@ h4 {
 }
 
 h1 {
-  font-family: 'Archivo Black', sans-serif;
   font-size: 44px;
-  font-weight: 700;
-  line-height: 1;
+  line-height: 1.15;
   color: var(--font-color-alt);
-  margin: 0 0 1rem;
-  transform: skew(-4deg);
+  margin: 0;
+  font-family: 'Archivo Black', sans-serif;
   text-transform: uppercase;
   letter-spacing: -0.05em;
+  font-weight: normal;
 }
 
 h2 {
@@ -222,15 +219,12 @@ main ul :last-child {
 /* NAV */
 
 nav {
-  position: fixed;
-  z-index: 2;
-  height: 64px;
+  height: 4rem;
   width: 100%;
-  margin: -64px auto 0;
+  margin: auto 0;
   padding: 0 1rem;
   scrollbar-width: none;
   background: var(--tertiary-bg-color);
-  border-bottom: 1px solid var(--font-color-figc);
 }
 
 nav::-webkit-scrollbar {
@@ -253,19 +247,20 @@ nav ul li {
   align-items: center;
   justify-content: center;
   align-self: center;
+  padding: 0 1.5rem 0;
   font-size: 18px;
-  height: 100%;
+  height: 42px;
   color: var(--font-color-alt);
 }
 
 nav ul li:first-of-type>a {
   background-position: 100% !important;
-  font-size: 18px;
+  font-size: 22px;
   font-family: 'Archivo Black', sans-serif;
   transform: skew(-4deg);
   text-transform: uppercase;
-  letter-spacing: -0.05em;
-  padding: 0 8px 0;
+  letter-spacing: -0.2em;
+  padding: 0;
 }
 
 nav ul li:first-of-type>a::before {
@@ -281,16 +276,7 @@ nav ul li a {
   flex-direction: row;
   text-align: center;
   font-weight: 500;
-  padding: 0 8px 0;
-  background-image: linear-gradient(to right,
-      var(--secondary-color),
-      var(--secondary-color) 50%,
-      var(--font-color-alt) 50%);
-  background-size: 200% 100%;
-  background-position: 100%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+color: var(--font-color-alt);
   transition: all 0.2s ease-in-out;
   text-decoration: none;
   position: relative;
@@ -307,14 +293,13 @@ nav ul li a:hover::before {
 }
 
 main {
-  margin: 64px auto 0;
+  margin: 0 auto;
   width: 100%;
 }
 
 #hero-container {
-  display: none;
   background: var(--tertiary-bg-color);
-  margin: 0 auto 4rem;
+  margin: 0 auto;
   padding: 0 1rem;
 }
 
@@ -322,16 +307,20 @@ main {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   height: 100%;
-  padding: 6rem 0;
+  padding: 3rem 0;
   margin: 0 auto;
   text-align: left;
+  max-width: var(--l-width);
 
 
   & h1 {
-    font-size: 64px;
+    font-size: 32px;
+    line-height: 1.2;
+    color: var(--font-color-alt);
+    transform: none;
   }
 
   & h2 {
@@ -451,7 +440,7 @@ a.cta {
   transition: all 0.2s ease-in-out;
   text-decoration: none;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -508,6 +497,7 @@ footer span {
 /* CASE STUDY PAGE */
 .heading {
   position: relative;
+  background: var(--tertiary-bg-color);
   margin: 0;
 
   & a.cta {
@@ -661,11 +651,11 @@ footer span {
 }
 
 .tertiary {
-  background: var(--tertiary-color);
+  background: var(--tertiary-bg-color);
 }
 
 .dark {
-  background: var(--tertiary-bg-color);
+  background: var(--secondary-bg-color);
   color: var(--font-color-alt);
 
   & * {
@@ -729,26 +719,6 @@ footer span {
   max-width: var(--m-width);
 }
 
-.heading .headline {
-  background-color: var(--tertiary-bg-color);
-}
-
-.heading .context {
-  background-color: var(--primary-bg-color);
-}
-
-.heading .insights {
-  background-color: var(--secondary-bg-color);
-}
-
-.heading .solution {
-  background: hsl(264, 15%, 94%);
-
-  & h2 {
-    color: var(--font-color);
-  }
-}
-
 .headline * {
   color: var(--font-color-alt);
 }
@@ -788,7 +758,6 @@ p.challenge {
   font-weight: 600;
   font-size: 26px;
   max-width: unset !important;
-  color: var(--secondary-color);
 }
 
 .headline p:not(:last-of-type) {
@@ -801,13 +770,13 @@ p.tags {
 }
 
 p.tags span {
-  color: var(--secondary-color);
+  font-weight: 700;
   font-size: inherit;
 }
 
 .read-more {
-  padding: 6rem 1rem;
-  background: var(--tertiary-bg-color);
+  padding: 4rem 1rem 6rem;
+  background: var(--secondary-bg-color);
 
   & div {
     display: flex;
@@ -1134,11 +1103,6 @@ blockquote :last-child,
 /* TABLET AND UP */
 @media all and (min-width: 768px) {
 
-  main {
-    /* max-width: calc(100% - 4rem); */
-    margin: 64px auto 0;
-  }
-
   h1 {
     font-size: 72px;
   }
@@ -1159,18 +1123,14 @@ blockquote :last-child,
     font-size: 24px;
   }
 
-  nav {
-    margin: -64px auto 0;
-  }
-
   nav ul li:first-of-type>a {
     font-size: 32px;
-    padding: 0 1.5rem 0;
+    padding: 0;
   }
 
-  nav ul li:first-of-type a::after {
+  /* nav ul li:first-of-type a::after {
     content: '\00a0Menken';
-  }
+  } */
 
   nav ul li {
     width: auto;
@@ -1179,39 +1139,41 @@ blockquote :last-child,
 
   nav ul li::after {
     content: '/';
-    color: var(--font-color-figc);
+    color: var(--font-color-alt);
     position: absolute;
     right: 0;
     transform: translateX(50%);
     pointer-events: none;
   }
 
-  nav ul li:not(:first-of-type):before {
+  nav ul li a::before {
     content: '';
-    width: calc(100% - 3rem);
+    width: 100%;
     height: 2px;
-    background-image: linear-gradient(to right, var(--secondary-color), var(--secondary-color) 50%, transparent 50%);
+    /* background-image: linear-gradient(to right, var(--font-color-alt), var(--font-color-alt) 50%, transparent 50%);
     background-size: 200% 100%;
-    background-position: 100%;
+    background-position: 100%; */
     position: absolute;
-    bottom: -1px;
-    left: 50%;
-    transform: translate(-50%);
-    transition: all 0.2s ease-in-out;
+    bottom: 0;
+    left: 0;
+
+    transform: scaleX(0); /* Initial scale of 0 for underline effect */
+    transform-origin: bottom right; /* Set transform origin */
+    transition: transform 0.25s ease-out; /* Transition effect for the underline */
+    background:var(--font-color-alt);
   }
 
-  nav ul li:Hover:not(:first-of-type):before {
-    background-position: 0;
+  nav ul li a:Hover::before {
+    /* background-position: 0; */
     text-decoration: none;
+
+    transform: scaleX(1); /* Scale the underline on hover */
+    transform-origin: bottom left; /* Set transform origin */
   }
 
   nav ul li:first-of-type::after,
   nav ul li:last-of-type::after {
     content: none;
-  }
-
-  nav ul li a {
-    padding: 0 1.5rem 0;
   }
 
   nav ul li:first-of-type {
@@ -1252,11 +1214,10 @@ blockquote :last-child,
   }
 
   #hero {
-    padding: 8rem 1rem 10rem;
-    text-align: center;
+    padding: 4rem 0 6rem;
 
     & h1 {
-      font-size: 96px;
+      font-size: 56px;
     }
   }
 
@@ -1266,7 +1227,7 @@ blockquote :last-child,
   }
 
   #hero-container {
-    margin: 0 auto 6rem;
+    margin: 0 auto;
   }
 
   .card {
@@ -1313,7 +1274,7 @@ blockquote :last-child,
   }
 
   .heading>div {
-    padding: 6rem 1rem;
+    padding: 4rem 1rem 6rem;
   }
 
   .heading-item.l p {
