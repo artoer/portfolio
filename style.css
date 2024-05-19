@@ -946,11 +946,10 @@ aside::after {
   border-bottom: 2px solid var(--primary-color);
 }
 
-/* #content h2+*,
-#content h3,
+#content h2+figure,
 #content h3+figure {
-  margin-top: 2rem !important;
-} */
+  margin-top: 0 !important;
+}
 
 figure.quote,
 figure.insert {
