@@ -342,7 +342,7 @@ main {
 
 #work {
   display: grid;
-  row-gap: 2.5rem;
+  row-gap: 3rem;
   width: var(--xl-width);
   max-width: calc(100vw - 2rem);
   margin: 0 auto;
