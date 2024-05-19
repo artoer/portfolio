@@ -25,7 +25,7 @@
 
   --primary-bg-color: hsl(264, 15%, 98%);
   --secondary-bg-color: hsl(264, 15%, 96%);
-  --tertiary-bg-color: linear-gradient(144deg, hsl(264, 100%, 50%),hsl(264, 100%, 10%)) fixed;
+  --tertiary-bg-color: linear-gradient(144deg, hsl(264, 100%, 50%), hsl(264, 100%, 10%)) fixed;
 
   --font-family-h: 'Archivo', sans-serif;
   --font-family-b: 'DM Sans', sans-serif;
@@ -154,7 +154,7 @@ h4 {
 
 h1 {
   font-size: 44px;
-  line-height: 1.15;
+  line-height: 1.1;
   color: var(--font-color-alt);
   margin: 0;
   font-family: 'Archivo Black', sans-serif;
@@ -276,7 +276,7 @@ nav ul li a {
   flex-direction: row;
   text-align: center;
   font-weight: 500;
-color: var(--font-color-alt);
+  color: var(--font-color-alt);
   transition: all 0.2s ease-in-out;
   text-decoration: none;
   position: relative;
@@ -318,7 +318,6 @@ main {
 
   & h1 {
     font-size: 32px;
-    line-height: 1.2;
     color: var(--font-color-alt);
     transform: none;
   }
@@ -343,7 +342,7 @@ main {
 
 #work {
   display: grid;
-  row-gap: 2rem;
+  row-gap: 2.5rem;
   width: var(--xl-width);
   max-width: calc(100vw - 2rem);
   margin: 0 auto;
@@ -389,7 +388,7 @@ main {
 }
 
 .card>div>h3 {
-  margin: 0 0 .5rem;
+  margin: 0 0 .25rem;
 }
 
 .card>div>span {
@@ -510,7 +509,7 @@ footer span {
 .heading>div {
   width: 100%;
   max-width: 100%;
-  padding: 4rem 1rem;
+  padding: 2rem 1rem 4rem;
 }
 
 .heading img,
@@ -756,7 +755,7 @@ p.challenge {
   font-family: var(--font-family-h);
   text-align: left;
   font-weight: 600;
-  font-size: 26px;
+  font-size: 24px;
   max-width: unset !important;
 }
 
@@ -823,8 +822,8 @@ p.tags span {
 }
 
 #content section:nth-of-type(odd) {
-  background: var(--primary-bg-color);
-}
+  background: var(--primary-bg-color);}
+
 
 #content p,
 #content ul,
@@ -842,7 +841,7 @@ p.tags span {
 }
 
 #content section .paragraph {
-  max-width: var(--l-width);
+  max-width: var(--m-width);
   margin: 0 auto;
 }
 
@@ -865,6 +864,7 @@ p.tags span {
 
 #content figure:has(img) figcaption {
   display: table-caption;
+  text-align: center;
   caption-side: bottom;
   width: auto;
   max-width: var(--m-width);
@@ -899,7 +899,6 @@ aside {
   display: flex;
   flex-direction: row;
   position: relative;
-  max-width: var(--l-width);
   margin: 4rem auto;
 }
 
@@ -1124,13 +1123,9 @@ blockquote :last-child,
   }
 
   nav ul li:first-of-type>a {
-    font-size: 32px;
+    font-size: 42px;
     padding: 0;
   }
-
-  /* nav ul li:first-of-type a::after {
-    content: '\00a0Menken';
-  } */
 
   nav ul li {
     width: auto;
@@ -1157,18 +1152,23 @@ blockquote :last-child,
     bottom: 0;
     left: 0;
 
-    transform: scaleX(0); /* Initial scale of 0 for underline effect */
-    transform-origin: bottom right; /* Set transform origin */
-    transition: transform 0.25s ease-out; /* Transition effect for the underline */
-    background:var(--font-color-alt);
+    transform: scaleX(0);
+    /* Initial scale of 0 for underline effect */
+    transform-origin: bottom right;
+    /* Set transform origin */
+    transition: transform 0.25s ease-out;
+    /* Transition effect for the underline */
+    background: var(--font-color-alt);
   }
 
   nav ul li a:Hover::before {
     /* background-position: 0; */
     text-decoration: none;
 
-    transform: scaleX(1); /* Scale the underline on hover */
-    transform-origin: bottom left; /* Set transform origin */
+    transform: scaleX(1);
+    /* Scale the underline on hover */
+    transform-origin: bottom left;
+    /* Set transform origin */
   }
 
   nav ul li:first-of-type::after,
@@ -1319,7 +1319,6 @@ blockquote :last-child,
     pointer-events: unset;
     margin: auto;
     border-radius: 4px;
-    max-width: var(--l-width);
     max-height: 50vh;
   }
 
