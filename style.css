@@ -21,7 +21,7 @@
 
 :root {
   --primary-color: hsl(264, 100%, 50%);
-  --secondary-color: hsl(48, 100%, 50%);
+  --secondary-color: hsl(0, 0%, 100%);
 
   --primary-bg-color: hsl(264, 15%, 98%);
   --secondary-bg-color: hsl(264, 15%, 96%);
@@ -434,7 +434,7 @@ a.cta {
       var(--secondary-color),
       var(--secondary-color) 50%,
       var(--primary-color) 50%);
-  background-size: calc(200% + 1%) 100%;
+  background-size: calc(200% + 2px) 100%;
   background-position: 100%;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
@@ -445,6 +445,7 @@ a.cta {
   justify-content: center;
   gap: 1rem;
   align-items: center;
+  border: 2px solid var(--primary-color);
 }
 
 a.cta>i {
@@ -452,8 +453,8 @@ a.cta>i {
 }
 
 a.cta:hover {
-  color: var(--font-color);
-  background-position: -.5px;
+  color: var(--primary-color);
+  background-position: 0;
 }
 
 footer {
