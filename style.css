@@ -881,8 +881,8 @@ p.tags span {
 
 #content figure:has(img) figcaption {
   display: table-caption;
-  text-align: center;
   caption-side: bottom;
+  text-align: center;
   width: auto;
   max-width: var(--m-width);
 }
@@ -904,7 +904,7 @@ figcaption {
   display: flex;
   align-items: center;
   margin: 1rem auto 0;
-  padding: 0 1rem;
+  padding: 0;
   width: 100%;
   font-size: var(--font-size-c);
   line-height: 1.6;
@@ -1223,6 +1223,10 @@ blockquote :last-child,
     margin: 3rem auto 3rem;
   }
 
+  #content figure:has(img) {
+    min-width: 480px;
+  }
+
   #work {
     max-width: calc(100vw - 4rem);
     margin: 0 auto;
@@ -1318,10 +1322,6 @@ blockquote :last-child,
 
   .two-col {
     columns: 2;
-  }
-
-  figcaption {
-    padding: 0;
   }
 
   figure.quote {
