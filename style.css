@@ -92,7 +92,7 @@
 html {
   height: 100%;
   scroll-behavior: smooth;
-  background: var(--secondary-bg-color);
+  background: var(--primary-bg-color);
   overflow-y: scroll;
 }
 
@@ -149,7 +149,7 @@ h3,
 h4 {
   line-height: 1.4;
   font-weight: 600;
-  width: 100%;
+  width: auto;
 }
 
 h1 {
@@ -236,7 +236,7 @@ nav ul {
   flex-flow: row nowrap;
   box-sizing: border-box;
   justify-content: space-between;
-  max-width: var(--xl-width);
+  max-width: var(--l-width);
   height: 100%;
   margin: 0 auto;
 }
@@ -247,7 +247,7 @@ nav ul li {
   align-items: center;
   justify-content: center;
   align-self: center;
-  padding: 0 1.5rem 0;
+  padding: 0 1rem 0;
   font-size: 18px;
   height: 42px;
   color: var(--font-color-alt);
@@ -342,23 +342,18 @@ main {
 
 #work {
   display: grid;
-  row-gap: 3rem;
-  width: var(--xl-width);
+  row-gap: 2rem;
+  width: var(--l-width);
   max-width: calc(100vw - 2rem);
   margin: 0 auto;
   padding: 4rem 0;
 }
 
 .card {
-  display: grid;
-  grid-template-rows: auto auto;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
   height: 100%;
   width: 100%;
-  overflow: hidden;
-  background-color: #FFF;
-  border-radius: 8px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
 .card h2 {
@@ -371,11 +366,11 @@ main {
 .card>img {
   height: 100%;
   width: 100%;
+  border-radius: 8px;
 }
 
 .card>div {
   display: flex;
-  height: 100%;
   width: 100%;
   flex-direction: column;
   margin: 0 auto;
@@ -383,16 +378,40 @@ main {
   align-items: start;
   text-align: left;
   color: var(--font-color);
-  padding: 2rem 1rem;
+  padding: 1rem 0;
   border: none;
 }
 
 .card>div>h3 {
-  margin: 0 0 .25rem;
+  position: relative;
+  color: var(--primary-color);
+  margin: 0;
+
+}
+
+.card:hover {
+  text-decoration: none;
+}
+
+.card>div>h3::after {
+  font-family: "Font Awesome 6 Free";
+  content: "\f061";
+  font-weight: 900;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  padding-left: 1rem;
+  transform: translateX(0%);
+  transition: all ease-in-out 0.2s;
+}
+
+.card:hover>div>h3::after {
+  opacity: 1;
+  transform: translateX(100%);
 }
 
 .card>div>span {
-  margin: 0 0 1rem;
+  margin: 0;
 }
 
 #open-in-new-tab {
@@ -822,8 +841,9 @@ p.tags span {
   padding: 4rem 1rem;
 }
 
-#content section:nth-of-type(odd) {
-  background: var(--primary-bg-color);}
+#content section:nth-of-type(even) {
+  background: var(--secondary-bg-color);
+}
 
 
 #content p,
@@ -1132,14 +1152,14 @@ blockquote :last-child,
     position: relative;
   }
 
-  nav ul li::after {
+  /* nav ul li::after {
     content: '/';
     color: var(--font-color-alt);
     position: absolute;
     right: 0;
     transform: translateX(50%);
     pointer-events: none;
-  }
+  } */
 
   nav ul li a::before {
     content: '';
@@ -1210,7 +1230,8 @@ blockquote :last-child,
   #work {
     max-width: calc(100vw - 4rem);
     margin: 0 auto;
-    padding: 4rem 0;
+    row-gap :3rem;
+    padding: 6rem 0;
   }
 
   #hero {
@@ -1236,7 +1257,9 @@ blockquote :last-child,
   }
 
   .card>div {
-    padding: 1.5rem 4rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
   a.cta {
