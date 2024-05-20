@@ -14,17 +14,23 @@
 
     gtag('config', 'G-ZZ2T5Q920Y');
   </script>
-<!-- Hotjar Tracking Code for https://www.amenken.me/ -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:4933734,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+  <!-- Hotjar Tracking Code for https://www.amenken.me/ -->
+  <script>
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () {
+        (h.hj.q = h.hj.q || []).push(arguments)
+      };
+      h._hjSettings = {
+        hjid: 4933734,
+        hjsv: 6
+      };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script');
+      r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
@@ -47,7 +53,8 @@
       <div class="headline">
         <h1>Optimizing Product Purchases</h1>
         <div>
-          <p class="challenge">How might we best integrate a quantity selector to our existing product page on mobile to reduce user friction and improve conversion?</p>
+          <p class="challenge">How might we best integrate a quantity selector to our existing product page on mobile to
+            reduce user friction and improve conversion?</p>
           <p class="tags">
             <span>Project</span>
             as a <span>UX Design Intern</span>
@@ -120,8 +127,7 @@
             sketches
             and prototypes.</p>
           <figure>
-            <img src="./img/quantity-selector/2.png"
-              alt="Initial sketch to integrate a quantity selector.">
+            <img src="./img/quantity-selector/2.png" alt="Initial sketch to integrate a quantity selector.">
             <figcaption>Initial attempt: Merging the price into the call-to-action to accommodate a quantity selector,
               but
               at the unwarranted expense of the cart icon, conciseness and consistency, blunting the call-to-action.
@@ -133,8 +139,7 @@
               available choices.</figcaption>
           </figure>
           <figure>
-            <img src="./img/quantity-selector/5.png"
-              alt="Overview of all iterations and considered options">
+            <img src="./img/quantity-selector/5.png" alt="Overview of all iterations and considered options">
             <figcaption>Sketch canvas showcasing diverse iterations and approaches to tackle different scenarios.
             </figcaption>
           </figure>
@@ -168,8 +173,17 @@
           </figure>
           <p>The final designs were shared in a Jira ticket, ensuring that they were easily accessible for further
             consideration and implementation by the development team.</p>
-
-          <h3>Validation</h3>
+          <h3>Potential Impact</h3>
+          <p>It's hypothesized that allowing users to purchase multiples of products earlier in the journey reduces
+            friction, resulting in
+            increased conversions. This is particularly beneficial for products often sold in multiples, such as concert
+            tickets.</p>
+        </div>
+      </section>
+      <section>
+        <div class="paragraph">
+          <h2>Outcome</h2>
+          <h3>Follow-up Validation</h3>
           <p>As a continuation, and partially validating the solution, an A/B test was conducted to assess featuring the
             add-to-cart
             call-to-action both above the
@@ -181,11 +195,12 @@
             <figcaption>Showcasing the new behavior for the A/B test, implemented using CSS and JavaScript.
             </figcaption>
           </figure>
-          <h3>Potential Impact</h3>
-          <p>It's hypothesized that allowing users to purchase multiples of products earlier in the journey reduces
-            friction, resulting in
-            increased conversions. This is particularly beneficial for products often sold in multiples, such as concert
-            tickets.</p>
+          <h3>Implementation</h3>
+          <p>Some time after my internship ended, my design was able to lay the foundation for the current iteration of the product detail page.</p>
+          <figure>
+            <img src="./img/quantity-selector/impl.png"
+              alt="Animation showcasing an A/B test as the user scrolls below the fold, displaying the behavior of the chosen design direction">
+          </figure>
         </div>
       </section>
       <section>
