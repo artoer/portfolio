@@ -24,7 +24,7 @@
   --secondary-color: hsl(0, 0%, 100%);
 
   --primary-bg-color: hsl(264, 15%, 98%);
-  --secondary-bg-color: hsl(264, 15%, 96%);
+  --secondary-bg-color: hsl(264, 15%, 95%);
   --tertiary-bg-color: linear-gradient(144deg, hsl(264, 100%, 50%), hsl(264, 100%, 10%)) fixed;
 
   --font-family-h: 'Archivo', sans-serif;
