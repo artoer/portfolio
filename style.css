@@ -154,7 +154,7 @@ h4 {
 
 h1 {
   font-size: 42px;
-  line-height: 1.1;
+  line-height: 1;
   color: var(--font-color-alt);
   margin: 0;
   font-family: 'Archivo Black', sans-serif;
@@ -740,7 +740,7 @@ footer span {
 
 .heading h1 {
   margin: 0 auto;
-  line-height: 1;
+  line-height: 0.95;
   max-width: var(--m-width);
 }
 
