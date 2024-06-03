@@ -177,6 +177,7 @@ h3 {
 h4 {
   font-size: 24px;
   margin: 0 auto .25rem;
+  color: var(--primary-color);
 }
 
 h5 {
@@ -367,7 +368,7 @@ main {
   height: 100%;
   width: 100%;
   border-radius: 8px;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 2 / 1;
 }
 
 .card>div {
@@ -379,7 +380,7 @@ main {
   align-items: start;
   text-align: left;
   color: var(--font-color);
-  padding: 1rem 0;
+  padding: 1rem 0 0;
   border: none;
 }
 
