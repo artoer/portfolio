@@ -311,7 +311,7 @@ main {
   justify-content: start;
   align-items: center;
   height: 100%;
-  padding: 3rem 0;
+  padding: 3rem 0 4rem;
   margin: 0 auto;
   text-align: left;
   max-width: var(--l-width);
@@ -380,7 +380,7 @@ main {
   align-items: start;
   text-align: left;
   color: var(--font-color);
-  padding: 1rem 0 0;
+  padding: 1rem 0;
   border: none;
 }
 
@@ -1232,12 +1232,12 @@ blockquote :last-child,
   #work {
     max-width: calc(100vw - 4rem);
     margin: 0 auto;
-    row-gap :4rem;
-    padding: 6rem 0;
+    /* row-gap :4rem;
+    padding: 6rem 0; */
   }
 
   #hero {
-    padding: 4rem 0 6rem;
+    /* padding: 4rem 0; */
 
     & h1 {
       font-size: 56px;
