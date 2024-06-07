@@ -322,13 +322,6 @@ main {
     color: var(--font-color-alt);
     transform: none;
   }
-
-  & h2 {
-    font-size: 24px;
-    color: var(--font-color-alt);
-    font-weight: 500;
-    margin: 0 auto;
-  }
 }
 
 #content img.profile-pic {
@@ -1240,7 +1233,7 @@ blockquote :last-child,
     /* padding: 4rem 0; */
 
     & h1 {
-      font-size: 56px;
+      font-size: 54px;
     }
   }
 
