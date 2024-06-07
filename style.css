@@ -248,7 +248,7 @@ nav ul li {
   align-items: center;
   justify-content: center;
   align-self: center;
-  padding: 0 1rem 0;
+  padding: 0;
   font-size: 18px;
   height: 42px;
   color: var(--font-color-alt);
@@ -256,11 +256,10 @@ nav ul li {
 
 nav ul li:first-of-type>a {
   background-position: 100% !important;
-  font-size: 22px;
   font-family: 'Archivo Black', sans-serif;
   transform: skew(-4deg);
   text-transform: uppercase;
-  letter-spacing: -0.2em;
+  letter-spacing: -0.05em;
   padding: 0;
 }
 
@@ -308,19 +307,16 @@ main {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  align-items: center;
+  justify-content: center;
+  align-items: start;
   height: 100%;
-  padding: 3rem 0 4rem;
+  padding: 2rem 0 4rem;
   margin: 0 auto;
   text-align: left;
   max-width: var(--l-width);
 
-
-  & h1 {
+  & h1{
     font-size: 32px;
-    color: var(--font-color-alt);
-    transform: none;
   }
 }
 
@@ -1134,13 +1130,25 @@ blockquote :last-child,
   }
 
   nav ul li:first-of-type>a {
-    font-size: 42px;
+    font-size: 24px;
     padding: 0;
   }
 
+  nav ul li:first-of-type>a::after {
+    content: '\00a0Menken';
+  }
+
   nav ul li {
+    margin: 0 1rem;
     width: auto;
     position: relative;
+  }
+
+  nav ul li:first-of-type {
+    margin-left:0;
+  }
+  nav ul li:last-of-type {
+    margin-right:0;
   }
 
   /* nav ul li::after {
@@ -1230,10 +1238,12 @@ blockquote :last-child,
   }
 
   #hero {
-    /* padding: 4rem 0; */
+    align-items: center;
+    gap: .5rem;
 
-    & h1 {
-      font-size: 54px;
+    & h1,
+    h2 {
+      font-size: 56px;
     }
   }
 
