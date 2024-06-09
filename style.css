@@ -152,8 +152,9 @@ h4 {
   width: auto;
 }
 
-h1 {
-  font-size: 42px;
+h1,
+#hero h2 {
+  font-size: 40px;
   line-height: 1;
   color: var(--font-color-alt);
   margin: 0;
@@ -255,11 +256,12 @@ nav ul li {
 }
 
 nav ul li:first-of-type>a {
+  font-size: 28px;
   background-position: 100% !important;
   font-family: 'Archivo Black', sans-serif;
   transform: skew(-4deg);
   text-transform: uppercase;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.1875em;
   padding: 0;
 }
 
@@ -313,10 +315,16 @@ main {
   padding: 2rem 0 4rem;
   margin: 0 auto;
   text-align: left;
-  max-width: var(--l-width);
+  max-width: var(--m-width);
 
-  & h1{
+  /* & h1, h2 {
     font-size: 32px;
+  } */
+
+  & h2 {
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--font-color-alt);
   }
 }
 
@@ -1109,7 +1117,7 @@ blockquote :last-child,
 /* TABLET AND UP */
 @media all and (min-width: 768px) {
 
-  h1 {
+  h1, #hero h2 {
     font-size: 72px;
   }
 
@@ -1130,13 +1138,13 @@ blockquote :last-child,
   }
 
   nav ul li:first-of-type>a {
-    font-size: 24px;
+    font-size: 34px;
     padding: 0;
   }
 
-  nav ul li:first-of-type>a::after {
+  /* nav ul li:first-of-type>a::after {
     content: '\00a0Menken';
-  }
+  } */
 
   nav ul li {
     margin: 0 1rem;
@@ -1145,10 +1153,11 @@ blockquote :last-child,
   }
 
   nav ul li:first-of-type {
-    margin-left:0;
+    margin-left: 0;
   }
+
   nav ul li:last-of-type {
-    margin-right:0;
+    margin-right: 0;
   }
 
   /* nav ul li::after {
@@ -1239,12 +1248,6 @@ blockquote :last-child,
 
   #hero {
     align-items: center;
-    gap: .5rem;
-
-    & h1,
-    h2 {
-      font-size: 56px;
-    }
   }
 
   aside p {
