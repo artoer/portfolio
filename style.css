@@ -177,13 +177,13 @@ h3 {
 
 h4 {
   font-size: 24px;
-  margin: 0 auto .25rem;
+  margin: 0 auto;
   color: var(--primary-color);
 }
 
 h5 {
   font-size: 20px;
-  margin: 0 auto .25rem;
+  margin: 0 auto;
 }
 
 main li {
