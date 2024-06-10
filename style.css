@@ -172,7 +172,7 @@ h2 {
 
 h3 {
   font-size: 28px;
-  margin: 0 auto 1rem;
+  margin: 0 auto .5rem;
 }
 
 h4 {
@@ -1184,7 +1184,7 @@ blockquote :last-child,
     /* Initial scale of 0 for underline effect */
     transform-origin: bottom right;
     /* Set transform origin */
-    transition: transform 0.25s ease-out;
+    transition: transform 0.2s ease-in-out;
     /* Transition effect for the underline */
     background: var(--font-color-alt);
   }
