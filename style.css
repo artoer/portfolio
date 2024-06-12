@@ -317,14 +317,16 @@ main {
   text-align: left;
   max-width: var(--m-width);
 
-  /* & h1, h2 {
-    font-size: 32px;
-  } */
-
   & h2 {
     color: transparent;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: var(--font-color-alt);
+  }
+
+  & h2 span {
+    color: transparent;
+    font-size: inherit;
+    margin: 0 .25rem 0 .5rem;
   }
 }
 
@@ -1117,7 +1119,8 @@ blockquote :last-child,
 /* TABLET AND UP */
 @media all and (min-width: 768px) {
 
-  h1, #hero h2 {
+  h1,
+  #hero h2 {
     font-size: 72px;
   }
 
