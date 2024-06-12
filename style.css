@@ -966,7 +966,7 @@ aside::after {
 
 #content h2+figure,
 #content h3+figure {
-  margin-top: 0 !important;
+  margin-top: 1.5rem !important;
 }
 
 figure.quote,
