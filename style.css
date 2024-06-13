@@ -366,7 +366,7 @@ main {
 .card>img {
   height: 100%;
   width: 100%;
-  border-radius: 8px;
+  border-radius: 12px;
   aspect-ratio: 2 / 1;
 }
 
@@ -902,8 +902,6 @@ p.tags span {
 }
 
 figcaption {
-  display: flex;
-  align-items: center;
   margin: 1rem auto 0;
   padding: 0;
   width: 100%;
@@ -973,17 +971,14 @@ figure.quote,
 figure.insert {
   display: flex;
   flex-flow: column nowrap;
-  padding: 1.5rem 2rem;
+  padding: 2rem;
   background: #FFF;
+  border-radius: 12px;
 }
 
 figure.insert {
   border-top: 2px solid var(--primary-color);
   border-bottom: 2px solid var(--primary-color);
-}
-
-figure.quote {
-  border-left: 2px solid var(--primary-color);
 }
 
 figure.insert p {
@@ -1000,7 +995,22 @@ figure.insert figcaption {
   padding: 0;
   border: none;
   font-style: normal;
-  margin: 1rem auto 0;
+  margin: 1.5rem auto 0;
+  line-height: 1.4;
+
+  & span {
+    font-size: inherit;
+  }
+
+  & .name, .title {
+    color: var(--font-color-figc);
+    display: inline-block;
+    width: 100%;
+  }
+
+  & .title {
+    font-weight: 400;
+  }
 }
 
 .quote p:first-of-type::before {
@@ -1012,12 +1022,12 @@ figure.insert figcaption {
 }
 
 
-figure.quote figcaption::before,
+/* figure.quote figcaption::before,
 #content figure.insert figcaption::before,
 .heading figure:has(blockquote) figcaption::before {
   content: '—';
   margin: 0 .25rem auto;
-}
+} */
 
 blockquote {
   margin: 0 auto;
@@ -1330,8 +1340,7 @@ blockquote :last-child,
   }
 
   figure.quote {
-    padding: 1.5rem 3rem;
-    border-left: 4px solid var(--primary-color);
+    padding: 3rem;
   }
 
   figure.insert p {
