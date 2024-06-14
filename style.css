@@ -29,8 +29,12 @@
 
   --font-family-h: 'Archivo', sans-serif;
   --font-family-b: 'DM Sans', sans-serif;
-  --font-size-b: clamp(1.125rem, 0.8864rem + 0.9091vw, 1.25rem);
-  --font-size-c: clamp(1rem, 0.7614rem + 0.9091vw, 1.125rem);
+  
+  --font-size-xl: 32px;
+  --font-size-l: 26px;
+  --font-size-m: clamp(1.125rem, 0.8864rem + 0.9091vw, 1.25rem);
+  --font-size-s: clamp(1rem, 0.7614rem + 0.9091vw, 1.125rem);
+
   --font-color: hsl(0, 0%, 15%);
   --font-color-figc: hsl(0, 0%, 35%);
   --font-color-alt: hsl(0, 0%, 98%);
@@ -129,20 +133,15 @@ footer a:hover {
 span {
   font-family: inherit;
   font-weight: inherit;
-  font-size: var(--font-size-c);
+  font-size: var(--font-size-s);
   color: var(--font-color-figc);
 }
 
 p {
-  font-size: var(--font-size-b);
+  font-size: var(--font-size-m);
   line-height: 1.6;
   column-span: all;
 }
-
-/* #content section p:has(+ ul),
-#content section h3:has(+ ul) {
-  margin-bottom: 1rem;
-} */
 
 h2,
 h3,
@@ -165,30 +164,30 @@ h1,
 }
 
 h2 {
-  font-size: 36px;
+  font-size: var(--font-size-xl);
   font-weight: 700;
   margin: 0 auto 1.5rem;
 }
 
 h3 {
-  font-size: 28px;
+  font-size: var(--font-size-l);
   margin: 0 auto .5rem;
 }
 
 h4 {
-  font-size: 24px;
+  font-size: var(--font-size-m);
   margin: 0 auto;
   color: var(--primary-color);
 }
 
 h5 {
-  font-size: 20px;
+  font-size: var(--font-size-m);
   margin: 0 auto;
 }
 
 main li {
   list-style-position: inside;
-  font-size: var(--font-size-b);
+  font-size: var(--font-size-m);
   line-height: 1.6;
   break-inside: avoid;
   -webkit-column-break-inside: avoid;
@@ -198,7 +197,7 @@ main li {
 
 main li::marker {
   font-weight: 700;
-  font-size: 24px;
+  font-size: var(--font-size-l);
   color: var(--primary-color);
 }
 
@@ -250,13 +249,13 @@ nav ul li {
   justify-content: center;
   align-self: center;
   padding: 0;
-  font-size: 18px;
+  font-size: var(--font-size-s);
   height: 42px;
   color: var(--font-color-alt);
 }
 
 nav ul li:first-of-type>a {
-  font-size: 28px;
+  font-size: var(--font-size-l);
   background-position: 100% !important;
   font-family: 'Archivo Black', sans-serif;
   transform: skew(-4deg);
@@ -357,7 +356,7 @@ main {
 }
 
 .card h2 {
-  font-size: 20px;
+  font-size: var(--font-size-l);
   width: 100%;
   line-height: 1.6;
   font-weight: 400;
@@ -453,7 +452,7 @@ a.cta {
   background-position: 100%;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
-  font-size: 18px;
+  font-size: var(--font-size-m);
   font-weight: 500;
   display: flex;
   flex-direction: row;
@@ -506,7 +505,7 @@ footer a:hover i {
 
 footer span {
   color: var(--font-color);
-  font-size: var(--font-size-c);
+  font-size: var(--font-size-s);
 }
 
 /* CASE STUDY PAGE */
@@ -526,207 +525,6 @@ footer span {
   width: 100%;
   max-width: 100%;
   padding: 2rem 1rem 4rem;
-}
-
-.heading img,
-.heading blockquote {
-  order: -1;
-}
-
-.heading .heading-item {
-  display: grid;
-  padding: 0;
-  margin: 0 auto 2rem;
-  background-color: #FFF;
-}
-
-.heading>div>.heading-item:last-of-type {
-  margin-bottom: 0;
-}
-
-.heading-item.two {
-  grid-template-rows: auto auto;
-}
-
-.heading-item blockquote {
-  font-size: 24px;
-  font-weight: 500;
-  padding: 0 0 1.5rem;
-}
-
-.heading-item figcaption {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  text-align: right;
-  display: block;
-}
-
-.heading-item span.pct {
-  display: block;
-  font-size: 64px;
-  font-family: 'Archivo Black';
-  color: var(--font-color);
-}
-
-.heading-item figure:has(blockquote) {
-  display: flex;
-  flex-direction: column;
-  padding: 2rem 1rem;
-  order: -1;
-}
-
-.heading .heading-item:has(>img) {
-  grid-template-columns: none;
-  grid-template-rows: none;
-  height: auto;
-  margin: 3rem auto;
-
-  img {
-    padding: 0;
-    aspect-ratio: unset;
-  }
-}
-
-.heading .outcome {
-  padding: 0;
-  margin: 0 auto;
-
-  & h3 {
-    padding: 3rem 0 1rem;
-    color: var(--font-color);
-  }
-
-  & div {
-    display: flex;
-    flex-direction: column;
-    gap: .25rem;
-
-    & div {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      justify-content: start;
-      align-items: center;
-      row-gap: 1.5rem;
-      width: 100%;
-      padding: 2rem;
-      background: var(--primary-bg-color);
-      border-radius: 4px;
-
-      &>* {
-        z-index: 1;
-        color: var(--font-color);
-      }
-
-      & p {
-        text-align: left;
-        word-break: keep-all;
-      }
-
-      & i {
-        margin: 1.5rem 0 1rem;
-        color: var(--primary-color);
-      }
-
-      & span {
-        font-size: 32px;
-        color: var(--font-color-alt);
-        font-family: 'Archivo Black';
-        padding: .5rem 1rem;
-        background: var(--primary-color);
-        border-radius: 4px;
-        margin: 0 auto 0 0;
-      }
-
-    }
-
-    /* & div::after {
-      position: absolute;
-      content: '';
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background-color: var(--primary-bg-color);
-      transform: skew(-4deg);
-      z-index: 0;
-      margin-left: -1.1%;
-      border-radius: 4px;
-    } */
-
-  }
-
-}
-
-.primary,
-.primary * {
-  background: var(--primary-color);
-  color: var(--font-color-alt);
-}
-
-.tertiary {
-  background: var(--tertiary-bg-color);
-}
-
-.dark {
-  background: var(--secondary-bg-color);
-  color: var(--font-color-alt);
-
-  & * {
-    color: var(--font-color-alt);
-  }
-}
-
-.secondary {
-  background: var(--secondary-color);
-}
-
-.heading-item.xl p {
-  font-family: var(--font-family-h);
-  font-weight: bold;
-  font-size: 24px;
-}
-
-.heading-item.l p {
-  font-family: var(--font-family-h);
-  font-size: 20px;
-  font-weight: 600;
-}
-
-.heading-item>* {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 2rem 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.heading-item figure {
-  padding: 0;
-  margin: 0;
-  height: 100%;
-  width: 100%;
-  /* box-shadow: 0px 0px 8px rgba(0, 0, 0, .05); */
-}
-
-.heading-item figure img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  aspect-ratio: auto;
-  border-radius: 0px;
-  padding: 0;
-}
-
-.heading-item div {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
 }
 
 .heading>div>div {
@@ -769,10 +567,9 @@ p.challenge {
   padding: 0;
   margin: 0 auto 1.5rem;
   line-height: 1.4;
-  font-family: var(--font-family-h);
   text-align: left;
   font-weight: 600;
-  font-size: 24px;
+  font-size: var(--font-size-m);
   max-width: unset !important;
 }
 
@@ -781,7 +578,7 @@ p.challenge {
 }
 
 p.tags {
-  font-size: var(--font-size-b);
+  font-size: var(--font-size-m);
   font-weight: 400;
 }
 
@@ -811,20 +608,6 @@ p.tags span {
     }
   }
 }
-
-/* .read-more {
-  padding: 4rem 1rem;
-
-  & div {
-    flex-direction: column;
-    & h2 {
-      text-align: center;
-    }
-    & i {
-      margin: 0 0 1.5rem;
-    }
-  }
-} */
 
 #content {
   position: relative;
@@ -898,14 +681,13 @@ p.tags span {
   min-width: 300px;
   object-fit: contain;
   margin: 0 auto;
-  /* box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 6px -1px; */
 }
 
 figcaption {
   margin: 1rem auto 0;
   padding: 0;
   width: 100%;
-  font-size: var(--font-size-c);
+  font-size: var(--font-size-s);
   line-height: 1.6;
   text-align: left;
   color: var(--font-color-figc);
@@ -926,7 +708,7 @@ aside p {
   font-family: var(--font-family-h);
   text-align: center;
   font-weight: 600;
-  font-size: 26px;
+  font-size: var(--font-size-l);
   max-width: unset !important;
   color: var(--primary-color);
 }
@@ -983,14 +765,13 @@ figure.insert {
 
 figure.insert p {
   font-weight: 600;
-  font-size: 24px;
-  font-family: var(--font-family-h);
+  font-size:var(--font-size-l);
 }
 
 figure.quote figcaption,
 figure.insert figcaption {
   max-width: var(--m-width);
-  font-size: var(--font-size-b);
+  font-size: var(--font-size-s);
   font-weight: 600;
   padding: 0;
   border: none;
@@ -1021,14 +802,6 @@ figure.insert figcaption {
   content: '”';
 }
 
-
-/* figure.quote figcaption::before,
-#content figure.insert figcaption::before,
-.heading figure:has(blockquote) figcaption::before {
-  content: '—';
-  margin: 0 .25rem auto;
-} */
-
 blockquote {
   margin: 0 auto;
   line-height: 1.4;
@@ -1047,13 +820,13 @@ blockquote :last-child,
   max-width: var(--m-width);
   margin: 0 auto 1.5rem;
   font-style: italic;
-  font-weight: 00;
+  font-weight: 500;
 }
 
 .quote blockquote {
   margin: 0 auto;
   line-height: 1.6;
-  font-size: var(--font-size-b);
+  font-size: var(--font-size-m);
   font-style: italic;
 }
 
@@ -1134,30 +907,10 @@ blockquote :last-child,
     font-size: 72px;
   }
 
-  h2 {
-    font-size: 42px;
-  }
-
-  h3 {
-    font-size: 34px;
-  }
-
-  h4 {
-    font-size: 28px;
-  }
-
-  h5 {
-    font-size: 24px;
-  }
-
   nav ul li:first-of-type>a {
-    font-size: 34px;
+    font-size: var(--font-size-xl);
     padding: 0;
   }
-
-  /* nav ul li:first-of-type>a::after {
-    content: '\00a0Menken';
-  } */
 
   nav ul li {
     margin: 0 1rem;
@@ -1172,44 +925,23 @@ blockquote :last-child,
   nav ul li:last-of-type {
     margin-right: 0;
   }
-
-  /* nav ul li::after {
-    content: '/';
-    color: var(--font-color-alt);
-    position: absolute;
-    right: 0;
-    transform: translateX(50%);
-    pointer-events: none;
-  } */
-
   nav ul li a::before {
     content: '';
     width: 100%;
     height: 2px;
-    /* background-image: linear-gradient(to right, var(--font-color-alt), var(--font-color-alt) 50%, transparent 50%);
-    background-size: 200% 100%;
-    background-position: 100%; */
     position: absolute;
     bottom: 0;
     left: 0;
-
     transform: scaleX(0);
-    /* Initial scale of 0 for underline effect */
     transform-origin: bottom right;
-    /* Set transform origin */
     transition: transform 0.2s ease-in-out;
-    /* Transition effect for the underline */
     background: var(--font-color-alt);
   }
 
   nav ul li a:Hover::before {
-    /* background-position: 0; */
     text-decoration: none;
-
     transform: scaleX(1);
-    /* Scale the underline on hover */
     transform-origin: bottom left;
-    /* Set transform origin */
   }
 
   nav ul li:first-of-type::after,
@@ -1259,7 +991,7 @@ blockquote :last-child,
 
   aside p {
     padding: 2rem;
-    font-size: 32px;
+    font-size: var(--font-size-l);
   }
 
   #hero-container {
@@ -1315,14 +1047,6 @@ blockquote :last-child,
     padding: 4rem 1rem 6rem;
   }
 
-  .heading-item.l p {
-    font-size: 26px;
-  }
-
-  .heading-item.xl p {
-    font-size: 32px;
-  }
-
   .heading img {
     height: auto;
     margin: 0 auto;
@@ -1344,7 +1068,7 @@ blockquote :last-child,
   }
 
   figure.insert p {
-    font-size: 28px;
+    font-size: var(--font-size-l);
   }
 
   #content figure img {
