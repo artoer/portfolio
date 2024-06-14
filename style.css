@@ -29,7 +29,7 @@
 
   --font-family-h: 'Archivo', sans-serif;
   --font-family-b: 'DM Sans', sans-serif;
-  
+
   --font-size-xl: 32px;
   --font-size-l: 26px;
   --font-size-m: clamp(1.125rem, 0.8864rem + 0.9091vw, 1.25rem);
@@ -209,7 +209,7 @@ main li:before {
 main ol *,
 main ul * {
   margin-bottom: .5rem;
-  text-indent: calc(23px + .5rem) hanging;
+  text-indent: calc(25px + .5rem) hanging;
 }
 
 main ol :last-child,
