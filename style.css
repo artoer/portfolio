@@ -749,6 +749,10 @@ aside::after {
   margin-top: 1.5rem !important;
 }
 
+figure.quote + figure.quote, figure.quote:has(+ figure.quote) {
+  margin: 1.5rem auto !important;
+}
+
 figure.quote,
 figure.insert {
   display: flex;
