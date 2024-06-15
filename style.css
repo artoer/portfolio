@@ -794,13 +794,13 @@ figure.insert figcaption {
   }
 }
 
-.quote p:first-of-type::before {
+/* .quote p:first-of-type::before {
   content: '“';
 }
 
 .quote p:last-of-type::after {
   content: '”';
-}
+} */
 
 blockquote {
   margin: 0 auto;
@@ -819,15 +819,21 @@ blockquote :last-child,
 .quote blockquote p {
   max-width: var(--m-width);
   margin: 0 auto 1.5rem;
-  font-style: italic;
   font-weight: 500;
+  font-style: italic;
+}
+
+blockquote p span {
+  padding: 1px 0.25rem;
+  background: var(--primary-color);
+  color: var(--font-color-alt);
+  font-size: inherit;
 }
 
 .quote blockquote {
   margin: 0 auto;
   line-height: 1.6;
   font-size: var(--font-size-m);
-  font-style: italic;
 }
 
 .insert p strong {
