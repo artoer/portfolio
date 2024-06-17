@@ -34,6 +34,7 @@
   --font-size-l: 24px;
   --font-size-m: 18px;
   --font-size-s: 16px;
+  --font-size-xs: 14px;
 
   --font-color: hsl(0, 0%, 15%);
   --font-color-figc: hsl(0, 0%, 35%);
@@ -252,7 +253,8 @@ nav ul li {
   justify-content: center;
   align-self: center;
   padding: 0;
-  font-size: var(--font-size-s);
+  font-size: var(--font-size-xs);
+  width: 100%;
   height: 42px;
   color: var(--font-color-alt);
 }
@@ -508,7 +510,7 @@ footer a:hover i {
 
 footer span {
   color: var(--font-color);
-  font-size: var(--font-size-s);
+  font-size: var(--font-size-xs);
 }
 
 /* CASE STUDY PAGE */
@@ -916,6 +918,7 @@ blockquote p span {
   --font-size-l: 26px;
   --font-size-m: 20px;
   --font-size-s: 18px;
+  --font-size-xs: 16px;
 }
 
   h1,
