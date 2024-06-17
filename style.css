@@ -31,17 +31,17 @@
   --font-family-b: 'DM Sans', sans-serif;
 
   --font-size-xl: 32px;
-  --font-size-l: 26px;
-  --font-size-m: clamp(1.125rem, 0.8864rem + 0.9091vw, 1.25rem);
-  --font-size-s: clamp(1rem, 0.7614rem + 0.9091vw, 1.125rem);
+  --font-size-l: 24px;
+  --font-size-m: 18px;
+  --font-size-s: 16px;
 
   --font-color: hsl(0, 0%, 15%);
   --font-color-figc: hsl(0, 0%, 35%);
   --font-color-alt: hsl(0, 0%, 98%);
 
-  --xl-width: 1440px;
-  --l-width: 1080px;
-  --m-width: 720px;
+  --xl-width: 64rem;
+  --l-width: 64rem;
+  --m-width: 40rem;
 }
 
 
@@ -148,15 +148,17 @@ h3,
 h4 {
   line-height: 1.4;
   font-weight: 600;
+  padding: .5rem 0;
   width: auto;
 }
 
 h1,
 #hero h2 {
-  font-size: 46px;
+  font-size: 40px;
   line-height: 1;
   color: var(--font-color-alt);
   margin: 0;
+  padding: 0;
   font-family: 'Archivo Black', sans-serif;
   text-transform: uppercase;
   letter-spacing: -0.05em;
@@ -177,6 +179,7 @@ h3 {
 h4 {
   font-size: var(--font-size-m);
   margin: 0 auto;
+  padding: 0;
   color: var(--primary-color);
 }
 
@@ -309,12 +312,12 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   height: 100%;
   padding: 4rem 0 6rem;
   margin: 0 auto;
   text-align: left;
-  max-width: var(--m-width);
+  max-width: var(--l-width);
 
   & h2 {
     color: transparent;
@@ -386,7 +389,7 @@ main {
   position: relative;
   color: var(--primary-color);
   margin: 0;
-
+  padding: 0;
 }
 
 .card:hover {
@@ -908,6 +911,13 @@ blockquote p span {
 /* TABLET AND UP */
 @media all and (min-width: 768px) {
 
+  :root {
+  --font-size-xl: 36px;
+  --font-size-l: 26px;
+  --font-size-m: 20px;
+  --font-size-s: 18px;
+}
+
   h1,
   #hero h2 {
     font-size: 72px;
@@ -919,7 +929,7 @@ blockquote p span {
   }
 
   nav ul li {
-    margin: 0 1rem;
+    margin: 0 1.5rem;
     width: auto;
     position: relative;
   }
