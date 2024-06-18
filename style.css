@@ -156,7 +156,7 @@ h4 {
 h1,
 #hero h2 {
   font-size: 40px;
-  line-height: 1;
+  line-height: 0.9;
   color: var(--font-color-alt);
   margin: 0;
   padding: 0;
@@ -543,7 +543,6 @@ footer span {
 
 .heading h1 {
   margin: 0 auto;
-  line-height: 0.95;
   max-width: var(--m-width);
 }
 
@@ -923,7 +922,7 @@ blockquote p span {
 
   h1,
   #hero h2 {
-    font-size: 72px;
+    font-size: 80px;
   }
 
   nav ul li:first-of-type>a {
