@@ -362,13 +362,6 @@ main {
   width: 100%;
 }
 
-.card h2 {
-  font-size: var(--font-size-l);
-  width: 100%;
-  line-height: 1.6;
-  font-weight: 400;
-}
-
 .card>img {
   height: 100%;
   width: 100%;
@@ -389,7 +382,7 @@ main {
   border: none;
 }
 
-.card>div>h3 {
+.card>div>h2 {
   position: relative;
   color: var(--primary-color);
   margin: 0;
@@ -400,7 +393,7 @@ main {
   text-decoration: none;
 }
 
-.card>div>h3::after {
+.card>div>h2::after {
   font-family: "Font Awesome 6 Free";
   content: "\f061";
   vertical-align: bottom;
@@ -408,7 +401,7 @@ main {
   transition: all ease-in-out 0.2s;
 }
 
-.card:hover>div>h3::after {
+.card:hover>div>h2::after {
   padding-left: 1.5rem;
 }
 
