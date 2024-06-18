@@ -227,7 +227,7 @@ nav {
   height: 4rem;
   width: 100%;
   margin: auto 0;
-  padding: 0 1rem;
+  padding: 0;
   scrollbar-width: none;
   background: var(--tertiary-bg-color);
 }
@@ -923,6 +923,10 @@ blockquote p span {
   h1,
   #hero h2 {
     font-size: 80px;
+  }
+
+  nav {
+    padding: 0 1rem;
   }
 
   nav ul li:first-of-type>a {
