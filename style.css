@@ -544,20 +544,14 @@ footer span {
 
 .heading h1 {
   margin: 0 auto;
-  max-width: var(--m-width);
+ max-width: var(--m-width);
 }
 
 .heading h1:has(+ div) {
-  margin: 0 auto 1.5rem;
+  margin: 0 0 2rem;
+  margin-left: max(0px, (100% - var(--m-width))/2);
+  max-width: 832px;
 }
-
-/* .headline p.challenge::before {
-  content: "“";
-}
-
-.headline p.challenge::after {
-  content: "”";
-} */
 
 .headline div {
   margin: 0 auto;
@@ -571,6 +565,7 @@ p.challenge {
   text-align: left;
   font-weight: 500;
   font-size: var(--font-size-l);
+  font-family: var(--font-family-h);
   max-width: unset !important;
 }
 
