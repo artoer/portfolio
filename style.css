@@ -30,6 +30,7 @@
   --font-family-h: 'Archivo', sans-serif;
   --font-family-b: 'DM Sans', sans-serif;
 
+  --font-size-xxl: 2.5rem;
   --font-size-xl: 1.5rem;
   --font-size-l: 1.25rem;
   --font-size-m: 1.125rem;
@@ -155,7 +156,7 @@ h4 {
 
 h1,
 #hero h2 {
-  font-size: 40px;
+  font-size: var(--font-size-xxl);
   line-height: 0.9;
   color: var(--font-color-alt);
   margin: 0;
@@ -909,6 +910,7 @@ blockquote p span {
 @media all and (min-width: 768px) {
 
   :root {
+  --font-size-xxl: 6rem;
   --font-size-xl: 2rem;
   --font-size-l: 1.5rem;
   --font-size-m: 1.25rem;
@@ -918,7 +920,7 @@ blockquote p span {
 
   h1,
   #hero h2 {
-    font-size: 80px;
+    font-size: var(--font-size-xxl);
   }
 
   nav {
