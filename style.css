@@ -243,6 +243,8 @@ nav ul {
   flex-flow: row nowrap;
   box-sizing: border-box;
   justify-content: space-between;
+  gap: 16px;
+  padding: 0 16px;
   max-width: var(--l-width);
   height: 100%;
   margin: 0 auto;
@@ -920,13 +922,16 @@ blockquote p span {
     padding: 0 1rem;
   }
 
+  nav ul {
+    gap: 48px;
+  }
+
   nav ul li:first-of-type>a {
     font-size: var(--font-size-xl);
     padding: 0;
   }
 
   nav ul li {
-    margin: 0 1.5rem;
     width: auto;
     position: relative;
   }
