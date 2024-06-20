@@ -923,6 +923,7 @@ blockquote p span {
   }
 
   nav ul {
+    padding: 0;
     gap: 48px;
   }
 
