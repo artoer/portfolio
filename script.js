@@ -18,15 +18,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
   closeBtn.addEventListener('click', () => {
     modal.style.display = 'none';
   });
-  const openInNewTabLink = document.createElement('a');
-  openInNewTabLink.id = 'open-in-new-tab';
-  openInNewTabLink.classList.add('open-in-new-tab');
-  openInNewTabLink.target = '_blank';
-  openInNewTabLink.title = "Open in New Tab"
-  openInNewTabLink.innerHTML = '<i class="fa-solid fa-expand fa-xl"></i>';
-  openInNewTabLink.addEventListener('click', () => {
-    event.stopPropagation();
-  });
+
   const modalContainer = document.createElement('div');
   modalContainer.classList = 'modal-container';
   modal.appendChild(modalContainer);
@@ -37,7 +29,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
   modalImgContainer.appendChild(modalImg);
   modalImgContainer.appendChild(closeBtn);
-  modalImgContainer.appendChild(openInNewTabLink);
 
   // Append modal to document body
   document.body.appendChild(modal);
@@ -49,7 +40,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
       event.stopPropagation();
       modal.style.display = 'flex';
       modalImg.src = img.src;
-      openInNewTabLink.href = img.src;
     });
   });
 
