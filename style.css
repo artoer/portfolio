@@ -188,7 +188,7 @@ h4 {
 h1,
 #hero h2 {
   font-size: var(--font-size-xxl);
-  line-height: 0.9;
+  line-height: 0.85;
   color: var(--font-color-alt);
   margin: 0;
   padding: 0;
