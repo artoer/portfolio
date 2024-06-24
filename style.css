@@ -42,7 +42,7 @@
   --font-color-alt: hsl(0, 0%, 98%);
 
   --xl-width: 64rem;
-  --l-width: 64rem;
+  --l-width: 52rem;
   --m-width: 40rem;
 }
 
@@ -246,7 +246,7 @@ nav ul {
   justify-content: space-between;
   gap: 16px;
   padding: 0 16px;
-  max-width: var(--l-width);
+  max-width: var(--xl-width);
   height: 100%;
   margin: 0 auto;
 }
@@ -324,7 +324,7 @@ main {
   padding: 4rem 0 6rem;
   margin: 0 auto;
   text-align: left;
-  max-width: var(--l-width);
+  max-width: var(--xl-width);
 
   & h2 {
     color: transparent;
@@ -352,7 +352,7 @@ main {
 #work {
   display: grid;
   row-gap: 2rem;
-  width: var(--l-width);
+  width: var(--xl-width);
   max-width: calc(100vw - 2rem);
   margin: 0 auto;
   padding: 4rem 0;
@@ -547,7 +547,7 @@ footer span {
 .heading h1:has(+ div) {
   margin: 0 0 2rem;
   margin-left: max(0px, (100% - var(--m-width))/2);
-  max-width: 832px;
+  max-width: var(--l-width);
 }
 
 .headline div {
@@ -589,7 +589,7 @@ p.tags span {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    max-width: var(--l-width);
+    max-width: var(--xl-width);
     margin: 0 auto;
     gap: 1.5rem;
 
@@ -635,7 +635,7 @@ p.tags span {
 }
 
 #content section .paragraph {
-  max-width: var(--l-width);
+  max-width: var(--xl-width);
   margin: 0 auto;
 }
 
