@@ -76,15 +76,6 @@
   font-family: 'Archivo Black';
   src: url('../assets/fonts/ArchivoBlack-Regular.ttf') format('truetype');
   src: url('./assets/fonts/ArchivoBlack-Regular.ttf') format('truetype');
-  font-weight: 400;
-}
-
-/* DM Sans - Medium */
-@font-face {
-  font-family: 'DM Sans';
-  src: url('../assets/fonts/DMSans-Medium.ttf') format('truetype');
-  src: url('./assets/fonts/DMSans-Medium.ttf') format('truetype');
-  font-weight: 500;
 }
 
 /* DM Sans - Regular */
@@ -94,6 +85,42 @@
   src: url('./assets/fonts/DMSans-Regular.ttf') format('truetype');
   font-weight: 400;
 }
+
+
+/* DM Sans - Medium */
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../assets/fonts/DMSans-Medium.ttf') format('truetype');
+  src: url('./assets/fonts/DMSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+
+/* DM Sans - Medium Italic */
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../assets/fonts/DMSans-MediumItalic.ttf') format('truetype');
+  src: url('./assets/fonts/DMSans-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* DM Sans - SemiBold */
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../assets/fonts/DMSans-SemiBold.ttf') format('truetype');
+  src: url('./assets/fonts/DMSans-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+
+/* DM Sans - Bold */
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../assets/fonts/DMSans-Bold.ttf') format('truetype');
+  src: url('./assets/fonts/DMSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
 
 html {
   height: 100%;
@@ -143,6 +170,10 @@ p {
   font-size: var(--font-size-m);
   line-height: 1.6;
   column-span: all;
+
+  a {
+    font-weight: 500;
+  }
 }
 
 h2,
@@ -852,7 +883,7 @@ blockquote p span {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.32);
+  background-color: rgba(0, 0, 0, 0.3);
   opacity: 0;
   animation: modalFadeIn 0.2s ease-in-out forwards;
 }
