@@ -815,8 +815,6 @@ figure.insert figcaption {
 
   & .name, .title {
     color: var(--font-color-figc);
-    display: inline-block;
-    width: 100%;
   }
 
   & .title {
