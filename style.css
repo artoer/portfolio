@@ -181,6 +181,7 @@ h3 {
 
 h4 {
   font-size: var(--font-size-m);
+  text-transform: uppercase;
   margin: 0 auto;
   padding: 0;
   color: var(--primary-color);
@@ -634,7 +635,7 @@ p.tags span {
 }
 
 #content section .paragraph {
-  max-width: var(--m-width);
+  max-width: var(--l-width);
   margin: 0 auto;
 }
 
@@ -689,18 +690,18 @@ aside {
   display: flex;
   flex-direction: row;
   position: relative;
-  margin: 4rem auto;
+  margin: 6rem auto;
 }
 
 aside p {
   position: relative;
-  padding: 1.5rem;
+  padding: 0;
   margin: 0 !important;
   line-height: 1.4;
   font-family: var(--font-family-h);
   text-align: center;
   font-weight: 600;
-  font-size: var(--font-size-l);
+  font-size: var(--font-size-xl);
   max-width: unset !important;
   color: var(--primary-color);
 }
@@ -713,7 +714,7 @@ aside p::after {
   content: '”';
 }
 
-aside::before,
+/* aside::before,
 aside::after {
   content: '';
   width: 9rem;
@@ -724,7 +725,7 @@ aside::after {
   left: 0;
   border-left: 2px solid var(--primary-color);
   border-top: 2px solid var(--primary-color);
-}
+} */
 
 aside::after {
   top: unset;
@@ -1006,11 +1007,6 @@ blockquote p span {
   #work {
     max-width: calc(100vw - 4rem);
     margin: 0 auto;
-  }
-
-  aside p {
-    padding: 2rem;
-    font-size: var(--font-size-l);
   }
 
   #hero-container {
