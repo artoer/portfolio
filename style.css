@@ -690,12 +690,12 @@ aside {
   display: flex;
   flex-direction: row;
   position: relative;
-  margin: 6rem auto;
+  margin: 4rem auto;
 }
 
 aside p {
   position: relative;
-  padding: 0;
+  padding: 2rem 0;
   margin: 0 !important;
   line-height: 1.4;
   font-family: var(--font-family-h);
@@ -704,6 +704,8 @@ aside p {
   font-size: var(--font-size-xl);
   max-width: unset !important;
   color: var(--primary-color);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 aside p::before {
