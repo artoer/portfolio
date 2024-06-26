@@ -21,7 +21,7 @@
 
 :root {
   --primary-color: hsl(264, 100%, 50%);
-  --secondary-color: hsl(0, 0%, 100%);
+  --secondary-color: hsl(336, 100%, 50%);
 
   --primary-bg-color: hsl(264, 15%, 98%);
   --secondary-bg-color: hsl(264, 15%, 95%);
@@ -38,7 +38,7 @@
   --font-size-xs: 0.875rem;
 
   --font-color: hsl(0, 0%, 15%);
-  --font-color-figc: hsl(0, 0%, 35%);
+  --font-color-figc: hsl(0, 0%, 40%);
   --font-color-alt: hsl(0, 0%, 98%);
 
   --xl-width: 64rem;
@@ -142,14 +142,14 @@ h4 {
 }
 
 a {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   text-decoration: none;
   font-weight: inherit;
   font-family: inherit;
 
   &:hover {
     text-decoration: underline;
-    text-decoration-color: var(--primary-color);
+    text-decoration-color: var(--secondary-color);
     text-decoration-thickness: .125rem;
     text-underline-offset: .1875rem;
   }
@@ -172,7 +172,7 @@ p {
   column-span: all;
 
   a {
-    font-weight: 500;
+    font-weight: 600;
   }
 }
 
@@ -215,7 +215,7 @@ h4 {
   text-transform: uppercase;
   margin: 0 auto;
   padding: 0;
-  color: var(--primary-color);
+  color: var(--font-color-figc);
 }
 
 h5 {
@@ -478,12 +478,7 @@ a.cta {
   height: 52px;
   min-width: 256px;
   width: 100%;
-  background-image: linear-gradient(to right,
-      var(--secondary-color),
-      var(--secondary-color) 50%,
-      var(--primary-color) 50%);
-  background-size: calc(200% + 2px) 100%;
-  background-position: 100%;
+  background: var(--secondary-color);
   transition: all 0.2s ease-in-out;
   text-decoration: none;
   font-size: var(--font-size-m);
@@ -493,7 +488,6 @@ a.cta {
   justify-content: center;
   gap: 1rem;
   align-items: center;
-  border: 2px solid var(--primary-color);
 }
 
 a.cta>i {
@@ -501,8 +495,7 @@ a.cta>i {
 }
 
 a.cta:hover {
-  color: var(--primary-color);
-  background-position: 0;
+  background: hsl(336, 100%, 40%);
 }
 
 footer {
@@ -572,7 +565,7 @@ footer span {
 
 .heading h1 {
   margin: 0 auto;
- max-width: var(--m-width);
+  max-width: var(--m-width);
 }
 
 .heading h1:has(+ div) {
@@ -671,7 +664,7 @@ p.tags span {
 }
 
 .heading li::marker {
-  color: var(--secondary-color);
+  color: var(--font-color-alt);
 }
 
 #content section div> :first-child {
@@ -775,7 +768,8 @@ aside::after {
   margin-top: 1.5rem !important;
 }
 
-figure.quote + figure.quote, figure.quote:has(+ figure.quote) {
+figure.quote+figure.quote,
+figure.quote:has(+ figure.quote) {
   margin: 1.5rem auto !important;
 }
 
@@ -795,7 +789,7 @@ figure.insert {
 
 figure.insert p {
   font-weight: 600;
-  font-size:var(--font-size-l);
+  font-size: var(--font-size-l);
 }
 
 figure.quote figcaption,
@@ -813,7 +807,8 @@ figure.insert figcaption {
     font-size: inherit;
   }
 
-  & .name, .title {
+  & .name,
+  .title {
     color: var(--font-color-figc);
   }
 
@@ -937,13 +932,13 @@ blockquote p span {
 @media all and (min-width: 768px) {
 
   :root {
-  --font-size-xxl: 6rem;
-  --font-size-xl: 2rem;
-  --font-size-l: 1.5rem;
-  --font-size-m: 1.25rem;
-  --font-size-s: 1.125rem;
-  --font-size-xs: 1rem;
-}
+    --font-size-xxl: 6rem;
+    --font-size-xl: 2rem;
+    --font-size-l: 1.5rem;
+    --font-size-m: 1.25rem;
+    --font-size-s: 1.125rem;
+    --font-size-xs: 1rem;
+  }
 
   h1,
   #hero h2 {
@@ -976,6 +971,7 @@ blockquote p span {
   nav ul li:last-of-type {
     margin-right: 0;
   }
+
   nav ul li a::before {
     content: '';
     width: 100%;
