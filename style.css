@@ -195,7 +195,7 @@ h4 {
 h1,
 #hero h2 {
   font-size: var(--font-size-xxl);
-  line-height: 0.85;
+  line-height: 1;
   margin: 0;
   padding: 0;
   font-family: 'Archivo Black', sans-serif;
@@ -565,7 +565,7 @@ footer span {
 .heading>div {
   width: 100%;
   max-width: 100%;
-  padding: 2rem 1rem 0;
+  padding: 7rem 1rem 2rem;
 }
 
 .heading>div>div {
@@ -596,17 +596,8 @@ p.challenge {
   position: relative;
   padding: 0;
   margin: 0;
-  line-height: 1.4;
-  text-align: left;
-  font-weight: 500;
-  font-size: var(--font-size-l);
-  font-family: var(--font-family-h);
-  max-width: unset !important;
+  color: var(--font-color-figc);
 }
-
-/* .headline p:not(:last-of-type) {
-  margin: 0 auto 1.5rem
-} */
 
 p.tags {
   font-size: var(--font-size-m);
@@ -956,6 +947,7 @@ blockquote p span {
 
   h1,
   #hero h2 {
+    line-height: .85;
     font-size: var(--font-size-xxl);
   }
 
@@ -1097,10 +1089,6 @@ blockquote p span {
 
   .heading .outcome div {
     flex-direction: row;
-  }
-
-  .heading>div {
-    padding: 6rem 1rem 2rem;
   }
 
   .heading img {
