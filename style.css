@@ -12,20 +12,29 @@
   /* outline: 1px solid #f00 !important; */
 }
 
-*:focus-visible {
-  outline: 4px solid var(--primary-color);
-  background: #FFF !important;
-  color: #000 !important;
-  -webkit-text-fill-color: #000 !important;
-}
-
 :root {
-  --primary-color: hsl(264, 100%, 50%);
+  /* --primary-color: hsl(264, 100%, 50%);
   --secondary-color: hsl(336, 100%, 50%);
 
   --primary-bg-color: hsl(264, 15%, 98%);
   --secondary-bg-color: hsl(264, 15%, 95%);
-  --tertiary-bg-color: radial-gradient(hsl(264, 100%, 50%), hsl(264, 100%, 25%)) fixed;
+  --primary-bg-color: radial-gradient(hsl(264, 100%, 50%), hsl(264, 100%, 25%)) fixed;
+
+  --font-color: hsl(0, 0%, 15%);
+  --font-color-figc: hsl(0, 0%, 40%);
+  --font-color-alt: hsl(0, 0%, 98%); */
+
+  --primary-color: hsl(264, 100%, 66.6%);
+  --secondary-color: hsl(336, 100%, 66.6%);
+
+  --primary-bg-color: hsl(264, 15%, 5%);
+  --secondary-bg-color: hsl(264, 15%, 6%);
+
+  --font-color: hsl(0, 0%, 90%);
+  --font-color-dark: hsl(0, 0%, 0%);
+  --font-color-figc: hsl(0, 0%, 70%);
+  --font-color-alt: hsl(0, 0%, 90%);
+
 
   --font-family-h: 'Archivo', sans-serif;
   --font-family-b: 'DM Sans', sans-serif;
@@ -37,9 +46,7 @@
   --font-size-s: 1rem;
   --font-size-xs: 0.875rem;
 
-  --font-color: hsl(0, 0%, 15%);
-  --font-color-figc: hsl(0, 0%, 40%);
-  --font-color-alt: hsl(0, 0%, 98%);
+
 
   --xl-width: 64rem;
   --l-width: 52rem;
@@ -142,14 +149,14 @@ h4 {
 }
 
 a {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   text-decoration: none;
   font-weight: inherit;
   font-family: inherit;
 
   &:hover {
     text-decoration: underline;
-    text-decoration-color: var(--secondary-color);
+    text-decoration-color: var(--primary-color);
     text-decoration-thickness: .125rem;
     text-underline-offset: .1875rem;
   }
@@ -189,7 +196,6 @@ h1,
 #hero h2 {
   font-size: var(--font-size-xxl);
   line-height: 0.85;
-  color: var(--font-color-alt);
   margin: 0;
   padding: 0;
   font-family: 'Archivo Black', sans-serif;
@@ -236,7 +242,7 @@ main li {
 main li::marker {
   font-weight: 700;
   font-size: var(--font-size-l);
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 main li:before {
@@ -263,7 +269,7 @@ nav {
   margin: auto 0;
   padding: 0;
   scrollbar-width: none;
-  background: var(--tertiary-bg-color);
+  background: var(--primary-bg-color);
 }
 
 nav::-webkit-scrollbar {
@@ -340,7 +346,7 @@ main {
 }
 
 #hero-container {
-  background: var(--tertiary-bg-color);
+  background: var(--primary-bg-color);
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -352,7 +358,7 @@ main {
   justify-content: center;
   align-items: start;
   height: 100%;
-  padding: 4rem 0 6rem;
+  padding: 6rem 0 4rem;
   margin: 0 auto;
   text-align: left;
   max-width: var(--xl-width);
@@ -478,7 +484,7 @@ a.cta {
   height: 52px;
   min-width: 256px;
   width: 100%;
-  background: var(--secondary-color);
+  background: var(--primary-color);
   transition: all 0.2s ease-in-out;
   text-decoration: none;
   font-size: var(--font-size-m);
@@ -495,7 +501,7 @@ a.cta>i {
 }
 
 a.cta:hover {
-  background: hsl(336, 100%, 40%);
+  background: hsl(264, 100%, 56.6%)
 }
 
 footer {
@@ -503,8 +509,7 @@ footer {
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  padding: 4rem 0;
-  gap: 2rem;
+  padding: 4rem 1rem;
   width: 100%;
   margin: 0 auto;
 }
@@ -512,11 +517,15 @@ footer {
 footer div {
   display: flex;
   flex-flow: row;
-  gap: 2rem;
+  gap: .25rem;
+  max-width: var(--xl-width);
+  width: 100%;
+  justify-content: start;
+  align-items: center;
 }
 
 footer a {
-  margin: 0 auto;
+  margin: 0;
   font-size: revert;
   height: 48px;
   width: 48px;
@@ -531,14 +540,18 @@ footer a:hover i {
 }
 
 footer span {
-  color: var(--font-color);
+  color: var(--font-color-figc);
   font-size: var(--font-size-xs);
+  margin-right: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* CASE STUDY PAGE */
 .heading {
   position: relative;
-  background: var(--tertiary-bg-color);
+  background: var(--primary-bg-color);
   margin: 0;
 
   & a.cta {
@@ -551,7 +564,7 @@ footer span {
 .heading>div {
   width: 100%;
   max-width: 100%;
-  padding: 2rem 1rem 4rem;
+  padding: 2rem 1rem 0;
 }
 
 .heading>div>div {
@@ -727,9 +740,9 @@ aside p {
   font-weight: 600;
   font-size: var(--font-size-xl);
   max-width: unset !important;
-  color: var(--primary-color);
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  color: var(--secondary-color);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 aside p::before {
@@ -778,7 +791,7 @@ figure.insert {
   display: flex;
   flex-flow: column nowrap;
   padding: 2rem;
-  background: #FFF;
+  background: rgba(255, 255, 255, .05);
   border-radius: 12px;
 }
 
@@ -848,8 +861,8 @@ blockquote :last-child,
 
 blockquote p span {
   padding: 1px 0.25rem;
-  background: var(--primary-color);
-  color: var(--font-color-alt);
+  background: var(--secondary-color);
+  color: var(--font-color-dark);
   font-size: inherit;
 }
 
@@ -925,7 +938,7 @@ blockquote p span {
 }
 
 .close-btn i {
-  color: var(--font-color);
+  color: var(--font-color-dark);
 }
 
 /* TABLET AND UP */
@@ -1086,7 +1099,7 @@ blockquote p span {
   }
 
   .heading>div {
-    padding: 4rem 1rem 6rem;
+    padding: 6rem 1rem 2rem;
   }
 
   .heading img {
