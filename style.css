@@ -565,7 +565,7 @@ footer span {
 .heading>div {
   width: 100%;
   max-width: 100%;
-  padding: 7rem 1rem 2rem;
+  padding: 7rem 1rem 4rem;
 }
 
 .heading>div>div {
@@ -1025,6 +1025,12 @@ blockquote p span {
     max-width: calc(100vw - 16rem);
     object-fit: contain;
     cursor: zoom-in;
+  }
+
+  .heading>div {
+    width: 100%;
+    max-width: 100%;
+    padding: 7rem 1rem 2rem;
   }
 
   #content {
