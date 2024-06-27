@@ -252,8 +252,7 @@ main li:before {
 
 main ol *,
 main ul * {
-  margin-bottom: .5rem;
-  text-indent: calc(25px + .5rem) hanging;
+  text-indent: calc(19px + .5rem) hanging;
 }
 
 main ol :last-child,
@@ -949,6 +948,12 @@ blockquote p span {
   #hero h2 {
     line-height: .85;
     font-size: var(--font-size-xxl);
+  }
+
+  main ol *,
+  main ul * {
+    margin-bottom: .5rem;
+    text-indent: calc(23px + .5rem) hanging;
   }
 
   nav {
