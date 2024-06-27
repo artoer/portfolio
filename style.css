@@ -377,13 +377,14 @@ main {
 }
 
 #content img.profile-pic {
-  height: 160px;
-  width: 160px;
-  min-height: 160px;
-  min-width: 160px;
-  margin: 0 auto 1.5rem;
+  height: calc((100vw - 1rem) / 1.5);
+  width: 100%;
+  min-height: 192px;
+  min-width: 100%;
+  margin: 0 auto 2rem;
   min-width: 0;
-  border-radius: 999px;
+  object-fit: cover;
+  border-radius: 4px;
 }
 
 #work {
@@ -1135,7 +1136,7 @@ blockquote p span {
   }
 
   #content img.profile-pic {
-    float: right;
-    margin: .5rem 0 0 1.5rem;
+    max-width: var(--m-width);
+    height: calc(var(--m-width) / 1.5);
   }
 }
