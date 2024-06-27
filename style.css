@@ -405,7 +405,7 @@ main {
 .card>img {
   height: 100%;
   width: 100%;
-  border-radius: 12px;
+  border-radius: 8px;
   aspect-ratio: 2 / 1;
 }
 
@@ -478,7 +478,7 @@ main {
 
 a.cta {
   border-radius: 4px;
-  color: var(--font-color-alt);
+  color: var(--font-color-dark);
   padding: 0 3rem;
   margin: 2rem 0 0;
   height: 52px;
@@ -501,7 +501,8 @@ a.cta>i {
 }
 
 a.cta:hover {
-  background: hsl(264, 100%, 56.6%)
+  background: hsl(264, 100%, 56.6%);
+  color: var(--font-color);
 }
 
 footer {
@@ -732,8 +733,8 @@ aside p {
   font-size: var(--font-size-xl);
   max-width: unset !important;
   color: var(--secondary-color);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 aside p::before {
@@ -783,7 +784,7 @@ figure.insert {
   flex-flow: column nowrap;
   padding: 2rem;
   background: rgba(255, 255, 255, .05);
-  border-radius: 12px;
+  border-radius: 8px;
 }
 
 figure.insert {
