@@ -861,7 +861,7 @@ blockquote :last-child,
 }
 
 blockquote p span {
-  padding: 1px 0.25rem;
+  padding: 2px 4px;
   background: var(--secondary-color);
   color: var(--font-color-dark);
   font-size: inherit;
