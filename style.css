@@ -570,7 +570,7 @@ footer span {
 
 .heading>div>div {
   text-align: left;
-  max-width: var(--m-width);
+  max-width: var(--l-width);
 }
 
 .headline * {
@@ -579,12 +579,12 @@ footer span {
 
 .heading h1 {
   margin: 0 auto;
-  max-width: var(--m-width);
+  max-width: var(--l-width);
 }
 
 .heading h1:has(+ div) {
   margin: 0 0 2rem;
-  margin-left: max(0px, (100% - var(--m-width))/2);
+  margin-left: max(0px, (100% - var(--l-width))/2);
   max-width: var(--l-width);
 }
 
@@ -594,6 +594,9 @@ footer span {
 
 p.challenge {
   position: relative;
+  max-width: var(--m-width);
+  font-size: var(--font-size-s);
+  font-weight: 500;
   padding: 0;
   margin: 0;
   color: var(--font-color-figc);
@@ -654,17 +657,18 @@ p.tags span {
 #content figure {
   max-width: var(--m-width);
   width: 100%;
-  margin: 0 auto 1.5rem;
+  margin: 0 auto 1.5rem 0;
 }
 
 #content h2,
 #content h3,
 #content h4 {
   max-width: var(--m-width);
+  margin-left: 0;
 }
 
 #content section .paragraph {
-  max-width: var(--xl-width);
+  max-width: var(--l-width);
   margin: 0 auto;
 }
 
@@ -770,12 +774,12 @@ aside::after {
 
 #content h2+figure,
 #content h3+figure {
-  margin-top: 1.5rem !important;
+  margin-top: 1.5rem auto !important;
 }
 
 figure.quote+figure.quote,
 figure.quote:has(+ figure.quote) {
-  margin: 1.5rem auto !important;
+  margin: 1.5rem 0 !important;
 }
 
 figure.quote,
@@ -1042,11 +1046,12 @@ blockquote p span {
   }
 
   #content figure {
-    margin: 3rem auto 3rem;
+    margin: 3rem auto 3rem 0;
   }
 
   #content figure:has(img) {
     min-width: 480px;
+    max-width: var(--l-width);
   }
 
   #work {
@@ -1138,5 +1143,6 @@ blockquote p span {
   #content img.profile-pic {
     max-width: var(--m-width);
     height: calc(var(--m-width) / 1.5);
+    margin-left:0;
   }
 }
