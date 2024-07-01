@@ -27,8 +27,8 @@
   --primary-color: hsl(264, 100%, 66.6%);
   --secondary-color: hsl(336, 100%, 66.6%);
 
-  --primary-bg-color: hsl(264, 15%, 5%);
-  --secondary-bg-color: hsl(264, 15%, 6%);
+  --primary-bg-color: hsl(264, 15%, 10%);
+  --secondary-bg-color: hsl(264, 15%, 8%);
 
   --font-color: hsl(0, 0%, 90%);
   --font-color-dark: hsl(0, 0%, 0%);
