@@ -727,7 +727,7 @@ aside {
   display: flex;
   flex-direction: row;
   position: relative;
-  margin: 6rem auto;
+  margin: 4rem auto;
   z-index: 1;
 }
 
@@ -1055,6 +1055,10 @@ blockquote p span {
     margin: 0 auto;
   }
 
+  aside {
+    margin: 6rem auto;
+  }
+
   aside p {
     padding: 2rem 0 2rem 6.5rem;
   }
@@ -1069,7 +1073,7 @@ blockquote p span {
   }
 
   aside p:after {
-    content:'';
+    content: '';
   }
 
   .card {
