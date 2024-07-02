@@ -585,7 +585,7 @@ footer span {
 .heading h1:has(+ div) {
   margin: 0 0 2rem;
   margin-left: max(0px, (100% - var(--l-width))/2);
-  max-width: var(--l-width);
+  max-width: calc((var(--l-width) + var(--xl-width))/2);
 }
 
 .headline div {
