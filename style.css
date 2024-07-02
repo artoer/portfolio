@@ -14,7 +14,7 @@
 
 :root {
   /* --primary-color: hsl(264, 100%, 50%);
-  --secondary-color: hsl(336, 100%, 50%);
+  --primary-color: hsl(336, 100%, 50%);
 
   --primary-bg-color: hsl(264, 15%, 98%);
   --secondary-bg-color: hsl(264, 15%, 95%);
@@ -25,10 +25,9 @@
   --font-color-alt: hsl(0, 0%, 98%); */
 
   --primary-color: hsl(264, 100%, 66.6%);
-  --secondary-color: hsl(336, 100%, 66.6%);
 
-  --primary-bg-color: hsl(264, 15%, 10%);
-  --secondary-bg-color: hsl(264, 15%, 8%);
+  --primary-bg-color: hsl(264, 10%, 6%);
+  --secondary-bg-color: hsl(264, 10%, 8%);
 
   --font-color: hsl(0, 0%, 90%);
   --font-color-dark: hsl(0, 0%, 0%);
@@ -149,17 +148,9 @@ h4 {
 }
 
 a {
-  color: var(--primary-color);
   text-decoration: none;
   font-weight: inherit;
   font-family: inherit;
-
-  &:hover {
-    text-decoration: underline;
-    text-decoration-color: var(--primary-color);
-    text-decoration-thickness: .125rem;
-    text-underline-offset: .1875rem;
-  }
 }
 
 footer a:hover {
@@ -180,6 +171,14 @@ p {
 
   a {
     font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: var(--primary-color);
+    text-decoration-thickness: .125rem;
+    text-underline-offset: .1875rem;
+  }
+
+  a:hover {
+    color: var(--primary-color);
   }
 }
 
@@ -243,7 +242,7 @@ main li {
 main li::marker {
   font-weight: 700;
   font-size: var(--font-size-l);
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 main li:before {
@@ -737,7 +736,7 @@ aside p {
   font-weight: 600;
   font-size: var(--font-size-xl);
   max-width: unset !important;
-  color: var(--secondary-color);
+  color: var(--primary-color);
   border-top: 1px solid rgba(255, 255, 255, 0.15);
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
@@ -858,7 +857,7 @@ blockquote :last-child,
 
 blockquote p span {
   padding: 2px 4px;
-  background: var(--secondary-color);
+  background: var(--primary-color);
   color: var(--font-color-dark);
   font-size: inherit;
 }
@@ -1144,6 +1143,6 @@ blockquote p span {
   #content img.profile-pic {
     max-width: var(--m-width);
     height: calc(var(--m-width) / 1.5);
-    margin-left:0;
+    margin-left: 0;
   }
 }
