@@ -727,23 +727,24 @@ aside {
   display: flex;
   flex-direction: row;
   position: relative;
-  margin: 4rem auto;
+  margin: 6rem auto;
+  z-index: 1;
 }
 
 aside p {
   position: relative;
-  padding: 2rem 0;
+  padding: 2rem 1rem;
   margin: 0 !important;
-  line-height: 1.4;
-  font-family: var(--font-family-h);
-  text-align: center;
-  font-weight: 600;
+  line-height: 1.1;
   font-size: var(--font-size-xl);
   max-width: unset !important;
-  color: var(--primary-color);
   border-top: 1px solid rgba(255, 255, 255, 0.15);
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  font-family: 'Archivo Black';
+  color: white;
+  text-transform: uppercase;
 }
+
 
 aside p::before {
   content: '“';
@@ -752,19 +753,6 @@ aside p::before {
 aside p::after {
   content: '”';
 }
-
-/* aside::before,
-aside::after {
-  content: '';
-  width: 9rem;
-  height: 3rem;
-  position: absolute;
-  background: transparent;
-  top: 0;
-  left: 0;
-  border-left: 2px solid var(--primary-color);
-  border-top: 2px solid var(--primary-color);
-} */
 
 aside::after {
   top: unset;
@@ -1065,6 +1053,23 @@ blockquote p span {
 
   #hero-container {
     margin: 0 auto;
+  }
+
+  aside p {
+    padding: 2rem 0 2rem 6.5rem;
+  }
+
+  aside p::before {
+    content: '”';
+    position: absolute;
+    font-size: 144px;
+    top: .375rem;
+    left: 0;
+    color: var(--primary-color);
+  }
+
+  aside p:after {
+    content:'';
   }
 
   .card {
