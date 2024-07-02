@@ -595,7 +595,7 @@ footer span {
 p.challenge {
   position: relative;
   max-width: var(--m-width);
-  font-size: var(--font-size-s);
+  font-size: var(--font-size-m);
   font-weight: 500;
   padding: 0;
   margin: 0;
@@ -1034,7 +1034,7 @@ blockquote p span {
   .heading>div {
     width: 100%;
     max-width: 100%;
-    padding: 6rem 1rem 2rem;
+    padding: 8rem 1rem 2rem;
   }
 
   #content {
