@@ -743,6 +743,7 @@ aside p {
   font-family: 'Archivo Black';
   color: white;
   text-transform: uppercase;
+  min-height: 7.25rem;
 }
 
 
