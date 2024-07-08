@@ -6,24 +6,13 @@
   box-sizing: border-box;
   text-rendering: optimizeLegibility;
   color: var(--font-color);
-  font-family: var(--font-family-b);
+  font-family: var(--font-family-body);
 
   /* debug */
   /* outline: 1px solid #f00 !important; */
 }
 
 :root {
-  /* --primary-color: hsl(264, 100%, 50%);
-  --primary-color: hsl(336, 100%, 50%);
-
-  --primary-bg-color: hsl(264, 15%, 98%);
-  --secondary-bg-color: hsl(264, 15%, 95%);
-  --primary-bg-color: radial-gradient(hsl(264, 100%, 50%), hsl(264, 100%, 25%)) fixed;
-
-  --font-color: hsl(0, 0%, 15%);
-  --font-color-figc: hsl(0, 0%, 40%);
-  --font-color-alt: hsl(0, 0%, 98%); */
-
   --primary-color: hsl(264, 100%, 66.6%);
 
   --primary-bg-color: hsl(264, 10%, 6%);
@@ -35,8 +24,8 @@
   --font-color-alt: hsl(0, 0%, 90%);
 
 
-  --font-family-h: 'Archivo', sans-serif;
-  --font-family-b: 'DM Sans', sans-serif;
+  --font-family-title: 'Archivo Black', sans-serif;
+  --font-family-body: 'DM Sans', sans-serif;
 
   --font-size-xxl: 2.5rem;
   --font-size-xl: 1.5rem;
@@ -50,31 +39,6 @@
   --xl-width: 64rem;
   --l-width: 52rem;
   --m-width: 40rem;
-}
-
-
-/* Archivo - Medium */
-@font-face {
-  font-family: 'Archivo';
-  src: url('../assets/fonts/Archivo-Medium.ttf') format('truetype');
-  src: url('./assets/fonts/Archivo-Medium.ttf') format('truetype');
-  font-weight: 500;
-}
-
-/* Archivo - Semibold */
-@font-face {
-  font-family: 'Archivo';
-  src: url('../assets/fonts/Archivo-SemiBold.ttf') format('truetype');
-  src: url('./assets/fonts/Archivo-SemiBold.ttf') format('truetype');
-  font-weight: 600;
-}
-
-/* Archivo - Bold */
-@font-face {
-  font-family: 'Archivo';
-  src: url('../assets/fonts/Archivo-Bold.ttf') format('truetype');
-  src: url('./assets/fonts/Archivo-Bold.ttf') format('truetype');
-  font-weight: 700;
 }
 
 /* Archivo Black */
@@ -143,7 +107,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: var(--font-family-h);
+  font-family: var(--font-family-body);
   font-feature-settings: normal;
 }
 
@@ -186,7 +150,7 @@ h2,
 h3,
 h4 {
   line-height: 1.4;
-  font-weight: 600;
+  font-weight: 700;
   width: auto;
 }
 
@@ -196,7 +160,7 @@ h1,
   line-height: 1;
   margin: 0;
   padding: 0;
-  font-family: 'Archivo Black', sans-serif;
+  font-family: var(--font-family-title);
   text-transform: uppercase;
   letter-spacing: -0.05em;
   font-weight: normal;
@@ -303,7 +267,7 @@ nav ul li {
 nav ul li:first-of-type>a {
   font-size: var(--font-size-l);
   background-position: 100% !important;
-  font-family: 'Archivo Black', sans-serif;
+  font-family: var(--font-family-title);
   transform: skew(-4deg);
   text-transform: uppercase;
   letter-spacing: -0.1875em;
@@ -744,7 +708,7 @@ aside p {
   max-width: unset !important;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-  font-family: 'Archivo Black';
+  font-family: var(--font-family-title);
   color: white;
   text-transform: uppercase;
   min-height: 7.25rem;
