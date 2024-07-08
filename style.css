@@ -429,13 +429,17 @@ main {
 
 .card>div>h2 {
   position: relative;
-  color: var(--primary-color);
   margin: 0;
   padding: 0;
+  transition: all ease-in-out 0.2s;
 }
 
 .card:hover {
   text-decoration: none;
+}
+
+.card:hover h2 {
+  color: var(--primary-color);
 }
 
 .card>div>h2::after {
