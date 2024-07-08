@@ -321,7 +321,7 @@ main {
   justify-content: center;
   align-items: start;
   height: 100%;
-  padding: 6rem 0 4rem;
+  padding: 6rem 0 2rem;
   margin: 0 auto;
   text-align: left;
   max-width: var(--xl-width);
@@ -1021,6 +1021,10 @@ blockquote p span {
 
   .card>img {
     aspect-ratio: 2 / 1;
+  }
+
+  #hero {
+    padding: 8rem 0 4rem;
   }
 
   #hero-container {
