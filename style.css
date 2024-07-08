@@ -370,7 +370,7 @@ main {
   height: 100%;
   width: 100%;
   border-radius: 6px;
-  aspect-ratio: 2 / 1;
+  aspect-ratio: 3 / 2;
 }
 
 .card>div {
@@ -1018,6 +1018,10 @@ blockquote p span {
   #work {
     max-width: calc(100vw - 4rem);
     margin: 0 auto;
+  }
+
+  .card>img {
+    aspect-ratio: 2 / 1;
   }
 
   #hero-container {
