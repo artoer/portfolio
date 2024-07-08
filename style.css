@@ -711,9 +711,8 @@ aside p {
   font-family: var(--font-family-title);
   color: white;
   text-transform: uppercase;
-  min-height: 7.25rem;
+  min-height: 8.125rem;
 }
-
 
 aside p::before {
   content: '“';
