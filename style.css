@@ -639,7 +639,7 @@ p.tags span {
 #content h2,
 #content h3,
 #content h4 {
-  max-width: var(--m-width);
+  max-width: var(--l-width);
   margin-left: 0;
 }
 
