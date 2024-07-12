@@ -1009,9 +1009,9 @@ blockquote p span {
     padding: 6rem 0;
   }
 
-  #content figure {
+  /* #content figure {
     margin: 4rem auto 4rem 0;
-  }
+  } */
 
   #content figure:has(img) {
     min-width: 480px;
