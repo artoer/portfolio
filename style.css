@@ -682,7 +682,7 @@ p.tags span {
 }
 
 figcaption {
-  margin: 1rem auto 0;
+  margin: 1.5rem auto 0;
   padding: 0;
   width: 100%;
   font-size: var(--font-size-s);
@@ -1006,7 +1006,7 @@ blockquote p span {
   }
 
   #content figure {
-    margin: 3rem auto 3rem 0;
+    margin: 4rem auto;
   }
 
   #content figure:has(img) {
@@ -1029,10 +1029,6 @@ blockquote p span {
 
   #hero-container {
     margin: 0 auto;
-  }
-
-  aside {
-    margin: 6rem auto;
   }
 
   aside p {
