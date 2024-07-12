@@ -632,6 +632,10 @@ p.tags span {
   margin: 0 auto 2rem 0;
 }
 
+#content figure {
+  margin: 4rem auto;
+}
+
 #content h2,
 #content h3,
 #content h4 {
@@ -1006,7 +1010,7 @@ blockquote p span {
   }
 
   #content figure {
-    margin: 4rem auto;
+    margin: 4rem auto 4rem 0;
   }
 
   #content figure:has(img) {
