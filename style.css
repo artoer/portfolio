@@ -13,7 +13,7 @@
 }
 
 :root {
-  --primary-color: #964FFF
+  --primary-color: #964FFF;
 
   --primary-bg-color: hsl(264, 10%, 6%);
   --secondary-bg-color: hsl(264, 10%, 8%);
