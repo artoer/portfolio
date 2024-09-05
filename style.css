@@ -228,7 +228,7 @@ main ul :last-child {
 nav {
   height: 4rem;
   width: 100%;
-  margin: auto 0;
+  margin: 1.5rem 0 0;
   padding: 0;
   scrollbar-width: none;
   background: var(--primary-bg-color);
@@ -310,7 +310,7 @@ main {
 #hero-container {
   background: var(--primary-bg-color);
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 2rem;
 }
 
 #hero {
@@ -320,7 +320,7 @@ main {
   justify-content: center;
   align-items: start;
   height: 100%;
-  padding: 6rem 0 2rem;
+  padding: 7.25rem 0 10rem;
   margin: 0 auto;
   text-align: left;
   max-width: var(--xl-width);
@@ -351,11 +351,11 @@ main {
 
 #work {
   display: grid;
-  row-gap: 3rem;
+  row-gap: 8rem;
   width: var(--xl-width);
   max-width: calc(100vw - 2rem);
   margin: 0 auto;
-  padding: 4rem 0;
+  padding: 0;
 }
 
 .card {
@@ -381,7 +381,7 @@ main {
   align-items: start;
   text-align: left;
   color: var(--font-color);
-  padding: 1rem 0;
+  padding: 2rem 0 0;
   border: none;
 }
 
@@ -439,11 +439,6 @@ main {
   color: var(--font-color-alt);
 }
 
-.modal-img-container>span,
-.modal-img-container>a {
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
-}
-
 a.cta {
   border-radius: 6px;
   color: var(--font-color-dark);
@@ -478,12 +473,13 @@ footer {
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  padding: 4rem 1rem;
+  padding: 8rem 2rem;
   width: 100%;
   margin: 0 auto;
 }
 
 footer div {
+  color: var(--font-color-figc);
   display: flex;
   flex-flow: row;
   gap: .25rem;
@@ -493,19 +489,9 @@ footer div {
   align-items: center;
 }
 
-footer a {
-  margin: 0;
-  font-size: revert;
-  height: 48px;
-  width: 48px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-}
-
-footer a:hover i {
-  color: var(--primary-color);
+footer div a {
+  color: var(--font-color);
+  font-weight: bold;
 }
 
 footer span {
@@ -533,7 +519,7 @@ footer span {
 .heading>div {
   width: 100%;
   max-width: 100%;
-  padding: 6rem 1rem 2rem;
+  padding: 8rem 1rem 4rem;
 }
 
 .heading>div>div {
@@ -843,6 +829,10 @@ blockquote p span {
   opacity: 1;
 }
 
+.modal-img-container {
+  position: relative;
+}
+
 .modal-container {
   display: flex;
   flex-direction: column;
@@ -865,7 +855,6 @@ blockquote p span {
 }
 
 .close-btn {
-  background-color: var(--font-color-alt);
   text-decoration: none;
   cursor: pointer;
   width: 48px;
@@ -874,16 +863,14 @@ blockquote p span {
   justify-content: center;
   align-items: center;
   height: 48px;
-  opacity: 1;
-  border-radius: 50%;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -1.5rem;
+  right: -1.5rem;
   transform: translate(50%, -50%);
 }
 
 .close-btn i {
-  color: var(--font-color-dark);
+  color: var(--font-color);
 }
 
 /* TABLET AND UP */
@@ -911,7 +898,7 @@ blockquote p span {
   }
 
   nav {
-    padding: 0 1rem;
+    padding: 0 2rem;
   }
 
   nav ul {
@@ -965,10 +952,6 @@ blockquote p span {
     margin-right: auto;
   }
 
-  .modal-img-container {
-    position: relative;
-  }
-
   .modal-img-container img {
     display: block;
     margin: auto;
@@ -983,7 +966,6 @@ blockquote p span {
   .heading>div {
     width: 100%;
     max-width: 100%;
-    padding: 8rem 1rem 2rem;
   }
 
   #content {
@@ -1013,7 +995,7 @@ blockquote p span {
   }
 
   #hero {
-    padding: 8rem 0 4rem;
+    padding: 14.5rem 0 20rem;
   }
 
   #hero-container {

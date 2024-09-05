@@ -3,10 +3,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const footerTemplate = Handlebars.compile(`
   <div>
     <span>&copy; 2024 Arthur Menken</span>
-    <a href="https://www.linkedin.com/in/arthur-menken/" title="LinkedIn" target="_blank"><i class="fa-brands fa-linkedin-in fa-xl"></i></a>
-    <a href="https://dribbble.com/artioer" title="Dribbble" target="_blank"><i class="fa-brands fa-dribbble fa-xl"></i></a>
-    <a href="mailto:arthur_menken@hotmail.com" title="Email"><i class="fa-regular fa-paper-plane fa-xl"></i></a>
-    <a href="./assets/Arthur-Menken_Resume-CV.pdf" title="Resume" target="_blank"><i class="fa-regular fa-file-pdf fa-xl"></i></a>
+    <a href="https://www.linkedin.com/in/arthur-menken/" title="LinkedIn" target="_blank">LinkedIn</a>
+    •
+    <a href="https://dribbble.com/artioer" title="Dribbble" target="_blank">Dribbble</a>
+    •
+    <a href="mailto:arthur_menken@hotmail.com" title="Email">Email</a>
+    •
+    <a href="./assets/Arthur-Menken_Resume-CV.pdf" title="Resume" target="_blank">Resume</a>
   </div>
 `);
 
