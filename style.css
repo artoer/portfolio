@@ -285,7 +285,7 @@ nav ul li a {
   align-items: center;
   flex-direction: row;
   text-align: center;
-  font-weight: 500;
+  font-weight: 700;
   color: var(--font-color-alt);
   transition: all 0.2s ease-in-out;
   text-decoration: none;
@@ -491,7 +491,7 @@ footer div {
 
 footer div a {
   color: var(--font-color);
-  font-weight: bold;
+  font-weight: 700;
 }
 
 footer span {
