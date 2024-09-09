@@ -170,12 +170,12 @@ h2 {
   font-size: var(--font-size-xl);
   font-weight: 700;
   margin: 0 auto;
-  padding: 0 0 3rem;
+  padding: 0 0 4rem;
 }
 
 h3 {
   font-size: var(--font-size-l);
-  padding: 1rem 0 0;
+  padding: 2rem 0 0;
   margin: 0 auto 2rem;
 }
 
@@ -310,7 +310,7 @@ main {
 #hero-container {
   background: var(--primary-bg-color);
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 
 #hero {
@@ -482,7 +482,7 @@ footer div {
   color: var(--font-color-figc);
   display: flex;
   flex-flow: row;
-  gap: .25rem;
+  gap: .5rem;
   max-width: var(--xl-width);
   width: 100%;
   justify-content: start;
@@ -519,7 +519,7 @@ footer span {
 .heading>div {
   width: 100%;
   max-width: 100%;
-  padding: 8rem 1rem 4rem;
+  padding: 10rem 1rem 0;
 }
 
 .heading>div>div {
@@ -678,7 +678,7 @@ aside {
   display: flex;
   flex-direction: row;
   position: relative;
-  margin: 4rem auto;
+  margin: 6rem auto;
   z-index: 1;
 }
 
@@ -973,7 +973,7 @@ blockquote p span {
   }
 
   #content section {
-    padding: 6rem 0;
+    padding: 10rem 0;
   }
 
   #content figure {
@@ -1000,6 +1000,7 @@ blockquote p span {
 
   #hero-container {
     margin: 0 auto;
+    padding: 0 2rem;
   }
 
   aside p {
