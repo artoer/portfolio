@@ -34,8 +34,9 @@ window.addEventListener("DOMContentLoaded", (event) => {
   document.body.appendChild(modal);
 
   // Add event listeners to images
-  const images = document.querySelectorAll('#content img');
+  const images = document.querySelectorAll('.process img, .solution img');
   images.forEach((img) => {
+    img.style.cursor = 'pointer';
     img.addEventListener('click', (event) => {
       event.stopPropagation();
       modal.style.display = 'flex';
@@ -49,15 +50,4 @@ window.addEventListener("DOMContentLoaded", (event) => {
       modal.style.display = 'none';
     }
   });
-
-  // keeps bg color footer consistent with last section bg color
-  const content = document.querySelector('#content');
-  const footer = document.querySelector('footer');
-
-  if (content) {
-    const sections = content.getElementsByTagName('section');
-    if (sections.length % 2 === 0) {
-      footer.style.background = 'var(--secondary-bg-color)';
-    }
-  }
 });

@@ -14,17 +14,23 @@
 
     gtag('config', 'G-ZZ2T5Q920Y');
   </script>
-<!-- Hotjar Tracking Code for https://www.amenken.me/ -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:4933734,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+  <!-- Hotjar Tracking Code for https://www.amenken.me/ -->
+  <script>
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () {
+        (h.hj.q = h.hj.q || []).push(arguments)
+      };
+      h._hjSettings = {
+        hjid: 4933734,
+        hjsv: 6
+      };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script');
+      r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
@@ -34,7 +40,7 @@
 
   <meta name="description" content="Arthur Menken is passionate about digital experiences for people.">
   <meta name="author" content="Arthur Menken">
-  <meta name="theme-color" content="#640DFF">
+  <meta name="theme-color" content="#5500FF">
   <meta name="robots" content="noindex,nofollow" />
   <link rel="icon" type="image/png" href="./favicon.png" />
   <title>Portfolio | Arthur Menken </title>
@@ -46,30 +52,37 @@
     <div id="hero-container">
       <div id="hero">
         <h1>Arthur Menken</h1>
-        <h2>UX Designer</h2>
+        <h2>— UX Designer</h2>
       </div>
     </div>
 
-    <div id="work">
-      <a href="./pc-builder.html" class="card">
-        <img src="./img/pc-builder/logo.jpg" alt="The PC builder tool's user interface">
-        <div>
-          <h2>Streamlining PC Building</h2>
-          <p>Tweakers • 2023</p>
-        </div>
-      </a>
-      <a href="./save-query.html" class="card">
-        <img src="./img/save-query/logo.jpg" alt="Sving the Search's designed screens">
-        <div>
-          <h2>Saving Your Search</h2>
-          <p>Talpa eCommerce • 2022</p>
-        </div>
-      </a>
+    <div id="work-container">
+      <div id="work">
+        <a href="./pc-builder.html" class="card">
+          <div class="card-img-container">
+            <img src="./img/pc-builder/logo.jpg" alt="The PC builder tool's user interface">
+          </div>
+          <div class="card-text-container">
+            <h2>Streamlining PC&nbsp;Building</h2>
+            <p>Tweakers • 2023</p>
+          </div>
+        </a>
+        <a href="./save-query.html" class="card">
+          <div class="card-img-container">
+            <img src="./img/save-query/logo.jpg" alt="Sving the Search's designed screens">
+          </div>
+          <div class="card-text-container">
+            <h2>Saving Your Search</h2>
+            <p>Talpa eCommerce • 2022</p>
+          </div>
+        </a>
+      </div>
     </div>
   </main>
 
   <footer></footer>
-   <script src="script.js"></script> <script src="node_modules/handlebars/dist/handlebars.js"></script>
+  <script src="script.js"></script>
+  <script src="node_modules/handlebars/dist/handlebars.js"></script>
   <script src="semantics.js"></script>
 
 </body>
