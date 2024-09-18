@@ -12,6 +12,7 @@
   --primary-500: #8D54FF;
   --primary-700: #7733ff;
   --primary-800:#622CCF;
+  --primary-900: #5500FF;
   --grey-200: #EFEEF2;
   --grey-400: #9C9B9E;
   --grey-600: #5D5D5E;
@@ -139,7 +140,7 @@ i {
 
 blockquote {
   font-size: var(--font-size-m);
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.4;
 }
 
@@ -519,7 +520,7 @@ footer div a {
   text-decoration: none;
   justify-content: center;
   align-items: center;
-  background: var(--primary-700);
+  background: linear-gradient(to bottom, var(--primary-800), var(--primary-500));
 }
 
 .fs-cta span {
@@ -531,7 +532,7 @@ footer div a {
   font-family: "Font Awesome 6 Free";
   content: "\f061";
   vertical-align: bottom;
-  padding-left: 2rem;
+  padding-left: 3rem;
   transition: all 0.2s ease-in-out;
 }
 
@@ -539,7 +540,7 @@ footer div a {
   margin-left: 0.5rem;
 
   &::after {
-    padding-left: 2.5rem;
+    padding-left: 3.5rem;
   }
 }
 
@@ -717,7 +718,7 @@ section>*:not(:last-of-type) {
 }
 
 section figure {
-  background: var(--primary-800);
+  background: radial-gradient(50% 100% at 50% 100%, var(--primary-500) 0%, var(--primary-800) 100%);
   padding: 4rem;
 
   & blockquote {
@@ -750,6 +751,10 @@ section figure:has(img) {
     --column-gap: 3rem;
   }
 
+  h2 {
+    padding: 0 0 1rem;
+  }
+
   nav>div {
     grid-template-columns: 2fr 1fr;
   }
@@ -763,7 +768,7 @@ section figure:has(img) {
   .col-2,
   footer>div {
     grid-template-columns: 1fr 1fr;
-    /* column-gap: var(--column-gap); */
+    gap: var(--column-gap);
   }
 
   .col-3 img,
@@ -782,10 +787,6 @@ section figure:has(img) {
     --font-size-m: 18px;
     --font-size-s: 14px;
     --column-gap: 2rem;
-  }
-
-  h2 {
-    padding: 0 0 1rem;
   }
 
   .about-container {
@@ -865,6 +866,7 @@ section figure:has(img) {
   }
 
   .fs-cta span::after {
-    margin-left: 1rem;
+    margin:0;
+    padding-left: 1.5rem;
   }
 }
