@@ -10,7 +10,7 @@
 
 :root {
   --primary-500: #8D54FF;
-  --primary-700: #5500FF;
+  --primary-700: #7733FF;
   --grey-200: #EFEEF2;
   --grey-400: #9C9B9E;
   --grey-600: #5D5D5E;
@@ -133,7 +133,7 @@ li {
 
 i {
   margin: 2rem auto 4rem;
-  color:var(--grey-200);
+  color: var(--grey-200);
 }
 
 blockquote {
@@ -228,6 +228,10 @@ a {
   top: -1.5rem;
   right: -1.5rem;
   transform: translate(50%, -50%);
+}
+
+.close-btn i {
+  margin: auto;
 }
 
 /* Nav */
@@ -494,6 +498,11 @@ footer div a {
   & h4 {
     color: var(--grey-600);
   }
+
+  & blockquote span {
+    background: var(--primary-700);
+    color: var(--grey-200);
+  }
 }
 
 .fs-container figure,
@@ -514,13 +523,23 @@ footer div a {
 
 .fs-cta span {
   font-size: var(--font-size-l);
+  transition: all 0.2s ease-in-out;
 }
 
 .fs-cta span::after {
   font-family: "Font Awesome 6 Free";
   content: "\f061";
   vertical-align: bottom;
-  margin-left: 3rem;
+  padding-left: 2rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.fs-cta:hover span {
+  margin-left: 0.5rem;
+
+  &::after {
+    padding-left: 2.5rem;
+  }
 }
 
 .xl {
