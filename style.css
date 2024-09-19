@@ -348,6 +348,7 @@ footer>div>div {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  gap:.25rem;
 }
 
 footer span {
@@ -459,6 +460,11 @@ footer div a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  & a:hover {
+    color: var(--primary-700);
+    text-decoration-color: var(--primary-700);
+  }
 }
 
 .fs-container h1 {
@@ -486,11 +492,6 @@ footer div a {
   p,
   a {
     color: var(--grey-800);
-  }
-
-  a:hover {
-    color: var(--primary-700);
-    text-decoration-color: var(--primary-700);
   }
 
   & figcaption {
@@ -573,7 +574,7 @@ footer div a {
 
   & p,
   h1 {
-    color: var(--grey-800);
+    /* color: var(--grey-800); */
     margin-left: 0;
   }
 
