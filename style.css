@@ -11,7 +11,7 @@
 :root {
   --primary-500: #8D54FF;
   --primary-700: #7733ff;
-  --primary-800:#622CCF;
+  --primary-800: #622CCF;
   --primary-900: #5500FF;
   --grey-200: #EFEEF2;
   --grey-400: #9C9B9E;
@@ -348,7 +348,6 @@ footer>div>div {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap:.25rem;
 }
 
 footer span {
@@ -584,6 +583,11 @@ footer div a {
     text-transform: none;
     padding: 0;
   }
+
+  /* 
+  img {
+    height: 100%;
+  } */
 }
 
 .about-flex {
@@ -669,7 +673,8 @@ footer div a {
   grid-column: span 2;
 }
 
-.img-2 figure, .img-2 img {
+.img-2 figure,
+.img-2 img {
   grid-column: auto;
 }
 
@@ -701,7 +706,7 @@ section>*:not(:last-of-type) {
   flex-direction: column;
 }
 
-.collage > div:not(:last-of-type) {
+.collage>div:not(:last-of-type) {
   margin: 0 0 var(--column-gap);
 }
 
@@ -748,11 +753,11 @@ section figure:has(img) {
 
 @media (max-width: 1439px) {
   :root {
-    --font-size-xl: 96px;
-    --font-size-l: 48px;
-    --font-size-m: 32px;
+    --font-size-xl: 72px;
+    --font-size-l: 36px;
+    --font-size-m: 24px;
     --font-size-s: 18px;
-    --column-gap: 3rem;
+    --column-gap: 2.5rem;
   }
 
   h2 {
@@ -764,31 +769,38 @@ section figure:has(img) {
   }
 
   nav>div {
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   nav>div>a {
     font-size: 32px;
+    grid-column: span 2;
   }
 
   .col-4,
   .col-3,
-  .col-2,
-  footer>div {
+  .col-2 {
     grid-template-columns: 1fr 1fr;
     gap: var(--column-gap);
   }
 
+  footer>div {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  footer>div>div {
+    grid-column: 3;
+  }
+
   .col-3 img,
   .col-3 figure,
-  footer span,
-  nav>div>a {
+  footer span {
     grid-column: auto;
   }
 }
 
 
-@media (max-width: 719px) {
+@media (max-width: 799px) {
   :root {
     --font-size-xl: 42px;
     --font-size-l: 26px;
@@ -798,15 +810,12 @@ section figure:has(img) {
   }
 
   .about-container {
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
 
-    & h1 {
+    & h1,
+    .about-flex {
       grid-column: unset;
     }
-  }
-
-  .about-flex {
-    grid-column: unset;
   }
 
   .process img,
@@ -871,10 +880,20 @@ section figure:has(img) {
 
   footer span {
     text-align: center;
+    column-span: 2;
+  }
+
+  footer>div>div {
+    justify-content: center;
+  }
+
+  footer > div > div {
+    grid-column: 1;
+    justify-content: space-between;
   }
 
   .fs-cta span::after {
-    margin:0;
+    margin: 0;
     padding-left: 1.5rem;
   }
 }
