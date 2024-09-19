@@ -699,7 +699,10 @@ section>*:not(:last-of-type) {
 .collage {
   display: flex;
   flex-direction: column;
-  gap: var(--column-gap);
+}
+
+.collage > div:not(:last-of-type) {
+  margin: 0 0 var(--column-gap);
 }
 
 .process {
@@ -753,7 +756,11 @@ section figure:has(img) {
   }
 
   h2 {
-    padding: 0 0 1rem;
+    padding: 0 0 2rem;
+  }
+
+  h3 {
+    padding: 0 0 1.5rem;
   }
 
   nav>div {
