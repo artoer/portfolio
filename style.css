@@ -462,8 +462,8 @@ footer div a {
   align-items: center;
 
   & a:hover {
-    color: var(--primary-700);
-    text-decoration-color: var(--primary-700);
+    color: var(--primary-500);
+    text-decoration-color: var(--primary-500);
   }
 }
 
