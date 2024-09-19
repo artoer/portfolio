@@ -668,7 +668,7 @@ footer div a {
   grid-column: span 2;
 }
 
-.img-2 figure {
+.img-2 figure, .img-2 img {
   grid-column: auto;
 }
 
