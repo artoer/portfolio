@@ -768,23 +768,19 @@ section figure:has(img) {
     padding: 0 0 1.5rem;
   }
 
-  nav>div {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
   nav>div>a {
     font-size: 32px;
     grid-column: span 2;
   }
 
-  .col-4,
   .col-3,
   .col-2 {
     grid-template-columns: 1fr 1fr;
     gap: var(--column-gap);
   }
 
-  footer>div {
+  footer>div,
+  nav>div {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
@@ -806,7 +802,7 @@ section figure:has(img) {
     --font-size-l: 26px;
     --font-size-m: 18px;
     --font-size-s: 14px;
-    --column-gap: 2rem;
+    --column-gap: 1.5rem;
   }
 
   .about-container {
@@ -836,6 +832,10 @@ section figure:has(img) {
     font-size: 20px;
   }
 
+  #work {
+    gap: 4rem;
+  }
+
   #work .card {
     grid-template-columns: auto;
     gap: 1.5rem;
@@ -863,11 +863,15 @@ section figure:has(img) {
     order: unset;
   }
 
-  .col-4,
   .col-3,
   .col-2,
   footer>div {
     grid-template-columns: 1fr;
+    gap: var(--column-gap);
+  }
+
+  .col-4 {
+    grid-template-columns: 1fr 1fr;
     gap: var(--column-gap);
   }
 
@@ -887,7 +891,7 @@ section figure:has(img) {
     justify-content: center;
   }
 
-  footer > div > div {
+  footer>div>div {
     grid-column: 1;
     justify-content: space-between;
   }
