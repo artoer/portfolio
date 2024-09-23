@@ -633,13 +633,13 @@ footer div a {
 .process h2::before {
   content: '';
   display: block;
-  height: 2px;
+  height: .25rem;
   width: 8rem;
   margin: 0 0 2rem;
   background: var(--grey-600);
 }
 
-.process h4+div:has(h2) h2::before {
+.process h4+h2::before {
   display: none;
 }
 
