@@ -100,7 +100,7 @@ h2 {
   font-weight: 700;
   line-height: 1.2;
   grid-column: 1/-1;
-  padding: 0 0 3rem;
+  padding: 0 0 2.5rem;
 }
 
 h3 {
@@ -337,7 +337,8 @@ footer>div {
   color: var(--grey-400);
   max-width: var(--max-width);
   width: 100%;
-  display: grid;
+  display: flex;
+  justify-content: space-between;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: var(--column-gap);
 }
@@ -348,6 +349,7 @@ footer>div>div {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  gap: .5rem;
 }
 
 footer span {
@@ -779,18 +781,12 @@ section figure:has(img) {
     gap: var(--column-gap);
   }
 
-  footer>div,
   nav>div {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  footer>div>div {
-    grid-column: 3;
-  }
-
   .col-3 img,
-  .col-3 figure,
-  footer span {
+  .col-3 figure {
     grid-column: auto;
   }
 }
@@ -864,8 +860,7 @@ section figure:has(img) {
   }
 
   .col-3,
-  .col-2,
-  footer>div {
+  .col-2 {
     grid-template-columns: 1fr;
     gap: var(--column-gap);
   }
@@ -877,23 +872,21 @@ section figure:has(img) {
 
   .col-3 img,
   .col-3 figure,
-  footer span,
   nav>div>a {
     grid-column: auto;
   }
 
   footer span {
     text-align: center;
-    column-span: 2;
+  }
+
+  footer>div {
+    flex-direction: column;
+    gap: .5rem;
   }
 
   footer>div>div {
     justify-content: center;
-  }
-
-  footer>div>div {
-    grid-column: 1;
-    justify-content: space-between;
   }
 
   .fs-cta span::after {

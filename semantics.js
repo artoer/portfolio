@@ -5,8 +5,11 @@ document.addEventListener("DOMContentLoaded", function () {
     <span>&copy; 2024 Arthur Menken</span>
     <div>
       <a href="https://www.linkedin.com/in/arthur-menken/" title="LinkedIn" target="_blank">LinkedIn</a>
+      •
       <a href="https://dribbble.com/artioer" title="Dribbble" target="_blank">Dribbble</a>
+      •
       <a href="mailto:arthur_menken@hotmail.com" title="Email">Email</a>
+      •
       <a href="./assets/Arthur-Menken_Resume-CV.pdf" title="Resume" target="_blank">Resume</a>
     </div>
   </div>
