@@ -15,6 +15,7 @@
   --primary-900: #5500FF;
 
   --grey-200: #F7F6FA;
+  --grey-250: #F4F3F7;
   --grey-400: #989799;
   --grey-600: #656466;
   --grey-800: #0E0D0F;
@@ -156,6 +157,10 @@ img {
   object-fit: cover;
   height: auto;
   width: 100%;
+}
+
+.content-container img {
+  border: 1px solid var(--grey-250);
 }
 
 a {
