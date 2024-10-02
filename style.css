@@ -91,9 +91,9 @@ html {
 
 h1 {
   font-size: var(--font-size-xl);
-  line-height: 0.85;
+  line-height: 0.8;
   font-weight: 900;
-  letter-spacing: -.02em;
+  letter-spacing: -.05em;
   text-transform: uppercase;
 }
 
@@ -397,8 +397,8 @@ footer div a {
 #hero h2 {
   font-size: var(--font-size-xl);
   font-weight: 900;
-  line-height: 0.85;
-  letter-spacing: -.02em;
+  line-height: 0.8;
+  letter-spacing: -.05em;
   text-transform: uppercase;
   padding: 0;
 }
@@ -763,7 +763,7 @@ section figure:has(img) {
 
 @media (max-width: 1439px) {
   :root {
-    --font-size-xl: 72px;
+    --font-size-xl: 80px;
     --font-size-l: 36px;
     --font-size-m: 24px;
     --font-size-s: 18px;
