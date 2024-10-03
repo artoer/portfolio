@@ -431,7 +431,7 @@ footer div a {
   padding: 0 0 1.5rem;
   text-transform: uppercase;
   line-height: 1;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.025em;
 }
 
 .card h2::after {
