@@ -382,6 +382,7 @@ footer div a {
 
 #hero {
   padding: 14.5rem 0 20rem;
+  padding: 12rem 0;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -400,7 +401,11 @@ footer div a {
   line-height: 0.8;
   letter-spacing: -.05em;
   text-transform: uppercase;
-  padding: 0;
+  padding: 0 0 2rem;
+}
+
+#hero p {
+  max-width: calc(50% - (var(--column-gap) / 2));
 }
 
 #work-container {
@@ -419,6 +424,7 @@ footer div a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   text-decoration: none;
+  column-gap: var(--column-gap);
 }
 
 .card h2 {
@@ -449,7 +455,6 @@ footer div a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 0 0 var(--column-gap);
 }
 
 .card>div.card-img-container {
@@ -818,6 +823,10 @@ section figure:has(img) {
     --font-size-m: 18px;
     --font-size-s: 14px;
     --column-gap: 1.5rem;
+  }
+  
+  #hero p {
+    max-width: unset;
   }
 
   .about-container {
