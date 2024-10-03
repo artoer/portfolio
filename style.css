@@ -417,9 +417,12 @@ footer div a {
 
 .card {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  column-gap: var(--column-gap);
+  grid-template-columns: 1fr 1fr;
   text-decoration: none;
+}
+
+.card h2 {
+  padding: 0 0 1rem;
 }
 
 .card p {
@@ -427,18 +430,11 @@ footer div a {
   font-weight: 400;
 }
 
-.card:nth-of-type(odd) {
-  grid-template-columns: 1fr 2fr;
-
-  & div.card-img-container {
-    order: 1;
-  }
-}
-
 .card>div.card-text-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 0 0 0 var(--column-gap);
 }
 
 .card>div.card-img-container {
@@ -845,10 +841,8 @@ section figure:has(img) {
     gap: 1.5rem;
   }
 
-  .card:nth-of-type(2n+1) {
-    & div.card-img-container {
-      order: unset;
-    }
+  .card>div.card-text-container {
+    padding: 0;
   }
 
   .process {
