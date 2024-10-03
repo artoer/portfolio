@@ -422,7 +422,21 @@ footer div a {
 }
 
 .card h2 {
-  padding: 0 0 1rem;
+  padding: 0 0 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+}
+
+.card h2::after {
+  font-family: "Font Awesome 5 Free";
+  content:'\f061';
+  margin: 0 0 0 .375em;
+  vertical-align: bottom;
+  transition: all 0.2s ease-out;
+}
+
+.card:hover h2::after {
+  margin: 0 0 0 .5em;
 }
 
 .card p {
