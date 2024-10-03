@@ -1,5 +1,7 @@
 window.addEventListener("DOMContentLoaded", (event) => {
 
+  console.log('Proudly hand-coded by Arthur Menken :)')
+
   // Create modal element
   const modal = document.createElement('div');
   modal.id = 'modal';
