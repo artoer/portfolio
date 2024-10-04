@@ -381,7 +381,6 @@ footer div a {
 }
 
 #hero {
-  padding: 14.5rem 0 20rem;
   padding: 12rem 0;
   position: relative;
   display: flex;
@@ -394,8 +393,7 @@ footer div a {
   max-width: var(--max-width);
 }
 
-#hero h1,
-#hero h2 {
+#hero h1 {
   font-size: var(--font-size-xl);
   font-weight: 900;
   line-height: 0.8;
@@ -855,6 +853,10 @@ section figure:has(img) {
 
   nav>div>a {
     font-size: 20px;
+  }
+
+  #hero {
+    padding: 8rem 0;
   }
 
   #work {
