@@ -866,6 +866,10 @@ section figure:has(img) {
     gap: 1.5rem;
   }
 
+  .card h2 {
+    padding: 0 0 .75rem;
+  }
+
   .card>div.card-text-container {
     padding: 0;
   }
