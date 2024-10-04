@@ -605,6 +605,7 @@ footer div a {
 
   h1 {
     font-size: var(--font-size-l);
+    font-weight: 700;
     grid-column: 2/-1;
     text-transform: none;
     padding: 0;
@@ -779,10 +780,10 @@ section figure:has(img) {
 
 @media (max-width: 1439px) {
   :root {
-    --font-size-xl: 80px;
-    --font-size-l: 36px;
-    --font-size-m: 24px;
-    --font-size-s: 18px;
+    --font-size-xl: 96px;
+    --font-size-l: 48px;  
+    --font-size-m: 28px;  
+    --font-size-s: 18px;  
     --column-gap: 2.5rem;
   }
 
@@ -818,10 +819,10 @@ section figure:has(img) {
 
 @media (max-width: 799px) {
   :root {
-    --font-size-xl: 42px;
-    --font-size-l: 26px;
-    --font-size-m: 18px;
-    --font-size-s: 14px;
+    --font-size-xl: 48px;  
+    --font-size-l: 26px;   
+    --font-size-m: 20px;  
+    --font-size-s: 16px; 
     --column-gap: 1.5rem;
   }
   
@@ -908,7 +909,7 @@ section figure:has(img) {
 
   footer>div {
     flex-direction: column;
-    gap: .5rem;
+    gap: var(--column-gap);
   }
 
   footer>div>div {
