@@ -556,15 +556,15 @@ footer div a {
   font-family: "Font Awesome 6 Free";
   content: "\f061";
   vertical-align: bottom;
-  padding-left: 3rem;
+  padding-left: .625em;
   transition: all 0.2s ease-out;
 }
 
 .fs-cta:hover span {
-  margin-left: 0.5rem;
+  margin-left: .125em;
 
   &::after {
-    padding-left: 3.5rem;
+    padding-left: .75em;
   }
 }
 
@@ -924,6 +924,5 @@ section figure:has(img) {
 
   .fs-cta span::after {
     margin: 0;
-    padding-left: 1.5rem;
   }
 }
