@@ -27,7 +27,9 @@
 
   --max-width: 1600px;
 
-  --column-gap: 3rem;
+  --spacing-l: 12rem;
+  --spacing-m: 6rem;
+  --spacing-s: 3rem;
 }
 
 /* DM Sans - Regular */
@@ -171,6 +173,11 @@ a {
   font-size: inherit;
 }
 
+main a:hover:not(.fs-cta) {
+  color: var(--primary-500);
+  text-decoration-color: var(--primary-500);
+}
+
 .modal {
   display: none;
   position: fixed;
@@ -258,7 +265,7 @@ nav>div {
   display: grid;
   place-content: center;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: var(--column-gap);
+  column-gap: var(--spacing-s);
   padding: 0;
   height: 100%;
   margin: 0 auto;
@@ -347,7 +354,7 @@ footer>div {
   display: flex;
   justify-content: space-between;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: var(--column-gap);
+  column-gap: var(--spacing-s);
 }
 
 footer>div>div {
@@ -403,7 +410,7 @@ footer div a {
 }
 
 #hero p {
-  max-width: calc(50% - (var(--column-gap) / 2));
+  max-width: calc(50% - (var(--spacing-s) / 2));
 }
 
 #work-container {
@@ -415,14 +422,14 @@ footer div a {
   flex-direction: column;
   max-width: var(--max-width);
   margin: 0 auto;
-  gap: 8rem;
+  gap: var(--spacing-m);
 }
 
 .card {
   display: grid;
   grid-template-columns: 1fr 1fr;
   text-decoration: none;
-  column-gap: var(--column-gap);
+  column-gap: var(--spacing-s);
 }
 
 .card h2 {
@@ -434,7 +441,7 @@ footer div a {
 
 .card h2::after {
   font-family: "Font Awesome 5 Free";
-  content:'\f061';
+  content: '\f061';
   margin: 0 0 0 .375em;
   vertical-align: bottom;
   transition: all 0.2s ease-out;
@@ -477,16 +484,11 @@ footer div a {
 /* screen filling container */
 .fs-container {
   min-height: calc(100vh - .5rem);
-  padding: 8rem 2rem;
+  padding: var(--spacing-m) 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  & a:hover {
-    color: var(--primary-500);
-    text-decoration-color: var(--primary-500);
-  }
 }
 
 .fs-container h1 {
@@ -499,12 +501,12 @@ footer div a {
 /* negate nav height */
 .fs-container.top {
   min-height: calc(100vh - .5rem - 5.5rem);
-  padding: 8rem 2rem 15.5rem;
+  padding: var(--spacing-m) 2rem 15.5rem;
 }
 
 .fs-container.heading {
   min-height: calc(100vh - .5rem - 5.5rem);
-  padding: 0 2rem 8rem;
+  padding: 0 2rem var(--spacing-m);
 }
 
 .fs-container.light {
@@ -592,7 +594,7 @@ footer div a {
   display: grid;
   width: 100%;
   max-width: var(--max-width);
-  gap: var(--column-gap);
+  gap: var(--spacing-s);
   grid-template-columns: 1fr 1fr 1fr;
 
   & p,
@@ -641,7 +643,7 @@ footer div a {
   display: grid;
   max-width: var(--max-width);
   width: 100%;
-  column-gap: var(--column-gap);
+  column-gap: var(--spacing-s);
 }
 
 /* .col-4>p,
@@ -659,7 +661,7 @@ footer div a {
   content: '';
   display: block;
   height: .125rem;
-  width: 8rem;
+  width: var(--spacing-m);
   margin: 0 0 2rem;
   background: var(--grey-400);
 }
@@ -710,7 +712,7 @@ footer div a {
 /* case study content */
 
 .content-container {
-  padding: 16rem 2rem;
+  padding: var(--spacing-l) 2rem;
 }
 
 section {
@@ -723,7 +725,7 @@ section {
 } */
 
 section>*:not(:last-of-type) {
-  margin: 0 0 8rem;
+  margin: 0 0 var(--spacing-m);
 }
 
 .collage {
@@ -732,11 +734,11 @@ section>*:not(:last-of-type) {
 }
 
 .collage>div:not(:last-of-type) {
-  margin: 0 0 var(--column-gap);
+  margin: 0 0 var(--spacing-s);
 }
 
 .process {
-  padding: 16rem 0 0;
+  padding: var(--spacing-l) 0 0;
 }
 
 .process>div:nth-of-type(even) p {
@@ -779,10 +781,13 @@ section figure:has(img) {
 @media (max-width: 1439px) {
   :root {
     --font-size-xl: 96px;
-    --font-size-l: 48px;  
-    --font-size-m: 28px;  
-    --font-size-s: 18px;  
-    --column-gap: 2.5rem;
+    --font-size-l: 48px;
+    --font-size-m: 28px;
+    --font-size-s: 18px;
+
+    --spacing-s: 10rem;
+    --spacing-m: 5rem;
+    --spacing-s: 2.5rem;
   }
 
   h2 {
@@ -801,7 +806,7 @@ section figure:has(img) {
   .col-3,
   .col-2 {
     grid-template-columns: 1fr 1fr;
-    gap: var(--column-gap);
+    gap: var(--spacing-s);
   }
 
   nav>div {
@@ -817,13 +822,14 @@ section figure:has(img) {
 
 @media (max-width: 799px) {
   :root {
-    --font-size-xl: 48px;  
-    --font-size-l: 26px;   
-    --font-size-m: 20px;  
-    --font-size-s: 16px; 
-    --column-gap: 1.5rem;
+    --font-size-xl: 48px;
+    --font-size-l: 26px;
+    --font-size-m: 20px;
+    --font-size-s: 16px;
+
+    --spacing-s: 1.5rem;
   }
-  
+
   #hero p {
     max-width: unset;
   }
@@ -848,7 +854,7 @@ section figure:has(img) {
   }
 
   .content-container {
-    padding: 8rem 2rem;
+    padding: var(--spacing-m) 2rem;
   }
 
   nav>div>a {
@@ -856,7 +862,7 @@ section figure:has(img) {
   }
 
   #hero {
-    padding: 8rem 0;
+    padding: var(--spacing-m) 0;
   }
 
   #work {
@@ -877,12 +883,12 @@ section figure:has(img) {
   }
 
   .process {
-    padding: 8rem 0 0;
+    padding: var(--spacing-m) 0 0;
   }
 
-  section>*:not(:last-of-type) {
+  /* section>*:not(:last-of-type) {
     margin: 0 0 4rem;
-  }
+  } */
 
   section figure {
     padding: 2rem;
@@ -895,12 +901,12 @@ section figure:has(img) {
   .col-3,
   .col-2 {
     grid-template-columns: 1fr;
-    gap: var(--column-gap);
+    gap: var(--spacing-s);
   }
 
   .col-4 {
     grid-template-columns: 1fr 1fr;
-    gap: var(--column-gap);
+    gap: var(--spacing-s);
   }
 
   .col-3 img,
@@ -915,7 +921,7 @@ section figure:has(img) {
 
   footer>div {
     flex-direction: column;
-    gap: var(--column-gap);
+    gap: var(--spacing-s);
   }
 
   footer>div>div {
