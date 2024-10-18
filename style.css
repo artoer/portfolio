@@ -20,16 +20,17 @@
   --grey-600: #656466;
   --grey-800: #0E0D0F;
 
-  --font-size-xl: 144px;
-  --font-size-l: 64px;
-  --font-size-m: 36px;
-  --font-size-s: 20px;
+  --font-size-xl: 7rem;
+  --font-size-l: 3.5rem;
+  --font-size-m: 2rem;
+  --font-size-s: 1.25rem;
 
   --max-width: 1600px;
+  --page-margin: 2.5rem;
 
   --spacing-l: 12rem;
   --spacing-m: 6rem;
-  --spacing-s: 3rem;
+  --spacing-s: 2.5rem;
 }
 
 /* DM Sans - Regular */
@@ -96,12 +97,16 @@ h1 {
   line-height: 0.8;
   font-weight: 900;
   letter-spacing: -.05em;
+  background: linear-gradient(115deg, #8040FF 0%, #6080FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   text-transform: uppercase;
 }
 
 h2 {
   font-size: var(--font-size-l);
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.1;
   grid-column: 1/-1;
   padding: 0 0 2rem;
@@ -109,7 +114,7 @@ h2 {
 
 h3 {
   font-size: var(--font-size-m);
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.4;
   grid-column: 1/-1;
   padding: 0 0 2rem;
@@ -117,7 +122,7 @@ h3 {
 
 h4 {
   font-size: var(--font-size-s);
-  font-weight: 700;
+  font-weight: 600;
   margin: 0 0 1.5rem;
   color: var(--grey-600);
   text-transform: uppercase;
@@ -169,7 +174,7 @@ a {
   text-decoration-color: var(--primary-500);
   text-decoration-thickness: .25rem;
   text-underline-offset: .25rem;
-  font-weight: 700;
+  font-weight: 600;
   font-size: inherit;
 }
 
@@ -190,7 +195,8 @@ main a:hover:not(.fs-cta) {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(2px);
   opacity: 0;
   animation: modalFadeIn 0.2s ease-out forwards;
 }
@@ -247,14 +253,14 @@ main a:hover:not(.fs-cta) {
 
 .close-btn i {
   margin: auto;
-  color: #FFF;
+  color: #000;
 }
 
 /* Nav */
 nav {
   height: 4rem;
   width: 100%;
-  padding: 0 2rem;
+  padding: 0 var(--page-margin);
   margin: 1.5rem auto 0;
   scrollbar-width: none;
   display: flex;
@@ -277,7 +283,8 @@ nav ul {
   display: flex;
   flex-direction: row;
   width: 100%;
-  justify-content: space-between;
+  justify-content: end;
+  gap: 4rem;
   align-items: center;
 }
 
@@ -342,7 +349,7 @@ footer {
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  padding: 10rem 2rem;
+  padding: var(--spacing-l) var(--page-margin);
   width: 100%;
   margin: 0 auto;
 }
@@ -384,11 +391,11 @@ footer div a {
 
 #hero-container {
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 var(--page-margin);
 }
 
 #hero {
-  padding: 12rem 0;
+  padding: var(--spacing-l) 0;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -401,12 +408,7 @@ footer div a {
 }
 
 #hero h1 {
-  font-size: var(--font-size-xl);
-  font-weight: 900;
-  line-height: 0.8;
-  letter-spacing: -.05em;
-  text-transform: uppercase;
-  padding: 0 0 2rem;
+  padding: 0 0 var(--spacing-s);
 }
 
 #hero p {
@@ -414,7 +416,7 @@ footer div a {
 }
 
 #work-container {
-  padding: 0 2rem;
+  padding: 0 var(--page-margin);
 }
 
 #work {
@@ -434,7 +436,7 @@ footer div a {
 
 .card h2 {
   padding: 0 0 1.5rem;
-  text-transform: uppercase;
+
   line-height: 1;
   letter-spacing: -0.025em;
 }
@@ -484,7 +486,7 @@ footer div a {
 /* screen filling container */
 .fs-container {
   min-height: calc(100vh - .5rem);
-  padding: var(--spacing-m) 2rem;
+  padding: var(--spacing-l) var(--page-margin);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -492,21 +494,26 @@ footer div a {
 }
 
 .fs-container h1 {
+  width: fit-content;
+  margin: auto auto auto 0;
+}
+
+.heading-wrapper {
   max-width: var(--max-width);
-  padding: 10rem 0;
+  padding: var(--spacing-l) 0;
   width: 100%;
-  margin: auto;
+  margin: auto
 }
 
 /* negate nav height */
 .fs-container.top {
   min-height: calc(100vh - .5rem - 5.5rem);
-  padding: var(--spacing-m) 2rem 15.5rem;
+  padding: var(--spacing-l) var(--page-margin) calc(var(--spacing-l) + 5.5rem);
 }
 
 .fs-container.heading {
   min-height: calc(100vh - .5rem - 5.5rem);
-  padding: 0 2rem var(--spacing-m);
+  padding: 0 var(--page-margin) var(--spacing-m);
 }
 
 .fs-container.light {
@@ -545,7 +552,7 @@ footer div a {
   text-decoration: none;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom, var(--primary-800), var(--primary-500));
+  background: linear-gradient(to bottom, #8040FF 0%, #6080FF 100%);
 }
 
 .fs-cta span {
@@ -594,27 +601,24 @@ footer div a {
   display: grid;
   width: 100%;
   max-width: var(--max-width);
-  gap: var(--spacing-s);
+  column-gap: var(--spacing-s);
   grid-template-columns: 1fr 1fr 1fr;
+  padding: 0;
 
-  & p,
+  p,
   h1 {
     /* color: var(--grey-200); */
     margin-left: 0;
   }
 
   h1 {
-    font-size: var(--font-size-l);
-    font-weight: 700;
-    grid-column: 2/-1;
-    text-transform: none;
-    padding: 0;
+    grid-column: 1/-1;
+    padding: 0 0 var(--spacing-s);
   }
 
-  /* 
   img {
-    height: 100%;
-  } */
+    margin: 1rem 0 0;
+  }
 }
 
 .about-flex {
@@ -627,7 +631,7 @@ footer div a {
 .about-columns {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 2rem;
 
   & p {
     width: 100%;
@@ -646,11 +650,9 @@ footer div a {
   column-gap: var(--spacing-s);
 }
 
-/* .col-4>p,
-.col-3>p,
-.col-2>p {
-  padding: 3rem 0 0;
-} */
+.col-2 p {
+  font-size: var(--font-size-m);
+}
 
 .col-4 ul {
   list-style: none;
@@ -678,9 +680,9 @@ footer div a {
 
 .col-4 ul li:first-of-type {
   color: var(--grey-600);
-  margin: 0 0 .75rem;
-  text-transform: uppercase;
+  margin: 0 0 .5rem;
   font-weight: 500;
+  text-transform: uppercase;
 }
 
 .col-4 {
@@ -712,7 +714,7 @@ footer div a {
 /* case study content */
 
 .content-container {
-  padding: var(--spacing-l) 2rem;
+  padding: var(--spacing-l) var(--page-margin);
 }
 
 section {
@@ -741,20 +743,25 @@ section>*:not(:last-of-type) {
   padding: var(--spacing-l) 0 0;
 }
 
-.process>div:nth-of-type(even) p {
+/* .process>div:nth-of-type(even) p {
   order: 2;
+} */
+
+.process>div p {
+  order: 0;
 }
+
 
 .label {
   display: block;
   font-size: var(--font-size-m);
   color: var(--grey-800);
-  font-weight: 700;
+  font-weight: 600;
   padding: 0 0 1.5rem;
 }
 
 section figure {
-  background: radial-gradient(50% 100% at 50% 100%, var(--primary-500) 0%, var(--primary-800) 100%);
+  background: linear-gradient(90deg, #8040FF 0%, #6080FF 100%);
   padding: 4rem;
 
   & blockquote {
@@ -778,16 +785,16 @@ section figure:has(img) {
   }
 }
 
-@media (max-width: 1439px) {
+@media (max-width: 1440px) {
   :root {
-    --font-size-xl: 96px;
-    --font-size-l: 48px;
-    --font-size-m: 28px;
-    --font-size-s: 18px;
+    --font-size-xl: 5rem;
+    --font-size-l: 2.5rem;
+    --font-size-m: 1.5rem;
+    --font-size-s: 1.25rem;
 
-    --spacing-s: 10rem;
+    --spacing-l: 10rem;
     --spacing-m: 5rem;
-    --spacing-s: 2.5rem;
+    /* --spacing-s: 1.5rem; */
   }
 
   h2 {
@@ -822,12 +829,15 @@ section figure:has(img) {
 
 @media (max-width: 799px) {
   :root {
-    --font-size-xl: 48px;
-    --font-size-l: 26px;
-    --font-size-m: 20px;
-    --font-size-s: 16px;
+    --font-size-xl: 2.5rem;
+    --font-size-l: 1.25rem;
+    --font-size-m: 1.125rem;
+    --font-size-s: 1rem;
 
-    --spacing-s: 1.5rem;
+    --spacing-l: 6rem;
+    --spacing-m: 2.5rem;
+
+    --page-margin: 1.5rem;
   }
 
   #hero p {
@@ -841,6 +851,10 @@ section figure:has(img) {
     .about-flex {
       grid-column: unset;
     }
+
+    img {
+      margin: 2rem 0 0;
+    }
   }
 
   .process img,
@@ -848,21 +862,18 @@ section figure:has(img) {
     pointer-events: none;
   }
 
+  nav ul {
+    gap: 0;
+    justify-content: space-between;
+  }
+
   nav>div {
     grid-template-columns: 1fr 3fr;
     gap: 0;
   }
 
-  .content-container {
-    padding: var(--spacing-m) 2rem;
-  }
-
   nav>div>a {
-    font-size: 20px;
-  }
-
-  #hero {
-    padding: var(--spacing-m) 0;
+    font-size: var(--font-size-m);
   }
 
   #work {
@@ -875,20 +886,12 @@ section figure:has(img) {
   }
 
   .card h2 {
-    padding: 0 0 .75rem;
+    padding: 0 0 .5rem;
   }
 
   .card>div.card-text-container {
     padding: 0;
   }
-
-  .process {
-    padding: var(--spacing-m) 0 0;
-  }
-
-  /* section>*:not(:last-of-type) {
-    margin: 0 0 4rem;
-  } */
 
   section figure {
     padding: 2rem;
