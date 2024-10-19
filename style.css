@@ -97,7 +97,7 @@ h1 {
   line-height: 0.8;
   font-weight: 900;
   letter-spacing: -.05em;
-  background: linear-gradient(270deg, #66F,#73F,#C6F);
+  background: linear-gradient(90deg, #66F,#73F,#C6F);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -761,7 +761,7 @@ section>*:not(:last-of-type) {
 }
 
 section figure {
-  background: linear-gradient(270deg, #66F,#73F,#C6F);
+  background: linear-gradient(90deg, #66F,#73F,#C6F);
   padding: 4rem;
 
   & blockquote {
