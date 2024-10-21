@@ -16,13 +16,14 @@
 
   --grey-200: #F7F6FA;
   --grey-250: #F4F3F7;
+  --grey-300: #DEDDE0;
   --grey-400: #989799;
   --grey-600: #656466;
   --grey-800: #0E0D0F;
 
-  --font-size-xl: 7rem;
-  --font-size-l: 3.5rem;
-  --font-size-m: 2rem;
+  --font-size-xl: 6rem;
+  --font-size-l: 3rem;
+  --font-size-m: 1.75rem;
   --font-size-s: 1.25rem;
 
   --max-width: 1600px;
@@ -94,14 +95,10 @@ html {
 
 h1 {
   font-size: var(--font-size-xl);
-  line-height: 0.8;
-  font-weight: 900;
-  letter-spacing: -.05em;
-  background: linear-gradient(90deg, #66F,#73F,#C6F);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: -.025em;
   background-clip: text;
-  text-transform: uppercase;
 }
 
 h2 {
@@ -122,7 +119,7 @@ h3 {
 
 h4 {
   font-size: var(--font-size-s);
-  font-weight: 600;
+  font-weight: 500;
   margin: 0 0 1.5rem;
   color: var(--grey-600);
   text-transform: uppercase;
@@ -261,7 +258,7 @@ nav {
   height: 4rem;
   width: 100%;
   padding: 0 var(--page-margin);
-  margin: 1.5rem auto 0;
+  margin: 1.5rem auto;
   scrollbar-width: none;
   display: flex;
   flex-direction: row;
@@ -493,26 +490,22 @@ footer div a {
   align-items: center;
 }
 
-.fs-container h1 {
-  width: fit-content;
-  margin: auto auto auto 0;
-}
-
 .heading-wrapper {
   max-width: var(--max-width);
-  padding: var(--spacing-l) 0;
+  /* padding: var(--spacing-l) 0; */
   width: 100%;
   margin: auto
 }
 
+/* nav */
 /* negate nav height */
 .fs-container.top {
-  min-height: calc(100vh - .5rem - 5.5rem);
-  padding: var(--spacing-l) var(--page-margin) calc(var(--spacing-l) + 5.5rem);
+  min-height: calc(100vh - 1rem - 7rem);
+  padding: var(--spacing-m) var(--page-margin) calc(var(--spacing-m) + 5.5rem);
 }
 
 .fs-container.heading {
-  min-height: calc(100vh - .5rem - 5.5rem);
+  min-height: calc(100vh - 1rem - 7rem);
   padding: 0 var(--page-margin) var(--spacing-m);
 }
 
@@ -552,7 +545,7 @@ footer div a {
   text-decoration: none;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(0deg, #66F,#73F,#C6F);
+  background: linear-gradient(180deg, var(--primary-500), var(--primary-800));
 }
 
 .fs-cta span {
@@ -659,17 +652,14 @@ footer div a {
   width: 100%;
 }
 
-.process h2::before {
+.solution h2::after,
+.process h2::after {
   content: '';
   display: block;
-  height: .125rem;
-  width: var(--spacing-m);
-  margin: 0 0 2rem;
-  background: var(--grey-400);
-}
-
-.process h4+h2::before {
-  display: none;
+  height: 1px;
+  width: 100%;
+  margin: 2rem 0 0;
+  background: var(--grey-300);
 }
 
 .process h2+p,
@@ -754,14 +744,14 @@ section>*:not(:last-of-type) {
 
 .label {
   display: block;
-  font-size: var(--font-size-m);
+  font-size: var(--font-size-s);
   color: var(--grey-800);
-  font-weight: 600;
-  padding: 0 0 1.5rem;
+  font-weight: 700;
+  padding: 0 0 1rem;
 }
 
 section figure {
-  background: linear-gradient(90deg, #66F,#73F,#C6F);
+  background: linear-gradient(145deg, var(--primary-500), var(--primary-800));
   padding: 4rem;
 
   & blockquote {
@@ -787,14 +777,18 @@ section figure:has(img) {
 
 @media (max-width: 1440px) {
   :root {
-    --font-size-xl: 5rem;
-    --font-size-l: 2.5rem;
+    /* --font-size-xl: 10rem;
+  --font-size-l: 2.5rem;
     --font-size-m: 1.5rem;
     --font-size-s: 1.25rem;
 
+    --font-size-xl: 9rem;
+    --font-size-l: 3rem;
+    --font-size-m: 2rem;
+    --font-size-s: 1.25rem; */
+
     --spacing-l: 10rem;
     --spacing-m: 5rem;
-    /* --spacing-s: 1.5rem; */
   }
 
   h2 {
@@ -829,8 +823,8 @@ section figure:has(img) {
 
 @media (max-width: 799px) {
   :root {
-    --font-size-xl: 2.5rem;
-    --font-size-l: 1.25rem;
+    --font-size-xl: 3rem;
+    --font-size-l: 1.5rem;
     --font-size-m: 1.125rem;
     --font-size-s: 1rem;
 
