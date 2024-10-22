@@ -869,9 +869,8 @@ section figure:has(img) {
     }
   }
 
-  .process img,
-  .solution img {
-    pointer-events: none;
+  .heading-wrapper {
+    padding: 0 0 var(--spacing-l);
   }
 
   nav ul {
