@@ -16,7 +16,7 @@
 
   --grey-200: #F7F6FA;
   --grey-250: #F4F3F7;
-  --grey-300: #DEDDE0;
+  --grey-300: #C5C4C7;
   --grey-400: #989799;
   --grey-600: #656466;
   --grey-800: #0E0D0F;
@@ -405,7 +405,7 @@ footer div a {
 }
 
 #hero h1 {
-  padding: 0 0 var(--spacing-s);
+  padding: 0 0 2rem;
 }
 
 #hero p {
