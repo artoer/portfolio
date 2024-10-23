@@ -329,7 +329,11 @@ nav ul li a::before {
   transform: scaleX(0);
   transform-origin: bottom right;
   transition: transform 0.2s ease-out;
-  background: var(--grey-800);
+  background: var(--primary-700);
+}
+
+nav ul li a:hover {
+  color: var(--primary-700);
 }
 
 nav ul li a:hover::before {
@@ -383,6 +387,10 @@ footer div a {
   text-decoration: none;
 }
 
+footer div a:hover {
+  color:var(--grey-600);
+}
+
 
 /* Home Page */
 
@@ -433,21 +441,21 @@ footer div a {
 
 .card h2 {
   padding: 0 0 1.5rem;
-
   line-height: 1;
   letter-spacing: -0.025em;
+  transition: all 0.2s ease-out;
 }
 
 .card h2::after {
   font-family: "Font Awesome 5 Free";
   content: '\f061';
-  margin: 0 0 0 .375em;
+  margin: 0 0 0 .5em;
   vertical-align: bottom;
   transition: all 0.2s ease-out;
 }
 
 .card:hover h2::after {
-  margin: 0 0 0 .5em;
+  margin: 0 0 0 .625em;
 }
 
 .card p {
@@ -573,7 +581,7 @@ footer div a {
   font-family: "Font Awesome 6 Free";
   content: "\f061";
   vertical-align: bottom;
-  padding-left: .625em;
+  padding-left: .5em;
   transition: all 0.2s ease-out;
 }
 
@@ -581,7 +589,7 @@ footer div a {
   margin-left: .125em;
 
   &::after {
-    padding-left: .75em;
+    padding-left: .625em;
   }
 }
 
