@@ -269,10 +269,7 @@ nav {
 }
 
 nav>div {
-  display: grid;
-  place-content: center;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: var(--spacing-s);
+  display: flex;
   padding: 0;
   height: 100%;
   margin: 0 auto;
@@ -941,10 +938,11 @@ section figure:has(img) {
   }
 
   .col-3 img,
-  .col-3 figure,
-  nav>div>a {
+  .col-3 figure{
     grid-column: auto;
   }
+  nav>div>a {
+  min-width: 25%;}
 
   footer span {
     text-align: center;
