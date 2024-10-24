@@ -295,15 +295,12 @@ nav ul li {
 }
 
 nav>div>a {
-  font-size: 48px;
+  font-size: var(--font-size-m);
   font-weight: 900;
   font-style: italic;
-  grid-column: span 3;
   letter-spacing: -0.18em;
-  width: auto;
-  max-height: 4rem;
   text-decoration: none;
-  align-self: center;
+  line-height: 4rem;
 }
 
 nav ul li a {
@@ -832,11 +829,6 @@ section figure:has(img) {
   h3 {
     padding: 0 0 1.5rem;
   } */
-
-  nav>div>a {
-    font-size: 32px;
-    grid-column: span 2;
-  }
 
   .col-3,
   .col-2 {
