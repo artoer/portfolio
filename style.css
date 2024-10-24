@@ -413,6 +413,7 @@ footer div a:hover {
 #hero {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  column-gap: var(--spacing-s);
 }
 
 #hero h1 {
