@@ -410,12 +410,20 @@ footer div a:hover {
   max-width: var(--max-width);
 }
 
+#hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 #hero h1 {
   padding: 0 0 var(--spacing-s);
+  grid-column: 1/-1;
 }
 
 #hero p {
-  max-width: calc(50% - (var(--spacing-s) / 2));
+  /* max-width: calc(50% - (var(--spacing-s) / 2)); */
+  grid-column: span 2;
+  font-size: var(--font-size-m);
 }
 
 #work-container {
@@ -829,6 +837,10 @@ section figure:has(img) {
   h3 {
     padding: 0 0 1.5rem;
   } */
+
+  #hero {
+    grid-template-columns: 1fr 1fr;
+  }
 
   .col-3,
   .col-2 {
