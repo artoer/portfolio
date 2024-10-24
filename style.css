@@ -441,8 +441,6 @@ footer div a:hover {
 }
 
 .card h2 {
-  padding: 0 0 1.5rem;
-  line-height: 1;
   letter-spacing: -0.025em;
   transition: all 0.2s ease-out;
 }
@@ -460,6 +458,11 @@ footer div a:hover {
 }
 
 .card p {
+  font-weight: 400;
+}
+
+.card p:last-of-type {
+  margin: 1.5rem 0 0;
   color: var(--grey-600);
   font-weight: 400;
 }
@@ -907,14 +910,11 @@ section figure:has(img) {
 
   #work .card {
     grid-template-columns: auto;
-    gap: 1.5rem;
-  }
-
-  .card h2 {
-    padding: 0 0 .5rem;
+    gap: var(--spacing-s);
   }
 
   .card>div.card-text-container {
+    order: 2;
     padding: 0;
   }
 
