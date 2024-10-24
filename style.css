@@ -431,6 +431,7 @@ footer div a:hover {
   max-width: var(--max-width);
   margin: 0 auto;
   gap: var(--spacing-m);
+  scroll-margin-top: var(--spacing-m);
 }
 
 .card {
