@@ -456,7 +456,8 @@ footer div a:hover {
   font-family: "Font Awesome 5 Free";
   content: '\f061';
   margin: 0 0 0 .5em;
-  vertical-align: bottom;
+  line-height: 0;
+  vertical-align: baseline;
   transition: all 0.2s ease-out;
 }
 
@@ -592,7 +593,8 @@ footer div a:hover {
 .fs-cta span::after {
   font-family: "Font Awesome 6 Free";
   content: "\f061";
-  vertical-align: bottom;
+  line-height: 0;
+  vertical-align: baseline;
   padding-left: .5em;
   transition: all 0.2s ease-out;
 }
