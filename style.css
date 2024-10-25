@@ -466,6 +466,7 @@ footer div a:hover {
 
 .card p {
   font-weight: 400;
+  max-width: 40rem;
 }
 
 .card p:last-of-type {
