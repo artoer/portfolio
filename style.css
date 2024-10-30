@@ -95,7 +95,7 @@ html {
 
 h1 {
   font-size: var(--font-size-xl);
-  line-height: .8em;
+  line-height: .9em;
   font-weight: 900;
   letter-spacing: -.0625em;
   text-transform: uppercase;
