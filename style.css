@@ -744,12 +744,19 @@ section>div:not(:last-of-type) {
   grid-column: 1;
 }
 
+.emoji {
+  font-size: 2rem; 
+  line-height: normal;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
 .label {
   display: block;
   font-size: var(--font-size-s);
   color: var(--grey-800);
   font-weight: 700;
-  padding: 0 0 1rem;
+  padding: 0 0 .75rem;
 }
 
 section figure {
