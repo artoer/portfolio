@@ -97,7 +97,7 @@ html {
 
 h1 {
   font-size: var(--font-size-xl);
-  line-height: .8em;
+  line-height: .9em;
   font-weight: 900;
   letter-spacing: -.025em;
   text-transform: uppercase;
@@ -251,10 +251,10 @@ main a:hover:not(.fs-cta) {
 
 /* Nav */
 nav {
-  height: 4rem;
+  height: 6rem;
   width: 100%;
   padding: 0 var(--page-margin);
-  margin: 1.5rem auto;
+  margin: 0 auto;
   scrollbar-width: none;
   display: flex;
   flex-direction: row;
@@ -292,7 +292,7 @@ nav>div>a {
   font-style: italic;
   letter-spacing: -0.18em;
   text-decoration: none;
-  line-height: 4rem;
+  line-height: 6rem;
 }
 
 nav ul li a {
@@ -511,7 +511,7 @@ footer div a:hover {
 }
 
 .fs-container.top, .fs-container.heading, #hero {
-  padding-top: calc(var(--spacing-l) - 4rem)
+  padding-top: calc(var(--spacing-l) - 2rem)
 }
 
 .fs-container.light {
