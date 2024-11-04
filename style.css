@@ -760,18 +760,18 @@ section>div:not(:last-of-type) {
 }
 
 section figure {
-  background: linear-gradient(180deg, var(--grey-800), #14003D);
-  background: var(--primary-800);
-  padding: 4rem;
-
   & blockquote {
+    display: inline;
+    background: var(--primary-800);
     color: var(--grey-200);
+    padding: 1px 4px;
   }
 
   & figcaption {
-    margin: 2rem 0 0 auto;
-    color: var(--grey-200);
     text-align: right;
+    /* font-size: var(--font-size-m); */
+    color: var(--grey-600);
+    margin: 2rem 0 0;
   }
 }
 
