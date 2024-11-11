@@ -441,6 +441,7 @@ footer div a:hover {
 .card h2 {
   letter-spacing: -0.025em;
   transition: all 0.2s ease-out;
+  color: var(--primary-800);
 }
 
 .card h2::after {
@@ -870,9 +871,14 @@ section figure:has(img) {
     order: 2;
     padding: 0;
   }
+
   section figure {
-    figcaption{margin:1rem 0 0;}
-    blockquote{padding:0px 4px;}
+    figcaption {
+      margin:1rem 0 0;
+    }
+    blockquote {
+      padding:0px 4px;
+    }
   }
 
   .process > div p:not(:first-of-type) {
