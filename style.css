@@ -97,7 +97,7 @@ html {
 
 h1 {
   font-size: var(--font-size-xl);
-  line-height: .9em;
+  line-height: .85em;
   font-weight: 900;
   letter-spacing: -.025em;
   text-transform: uppercase;
@@ -106,7 +106,7 @@ h1 {
 h2 {
   font-size: var(--font-size-l);
   font-weight: 700;
-  line-height: 1.2em;
+  line-height: 1em;
   grid-column: 1/-1;
   padding: 0 0 2rem;
 }
