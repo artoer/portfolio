@@ -20,7 +20,7 @@
   --grey-300: #C6C5C7;
   --grey-400: #989799;
   --grey-600: #656566;
-  --grey-800: #0E0D0F;
+  --grey-800: #19171F;
 
   --font-size-xl: 6rem;
   --font-size-l: 3rem; 
@@ -90,7 +90,7 @@ html {
 h1 {
   font-size: var(--font-size-xl);
   font-weight: 900;
-  line-height: .9em;
+  line-height: 1.1em;
   letter-spacing: normal;
 }
 
@@ -501,6 +501,7 @@ footer div a:hover {
 
   h1 {
     max-width: calc(50% - (var(--spacing-s) / 2));
+    /* max-width: calc((100% / 3) - (2.5rem * 2 / 3)); */
   }
 }
 
