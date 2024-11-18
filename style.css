@@ -89,18 +89,15 @@ html {
 
 h1 {
   font-size: var(--font-size-xl);
-  line-height: .8em;
   font-weight: 900;
-  letter-spacing: -.025em;
-  /* text-transform: uppercase; */
-  line-height: 1em;
+  line-height: .9em;
   letter-spacing: normal;
 }
 
 h2 {
   font-size: var(--font-size-l);
   font-weight: 700;
-  line-height: 1.2em;
+  line-height: 1.1em;
   grid-column: 1/-1;
   padding: 0 0 4rem;
 }
@@ -141,7 +138,7 @@ i {
 }
 
 blockquote span {
-  padding: 1px 4px;
+  padding: 2px 4px;
   background: var(--primary-800);
   color: var(--grey-200);
   font-size: inherit;
@@ -403,7 +400,7 @@ footer div a:hover {
 }
 
 #hero h1 {
-  padding: 0 0 2rem;
+  padding: 0 0 var(--spacing-s);
   grid-column: 1/-1;
 }
 
@@ -577,7 +574,7 @@ footer div a:hover {
   font-size: var(--font-size-l);
   margin: 0 auto;
   font-weight: 500;
-  line-height: 1.4;
+  line-height: 1.6;
 }
 
 .xl:not(:last-of-type) {
@@ -608,7 +605,7 @@ footer div a:hover {
 
   h1 {
     grid-column: 1/-1;
-    padding: 0 0 2rem;
+    padding: 0 0 var(--spacing-s);
   }
 
   img {
