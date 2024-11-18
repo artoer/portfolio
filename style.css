@@ -865,7 +865,7 @@ section figure:has(img) {
 
   .card>div.card-text-container {
     order: 2;
-    padding: 0 var(--page-margin) var(--page-margin) var(--page-margin);
+    padding: 0 var(--page-margin) var(--spacing-s) var(--page-margin);
   }
 
   section figure {
