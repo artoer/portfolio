@@ -400,7 +400,7 @@ footer div a:hover {
 }
 
 #hero h1 {
-  padding: 0 0 1rem;
+  padding: 0 0 1.5rem;
   grid-column: 1/-1;
 }
 
@@ -606,7 +606,7 @@ footer div a:hover {
 
   h1 {
     grid-column: 1/-1;
-    padding: 0 0 1rem;
+    padding: 0 0 1.5rem;
   }
 
   img {
@@ -759,7 +759,7 @@ section figure {
     display: inline;
     background: var(--primary-800);
     color: var(--grey-200);
-    padding: 1px 4px;
+    padding: 2px 4px;
   }
 
   & figcaption {
