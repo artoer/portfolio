@@ -815,6 +815,10 @@ section figure:has(img) {
     --page-margin: 1.5rem;
   }
 
+  img {
+    pointer-events: none;
+  }
+
   #hero p {
     max-width: unset;
   }
