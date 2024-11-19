@@ -427,11 +427,17 @@ footer div a:hover {
   grid-template-columns: 1fr 1fr;
   text-decoration: none;
   column-gap: var(--spacing-s);
-  background: var(--grey-100);
+  transition: all 0.2s ease-out;
 }
 
+.card:hover {
+  background: var(--grey-100);
+  transition: all 0.2s ease-out;
+}
+
+
 .card h2 {
-  padding: 0 0 2rem;
+  padding: 0 0 1.5rem;
   transition: all 0.2s ease-out;
   color: var(--primary-800);
 }
@@ -439,13 +445,15 @@ footer div a:hover {
 .card h2::after {
   font-family: "Font Awesome 5 Free";
   content: '\f061';
-  margin: 0 0 0 .5em;
+  margin: 0;
   line-height: 0;
   vertical-align: baseline;
+  opacity: 0;
   transition: all 0.2s ease-out;
 }
 
 .card:hover h2::after {
+  opacity: 1;
   margin: 0 0 0 .625em;
 }
 
@@ -545,7 +553,10 @@ footer div a:hover {
   text-decoration: none;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(180deg, var(--primary-700), var(--primary-900));
+  background: linear-gradient(180deg, var(--primary-500), var(--primary-900));
+  background-size: 200% 200%;
+  background-position: 0% 0%;
+  transition: all 0.2s ease-out;
 }
 
 .fs-cta span {
@@ -559,14 +570,20 @@ footer div a:hover {
   content: "\f061";
   line-height: 0;
   vertical-align: baseline;
-  padding-left: .5em;
+  padding-left: 0;
   transition: all 0.2s ease-out;
+  opacity: 0;
+}
+
+.fs-cta:hover {
+  background-position: 0% 100%;
 }
 
 .fs-cta:hover span {
-  margin-left: .125em;
+  margin-left: .625em;
 
   &::after {
+    opacity: 1;
     padding-left: .625em;
   }
 }
@@ -863,6 +880,7 @@ section figure:has(img) {
   #work .card {
     grid-template-columns: auto;
     gap: var(--spacing-s);
+    background: var(--grey-100);
   }
 
   .card>div.card-text-container {
