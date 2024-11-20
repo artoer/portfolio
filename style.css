@@ -91,30 +91,30 @@ html {
 h1 {
   font-size: var(--font-size-xl);
   font-weight: 900;
-  line-height: 1em;
+  line-height: 1.2em;
   letter-spacing: normal;
 }
 
 h2 {
   font-size: var(--font-size-l);
   font-weight: 700;
-  line-height: 1em;
+  line-height: 1.2em;
   grid-column: 1/-1;
-  padding: 0 0 4rem;
+  padding: 0 0 2.5rem;
 }
 
 h3 {
   font-size: var(--font-size-m);
   font-weight: 600;
-  line-height: 1em;
+  line-height: 1.2em;
   grid-column: 1/-1;
   padding: 0 0 2rem;
 }
 
 h4 {
   font-size: var(--font-size-s);
-  line-height: 1em;
-  font-weight: 500;
+  line-height: 1.2em;
+  font-weight: 400;
   margin: 0 0 2rem;
   color: var(--grey-600);
   text-transform: uppercase;
@@ -157,7 +157,7 @@ img {
 
 a {
   text-decoration-color: var(--primary-800);
-  text-decoration-thickness: .125rem;
+  text-decoration-thickness: .25rem;
   text-underline-offset: .25rem;
   font-weight: 600;
   font-size: inherit;
@@ -455,7 +455,7 @@ footer div a:hover {
 
 .card:hover h2::after {
   opacity: 1;
-  margin: 0 0 0 .625em;
+  margin: 0 0 0 .5em;
 }
 
 .card p {
@@ -510,22 +510,13 @@ footer div a:hover {
 }
 
 .meta-wrapper {
-  padding: var(--spacing-s) var(--page-margin);
+  padding: 0 var(--page-margin) var(--spacing-l);
   width: 100%;
   margin: 0;
-  background: var(--primary-850);
-}
-
-.fs-container.heading {
-  background: var(--primary-800);
-
-  h1 {
-    color:var(--grey-200);
-  }
 }
 
 .fs-container.top, #hero {
-  padding-top: calc(var(--spacing-l) - 4rem);
+  padding-top: calc(var(--spacing-l) - 3.5rem);
 }
 
 .fs-container.light {
@@ -591,11 +582,11 @@ footer div a:hover {
 }
 
 .fs-cta:hover span {
-  margin-left: .625em;
+  margin-left: .5em;
 
   &::after {
     opacity: 1;
-    padding-left: .625em;
+    padding-left: .5em;
   }
 }
 
@@ -677,35 +668,19 @@ footer div a:hover {
   width: 100%;
 }
 
-.heading-meta ul li {
-  color:var(--grey-200);
-}
-
-.heading-meta ul li strong,.heading-meta ul li a {
-  color:inherit;
-  text-decoration-color: inherit;
-}
-
-.heading-meta ul li a:hover{
-  color:inherit;
-  text-decoration-color: inherit;
-}
-
 .heading-meta ul li a::after{
   font-family: "Font Awesome 6 Free";
   content: " \f061";
   line-height: 0;
   vertical-align: baseline;
   padding-left: 0;
-  transition: all 0.2s ease-out;
   color:inherit;
   text-decoration-color: inherit;
 }
 
 .heading-meta ul li:first-of-type {
-  color: var(--grey-250);
+  color: var(--grey-600);
   margin: 0 0 .25rem;
-  font-weight: 500;
   text-transform: uppercase;
 }
 
@@ -796,10 +771,14 @@ section>div:not(:last-of-type) {
   order: 2;
 } */
 
-.process>div p {
+.process>div p+p {
+  grid-column: 1;
+} 
+
+/* .process>div p {
   order: 0;
   grid-column: 1;
-}
+} */
 
 .emoji {
   font-size: 2rem; 
