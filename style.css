@@ -12,6 +12,7 @@
   --primary-500: #925CFF;
   --primary-700: #7E3DFF;
   --primary-800: #691FFF;
+  --primary-850: #5F28CC;
   --primary-900: #5500FF;
 
   --grey-100: #FFF;
@@ -90,14 +91,14 @@ html {
 h1 {
   font-size: var(--font-size-xl);
   font-weight: 900;
-  line-height: 1.2em;
+  line-height: 1em;
   letter-spacing: normal;
 }
 
 h2 {
   font-size: var(--font-size-l);
   font-weight: 700;
-  line-height: 1.2em;
+  line-height: 1em;
   grid-column: 1/-1;
   padding: 0 0 4rem;
 }
@@ -105,14 +106,14 @@ h2 {
 h3 {
   font-size: var(--font-size-m);
   font-weight: 600;
-  line-height: 1.2em;
+  line-height: 1em;
   grid-column: 1/-1;
   padding: 0 0 2rem;
 }
 
 h4 {
   font-size: var(--font-size-s);
-  line-height: 1.2em;
+  line-height: 1em;
   font-weight: 500;
   margin: 0 0 2rem;
   color: var(--grey-600);
@@ -156,7 +157,7 @@ img {
 
 a {
   text-decoration-color: var(--primary-800);
-  text-decoration-thickness: .25rem;
+  text-decoration-thickness: .125rem;
   text-underline-offset: .25rem;
   font-weight: 600;
   font-size: inherit;
@@ -503,18 +504,28 @@ footer div a:hover {
 
 .heading-wrapper {
   max-width: var(--max-width);
-  padding: 0 0 6rem;
+  padding: 0;
   width: 100%;
   margin: 0;
+}
+
+.meta-wrapper {
+  padding: var(--spacing-s) var(--page-margin);
+  width: 100%;
+  margin: 0;
+  background: var(--primary-850);
+}
+
+.fs-container.heading {
+  background: var(--primary-800);
 
   h1 {
-    max-width: calc(50% - (var(--spacing-s) / 2));
-    /* max-width: calc((100% / 3) - (2.5rem * 2 / 3)); */
+    color:var(--grey-200);
   }
 }
 
-.fs-container.top, .fs-container.heading, #hero {
-  padding-top: calc(var(--spacing-l) - 4rem)
+.fs-container.top, #hero {
+  padding-top: calc(var(--spacing-l) - 4rem);
 }
 
 .fs-container.light {
@@ -652,6 +663,52 @@ footer div a:hover {
 
 /* case study top */
 
+.heading-meta {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0 auto;
+  max-width: var(--max-width);
+  column-gap: var(--spacing-s);
+}
+
+.heading-meta ul {
+  list-style: none;
+  width: 100%;
+}
+
+.heading-meta ul li {
+  color:var(--grey-200);
+}
+
+.heading-meta ul li strong,.heading-meta ul li a {
+  color:inherit;
+  text-decoration-color: inherit;
+}
+
+.heading-meta ul li a:hover{
+  color:inherit;
+  text-decoration-color: inherit;
+}
+
+.heading-meta ul li a::after{
+  font-family: "Font Awesome 6 Free";
+  content: " \f061";
+  line-height: 0;
+  vertical-align: baseline;
+  padding-left: 0;
+  transition: all 0.2s ease-out;
+  color:inherit;
+  text-decoration-color: inherit;
+}
+
+.heading-meta ul li:first-of-type {
+  color: var(--grey-250);
+  margin: 0 0 .25rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
 .col-4,
 .col-3,
 .col-2 {
@@ -663,11 +720,6 @@ footer div a:hover {
 
 .col-2 p {
   font-size: var(--font-size-m);
-}
-
-.col-4 ul {
-  list-style: none;
-  width: 100%;
 }
 
 .solution h2::before,
@@ -684,13 +736,6 @@ footer div a:hover {
 .solution h2+p,
 .process p+p {
   padding: 0;
-}
-
-.col-4 ul li:first-of-type {
-  color: var(--grey-600);
-  margin: 0 0 .5rem;
-  font-weight: 500;
-  text-transform: uppercase;
 }
 
 .col-4 {
@@ -909,6 +954,11 @@ section figure:has(img) {
 
   .col-4 {
     grid-template-columns: 1fr;
+    gap: var(--spacing-s);
+  }
+
+  .heading-meta {
+    flex-direction: column;
     gap: var(--spacing-s);
   }
 
