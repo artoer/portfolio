@@ -20,7 +20,7 @@
   --grey-250: #F5F5F7;
   --grey-300: #C6C5C7;
   --grey-400: #989799;
-  --grey-600: #656566;
+  --grey-600: #727273;
   --grey-800: #19171F;
 
   --font-size-xl: 5rem;
@@ -139,7 +139,7 @@ i {
 }
 
 blockquote span {
-  padding: 2px 4px;
+  padding: 4px 4px;
   background: var(--primary-800);
   color: var(--grey-200);
   font-size: inherit;
@@ -668,19 +668,8 @@ footer div a:hover {
   width: 100%;
 }
 
-.heading-meta ul li a::after{
-  font-family: "Font Awesome 6 Free";
-  content: " \f061";
-  line-height: 0;
-  vertical-align: baseline;
-  padding-left: 0;
-  color:inherit;
-  text-decoration-color: inherit;
-}
-
 .heading-meta ul li:first-of-type {
   color: var(--grey-600);
-  margin: 0 0 .25rem;
   text-transform: uppercase;
 }
 
@@ -800,7 +789,7 @@ section figure {
     display: inline;
     background: var(--primary-800);
     color: var(--grey-200);
-    padding: 2px 4px;
+    padding: 4px 4px;
   }
 
   & figcaption {
