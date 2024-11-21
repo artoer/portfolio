@@ -139,7 +139,7 @@ i {
 }
 
 blockquote span {
-  padding: 4px 4px;
+  padding: 2px 4px;
   background: var(--primary-800);
   color: var(--grey-200);
   font-size: inherit;
@@ -593,8 +593,8 @@ footer div a:hover {
 .xl, blockquote {
   font-size: var(--font-size-l);
   margin: 0 auto;
-  font-weight: 500;
-  line-height: 1.6;
+  font-weight: 700;
+  line-height: 1.45;
 }
 
 .xl:not(:last-of-type) {
@@ -773,15 +773,19 @@ section>div:not(:last-of-type) {
   font-size: 2rem; 
   line-height: normal;
   display: block;
-  margin-bottom: 1.5rem;
+  margin: 0 0 1rem;
 }
 
 .label {
-  display: block;
+  display: inline-block;
   font-size: var(--font-size-s);
   color: var(--grey-800);
   font-weight: 700;
-  padding: 0 0 .75rem;
+  padding: 2px 4px;
+  margin: 0 0 1rem;
+
+  background: var(--primary-800);
+    color: var(--grey-200);
 }
 
 section figure {
@@ -789,7 +793,7 @@ section figure {
     display: inline;
     background: var(--primary-800);
     color: var(--grey-200);
-    padding: 4px 4px;
+    padding: 2px 4px;
   }
 
   & figcaption {
