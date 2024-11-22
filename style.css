@@ -513,8 +513,14 @@ footer div a:hover {
   margin: 0;
 }
 
+.heading-wrapper img{
+  aspect-ratio: 2 / 1;
+  grid-column: 1/-1;
+  margin: 0 0 var(--spacing-m);
+}
+
 .heading-solution {
-  margin: var(--spacing-m) 0;
+  margin: var(--spacing-l) 0 0;
   width: 100%;
   max-width: var(--max-width);
 }
@@ -532,6 +538,10 @@ footer div a:hover {
 
 .fs-container.top, .fs-container.heading, #hero {
   padding-top: calc(var(--spacing-l) - 3.5rem);
+}
+
+.fs-container.heading {
+  padding-top: 0;
 }
 
 .fs-container.light {
@@ -673,7 +683,7 @@ footer div a:hover {
   display: flex;
   flex-direction: row;
   width: 100%;
-  margin: 0 auto;
+  margin: var(--spacing-m) auto 0;
   max-width: var(--max-width);
   column-gap: var(--spacing-s);
 }
@@ -902,10 +912,7 @@ section figure:has(img) {
     flex-direction: column;
   }
 
-  .heading-solution {
-    margin: var(--spacing-l) 0;
-  }
-
+  
   nav ul {
     gap: 0;
     justify-content: space-between;
