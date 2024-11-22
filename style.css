@@ -25,11 +25,11 @@
 
   --font-size-xl: 5rem;
   --font-size-l: 3rem; 
-  --font-size-m: 1.75rem;
-  --font-size-s: 1.25rem;
+  --font-size-m: 1.5rem;
+  --font-size-s: 1.125rem;
 
-  --max-width: 1600px;
-  --page-margin: 2.5rem;
+  --max-width: calc(1440px - (var(--page-margin) * 2));
+  --page-margin: 1.5rem;
 
   --spacing-l: 10rem;
   --spacing-m: 5rem;
@@ -93,6 +93,7 @@ h1 {
   font-weight: 900;
   line-height: 1.2em;
   letter-spacing: normal;
+  grid-column: 1/-1;
 }
 
 h2 {
@@ -151,7 +152,7 @@ img {
   width: 100%;
 }
 
-.content-container img {
+.content-container img, .heading-solution img {
   border: 1px solid var(--grey-250);
 }
 
@@ -295,7 +296,7 @@ nav ul li a {
   align-items: center;
   flex-direction: row;
   text-align: center;
-  font-weight: 600;
+  font-weight: 500;
   transition: all 0.2s ease-out;
   text-decoration: none;
   position: relative;
@@ -365,7 +366,7 @@ footer span {
 footer div a {
   color: var(--grey-800);
   font-size: var(--font-size-s);
-  font-weight: 600;
+  font-weight: 500;
   text-decoration: none;
 }
 
@@ -503,10 +504,24 @@ footer div a:hover {
 }
 
 .heading-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: var(--spacing-s);
   max-width: var(--max-width);
   padding: 0;
   width: 100%;
   margin: 0;
+}
+
+.heading-solution {
+  margin: var(--spacing-m) 0;
+  width: 100%;
+  max-width: var(--max-width);
+}
+
+.heading-wrapper p {
+  margin: 1.5rem 0 0;
+  font-size: var(--font-size-m);
 }
 
 .meta-wrapper {
@@ -515,7 +530,7 @@ footer div a:hover {
   margin: 0;
 }
 
-.fs-container.top, #hero {
+.fs-container.top, .fs-container.heading, #hero {
   padding-top: calc(var(--spacing-l) - 3.5rem);
 }
 
@@ -668,6 +683,10 @@ footer div a:hover {
   width: 100%;
 }
 
+.heading-meta ul:not(:last-of-type) {
+  border-right: 1px solid var(--grey-250);
+}
+
 .heading-meta ul li:first-of-type {
   color: var(--grey-600);
   text-transform: uppercase;
@@ -757,6 +776,10 @@ section>div:not(:last-of-type) {
 
 .process {
   padding: var(--spacing-l) 0 0;
+}
+
+.process:first-of-type {
+  padding:0;
 }
 
 /* .process>div:nth-of-type(even) p {
