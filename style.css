@@ -948,9 +948,6 @@ section figure:has(img) {
     figcaption {
       margin:1rem 0 0;
     }
-    blockquote {
-      padding:0px 4px;
-    }
   }
 
   .process > div p:not(:first-of-type) {

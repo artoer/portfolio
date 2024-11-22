@@ -36,7 +36,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
   document.body.appendChild(modal);
 
   // Add event listeners to images
-  const images = document.querySelectorAll('.process img, .solution img');
+  const images = document.querySelectorAll('.process img, .solution img, .fs-container.heading img');
   images.forEach((img) => {
     img.style.cursor = 'pointer';
     img.addEventListener('click', (event) => {
