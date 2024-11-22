@@ -898,7 +898,12 @@ section figure:has(img) {
   }
 
   .heading-wrapper {
-    padding: var(--spacing-m) 0 var(--spacing-l);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .heading-solution {
+    margin: var(--spacing-l) 0;
   }
 
   nav ul {
