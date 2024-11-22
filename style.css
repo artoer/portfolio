@@ -505,7 +505,7 @@ footer div a:hover {
 
 .heading-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   column-gap: var(--spacing-s);
   max-width: var(--max-width);
   padding: 0;
@@ -515,8 +515,9 @@ footer div a:hover {
 
 .heading-wrapper img{
   aspect-ratio: 2 / 1;
+  max-height: 60vh;
   grid-column: 1/-1;
-  margin: 0 0 var(--spacing-m);
+  margin: var(--spacing-m) 0 0;
 }
 
 .heading-solution {
@@ -528,6 +529,7 @@ footer div a:hover {
 .heading-wrapper p {
   margin: 1.5rem 0 0;
   font-size: var(--font-size-m);
+  grid-column: span 2;
 }
 
 .meta-wrapper {
@@ -540,9 +542,9 @@ footer div a:hover {
   padding-top: calc(var(--spacing-l) - 3.5rem);
 }
 
-.fs-container.heading {
+/* .fs-container.heading {
   padding-top: 0;
-}
+} */
 
 .fs-container.light {
   background: var(--grey-800);
