@@ -695,9 +695,9 @@ footer div a:hover {
   width: 100%;
 }
 
-.heading-meta ul:not(:last-of-type) {
+/* .heading-meta ul:not(:last-of-type) {
   border-right: 1px solid var(--grey-250);
-}
+} */
 
 .heading-meta ul li:first-of-type {
   color: var(--grey-600);
