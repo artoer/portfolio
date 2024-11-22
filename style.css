@@ -515,7 +515,6 @@ footer div a:hover {
 
 .heading-wrapper img{
   aspect-ratio: 2 / 1;
-  max-height: 60vh;
   grid-column: 1/-1;
   margin: var(--spacing-m) 0 0;
 }
