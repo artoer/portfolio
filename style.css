@@ -591,6 +591,7 @@ footer div a:hover {
   font-size: var(--font-size-l);
   transition: all 0.2s ease-out;
   color: var(--grey-200);
+  font-weight: 700;
 }
 
 .fs-cta span::after {
