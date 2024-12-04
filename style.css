@@ -9,31 +9,32 @@
 }
 
 :root {
-  --primary-500: #925CFF;
-  --primary-700: #7E3DFF;
-  --primary-800: #691FFF;
-  --primary-850: #5F28CC;
-  --primary-900: #5500FF;
+  --primary-light: #7733FF;
+  --primary-dark: #6719FF;
+  --primary-darker: #1D0747;
 
-  --grey-100: #FFF;
   --grey-200: #F8F7FA;
-  --grey-250: #E8E7EB;
+  --grey-250: #EEEDF0;
   --grey-300: #C6C5C7;
   --grey-400: #989799;
   --grey-600: #727273;
   --grey-800: #19171F;
 
-  --font-size-xl: 5rem;
-  --font-size-l: 3rem; 
+  --font-size-xl: 4rem;
+  --font-size-l: 2.5rem; 
   --font-size-m: 1.5rem;
   --font-size-s: 1.125rem;
+
+  --radius-l: 40px;
+  --radius-s: 8px;
 
   --max-width: calc(1440px - (var(--page-margin) * 2));
   --page-margin: 1.5rem;
 
-  --spacing-l: 10rem;
-  --spacing-m: 5rem;
+  --spacing-l: 8rem;
+  --spacing-m: 4rem;
   --spacing-s: 2.5rem;
+  --spacing-xs:1rem;
 }
 
 /* max-width: calc((100% / 3) - (2.5rem * 2 / 3)); */
@@ -85,15 +86,16 @@ html {
   background: var(--grey-200);
   font-family: 'Onest', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
   overflow-y: scroll;
-  font-feature-settings: 'ss01' on;
 }
 
 h1 {
   font-size: var(--font-size-xl);
+  color:var(--primary-darker);
   font-weight: 900;
   line-height: 1.2em;
   letter-spacing: normal;
   grid-column: 1/-1;
+  padding: 0 0 var(--spacing-xs);
 }
 
 h2 {
@@ -101,7 +103,7 @@ h2 {
   font-weight: 700;
   line-height: 1.2em;
   grid-column: 1/-1;
-  padding: 0 0 var(--spacing-s);
+  padding: 0 0 var(--spacing-xs);
 }
 
 h3 {
@@ -109,14 +111,14 @@ h3 {
   font-weight: 600;
   line-height: 1.2em;
   grid-column: 1/-1;
-  padding: 0 0 1.5rem;
+  padding: 0 0 var(--spacing-xs);
 }
 
 h4 {
   font-size: var(--font-size-s);
   line-height: 1.2em;
   font-weight: 400;
-  margin: 0 0 1.5rem;
+  margin: 0 0 var(--spacing-xs);
   color: var(--grey-600);
   text-transform: uppercase;
 }
@@ -141,7 +143,7 @@ i {
 
 blockquote span {
   padding: 2px 4px;
-  background: var(--primary-800);
+  background: var(--primary-dark);
   color: var(--grey-200);
   font-size: inherit;
 }
@@ -157,7 +159,7 @@ img {
 }
 
 a {
-  text-decoration-color: var(--primary-800);
+  text-decoration-color: var(--primary-light);
   text-decoration-thickness: .25rem;
   text-underline-offset: .25rem;
   font-weight: 600;
@@ -165,8 +167,8 @@ a {
 }
 
 main a:hover:not(.fs-cta) {
-  color: var(--primary-800);
-  text-decoration-color: var(--primary-800);
+  color: var(--primary-light);
+  text-decoration-color: var(--primary-light);
 }
 
 .modal {
@@ -281,9 +283,9 @@ nav ul li {
 
 nav>div>a {
   font-size: var(--font-size-l);
-  font-weight: 900;
+  font-weight: 700;
   font-style: italic;
-  letter-spacing: -0.18em;
+  letter-spacing: -0.2em;
   text-decoration: none;
   line-height: 6rem;
 }
@@ -312,11 +314,11 @@ nav ul li a::before {
   transform: scaleX(0);
   transform-origin: bottom right;
   transition: transform 0.2s ease-out;
-  background: var(--primary-800);
+  background: var(--primary-dark);
 }
 
 nav ul li a:hover {
-  color: var(--primary-800);
+  color: var(--primary-dark);
 }
 
 nav ul li a:hover::before {
@@ -349,7 +351,7 @@ footer>div {
 }
 
 footer>div>div {
-  color: var(--grey-400);
+  color: var(--grey-300);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -366,12 +368,13 @@ footer span {
 footer div a {
   color: var(--grey-800);
   font-size: var(--font-size-s);
-  font-weight: 500;
+  font-weight: 400;
   text-decoration: none;
 }
 
 footer div a:hover {
-  color: var(--grey-600);
+  color: var(--primary-darker);
+  font-weight: 600;
 }
 
 
@@ -395,20 +398,14 @@ footer div a:hover {
   max-width: var(--max-width);
 }
 
-#hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: var(--spacing-s);
-}
-
 #hero h1 {
-  padding: 0 0 1.5rem;
-  grid-column: 1/-1;
+  padding: 0 0 var(--spacing-xs);
 }
 
 #hero p {
   grid-column: span 2;
   font-size: var(--font-size-m);
+  max-width: 52ch;
 }
 
 #work-container {
@@ -430,18 +427,19 @@ footer div a:hover {
   text-decoration: none;
   column-gap: var(--spacing-s);
   transition: all 0.2s ease-out;
+  overflow: hidden;
+  border-radius: var(--radius-l);
 }
 
 .card:hover {
-  background: var(--grey-100);
   transition: all 0.2s ease-out;
+  background: var(--grey-250);
 }
-
 
 .card h2 {
   padding: 0 0 1.5rem;
   transition: all 0.2s ease-out;
-  color: var(--primary-800);
+  color: var(--primary-dark);
 }
 
 .card h2::after {
@@ -517,16 +515,17 @@ footer div a:hover {
   aspect-ratio: 2 / 1;
   grid-column: 1/-1;
   margin: var(--spacing-m) 0 0;
+  border-radius: var(--radius-l);
 }
 
 .heading-solution {
-  margin: var(--spacing-m) 0 0;
+  margin: var(--spacing-l) 0 0;
   width: 100%;
   max-width: var(--max-width);
 }
 
 .heading-wrapper p {
-  margin: 1.5rem 0 0;
+  /* margin: var(--spacing-xs) 0 0; */
   font-size: var(--font-size-m);
   grid-column: span 2;
 }
@@ -563,7 +562,7 @@ footer div a:hover {
   }
 
   & blockquote span {
-    background: var(--primary-700);
+    background: var(--primary-light);
     color: var(--grey-800);
   }
 }
@@ -581,7 +580,7 @@ footer div a:hover {
   text-decoration: none;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(180deg, var(--primary-500), var(--primary-900));
+  background: linear-gradient(180deg, var(--primary-light), var(--primary-dark));
   background-size: 200% 200%;
   background-position: 0% 0%;
   transition: all 0.2s ease-out;
@@ -625,7 +624,7 @@ footer div a:hover {
 }
 
 .xl:not(:last-of-type) {
-  margin: 0 0 3rem;
+  margin: 0 0 2rem;
 }
 
 .fs-container figcaption {
@@ -652,7 +651,7 @@ footer div a:hover {
 
   h1 {
     grid-column: 1/-1;
-    padding: 0 0 1.5rem;
+    /* padding: 0 0 1.5rem; */
   }
 
   img {
@@ -688,12 +687,12 @@ footer div a:hover {
   width: 100%;
   margin: var(--spacing-m) auto 0;
   max-width: var(--max-width);
-  padding: 0 0 var(--spacing-s);
+  padding: 0;
 }
 
 .overview-wrapper p {
   grid-column: span 2;
-  margin-bottom: var(--spacing-m);
+  margin-bottom: var(--spacing-s);
   font-size: var(--font-size-m);
 }
 
@@ -708,10 +707,6 @@ footer div a:hover {
   list-style: none;
   width: 100%;
 }
-
-/* .overview-wrapper ul:not(:last-of-type) {
-  border-right: 1px solid var(--grey-250);
-} */
 
 .overview-wrapper ul li:first-of-type {
   color: var(--grey-600);
@@ -739,7 +734,7 @@ footer div a:hover {
   height: .25rem;
   width: 6rem;
   margin: 0 0 2rem;
-  background: var(--primary-800);
+  background: var(--primary-dark);
 }
 
 .process h2+p,
@@ -760,10 +755,13 @@ footer div a:hover {
   grid-template-columns: 1fr 1fr;
 }
 
-.col-3 img,
-.col-3 figure {
+.col-3 img {
   grid-column: span 2;
   grid-column: 1/-1;
+}
+
+.col-3 figure {
+  grid-column: span 2;
 }
 
 .img-2 figure,
@@ -786,11 +784,23 @@ section {
   margin: 0 auto;
 }
 
+.process .section-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  h2 {
+    grid-column: auto;
+  }
+
+  p {
+    grid-column: auto;
+    margin: 2rem 0 0;
+    font-size: var(--font-size-m);
+  }
+}
+
 section>div:not(:last-of-type) {
   margin: 0 0 var(--spacing-m);
-  /* margin: 0 0 calc(var(--spacing-m) / 2);
-  padding: 0 0 calc(var(--spacing-m) / 2);
-  border-bottom: 1px solid var(--grey-250); */
 }
 
 .collage {
@@ -834,17 +844,17 @@ section>div:not(:last-of-type) {
   font-size: var(--font-size-m);
   color: var(--grey-800);
   font-weight: 700;
-  padding: 2px 4px;
+  padding: 4px 8px;
   margin: 0 0 1rem;
-
-  background: var(--primary-800);
+  background: var(--primary-light);
     color: var(--grey-200);
+    border-radius: var(--radius-s);
 }
 
 section figure {
   & blockquote {
     display: inline;
-    background: var(--primary-800);
+    background: var(--primary-light);
     color: var(--grey-200);
     padding: 2px 4px;
   }
@@ -901,6 +911,9 @@ section figure:has(img) {
     --spacing-s: 1.5rem;
 
     --page-margin: 1.5rem;
+
+    --radius-l: 20px;
+    --radius-s: 4px;
   }
 
   img {
@@ -926,11 +939,14 @@ section figure:has(img) {
     }
   }
 
-  .heading-wrapper {
+  .heading-wrapper, .process .section-intro {
     display: flex;
     flex-direction: column;
+    gap:0;
+    p {
+      margin: 0;
+    }
   }
-
   
   nav ul {
     gap: 0;
@@ -953,7 +969,6 @@ section figure:has(img) {
   #work .card {
     grid-template-columns: auto;
     gap: var(--spacing-s);
-    background: var(--grey-100);
   }
 
   .card>div.card-text-container {
@@ -972,12 +987,7 @@ section figure:has(img) {
   }
 
   .col-3,
-  .col-2 {
-    grid-template-columns: 1fr;
-    gap: var(--spacing-s);
-  }
-
-  .col-4 {
+  .col-2, .col-4,.section-intro {
     grid-template-columns: 1fr;
     gap: var(--spacing-s);
   }
