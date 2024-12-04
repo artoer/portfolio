@@ -969,6 +969,7 @@ section figure:has(img) {
   #work .card {
     grid-template-columns: auto;
     gap: var(--spacing-s);
+    background: var(--grey-250);
   }
 
   .card>div.card-text-container {
@@ -995,6 +996,7 @@ section figure:has(img) {
   .overview-wrapper {
     display: flex;
     flex-direction: column;
+    margin: var(--spacing-l) auto 0;
   }
 
   .overview-wrapper p {
