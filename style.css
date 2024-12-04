@@ -90,7 +90,6 @@ html {
 
 h1 {
   font-size: var(--font-size-xl);
-  color:var(--primary-darker);
   font-weight: 900;
   line-height: 1.2em;
   letter-spacing: normal;
