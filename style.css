@@ -535,9 +535,9 @@ footer div a:hover {
   margin: 0;
 }
 
-.fs-container.top, .fs-container.heading, #hero {
+/* .fs-container.top, .fs-container.heading, #hero {
   padding-top: calc(var(--spacing-l) - 3.5rem);
-}
+} */
 
 /* .fs-container.heading {
   padding-top: 0;
