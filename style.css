@@ -31,11 +31,11 @@
   --max-width: calc(1440px - (var(--page-margin) * 2));
   --page-margin: 1.5rem;
 
-  --spacing-xl: 10rem;
-  --spacing-l: 8rem;
-  --spacing-m: 4rem;
-  --spacing-s: 2.5rem;
-  --spacing-xs:1rem;
+  --spacing-xl: 10rem; /*160*/
+  --spacing-l: 7.5rem; /*120*/
+  --spacing-m: 5rem; /*80*/
+  --spacing-s: 2.5rem; /*40*/
+  --spacing-xs: 1.25rem; /*20*/
 }
 
 /* max-width: calc((100% / 3) - (2.5rem * 2 / 3)); */
@@ -103,7 +103,7 @@ h2 {
   font-weight: 700;
   line-height: 1.2em;
   grid-column: 1/-1;
-  padding: 0 0 var(--spacing-xs);
+  padding: 0 0 var(--spacing-s);
 }
 
 h3 {
@@ -800,7 +800,7 @@ section {
 }
 
 section>div:not(:last-of-type) {
-  margin: 0 0 var(--spacing-m);
+  margin: 0 0 var(--spacing-s);
 }
 
 .collage {
