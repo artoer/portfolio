@@ -940,7 +940,7 @@ section figure:has(img) {
   #work .card {
     grid-template-columns: auto;
     gap: var(--spacing-s);
-    background: var(--grey-250);
+    background: var(--grey-200);
   }
 
   .card>div.card-text-container {
