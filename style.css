@@ -11,11 +11,11 @@
 :root {
   --primary-light: #7733FF;
   --primary-dark: #6719FF;
-  --primary-darker: #1D0747;
+  --primary-darker: #3C1A80;
 
   --grey-100: #F8F7FA;
-  --grey-200: #EFEDF3;
-  --grey-250: #EBE8EF;
+  --grey-200: #F0EEF5;
+  --grey-250: #EAE6F0;
   --grey-400: #989799;
   --grey-600: #6A6A6B;
   --grey-700: #211E29;
