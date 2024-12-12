@@ -8,8 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
       •
       <a href="https://dribbble.com/artioer" title="Dribbble" target="_blank">Dribbble</a>
       •
-      <a href="mailto:arthur_menken@hotmail.com" title="Email">Email</a>
-      •
       <a href="./assets/Arthur-Menken_Resume-CV.pdf" title="Resume" target="_blank">Resume</a>
     </div>
   </div>
@@ -17,15 +15,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const navTemplate = Handlebars.compile(`
     <div>
-      <a href="./">AM</a>
-      <ul>
-        <li><a href="./#work">Work</a></li>
-        <li><a href="./about.html">About</a></li>
-        <li><a href="./assets/Arthur-Menken_Resume-CV.pdf" target="_blank">Resume</a></li>
-      </ul>
+      <a class="back" href="./"><i class="fa-solid fa-arrow-left fa-xl"></i></a>
     </div>
 `);
 
+{/* <a class="logo" href="./">AM</a> */}
   // render the templates with the data
   document.querySelector('footer').innerHTML = footerTemplate();
   document.querySelector('nav').innerHTML = navTemplate();
