@@ -878,8 +878,16 @@ section figure:has(img) {
     gap: var(--spacing-s);
   }
 
-  nav>div {
-    grid-template-columns: 1fr 1fr 1fr;
+  .intro-content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .intro-content div, .intro-content img {
+    grid-column: unset;
+  }
+
+  .intro-content img {
+    grid-column: 2;
   }
 
   .col-3 img,
@@ -896,9 +904,11 @@ section figure:has(img) {
     --font-size-m: 1.25rem;
     --font-size-s: 1rem;
 
-    --spacing-l: 6rem;
-    --spacing-m: 1.5rem;
-    --spacing-s: 1.5rem;
+    --spacing-xl: 8rem; /*128*/
+    --spacing-l: 6rem; /*96*/
+    --spacing-m: 4rem; /*64*/
+    --spacing-s: 2rem; /*32*/
+    --spacing-xs: 1rem; /*16*/
 
     --page-margin: 1.5rem;
 
