@@ -422,7 +422,7 @@ footer div a:hover {
   height: 3rem;
   line-height: 3rem;
   text-align: center;
-  padding: 0 1rem;
+  padding: 0 1.5rem;
   background: var(--grey-200);
   border-radius: 999px;
   transition: all ease-out .2s;
