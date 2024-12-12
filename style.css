@@ -303,10 +303,15 @@ nav>div>a.back:hover {
   background:var(--grey-250);
 }
 
+nav>div>a.back:hover i {
+  color:var(--primary-darker);
+}
+
 a.back i {
   color:var(--grey-800);
   margin:0;
 }
+
 
 /* footer */
 
@@ -415,7 +420,7 @@ footer div a:hover {
 }
 
 .intro-text .intro-socials a:hover {
-  color:inherit;
+  color:var(--primary-darker);
   background: var(--grey-250);
 }
 
