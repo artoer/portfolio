@@ -14,12 +14,10 @@
   --primary-darker: #1D0747;
 
   --grey-100: #F8F7FA;
-  --grey-150: #F3F2F5;
-  --grey-200: #EEEDF0;
-  --grey-250: #E9E8EB;
-  --grey-300: #C6C5C7;
+  --grey-200: #EFEDF2;
+  --grey-250: #E9E6F0;
   --grey-400: #989799;
-  --grey-600: #727273;
+  --grey-600: #6A6A6B;
   --grey-700: #211E29;
   --grey-800: #19171F;
 
@@ -333,7 +331,7 @@ footer>div {
 }
 
 footer>div>div {
-  color: var(--grey-300);
+  color: var(--grey-400);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -451,12 +449,12 @@ footer div a:hover {
   transition: all 0.2s ease-out;
   overflow: hidden;
   border-radius: var(--radius-l);
-  background: var(--grey-150);
+  background: var(--grey-200);
 }
 
 .card:hover {
   transition: all 0.2s ease-out;
-  background: var(--grey-200);
+  background: var(--grey-250);
 }
 
 .card h2 {
