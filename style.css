@@ -324,7 +324,6 @@ footer {
   justify-content: space-between;
   flex-direction: column;
   padding: var(--spacing-l) var(--page-margin) calc(var(--spacing-l) + 12px);
-  /* padding: var(--spacing-l) var(--page-margin); */
   width: 100%;
   margin: 0 auto;
   background: linear-gradient(
@@ -909,7 +908,7 @@ section figure:has(img) {
     grid-template-columns: 1fr 1fr;
     gap: var(--spacing-s);
   }
-  
+
   .col-3 img,
   .col-3 figure {
     grid-column: 2;
