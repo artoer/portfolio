@@ -909,20 +909,7 @@ section figure:has(img) {
     grid-template-columns: 1fr 1fr;
     gap: var(--spacing-s);
   }
-
-  .intro-content {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .intro-content div,
-  .intro-content img {
-    grid-column: unset;
-  }
-
-  .intro-content img {
-    grid-column: 2;
-  }
-
+  
   .col-3 img,
   .col-3 figure {
     grid-column: 2;
