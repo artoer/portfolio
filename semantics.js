@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Handlebars
   const footerTemplate = Handlebars.compile(`
   <div>
-    <span>&copy; 2024 Arthur Menken</span>
+    <span>&copy; Arthur Menken</span>
     <div>
       <a href="https://www.linkedin.com/in/arthur-menken/" title="LinkedIn" target="_blank">LinkedIn</a>
       •
