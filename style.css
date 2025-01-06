@@ -546,7 +546,7 @@ footer div a:hover {
 .card img {
   transition: 200ms ease-out;
   height: 100%;
-  aspect-ratio: 3 / 2;
+  aspect-ratio: 16 / 10;
 }
 
 .card:hover img {
