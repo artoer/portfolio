@@ -14,8 +14,8 @@
   --primary-darker: #3c1a80;
 
   --grey-100: #FAF9FC;
-  --grey-200: #F2F0F7;
-  --grey-250: #EEEBF2;
+  --grey-200: #F4F2F7;
+  --grey-250: #ECE9F2;
   --grey-400: #989799;
   --grey-600: #6a6a6b;
   --grey-700: #211e29;
@@ -295,8 +295,8 @@ nav > div > a.back {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 3.25rem;
-  width: 3.25rem;
+  height: 3.5rem;
+  width: 3.5rem;
   text-decoration: none;
   transition: all 0.2s ease-out;
   border-radius: 999px;
@@ -378,7 +378,7 @@ footer div a:hover {
 /* Home Page */
 
 .intro-container {
-  padding: var(--spacing-xl) var(--page-margin);
+  padding: var(--spacing-xl) var(--page-margin) var(--spacing-l);
 }
 
 .intro-grid {
@@ -432,11 +432,6 @@ footer div a:hover {
   border-left: 1px solid var(--grey-400);
 }
 
-.intro-text .intro-socials a:hover {
-  color: var(--primary-darker);
-  background: var(--grey-250);
-}
-
 .intro-text .intro-socials a:hover i {
   color: var(--primary-darker);
 }
@@ -445,26 +440,37 @@ footer div a:hover {
   color: var(--grey-800);
   font-size: var(--font-size-s);
   text-decoration: none;
-  height: 3.25rem;
-  /* line-height: 3rem; */
+  height: 3.5rem;
   text-align: center;
   padding: 0 1.5rem;
   background: var(--grey-200);
   border-radius: 999px;
   transition: all ease-out 0.2s;
-
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.75rem;
+  gap: .75rem;
+  background: var(--grey-200);
 }
+.intro-text .intro-socials a:hover {
+  color: var(--primary-darker);
+  background: var(--grey-250);
+}
+
+/* .intro-text .intro-socials .in {
+  background: var(--grey-250);
+}
+
+.intro-text .intro-socials .in:hover {
+  background: var(--grey-300);
+} */
 
 .intro-text .intro-socials a i {
   margin: 0;
 }
 
 #work-container {
-  padding: 0 var(--page-margin) var(--spacing-xl);
+  padding: 0 var(--page-margin) var(--spacing-l);
 }
 
 #work {
@@ -540,7 +546,7 @@ footer div a:hover {
 .card img {
   transition: 200ms ease-out;
   height: 100%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 3 / 2;
 }
 
 .card:hover img {
@@ -549,8 +555,12 @@ footer div a:hover {
 }
 
 /* content */
+.fs-container.heading {
+  padding: var(--spacing-xl) var(--page-margin) var(--spacing-l);
+}
+
 .fs-container {
-  padding: var(--spacing-xl) var(--page-margin);
+  padding: var(--spacing-l) var(--page-margin);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -801,7 +811,7 @@ blockquote {
 /* case study content */
 
 .content-container {
-  padding: var(--spacing-xl) var(--page-margin);
+  padding: var(--spacing-l) var(--page-margin);
 }
 
 section {
