@@ -489,14 +489,12 @@ footer div a:hover {
 }
 
 .card {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  text-decoration: none;
-  column-gap: var(--spacing-s);
   transition: all 0.2s ease-out;
-  overflow: hidden;
   border-radius: var(--radius-l);
   background: var(--grey-200);
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
 }
 
 .card:hover {
@@ -505,7 +503,7 @@ footer div a:hover {
 }
 
 .card h2 {
-  padding: 0 0 var(--spacing-xs);
+  padding: 0;
   transition: all 0.2s ease-out;
   color: var(--primary-dark);
 }
@@ -514,6 +512,7 @@ footer div a:hover {
   font-family: "Font Awesome 5 Free";
   content: "\f061";
   margin: 0;
+  padding: 0 0.5em 0 0;
   line-height: 0;
   vertical-align: baseline;
   opacity: 0;
@@ -523,36 +522,41 @@ footer div a:hover {
 .card:hover h2::after {
   opacity: 1;
   margin: 0 0 0 0.5em;
+  padding: 0;
+  white-space: nowrap;
 }
 
 .card p {
   font-weight: 400;
   max-width: 40rem;
+  margin: .75rem 0 0;
 }
 
 .card p:last-of-type {
-  margin: var(--spacing-xs) 0 0;
   color: var(--grey-600);
   font-weight: 400;
 }
 
 .card > div.card-text-container {
-  display: flex;
+  position: absolute;
+  background: var(--grey-100);
+  bottom: var(--spacing-s);
+  left: var(--spacing-s);
+  padding: var(--spacing-s);
   flex-direction: column;
   justify-content: center;
-  padding: var(--spacing-s) var(--spacing-s) var(--spacing-s) 0;
+  border-radius: var(--radius-s);
 }
 
 .card > div.card-img-container {
   height: 100%;
   width: 100%;
-  overflow: hidden;
 }
 
 .card img {
   transition: 200ms ease-out;
   height: 100%;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 16 / 8;
 }
 
 .card:hover img {
@@ -976,7 +980,7 @@ section figure:has(img) {
   }
 
   .intro-container {
-    padding: var(--page-margin) var(--page-margin) var(--spacing-xl);
+    padding: var(--page-margin) var(--page-margin) var(--spacing-m);
   }
 
   .intro-content {
@@ -992,16 +996,33 @@ section figure:has(img) {
     width: 100%;
   }
 
+  #work { 
+    gap: var(--spacing-m);
+  }
 
   #work .card {
-    grid-template-columns: auto;
-    gap: var(--spacing-s);
-    background: var(--grey-200);
+    display: flex;
+    flex-direction:column;
+    border-radius: 0;
+  }
+
+  .card img {
+    aspect-ratio: 1 / 1;
+    border-radius: var(--radius-m);
   }
 
   .card > div.card-text-container {
-    order: 2;
-    padding: 0 var(--page-margin) var(--spacing-s) var(--page-margin);
+    display: block;
+    position: relative;
+    padding: var(--page-margin) 0 0;
+    bottom: 0;
+    left:0;
+    border-radius: 0;
+  }
+
+  .card h2::after { 
+    opacity: 1;
+    margin: 0 0 0 .5em;
   }
 
   section figure {
@@ -1020,6 +1041,10 @@ section figure:has(img) {
   .section-intro {
     grid-template-columns: 1fr;
     gap: var(--spacing-s);
+  }
+
+  .heading-wrapper img { 
+    aspect-ratio: 1 / 1;
   }
 
   .overview-wrapper {
