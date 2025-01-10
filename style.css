@@ -26,10 +26,10 @@
   --font-size-m: 1.5rem;
   --font-size-s: 1.125rem;
 
-  --radius-l: 32px;
-  --radius-m: 24px;
+  --radius-l: 24px;
+  --radius-m: 16px;
   --radius-s: 8px;
-
+  
   --max-width: calc(1440px - (var(--page-margin) * 2));
   --page-margin: 1.5rem;
 
