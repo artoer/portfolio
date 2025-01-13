@@ -23,10 +23,10 @@
   --grey-700: #211e29;
   --grey-800: #19171f;
 
-  --font-size-xl: 4rem;
-  --font-size-l: 2.5rem;
-  --font-size-m: 1.5rem;
-  --font-size-s: 1.125rem;
+  --font-size-xl: 4rem; /*64*/
+  --font-size-l: 2.5rem; /*40*/
+  --font-size-m: 1.75rem; /*28*/
+  --font-size-s: 1.125rem; /*18*/
 
   --radius-l: 24px;
   --radius-m: 16px;
@@ -107,7 +107,7 @@ h2 {
   font-weight: 700;
   line-height: 1.2em;
   grid-column: 1/-1;
-  padding: 0 0 var(--spacing-s);
+  padding: 0 0 var(--spacing-xs);
 }
 
 h3 {
@@ -121,7 +121,7 @@ h3 {
 h4 {
   font-size: var(--font-size-s);
   line-height: 1.2em;
-  font-weight: 400;
+  font-weight: 500;
   margin: 0 0 var(--spacing-xs);
   color: var(--grey-600);
   text-transform: uppercase;
@@ -402,11 +402,7 @@ footer div a:hover {
 }
 
 .intro-text p {
-  grid-column: span 2;
-  font-size: var(--font-size-m);
-}
-
-.intro-text p {
+  font-size: var(--font-size-s);
   margin-bottom: var(--spacing-xs);
 }
 
@@ -441,6 +437,7 @@ footer div a:hover {
 .intro-text .intro-socials a {
   color: var(--grey-800);
   font-size: var(--font-size-s);
+  font-weight: 500;
   text-decoration: none;
   height: 3.5rem;
   text-align: center;
@@ -645,6 +642,7 @@ footer div a:hover {
 .fs-container figure,
 .fs-text-container {
   max-width: var(--max-width);
+  width: 100%;
   margin: auto;
 }
 
@@ -729,7 +727,7 @@ blockquote {
 .overview-wrapper p {
   grid-column: span 2;
   margin-bottom: var(--spacing-s);
-  font-size: var(--font-size-m);
+  font-size: var(--font-size-s);
 }
 
 .meta-data {
@@ -746,7 +744,6 @@ blockquote {
 
 .overview-wrapper ul li:first-of-type {
   color: var(--grey-600);
-  text-transform: uppercase;
   line-height: 2;
 }
 
@@ -826,21 +823,21 @@ section {
 
 .process .section-intro {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 
   h2 {
-    grid-column: auto;
+    grid-column: span 2;
   }
 
   p {
-    grid-column: auto;
+    grid-column: 3;
     margin: var(--spacing-s) 0 0;
-    font-size: var(--font-size-m);
+    font-size: var(--font-size-s);
   }
 }
 
 section > div:not(:last-of-type) {
-  margin: 0 0 var(--spacing-s);
+  margin: 0 0 var(--spacing-m);
 }
 
 .collage {
@@ -881,7 +878,7 @@ section > div:not(:last-of-type) {
 
 .label {
   display: inline-block;
-  font-size: var(--font-size-m);
+  font-size: var(--font-size-s);
   color: var(--grey-800);
   font-weight: 700;
   padding: 6px 12px;
