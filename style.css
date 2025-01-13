@@ -1001,6 +1001,7 @@ section figure:has(img) {
     display: flex;
     flex-direction:column;
     border-radius: 0;
+    background: var(--grey-200);
   }
 
   .card img {
