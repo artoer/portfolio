@@ -558,7 +558,7 @@ footer div a:hover {
 
 .card:hover img {
   transition: 0.2s ease-out;
-  transform: scale(1.04);
+  transform: scale(1.02);
 }
 
 /* content */
