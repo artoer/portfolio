@@ -12,6 +12,8 @@
   --primary-light: #7733ff;
   --primary-dark: #6719ff;
   --primary-darker: #3c1a80;
+  --secondary: #FFB239;
+  --secondary: hsl(40, 100%, 60%);
 
   --grey-100: #FAF9FC;
   --grey-200: #EFEEF2;
@@ -534,7 +536,7 @@ footer div a:hover {
 
 .card > div.card-text-container {
   position: absolute;
-  background: var(--grey-100);
+  background: var(--grey-200);
   bottom: var(--spacing-s);
   left: var(--spacing-s);
   padding: var(--spacing-s);
@@ -633,7 +635,7 @@ footer div a:hover {
   }
 
   & blockquote span {
-    background: var(--primary-light);
+    background: var(--secondary);
     color: var(--grey-800);
   }
 }
@@ -886,16 +888,16 @@ section > div:not(:last-of-type) {
   font-weight: 700;
   padding: 4px 8px;
   margin: 0 0 var(--spacing-xs);
-  background: var(--primary-light);
-  color: var(--grey-100);
+  background: var(--secondary);
+  color: var(--grey-800);
   border-radius: var(--radius-s);
 }
 
 section figure {
   & blockquote {
     display: inline;
-    background: var(--primary-light);
-    color: var(--grey-100);
+    background: var(--secondary);
+    color: var(--grey-800);
     padding: 2px 4px;
   }
 
