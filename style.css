@@ -158,10 +158,10 @@ img {
   width: 100%;
 }
 
-.content-container img,
+/* .content-container img,
 .heading-solution img {
   border: 1px solid var(--grey-250);
-}
+} */
 
 a {
   text-decoration-color: var(--primary-light);
@@ -418,7 +418,7 @@ footer div a:hover {
   aspect-ratio: 1 / 1; 
   max-width: 100%; 
   margin: auto 0 auto auto;
-  border-radius: var(--radius-m);
+  
 }
 
 .intro-socials {
@@ -492,7 +492,6 @@ footer div a:hover {
 
 .card {
   transition: all 0.2s ease-out;
-  border-radius: var(--radius-l);
   background: var(--grey-200);
   text-decoration: none;
   position: relative;
@@ -542,7 +541,7 @@ footer div a:hover {
   padding: var(--spacing-s);
   flex-direction: column;
   justify-content: center;
-  border-radius: var(--radius-s);
+  
 }
 
 .card > div.card-img-container {
@@ -587,12 +586,11 @@ footer div a:hover {
 .heading-wrapper img {
   aspect-ratio: 2 / 1;
   grid-column: 1/-1;
-  margin: var(--spacing-m) 0 0;
-  border-radius: var(--radius-l);
+  margin: var(--spacing-s) 0 0;
 }
 
 .heading-solution {
-  margin: var(--spacing-l) 0 0;
+  margin: var(--spacing-m) 0 0;
   width: 100%;
   max-width: var(--max-width);
 }
@@ -836,7 +834,7 @@ section {
 
   p {
     grid-column: auto;
-    margin: var(--spacing-xs) 0 0;
+    margin: var(--spacing-s) 0 0;
     font-size: var(--font-size-m);
   }
 }
@@ -886,11 +884,11 @@ section > div:not(:last-of-type) {
   font-size: var(--font-size-m);
   color: var(--grey-800);
   font-weight: 700;
-  padding: 4px 8px;
+  padding: 6px 12px;
   margin: 0 0 var(--spacing-xs);
   background: var(--secondary);
   color: var(--grey-800);
-  border-radius: var(--radius-s);
+  
 }
 
 section figure {
@@ -1006,7 +1004,7 @@ section figure:has(img) {
 
   .card img {
     aspect-ratio: 1 / 1;
-    border-radius: var(--radius-m);
+    
   }
 
   .card > div.card-text-container {
