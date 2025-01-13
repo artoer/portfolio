@@ -12,8 +12,7 @@
   --primary-light: #7733ff;
   --primary-dark: #6719ff;
   --primary-darker: #3c1a80;
-  --secondary: #FFB239;
-  --secondary: hsl(40, 100%, 60%);
+  --secondary: #ffbb33;
 
   --grey-100: #FAF9FC;
   --grey-200: #EFEEF2;
@@ -399,6 +398,10 @@ footer div a:hover {
 
 .intro-text {
   grid-column: span 2;
+}
+
+.intro-text p:first-of-type {
+  font-size: var(--font-size-m);
 }
 
 .intro-text p {
