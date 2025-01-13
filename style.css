@@ -725,7 +725,6 @@ blockquote {
 }
 
 .overview-wrapper p {
-  grid-column: span 2;
   margin-bottom: var(--spacing-s);
   font-size: var(--font-size-s);
 }
