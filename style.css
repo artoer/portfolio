@@ -1013,6 +1013,7 @@ section figure:has(img) {
     bottom: 0;
     left:0;
     border-radius: 0;
+    background: none;
   }
 
   .card h2::after { 
