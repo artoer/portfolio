@@ -391,21 +391,18 @@ footer div a:hover {
 .intro-content {
   display: grid;
   gap: var(--spacing-s);
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   align-items: start;
   grid-auto-rows: min-content;
 }
 
 .intro-text {
-  grid-column: span 2;
-}
-
-.intro-text p:first-of-type {
-  font-size: var(--font-size-m);
+  grid-column: span 3;
 }
 
 .intro-text p {
-  font-size: var(--font-size-s);
+  font-size: var(--font-size-m);
+  line-height: 1.5;
   margin-bottom: var(--spacing-xs);
 }
 
@@ -598,6 +595,7 @@ footer div a:hover {
 .heading-wrapper p {
   /* margin: var(--spacing-xs) 0 0; */
   font-size: var(--font-size-m);
+  line-height: 1.5;
   grid-column: span 2;
 }
 
@@ -974,7 +972,7 @@ section figure:has(img) {
   }
 
   .intro-container {
-    padding: var(--page-margin) var(--page-margin) var(--spacing-m);
+    padding: var(--spacing-m) var(--page-margin) var(--spacing-m);
   }
 
   .intro-content {
