@@ -26,10 +26,6 @@
   --font-size-l: 2.5rem; /*40*/
   --font-size-m: 1.5rem; /*24*/
   --font-size-s: 1.125rem; /*18*/
-
-  --radius-l: 24px;
-  --radius-m: 16px;
-  --radius-s: 8px;
   
   --max-width: calc(1440px - (var(--page-margin) * 2));
   --page-margin: 1.5rem;
@@ -155,6 +151,7 @@ img {
   object-fit: cover;
   height: auto;
   width: 100%;
+  border-radius: 12px;
 }
 
 /* .content-container img,
@@ -226,6 +223,7 @@ main a:hover:not(.fs-cta) {
   max-width: calc(100vw - 12rem);
   object-fit: contain;
   cursor: zoom-in;
+  border-radius: 0;
 }
 
 .close-btn {
@@ -493,6 +491,7 @@ footer div a:hover {
   text-decoration: none;
   position: relative;
   overflow: hidden;
+  border-radius: 12px;
 }
 
 .card:hover {
