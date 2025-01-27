@@ -335,6 +335,7 @@ footer {
     #fff calc(100% - 4px),
     #1e4785 calc(100% - 4px), #1e4785
   );
+  background: var(--grey-100);
 }
 
 footer > div {
