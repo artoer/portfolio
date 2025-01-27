@@ -151,7 +151,7 @@ img {
   object-fit: cover;
   height: auto;
   width: 100%;
-  border-radius: 12px;
+  border-radius: 8px;
 }
 
 /* .content-container img,
@@ -845,7 +845,15 @@ section > div:not(:last-of-type) {
 }
 
 .collage > div:not(:last-of-type) {
-  margin: 0 0 var(--spacing-s);
+  margin: 0 0 var(--spacing-xs);
+}
+
+.collage div {
+  column-gap: var(--spacing-xs);
+}
+
+.collage img {
+  height: 100%;
 }
 
 .process {
