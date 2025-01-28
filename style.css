@@ -482,7 +482,7 @@ footer div a:hover {
   flex-direction: column;
   max-width: var(--max-width);
   margin: 0 auto;
-  gap: var(--spacing-s);
+  gap: var(--spacing-m);
   scroll-margin-top: var(--spacing-m);
 }
 
@@ -995,10 +995,6 @@ section figure:has(img) {
 
   .intro-text .intro-socials a {
     width: 100%;
-  }
-
-  #work { 
-    gap: var(--spacing-m);
   }
 
   #work .card {
