@@ -557,7 +557,7 @@ footer div a:hover {
 .card img {
   transition: 0.2s ease-out;
   height: 100%;
-  aspect-ratio: 16 / 8;
+  aspect-ratio: 2 / 1;
 }
 
 .card:hover img {
@@ -1013,7 +1013,7 @@ section figure:has(img) {
   }
 
   .card img {
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 3 / 2;
   }
 
   .card > div.card-text-container {
