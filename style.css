@@ -90,14 +90,13 @@ html {
 
 h1 {
   font-size: var(--font-size-xl);
-  font-weight: 600;
+  font-weight: normal;
   line-height: 1.2em;
-  letter-spacing: normal;
   grid-column: 1/-1;
   padding: 0 0 var(--spacing-s);
   font-family: 'Archivo Black';
   text-transform: uppercase;
-  letter-spacing: -1px;
+  letter-spacing: -0.02em;
 }
 
 h2 {
