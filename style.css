@@ -300,12 +300,11 @@ nav > div > a.back {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 3.5rem;
-  width: 3.5rem;
+  height: 2.75rem;
+  width: 2.75rem;
   text-decoration: none;
   transition: all 0.2s ease-out;
   border-radius: 999px;
-  background: var(--grey-200);
 }
 
 nav > div > a.back:hover {
@@ -444,9 +443,9 @@ footer div a:hover {
   font-size: var(--font-size-s);
   font-weight: 400;
   text-decoration: none;
-  height: 3.5rem;
+  height: auto;
   text-align: center;
-  padding: 0 2rem;
+  padding: .75rem 1.5rem;
   background: var(--grey-200);
   border-radius: 999px;
   transition: all ease-out 0.2s;
