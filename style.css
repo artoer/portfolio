@@ -71,6 +71,14 @@
   font-weight: 700;
 }
 
+/* General Sans - Bold */
+@font-face {
+  font-family: "Archivo Black";
+  src: url("../assets/fonts/ArchivoBlack-Regular.ttf") format("opentype");
+  src: url("./assets/fonts/ArchivoBlack-Regular.ttf") format("opentype");
+}
+
+
 html {
   height: 100%;
   scroll-behavior: smooth;
@@ -86,7 +94,10 @@ h1 {
   line-height: 1.2em;
   letter-spacing: normal;
   grid-column: 1/-1;
-  padding: 0 0 var(--spacing-xs);
+  padding: 0 0 var(--spacing-s);
+  font-family: 'Archivo Black';
+  text-transform: uppercase;
+  letter-spacing: -1px;
 }
 
 h2 {
