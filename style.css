@@ -683,7 +683,7 @@ background: var(--primary-light);
 }
 
 .fs-cta span {
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-l);
   transition: all 0.2s ease-out;
   color: var(--grey-100);
   font-weight: 600;
