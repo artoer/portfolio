@@ -508,7 +508,8 @@ footer div a:hover {
 .card h2 {
   padding: 0;
   transition: all 0.2s ease-out;
-  color: var(--primary-light);
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
 }
 
 .card h2::after {
@@ -520,6 +521,10 @@ footer div a:hover {
   vertical-align: baseline;
   opacity: 0;
   transition: all 0.2s ease-out;
+}
+
+.card:hover h2 {
+  color: var(--primary-dark);
 }
 
 .card:hover h2::after {
@@ -542,11 +547,15 @@ footer div a:hover {
   padding: var(--spacing-s);
   flex-direction: column;
   justify-content: center;
-  backdrop-filter: blur(12px) contrast(1.1);
   border-radius: 6px;
   background: hsla(0, 0%, 100%, 0.8);
   backdrop-filter: blur(20px) saturate(1.8);
   -webkit-backdrop-filter: blur(20px) saturate(1.8);
+  transition: 0.2s ease-out;
+}
+
+.card:hover > div.card-text-container {
+  background: var(--grey-100);
 }
 
 .card > div.card-img-container {
@@ -667,16 +676,19 @@ footer div a:hover {
     var(--primary-light),
     var(--primary-dark)
   );
+background: var(--primary-light);
   background-size: 200% 200%;
   background-position: 0% 0%;
   transition: all 0.2s ease-out;
 }
 
 .fs-cta span {
-  font-size: var(--font-size-l);
+  font-size: var(--font-size-xl);
   transition: all 0.2s ease-out;
   color: var(--grey-100);
-  font-weight: 500;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
 }
 
 .fs-cta span::after {
@@ -692,10 +704,12 @@ footer div a:hover {
 
 .fs-cta:hover {
   background-position: 0% 100%;
+  background: #fff;
 }
 
 .fs-cta:hover span {
   margin-left: 0.5em;
+  color:var(--primary-dark);
 
   &::after {
     opacity: 1;
