@@ -751,7 +751,7 @@ blockquote {
 }
 
 .overview-wrapper p {
-  margin-bottom: var(--spacing-s);
+  margin: var(--spacing-xs) 0 var(--spacing-s);
   font-size: var(--font-size-m);
   grid-column: span 2;
   font-weight: 500;
