@@ -71,13 +71,6 @@
   font-weight: 700;
 }
 
-/* General Sans - Bold */
-@font-face {
-  font-family: "Archivo Black";
-  src: url("../assets/fonts/ArchivoBlack-Regular.ttf") format("opentype");
-  src: url("./assets/fonts/ArchivoBlack-Regular.ttf") format("opentype");
-}
-
 html {
   height: 100%;
   scroll-behavior: smooth;
@@ -89,11 +82,10 @@ html {
 
 h1 {
   font-size: var(--font-size-xl);
-  font-weight: normal;
+  font-weight: 700;
   line-height: 0.9em;
   grid-column: 1/-1;
   padding: 0 0 var(--spacing-s);
-  font-family: "Archivo Black";
   text-transform: uppercase;
   letter-spacing: -0.02em;
 }
@@ -408,7 +400,6 @@ footer div a:hover {
   font-size: var(--font-size-m);
   line-height: 1.5;
   margin-bottom: var(--spacing-xs);
-  font-weight: 500;
 }
 
 .intro-grid img {
