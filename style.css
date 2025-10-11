@@ -82,11 +82,10 @@ html {
 
 h1 {
   font-size: var(--font-size-xl);
-  font-weight: 700;
+  font-weight: 600;
   line-height: 0.9em;
   grid-column: 1/-1;
   padding: 0 0 var(--spacing-s);
-  text-transform: uppercase;
   letter-spacing: -0.02em;
 }
 
@@ -112,7 +111,6 @@ h4 {
   font-weight: 500;
   margin: 0 0 var(--spacing-xs);
   color: var(--grey-600);
-  text-transform: uppercase;
 }
 
 p,
@@ -158,13 +156,13 @@ img {
 
 a {
   text-decoration-color: var(--primary-light);
-  text-decoration-thickness: 0.25rem;
+  text-decoration-thickness: 1px;
   text-underline-offset: 0.25rem;
-  font-weight: 600;
+  font-weight: 500;
   font-size: inherit;
 }
 
-main a:hover:not(.fs-cta) {
+a:hover:not(.fs-cta) {
   color: var(--primary-light);
   text-decoration-color: var(--primary-light);
 }
@@ -345,14 +343,14 @@ footer > div {
   column-gap: var(--spacing-s);
 }
 
-footer > div > div {
+/* footer > div > div {
   color: var(--grey-400);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: 0.5rem;
-}
+} */
 
 footer span {
   color: var(--grey-600);
@@ -360,7 +358,7 @@ footer span {
   grid-column: span 3;
 }
 
-footer div a {
+/* footer div a {
   color: var(--grey-800);
   font-size: var(--font-size-s);
   font-weight: 400;
@@ -370,7 +368,7 @@ footer div a {
 footer div a:hover {
   color: var(--primary-darker);
   font-weight: 600;
-}
+} */
 
 /* Home Page */
 
@@ -384,14 +382,6 @@ footer div a:hover {
   margin: 0 auto;
 }
 
-.intro-content {
-  display: grid;
-  gap: var(--spacing-s);
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  align-items: start;
-  grid-auto-rows: min-content;
-}
-
 .intro-text {
   grid-column: span 3;
 }
@@ -399,7 +389,7 @@ footer div a:hover {
 .intro-text p {
   font-size: var(--font-size-m);
   line-height: 1.5;
-  margin-bottom: var(--spacing-xs);
+  margin-bottom: var(--spacing-s);
 }
 
 .intro-grid img {
@@ -419,6 +409,20 @@ footer div a:hover {
   align-items: center;
   gap: var(--spacing-xs);
   margin: var(--spacing-s) 0 0;
+}
+
+.socials {
+color: var(--grey-400);
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.socials a {
+  color: var(--grey-800);
+  font-size: var(--font-size-s);
 }
 
 .intro-socials span {
@@ -500,7 +504,6 @@ footer div a:hover {
 .card h2 {
   padding: 0;
   transition: all 0.2s ease-out;
-  text-transform: uppercase;
   letter-spacing: -0.02em;
 }
 
@@ -680,7 +683,6 @@ background: var(--primary-light);
   transition: all 0.2s ease-out;
   color: var(--grey-100);
   font-weight: 600;
-  text-transform: uppercase;
   letter-spacing: -0.02em;
 }
 
@@ -787,8 +789,8 @@ blockquote {
 .process h2::before {
   content: "";
   display: block;
-  height: 0.25rem;
-  width: 6rem;
+  height: 0.125rem;
+  width: 16rem;
   margin: 0 0 var(--spacing-s);
   background: var(--primary-dark);
 }
