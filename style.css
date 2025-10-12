@@ -462,10 +462,6 @@ color: var(--grey-400);
   background: var(--secondary);
 }
 
-.fs-container.overview {
-  padding: var(--spacing-m) var(--page-margin);
-}
-
 .fs-container {
   padding: var(--spacing-l) var(--page-margin);
   display: flex;
@@ -478,7 +474,7 @@ color: var(--grey-400);
   display: flex;
   flex-direction: column;
   max-width: var(--max-width);
-  padding: 0 0 var(--spacing-m);
+  padding: 0 0 var(--spacing-l);
   gap: var(--spacing-s);
   width: 100%;
   margin: 0;
