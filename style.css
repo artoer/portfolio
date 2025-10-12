@@ -27,7 +27,7 @@
   --font-size-m: 1.5rem; /*24*/
   --font-size-s: 1.25rem; /*20*/
 
-  --max-width: calc(1440px - (var(--page-margin) * 2));
+  --max-width: 1200px;
   --page-margin: 1.5rem;
 
   --spacing-xl: 10rem; /*160*/
@@ -89,7 +89,7 @@ h1 {
   letter-spacing: -0.02em;
 }
 
-h2  {
+h2, .xl, blockquote {
   font-size: var(--font-size-l);
   font-weight: 600;
   line-height: 1.2em;
@@ -497,7 +497,9 @@ color: var(--grey-400);
 
 .heading-wrapper p {
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
+  padding: 0;
+  width: 80%;
 }
 
 .meta-wrapper {
@@ -594,14 +596,13 @@ background: var(--primary-light);
 
 .xl,
 blockquote {
-  font-size: var(--font-size-l);
+  width: 80%;
+  text-align: left;
   margin: 0 auto;
-  font-weight: 600;
-  line-height: 1.45;
 }
 
 .xl:not(:last-of-type) {
-  margin: 0 0 var(--spacing-s);
+  margin: 0 auto var(--spacing-s);
 }
 
 .fs-container figcaption {
@@ -691,12 +692,12 @@ section {
 }
 
 .process figure {
-  width: 50%;
+  width: 60%;
   margin: var(--spacing-s) auto;
 }
 
 .process p {
-  width: 50%;
+  width: 60%;
   margin: 0 auto var(--spacing-xs);
 }
 
@@ -783,6 +784,10 @@ section figure:has(img) {
     pointer-events: none;
   }
 
+  .xl, blockquote {
+    width: 100%;
+  }
+
   .card img {
     aspect-ratio: 3 / 2;
   }
@@ -816,6 +821,7 @@ section figure:has(img) {
 
   .heading-wrapper p {
     text-align: left;
+    width: 100%;
   }
 
   .meta-data {
