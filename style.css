@@ -89,7 +89,7 @@ h1 {
   letter-spacing: -0.02em;
 }
 
-h2, .xl, blockquote {
+h2 {
   font-size: var(--font-size-l);
   font-weight: 600;
   line-height: 1.2em;
@@ -98,7 +98,7 @@ h2, .xl, blockquote {
   text-align: center;
 }
 
-h3, .heading-wrapper p, .overview-wrapper p {
+h3 {
   font-size: var(--font-size-m);
   font-weight: 600;
   line-height: 1.2em;
@@ -124,6 +124,13 @@ nav,
 figcaption {
   font-size: var(--font-size-s);
   line-height: 1.6;
+}
+
+p.large, blockquote {
+  font-size: var(--font-size-l);
+  margin: 0 auto var(--spacing-xs);
+  font-weight: 600;
+  line-height: 1.4;
 }
 
 strong {
@@ -496,6 +503,8 @@ color: var(--grey-400);
 }
 
 .heading-wrapper p {
+  font-size: var(--font-size-m);
+  font-weight: 500;
   text-align: center;
   margin: 0 auto;
   padding: 0;
@@ -596,6 +605,8 @@ background: var(--primary-light);
 
 .xl,
 blockquote {
+  font-size: var(--font-size-l);
+  font-weight: 600;
   width: 80%;
   text-align: left;
   margin: 0 auto;
@@ -624,8 +635,9 @@ blockquote {
 
 .overview-wrapper p {
   text-align: left;
-  font-weight: 400;
-  margin: 0 auto var(--spacing-xs);
+  margin: 0 auto var(--spacing-s);
+  padding: 0 0 var(--spacing-s);
+  border-bottom: 1px solid var(--grey-250);
 }
 
 .meta-data {
