@@ -603,7 +603,7 @@ background: var(--primary-light);
   }
 }
 
-.xl,
+.large,
 blockquote {
   font-size: var(--font-size-l);
   font-weight: 600;
@@ -704,7 +704,7 @@ section {
 }
 
 .process figure {
-  width: 60%;
+  width: 80%;
   margin: var(--spacing-s) auto;
 }
 
