@@ -409,7 +409,7 @@ color: var(--grey-400);
 }
 
 #work-container {
-  padding: 0 var(--page-margin) var(--spacing-l);
+  padding: 0 var(--page-margin) var(--spacing-xl);
 }
 
 #work {
