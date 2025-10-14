@@ -508,7 +508,7 @@ color: var(--grey-400);
   text-align: center;
   margin: 0 auto;
   padding: 0;
-  width: 80%;
+  width: 75%;
 }
 
 .meta-wrapper {
@@ -607,12 +607,12 @@ background: var(--primary-light);
 blockquote {
   font-size: var(--font-size-l);
   font-weight: 600;
-  width: 80%;
+  width: 75%;
   text-align: left;
   margin: 0 auto;
 }
 
-.xl:not(:last-of-type) {
+.large:not(:last-of-type) {
   margin: 0 auto var(--spacing-s);
 }
 
@@ -626,35 +626,38 @@ blockquote {
 /* case study top */
 
 .overview-wrapper {
-  display: flex;
-  flex-direction: column;
-  column-gap: var(--spacing-s);
   width: 100%;
-  max-width: calc(var(--max-width) / 3 * 2);
+  max-width: var(--max-width);
 }
 
 .overview-wrapper p {
+  width: 50%;
   text-align: left;
-  margin: 0 auto var(--spacing-s);
-  padding: 0 0 var(--spacing-s);
-  border-bottom: 1px solid var(--grey-250);
+  margin: 0 auto var(--spacing-m);
 }
 
-.meta-data {
+.row-list {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  column-gap: var(--spacing-s);
-  grid-column: 1/-1;
+  gap: var(--spacing-s);
+  margin: var(--spacing-s) 0 0;
 }
 
-.overview-wrapper ul {
+.row-list ul {
   list-style: none;
   width: 100%;
 }
 
-.overview-wrapper ul li:first-of-type {
-  color: var(--grey-600);
-  line-height: 2;
+.row-list ul li:first-of-type {
+  font-size: var(--font-size-s);
+  width: fit-content;
+  color: var(--grey-800);
+  font-weight: 600;
+  margin: 0 0 1rem;
+  padding: .25rem .5rem;
+  background: var(--secondary);
+  color: var(--grey-800);
 }
 
 /* case study content */
@@ -704,12 +707,12 @@ section {
 }
 
 .process figure {
-  width: 80%;
+  width: 75%;
   margin: var(--spacing-s) auto;
 }
 
 .process p {
-  width: 60%;
+  width: 50%;
   margin: 0 auto var(--spacing-xs);
 }
 
@@ -796,7 +799,7 @@ section figure:has(img) {
     pointer-events: none;
   }
 
-  .xl, blockquote {
+  .large, blockquote {
     width: 100%;
   }
 
@@ -831,15 +834,14 @@ section figure:has(img) {
     aspect-ratio: 1 / 1;
   }
 
-  .heading-wrapper p {
+  .heading-wrapper p, .overview-wrapper p {
     text-align: left;
     width: 100%;
   }
 
-  .meta-data {
+  .row-list {
     display: flex;
     flex-direction: column;
-    row-gap: 0;
   }
 
   main .process > * {
