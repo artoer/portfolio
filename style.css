@@ -297,23 +297,19 @@ nav > div > a.back {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 3.25rem;
-  width: 3.25rem;
+  height: 2.75rem;
+  width: 2.75rem;
   text-decoration: none;
   transition: all 0.2s ease-out;
   border-radius: 999px;
 }
 
 nav > div > a.back:hover {
-  background: rgba(255,255,255,.8);
+  background: rgba(255,255,255,.3);
 }
 
 nav > div > a.back:hover i {
   color: rgba(0,0,0,1);
-}
-
-a.back {
-  background: rgba(255,255,255,.2);
 }
 
 a.back i {
