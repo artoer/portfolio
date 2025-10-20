@@ -678,8 +678,9 @@ section {
   flex-direction: row;
 }
 
-.collage > div:not(:last-of-type) {
+.collage > :not(:last-of-type) {
   margin: 0 0 var(--spacing-xs);
+  padding: 0;
 }
 
 .collage div {
