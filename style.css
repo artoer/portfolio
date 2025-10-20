@@ -28,7 +28,7 @@
   --font-size-s: 1.25rem; /*20*/
 
   --max-width: 1200px;
-  --page-margin: 1rem;
+  --page-margin: 1.5rem;
 
   --spacing-xl: 10rem; /*160*/
   --spacing-l: 7.5rem; /*120*/
@@ -784,7 +784,7 @@ section figure:has(img) {
     --spacing-s: 2rem; /*32*/
     --spacing-xs: 1rem; /*16*/
 
-    --page-margin: 1.5rem;
+    --page-margin: 1rem;
 
     --radius-l: 16px;
     --radius-m: 12px;
