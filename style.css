@@ -9,10 +9,8 @@
 }
 
 :root {
-  --primary-light: #7733ff;
-  --primary-dark: #6719ff;
-  --primary-darker: #3c1a80;
-  --secondary: #8b6eff;
+  --primary: #7733ff;
+  --secondary: #6effe4;
 
   --grey-100: #faf9fc;
   --grey-200: #f1eef6;
@@ -148,7 +146,7 @@ i {
 
 blockquote span {
   padding: 2px 4px;
-  background: var(--primary-dark);
+  background: var(--primary);
   color: var(--grey-100);
   font-size: inherit;
 }
@@ -163,7 +161,7 @@ img {
 }
 
 a {
-  text-decoration-color: var(--primary-light);
+  text-decoration-color: var(--primary);
   text-decoration-thickness: 1px;
   text-underline-offset: 0.25rem;
   font-weight: 500;
@@ -171,8 +169,8 @@ a {
 }
 
 a:hover:not(.fs-cta) {
-  color: var(--primary-light);
-  text-decoration-color: var(--primary-light);
+  color: var(--primary);
+  text-decoration-color: var(--primary);
 }
 
 .modal {
@@ -555,21 +553,14 @@ color: var(--grey-400);
   text-decoration: none;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(
-    180deg,
-    var(--primary-light),
-    var(--primary-dark)
-  );
-background: var(--primary-light);
-  background-size: 200% 200%;
-  background-position: 0% 0%;
+  background: var(--primary);
   transition: all 0.2s ease-out;
 }
 
 .fs-cta span {
   font-size: var(--font-size-xl);
+  color:var(--grey-100);
   transition: all 0.2s ease-out;
-  color: var(--grey-100);
   font-weight: 600;
   letter-spacing: -0.02em;
 }
@@ -587,12 +578,12 @@ background: var(--primary-light);
 
 .fs-cta:hover {
   background-position: 0% 100%;
-  background: #fff;
+  background: var(--secondary);
 }
 
 .fs-cta:hover span {
   margin-left: 0.5em;
-  color:var(--primary-dark);
+  color:var(--grey-900);
 
   &::after {
     opacity: 1;

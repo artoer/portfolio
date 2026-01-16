@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const navTemplate = Handlebars.compile(`
     <div>
-      <a class="back" href="./"><i class="fa-solid fa-arrow-left fa-xl"></i></a>
+      <a class="back" href="./"><i class="fa-solid fa-arrow-left fa-l"></i></a>
     </div>
 `);
 
