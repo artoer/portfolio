@@ -10,7 +10,7 @@
 
 :root {
   --primary: #7733ff;
-  --secondary: #6effe4;
+  --secondary: #99ffdd;
 
   --grey-100: #faf9fc;
   --grey-200: #f1eef6;
@@ -83,7 +83,7 @@ h1 {
   font-weight: 600;
   line-height: 0.9em;
   grid-column: 1/-1;
-  padding: 0 0 var(--spacing-s);
+  padding: 0 0 var(--spacing-xs);
   letter-spacing: -0.02em;
 }
 
@@ -303,7 +303,7 @@ nav > div > a.back {
 }
 
 nav > div > a.back:hover {
-  background: rgba(255,255,255,.3);
+  background: rgba(0,0,0,.1);
 }
 
 nav > div > a.back:hover i {
